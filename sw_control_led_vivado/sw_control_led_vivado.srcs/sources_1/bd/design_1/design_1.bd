@@ -1,0 +1,61 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xE4575FEDE4575FED",
+      "device": "xc7z020clg484-1",
+      "name": "design_1",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "sw_control_led_0": ""
+    },
+    "ports": {
+      "sw": {
+        "type": "data",
+        "direction": "I",
+        "left": "7",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "led": {
+        "type": "data",
+        "direction": "O",
+        "left": "7",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "sw_control_led_0": {
+        "vlnv": "xilinx.com:hls:sw_control_led:1.0",
+        "xci_name": "design_1_sw_control_led_0_0"
+      }
+    },
+    "nets": {
+      "inputs_0_1": {
+        "ports": [
+          "sw",
+          "sw_control_led_0/inputs"
+        ]
+      },
+      "sw_control_led_0_outputs": {
+        "ports": [
+          "sw_control_led_0/outputs",
+          "led"
+        ]
+      }
+    }
+  }
+}
