@@ -1,0 +1,43 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xC869A867C869A867",
+      "device": "xc7z020clg484-1",
+      "name": "design_1",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "basic_output_0": ""
+    },
+    "ports": {
+      "LD": {
+        "type": "data",
+        "direction": "O",
+        "left": "7",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "basic_output_0": {
+        "vlnv": "xilinx.com:hls:basic_output:1.0",
+        "xci_name": "design_1_basic_output_0_0"
+      }
+    },
+    "nets": {
+      "basic_output_0_o": {
+        "ports": [
+          "basic_output_0/o",
+          "LD"
+        ]
+      }
+    }
+  }
+}
