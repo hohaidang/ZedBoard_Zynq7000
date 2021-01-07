@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"automatic_inlining": {
+			"proto_instances": {
+			}
+		}
+	}
+}

@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"trafic_light": {
+			"proto_instances": {
+			}
+		}
+	}
+}

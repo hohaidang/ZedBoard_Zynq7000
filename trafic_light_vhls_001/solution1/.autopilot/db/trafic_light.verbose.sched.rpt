@@ -1,0 +1,145 @@
+
+
+================================================================
+== Vivado HLS Report for 'trafic_light'
+================================================================
+* Date:           Thu Jan  7 17:46:06 2021
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        trafic_light_vhls_001
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 10.00 ns | 2.934 ns |   1.25 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|   0 ns   |   0 ns   |    0|    0|   none  |
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 0
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 2.93>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1 %l_sensor) nounwind, !map !13"   --->   Operation 2 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1 %r_sensor) nounwind, !map !19"   --->   Operation 3 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1 %u_sensor) nounwind, !map !23"   --->   Operation 4 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1 %d_sensor) nounwind, !map !27"   --->   Operation 5 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %ew_light) nounwind, !map !31"   --->   Operation 6 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %ns_light) nounwind, !map !37"   --->   Operation 7 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([13 x i8]* @trafic_light_str) nounwind"   --->   Operation 8 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%d_sensor_read = call i1 @_ssdm_op_Read.ap_none.i1(i1 %d_sensor) nounwind" [trafic_light_vhls_001/trafic_light.cpp:61]   --->   Operation 9 'read' 'd_sensor_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%u_sensor_read = call i1 @_ssdm_op_Read.ap_none.i1(i1 %u_sensor) nounwind" [trafic_light_vhls_001/trafic_light.cpp:61]   --->   Operation 10 'read' 'u_sensor_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%r_sensor_read = call i1 @_ssdm_op_Read.ap_none.i1(i1 %r_sensor) nounwind" [trafic_light_vhls_001/trafic_light.cpp:61]   --->   Operation 11 'read' 'r_sensor_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%l_sensor_read = call i1 @_ssdm_op_Read.ap_none.i1(i1 %l_sensor) nounwind" [trafic_light_vhls_001/trafic_light.cpp:61]   --->   Operation 12 'read' 'l_sensor_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1* %ns_light, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [trafic_light_vhls_001/trafic_light.cpp:67]   --->   Operation 13 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1* %ew_light, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [trafic_light_vhls_001/trafic_light.cpp:68]   --->   Operation 14 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1 %d_sensor, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [trafic_light_vhls_001/trafic_light.cpp:69]   --->   Operation 15 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1 %u_sensor, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [trafic_light_vhls_001/trafic_light.cpp:70]   --->   Operation 16 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1 %r_sensor, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [trafic_light_vhls_001/trafic_light.cpp:71]   --->   Operation 17 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1 %l_sensor, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [trafic_light_vhls_001/trafic_light.cpp:72]   --->   Operation 18 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [13 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [trafic_light_vhls_001/trafic_light.cpp:73]   --->   Operation 19 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.97ns)   --->   "%ew_rule_1 = and i1 %l_sensor_read, %r_sensor_read" [trafic_light_vhls_001/trafic_light.cpp:10->trafic_light_vhls_001/trafic_light.cpp:75]   --->   Operation 20 'and' 'ew_rule_1' <Predicate = true> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 21 [1/1] (0.00ns) (grouped into LUT with out node or_ln81_1)   --->   "%xor_ln22 = xor i1 %l_sensor_read, %r_sensor_read" [trafic_light_vhls_001/trafic_light.cpp:22->trafic_light_vhls_001/trafic_light.cpp:76]   --->   Operation 21 'xor' 'xor_ln22' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 22 [1/1] (0.97ns)   --->   "%and_ln22 = and i1 %u_sensor_read, %d_sensor_read" [trafic_light_vhls_001/trafic_light.cpp:22->trafic_light_vhls_001/trafic_light.cpp:76]   --->   Operation 22 'and' 'and_ln22' <Predicate = true> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 23 [1/1] (0.00ns) (grouped into LUT with out node or_ln81_1)   --->   "%xor_ln22_1 = xor i1 %and_ln22, true" [trafic_light_vhls_001/trafic_light.cpp:22->trafic_light_vhls_001/trafic_light.cpp:76]   --->   Operation 23 'xor' 'xor_ln22_1' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 24 [1/1] (0.00ns) (grouped into LUT with out node or_ln81_1)   --->   "%ew_rule_2 = and i1 %xor_ln22, %xor_ln22_1" [trafic_light_vhls_001/trafic_light.cpp:22->trafic_light_vhls_001/trafic_light.cpp:76]   --->   Operation 24 'and' 'ew_rule_2' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 25 [1/1] (0.00ns) (grouped into LUT with out node or_ln82)   --->   "%xor_ln34 = xor i1 %ew_rule_1, true" [trafic_light_vhls_001/trafic_light.cpp:34->trafic_light_vhls_001/trafic_light.cpp:77]   --->   Operation 25 'xor' 'xor_ln34' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 26 [1/1] (0.00ns) (grouped into LUT with out node or_ln82)   --->   "%ns_rule_3 = and i1 %and_ln22, %xor_ln34" [trafic_light_vhls_001/trafic_light.cpp:34->trafic_light_vhls_001/trafic_light.cpp:77]   --->   Operation 26 'and' 'ns_rule_3' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 27 [1/1] (0.00ns) (grouped into LUT with out node or_ln82)   --->   "%xor_ln46 = xor i1 %u_sensor_read, %d_sensor_read" [trafic_light_vhls_001/trafic_light.cpp:46->trafic_light_vhls_001/trafic_light.cpp:78]   --->   Operation 27 'xor' 'xor_ln46' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 28 [1/1] (0.97ns)   --->   "%or_ln54 = or i1 %r_sensor_read, %l_sensor_read" [trafic_light_vhls_001/trafic_light.cpp:54->trafic_light_vhls_001/trafic_light.cpp:79]   --->   Operation 28 'or' 'or_ln54' <Predicate = true> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 29 [1/1] (0.00ns) (grouped into LUT with out node or_ln82)   --->   "%xor_ln54 = xor i1 %or_ln54, true" [trafic_light_vhls_001/trafic_light.cpp:54->trafic_light_vhls_001/trafic_light.cpp:79]   --->   Operation 29 'xor' 'xor_ln54' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 30 [1/1] (0.00ns) (grouped into LUT with out node or_ln82)   --->   "%ns_rule_4 = and i1 %xor_ln46, %xor_ln54" [trafic_light_vhls_001/trafic_light.cpp:54->trafic_light_vhls_001/trafic_light.cpp:79]   --->   Operation 30 'and' 'ns_rule_4' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 31 [1/1] (0.00ns) (grouped into LUT with out node or_ln81)   --->   "%or_ln58 = or i1 %d_sensor_read, %u_sensor_read" [trafic_light_vhls_001/trafic_light.cpp:58->trafic_light_vhls_001/trafic_light.cpp:79]   --->   Operation 31 'or' 'or_ln58' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 32 [1/1] (0.00ns) (grouped into LUT with out node or_ln81)   --->   "%or_ln58_1 = or i1 %or_ln58, %or_ln54" [trafic_light_vhls_001/trafic_light.cpp:58->trafic_light_vhls_001/trafic_light.cpp:79]   --->   Operation 32 'or' 'or_ln58_1' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 33 [1/1] (0.00ns) (grouped into LUT with out node or_ln81)   --->   "%ew_rule_5 = xor i1 %or_ln58_1, true" [trafic_light_vhls_001/trafic_light.cpp:58->trafic_light_vhls_001/trafic_light.cpp:79]   --->   Operation 33 'xor' 'ew_rule_5' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 34 [1/1] (0.97ns) (out node of the LUT)   --->   "%or_ln81 = or i1 %ew_rule_1, %ew_rule_5" [trafic_light_vhls_001/trafic_light.cpp:81]   --->   Operation 34 'or' 'or_ln81' <Predicate = true> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 35 [1/1] (0.97ns) (out node of the LUT)   --->   "%or_ln81_1 = or i1 %or_ln81, %ew_rule_2" [trafic_light_vhls_001/trafic_light.cpp:81]   --->   Operation 35 'or' 'or_ln81_1' <Predicate = true> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i1P(i1* %ew_light, i1 %or_ln81_1) nounwind" [trafic_light_vhls_001/trafic_light.cpp:81]   --->   Operation 36 'write' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.97ns) (out node of the LUT)   --->   "%or_ln82 = or i1 %ns_rule_3, %ns_rule_4" [trafic_light_vhls_001/trafic_light.cpp:82]   --->   Operation 37 'or' 'or_ln82' <Predicate = true> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i1P(i1* %ns_light, i1 %or_ln82) nounwind" [trafic_light_vhls_001/trafic_light.cpp:82]   --->   Operation 38 'write' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "ret void" [trafic_light_vhls_001/trafic_light.cpp:83]   --->   Operation 39 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 2.93ns
+The critical path consists of the following:
+	wire read on port 'r_sensor' (trafic_light_vhls_001/trafic_light.cpp:61) [16]  (0 ns)
+	'and' operation ('ew_rule_1', trafic_light_vhls_001/trafic_light.cpp:10->trafic_light_vhls_001/trafic_light.cpp:75) [25]  (0.978 ns)
+	'or' operation ('or_ln81', trafic_light_vhls_001/trafic_light.cpp:81) [39]  (0.978 ns)
+	'or' operation ('or_ln81_1', trafic_light_vhls_001/trafic_light.cpp:81) [40]  (0.978 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

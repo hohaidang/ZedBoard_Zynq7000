@@ -1,9 +1,9 @@
 INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/vivado_hls.exe'
-INFO: [HLS 200-10] For user 'hohai' on host 'desktop-o8t2gmt' (Windows NT_amd64 version 6.2) on Thu Jan 07 16:19:54 +0900 2021
+INFO: [HLS 200-10] For user 'hohai' on host 'desktop-o8t2gmt' (Windows NT_amd64 version 6.2) on Thu Jan 07 17:46:23 +0900 2021
 INFO: [HLS 200-10] In directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000'
-Sourcing Tcl script 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/simple_combination_circuit_vhls/solution1/export.tcl'
-INFO: [HLS 200-10] Opening project 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/simple_combination_circuit_vhls'.
-INFO: [HLS 200-10] Opening solution 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/simple_combination_circuit_vhls/solution1'.
+Sourcing Tcl script 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/trafic_light_vhls_001/solution1/export.tcl'
+INFO: [HLS 200-10] Opening project 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/trafic_light_vhls_001'.
+INFO: [HLS 200-10] Opening solution 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/trafic_light_vhls_001/solution1'.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
 INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
@@ -17,4 +17,4 @@ source run_ippack.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
-INFO: [Common 17-206] Exiting Vivado at Thu Jan  7 16:20:02 2021...
+INFO: [Common 17-206] Exiting Vivado at Thu Jan  7 17:46:30 2021...

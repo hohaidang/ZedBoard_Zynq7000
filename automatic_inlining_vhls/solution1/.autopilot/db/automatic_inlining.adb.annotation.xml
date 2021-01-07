@@ -1,0 +1,6 @@
+<annotationInfo>
+<annotationInfo>
+<item  id="14" filename="automatic_inlining_vhls/automatic_inlining.cpp" linenumber="6" name="xor_ln6" contextFuncName="not_gate" moduleName="automatic_inlining" rtlName="xor_ln6_fu_47_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="2" fileDirectory="C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000"><\/item>
+<item  id="15" filename="automatic_inlining_vhls/automatic_inlining.cpp" linenumber="11" name="and_ln11" contextFuncName="and_gate" moduleName="automatic_inlining" rtlName="c" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="2" fileDirectory="C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000"><\/item>
+<\/annotationInfo>
+</annotationInfo>

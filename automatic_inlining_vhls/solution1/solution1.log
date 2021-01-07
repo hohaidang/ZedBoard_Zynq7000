@@ -1,0 +1,191 @@
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'automatic_inlining_vhls/automatic_inlining.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from automatic_inlining_vhls/automatic_inlining.cpp:1:
+automatic_inlining_vhls/automatic_inlining.cpp:15:4: error: assigning to 'bool *' from incompatible type 'bool'
+ c = and_gate(not_gate(a), b);
+   ^ ~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'automatic_inlining_vhls/automatic_inlining.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 178.750 ; gain = 89.590
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 178.750 ; gain = 89.590
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 178.750 ; gain = 89.590
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'not_gate' into 'automatic_inlining' (automatic_inlining_vhls/automatic_inlining.cpp:15) automatically.
+INFO: [XFORM 203-602] Inlining function 'and_gate' into 'automatic_inlining' (automatic_inlining_vhls/automatic_inlining.cpp:15) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 178.750 ; gain = 89.590
+INFO: [XFORM 203-602] Inlining function 'not_gate' into 'automatic_inlining' (automatic_inlining_vhls/automatic_inlining.cpp:15) automatically.
+INFO: [XFORM 203-602] Inlining function 'and_gate' into 'automatic_inlining' (automatic_inlining_vhls/automatic_inlining.cpp:15) automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 178.750 ; gain = 89.590
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 178.750 ; gain = 89.590
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'automatic_inlining' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'automatic_inlining' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 6.348 seconds; current allocated memory: 93.699 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.058 seconds; current allocated memory: 93.774 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'automatic_inlining' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'automatic_inlining/a' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'automatic_inlining/b' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'automatic_inlining/c' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'c' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on function 'automatic_inlining' to 'ap_ctrl_none'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'automatic_inlining'.
+INFO: [HLS 200-111]  Elapsed time: 0.087 seconds; current allocated memory: 93.852 MB.
+INFO: [HLS 200-789] **** Estimated Fmax: 1022.49 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 178.750 ; gain = 89.590
+INFO: [VHDL 208-304] Generating VHDL RTL for automatic_inlining.
+INFO: [VLOG 209-307] Generating Verilog RTL for automatic_inlining.
+INFO: [HLS 200-112] Total elapsed time: 7.272 seconds; peak allocated memory: 93.852 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'automatic_inlining_vhls/automatic_inlining.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 178.996 ; gain = 89.785
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 178.996 ; gain = 89.785
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 178.996 ; gain = 89.785
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 178.996 ; gain = 89.785
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 178.996 ; gain = 89.785
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 178.996 ; gain = 89.785
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'automatic_inlining' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'not_gate' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 6.437 seconds; current allocated memory: 112.853 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.057 seconds; current allocated memory: 112.891 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'and_gate' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.06 seconds; current allocated memory: 112.919 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.056 seconds; current allocated memory: 112.953 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'automatic_inlining' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.059 seconds; current allocated memory: 112.993 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.058 seconds; current allocated memory: 113.064 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'not_gate' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'not_gate'.
+INFO: [HLS 200-111]  Elapsed time: 0.069 seconds; current allocated memory: 113.116 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'and_gate' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'and_gate'.
+INFO: [HLS 200-111]  Elapsed time: 0.106 seconds; current allocated memory: 113.209 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'automatic_inlining' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'automatic_inlining/a' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'automatic_inlining/b' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'automatic_inlining/c' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'c' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on function 'automatic_inlining' to 'ap_ctrl_none'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'automatic_inlining'.
+INFO: [HLS 200-111]  Elapsed time: 0.139 seconds; current allocated memory: 113.332 MB.
+INFO: [HLS 200-789] **** Estimated Fmax: 511.25 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 186.230 ; gain = 97.020
+INFO: [VHDL 208-304] Generating VHDL RTL for automatic_inlining.
+INFO: [VLOG 209-307] Generating Verilog RTL for automatic_inlining.
+INFO: [HLS 200-112] Total elapsed time: 7.899 seconds; peak allocated memory: 113.332 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'automatic_inlining_vhls/automatic_inlining.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 178.207 ; gain = 88.766
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 178.207 ; gain = 88.766
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 178.207 ; gain = 88.766
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'not_gate' into 'automatic_inlining' (automatic_inlining_vhls/automatic_inlining.cpp:20) automatically.
+INFO: [XFORM 203-602] Inlining function 'and_gate' into 'automatic_inlining' (automatic_inlining_vhls/automatic_inlining.cpp:20) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 178.207 ; gain = 88.766
+INFO: [XFORM 203-602] Inlining function 'not_gate' into 'automatic_inlining' (automatic_inlining_vhls/automatic_inlining.cpp:20) automatically.
+INFO: [XFORM 203-602] Inlining function 'and_gate' into 'automatic_inlining' (automatic_inlining_vhls/automatic_inlining.cpp:20) automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 178.207 ; gain = 88.766
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 178.207 ; gain = 88.766
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'automatic_inlining' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'automatic_inlining' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 6.404 seconds; current allocated memory: 93.668 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.061 seconds; current allocated memory: 93.759 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'automatic_inlining' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'automatic_inlining/a' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'automatic_inlining/b' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'automatic_inlining/c' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'c' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on function 'automatic_inlining' to 'ap_ctrl_none'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'automatic_inlining'.
+INFO: [HLS 200-111]  Elapsed time: 0.081 seconds; current allocated memory: 93.868 MB.
+INFO: [HLS 200-789] **** Estimated Fmax: 1022.49 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 178.207 ; gain = 88.766
+INFO: [VHDL 208-304] Generating VHDL RTL for automatic_inlining.
+INFO: [VLOG 209-307] Generating Verilog RTL for automatic_inlining.
+INFO: [HLS 200-112] Total elapsed time: 7.336 seconds; peak allocated memory: 93.868 MB.

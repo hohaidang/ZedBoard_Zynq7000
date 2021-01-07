@@ -1,0 +1,25 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"2.0",
+   "Default View_TopLeft":"-296,-208",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port l_sensor -pg 1 -lvl 0 -x -10 -y -50 -defaultsOSRD
+preplace port r_sensor -pg 1 -lvl 0 -x -10 -y -20 -defaultsOSRD
+preplace port u_sensor -pg 1 -lvl 0 -x -10 -y 10 -defaultsOSRD
+preplace port d_sensor -pg 1 -lvl 0 -x -10 -y 50 -defaultsOSRD
+preplace port ew_light -pg 1 -lvl 2 -x 300 -y -20 -defaultsOSRD
+preplace port ns_light -pg 1 -lvl 2 -x 300 -y 10 -defaultsOSRD
+preplace inst trafic_light_0 -pg 1 -lvl 1 -x 150 -y 0 -defaultsOSRD
+preplace netloc d_sensor_0_1 1 0 1 10J 30n
+preplace netloc trafic_light_0_ew_light 1 1 1 280J -20n
+preplace netloc l_sensor_0_1 1 0 1 10J -50n
+preplace netloc trafic_light_0_ns_light 1 1 1 NJ 10
+preplace netloc r_sensor_0_1 1 0 1 10J -20n
+preplace netloc u_sensor_0_1 1 0 1 NJ 10
+levelinfo -pg 1 -10 150 300
+pagesize -pg 1 -db -bbox -sgen -130 -90 420 180
+"
+}
+

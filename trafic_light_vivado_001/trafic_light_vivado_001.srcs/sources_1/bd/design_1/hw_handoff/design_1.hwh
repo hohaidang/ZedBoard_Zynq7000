@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Jan  7 17:50:30 2021" VIVADOVERSION="2019.2">
+
+  <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zedboard:part0:1.0" DEVICE="7z020" NAME="design_1" PACKAGE="clg484" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="d_sensor" SIGIS="data" SIGNAME="External_Ports_d_sensor">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="trafic_light_0" PORT="d_sensor"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="ew_light" SIGIS="data" SIGNAME="trafic_light_0_ew_light">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="trafic_light_0" PORT="ew_light"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="l_sensor" SIGIS="data" SIGNAME="External_Ports_l_sensor">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="trafic_light_0" PORT="l_sensor"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="ns_light" SIGIS="data" SIGNAME="trafic_light_0_ns_light">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="trafic_light_0" PORT="ns_light"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="r_sensor" SIGIS="data" SIGNAME="External_Ports_r_sensor">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="trafic_light_0" PORT="r_sensor"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="u_sensor" SIGIS="data" SIGNAME="External_Ports_u_sensor">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="trafic_light_0" PORT="u_sensor"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="2101071746" FULLNAME="/trafic_light_0" HWVERSION="1.0" INSTANCE="trafic_light_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="trafic_light" VLNV="xilinx.com:hls:trafic_light:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_trafic_light_0_0"/>
+        <PARAMETER NAME="clk_period" VALUE="10"/>
+        <PARAMETER NAME="machine" VALUE="64"/>
+        <PARAMETER NAME="combinational" VALUE="1"/>
+        <PARAMETER NAME="latency" VALUE="0"/>
+        <PARAMETER NAME="II" VALUE="x"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="l_sensor" SIGIS="data" SIGNAME="External_Ports_l_sensor">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="l_sensor"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="r_sensor" SIGIS="data" SIGNAME="External_Ports_r_sensor">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="r_sensor"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="u_sensor" SIGIS="data" SIGNAME="External_Ports_u_sensor">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="u_sensor"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="d_sensor" SIGIS="data" SIGNAME="External_Ports_d_sensor">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="d_sensor"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ew_light" SIGIS="data" SIGNAME="trafic_light_0_ew_light">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ew_light"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ns_light" SIGIS="data" SIGNAME="trafic_light_0_ns_light">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ns_light"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

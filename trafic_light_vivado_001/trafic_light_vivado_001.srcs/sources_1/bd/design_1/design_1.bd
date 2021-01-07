@@ -1,0 +1,121 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x85A32D4385A32D43",
+      "device": "xc7z020clg484-1",
+      "name": "design_1",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "trafic_light_0": ""
+    },
+    "ports": {
+      "d_sensor": {
+        "type": "data",
+        "direction": "I",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "ew_light": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "l_sensor": {
+        "type": "data",
+        "direction": "I",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "ns_light": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "r_sensor": {
+        "type": "data",
+        "direction": "I",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "u_sensor": {
+        "type": "data",
+        "direction": "I",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "trafic_light_0": {
+        "vlnv": "xilinx.com:hls:trafic_light:1.0",
+        "xci_name": "design_1_trafic_light_0_0"
+      }
+    },
+    "nets": {
+      "d_sensor_0_1": {
+        "ports": [
+          "d_sensor",
+          "trafic_light_0/d_sensor"
+        ]
+      },
+      "trafic_light_0_ew_light": {
+        "ports": [
+          "trafic_light_0/ew_light",
+          "ew_light"
+        ]
+      },
+      "l_sensor_0_1": {
+        "ports": [
+          "l_sensor",
+          "trafic_light_0/l_sensor"
+        ]
+      },
+      "trafic_light_0_ns_light": {
+        "ports": [
+          "trafic_light_0/ns_light",
+          "ns_light"
+        ]
+      },
+      "r_sensor_0_1": {
+        "ports": [
+          "r_sensor",
+          "trafic_light_0/r_sensor"
+        ]
+      },
+      "u_sensor_0_1": {
+        "ports": [
+          "u_sensor",
+          "trafic_light_0/u_sensor"
+        ]
+      }
+    }
+  }
+}
