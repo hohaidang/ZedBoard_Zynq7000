@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="simple_combination_circuit.cpp" path="C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\simple_combination_circuit_vhls\simple_combination_circuit.cpp"/>
+  </source>
+  <testbench/>
+</autopilotfilemapping:AutoPilotFileMapping>

@@ -1,0 +1,7 @@
+<annotationInfo>
+<annotationInfo>
+<item  id="18" filename="simple_combination_circuit_vhls/simple_combination_circuit.cpp" linenumber="7" name="and_ln7" contextFuncName="simple_combinational_circuit" moduleName="simple_combinational_circuit" rtlName="and_ln7_fu_55_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="2" fileDirectory="C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000"><\/item>
+<item  id="19" filename="simple_combination_circuit_vhls/simple_combination_circuit.cpp" linenumber="7" name="xor_ln7" contextFuncName="simple_combinational_circuit" moduleName="simple_combinational_circuit" rtlName="xor_ln7_fu_61_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="2" fileDirectory="C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000"><\/item>
+<item  id="20" filename="simple_combination_circuit_vhls/simple_combination_circuit.cpp" linenumber="7" name="or_ln7" contextFuncName="simple_combinational_circuit" moduleName="simple_combinational_circuit" rtlName="d" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="2" fileDirectory="C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000"><\/item>
+<\/annotationInfo>
+</annotationInfo>
