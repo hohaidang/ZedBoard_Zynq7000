@@ -1,0 +1,7 @@
+Running: xsim.dir/simple_combinational_circuit/xsimk.exe -simmode gui -wdb simple_combinational_circuit.wdb -simrunnum 0 -socket 50341
+Design successfully loaded
+Design Loading Memory Usage: 5340 KB (Peak: 5340 KB)
+Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 7056 KB (Peak: 7056 KB)
+Simulation CPU Usage: 30 ms

@@ -43,12 +43,12 @@ set TargetInfo xc7z020:-clg484:-1
 set SourceFiles {sc {} c ../simple_combination_circuit.cpp}
 set SourceFlags {sc {} c {{}}}
 set DirectiveFile C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/simple_combination_circuit_vhls/solution1/solution1.directive
-set TBFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
+set TBFiles {verilog {../../../../../../AppData/Roaming/Xilinx/Vivado/simple_combination_circuit-tb.h ../../../../../../AppData/Roaming/Xilinx/Vivado/simple_combination_circuit-tb.cpp} bc {../../../../../../AppData/Roaming/Xilinx/Vivado/simple_combination_circuit-tb.h ../../../../../../AppData/Roaming/Xilinx/Vivado/simple_combination_circuit-tb.cpp} sc {../../../../../../AppData/Roaming/Xilinx/Vivado/simple_combination_circuit-tb.h ../../../../../../AppData/Roaming/Xilinx/Vivado/simple_combination_circuit-tb.cpp} vhdl {../../../../../../AppData/Roaming/Xilinx/Vivado/simple_combination_circuit-tb.h ../../../../../../AppData/Roaming/Xilinx/Vivado/simple_combination_circuit-tb.cpp} c {} cas {../../../../../../AppData/Roaming/Xilinx/Vivado/simple_combination_circuit-tb.h ../../../../../../AppData/Roaming/Xilinx/Vivado/simple_combination_circuit-tb.cpp}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVOutFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
-set TBTops {bc "" c "" sc "" cas "" vhdl "" verilog ""}
-set TBInstNames {bc "" c "" sc "" cas "" vhdl "" verilog ""}
+set TBTops {verilog {} bc {} sc {} vhdl {} c {} cas {}}
+set TBInstNames {verilog {} bc {} sc {} vhdl {} c {} cas {}}
 set XDCFiles {}
 set ExtraGlobalOptions {"area_timing" 1 "clock_gate" 1 "impl_flow" map "power_gate" 0}
 set TBTVFileNotFound {}

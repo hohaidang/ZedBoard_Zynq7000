@@ -1,0 +1,2 @@
+current_fileset
+open_wave_database simple_combinational_circuit.wdb

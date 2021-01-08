@@ -1,0 +1,73 @@
+<InterfaceSummary>
+<RtlPorts>
+<name>a1_V</name>
+<CType>
+<TypeName>ap_int 41</TypeName>
+<TypeWidth>41</TypeWidth>
+<PhysicalWidth>41</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>a2_V</name>
+<CType>
+<TypeName>ap_int 41</TypeName>
+<TypeWidth>41</TypeWidth>
+<PhysicalWidth>41</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>a3_V</name>
+<CType>
+<TypeName>ap_int 41</TypeName>
+<TypeWidth>41</TypeWidth>
+<PhysicalWidth>41</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>a4_V</name>
+<CType>
+<TypeName>ap_int 41</TypeName>
+<TypeWidth>41</TypeWidth>
+<PhysicalWidth>41</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>b1_V</name>
+<CType>
+<TypeName>ap_int 763</TypeName>
+<TypeWidth>763</TypeWidth>
+<PhysicalWidth>763</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>b2_V</name>
+<CType>
+<TypeName>ap_int 763</TypeName>
+<TypeWidth>763</TypeWidth>
+<PhysicalWidth>763</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>b3_V</name>
+<CType>
+<TypeName>ap_int 763</TypeName>
+<TypeWidth>763</TypeWidth>
+<PhysicalWidth>763</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+</InterfaceSummary>
+

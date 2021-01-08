@@ -1,0 +1,31 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../assignment-tb.cpp in debug mode
+   Generating csim.exe
+ a1 = 0
+ a2 = 2063
+ a3 = 2063
+ a4 = 2063
+ b1 = 19835148582765468633513017367
+ b2 = 19835148582765468633513017367
+ b3 = 19835148582765468633513017367
+ b1 = 0o020013500056400272001350005640027
+ b1 = 19835148582765468633513017367
+ b1 = 0x0401740174017401740174017
+a = -38
+b = -38
+c = 0x5a
+d = 0x5a
+e = 0x5a
+h = -38
+m = 0x1a
+f1 = 0x193
+f2 = 0x193
+e1 = 0x1
+arr[0] = 0x0f
+arr[1] = 0x1e
+test before = true
+test after = false
+0b01111
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

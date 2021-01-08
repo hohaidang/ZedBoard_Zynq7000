@@ -1,0 +1,104 @@
+Design test SUCCESSFUL
+
+C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\testbench_vhls\solution1\sim\verilog>set PATH= 
+
+C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\testbench_vhls\solution1\sim\verilog>call C:/Xilinx/Vivado/2019.2/bin/xelab xil_defaultlib.apatb_simple_combinational_circuit_top glbl -prj simple_combinational_circuit.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile "C:/Xilinx/Vivado/2019.2/data/xsim/ip/xsim_ip.ini" --lib "ieee_proposed=./ieee_proposed" -s simple_combinational_circuit -debug wave 
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "C:/Xilinx/Vivado/2019.2/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_simple_combinational_circuit_top glbl -prj simple_combinational_circuit.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile C:/Xilinx/Vivado/2019.2/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s simple_combinational_circuit -debug wave 
+Multi-threading is on. Using 10 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/testbench_vhls/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/testbench_vhls/solution1/sim/verilog/simple_combinational_circuit.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_simple_combinational_circuit_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/testbench_vhls/solution1/sim/verilog/simple_combinational_circuit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simple_combinational_circuit
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.simple_combinational_circuit
+Compiling module xil_defaultlib.apatb_simple_combinational_circu...
+Compiling module work.glbl
+Built simulation snapshot simple_combinational_circuit
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/testbench_vhls/solution1/sim/verilog/xsim.dir/simple_combinational_circuit/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/testbench_vhls/solution1/sim/verilog/xsim.dir/simple_combinational_circuit/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Jan  8 10:31:24 2021. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Fri Jan  8 10:31:24 2021...
+
+****** xsim v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/simple_combinational_circuit/xsim_script.tcl
+# xsim {simple_combinational_circuit} -autoloadwcfg -tclbatch {simple_combinational_circuit.tcl}
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source simple_combinational_circuit.tcl
+## log_wave -r /
+WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of object type or size limitations.  To see details please rerun the command with -verbose (-v).
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
+## set d_group [add_wave_group d(wire) -into $coutputgroup]
+## add_wave /apatb_simple_combinational_circuit_top/AESL_inst_simple_combinational_circuit/d -into $d_group -radix hex
+## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
+## set c_group [add_wave_group c(wire) -into $cinputgroup]
+## add_wave /apatb_simple_combinational_circuit_top/AESL_inst_simple_combinational_circuit/c -into $c_group -radix hex
+## set b_group [add_wave_group b(wire) -into $cinputgroup]
+## add_wave /apatb_simple_combinational_circuit_top/AESL_inst_simple_combinational_circuit/b -into $b_group -radix hex
+## set a_group [add_wave_group a(wire) -into $cinputgroup]
+## add_wave /apatb_simple_combinational_circuit_top/AESL_inst_simple_combinational_circuit/a -into $a_group -radix hex
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## set testbenchgroup [add_wave_group "Test Bench Signals"]
+## set tbinternalsiggroup [add_wave_group "Internal Signals" -into $testbenchgroup]
+## set tb_simstatus_group [add_wave_group "Simulation Status" -into $tbinternalsiggroup]
+## set tb_portdepth_group [add_wave_group "Port Depth" -into $tbinternalsiggroup]
+## add_wave /apatb_simple_combinational_circuit_top/AUTOTB_TRANSACTION_NUM -into $tb_simstatus_group -radix hex
+## add_wave /apatb_simple_combinational_circuit_top/ready_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_simple_combinational_circuit_top/done_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_simple_combinational_circuit_top/LENGTH_a -into $tb_portdepth_group -radix hex
+## add_wave /apatb_simple_combinational_circuit_top/LENGTH_b -into $tb_portdepth_group -radix hex
+## add_wave /apatb_simple_combinational_circuit_top/LENGTH_c -into $tb_portdepth_group -radix hex
+## add_wave /apatb_simple_combinational_circuit_top/LENGTH_d -into $tb_portdepth_group -radix hex
+## set tbcoutputgroup [add_wave_group "C Outputs" -into $testbenchgroup]
+## set tb_d_group [add_wave_group d(wire) -into $tbcoutputgroup]
+## add_wave /apatb_simple_combinational_circuit_top/d -into $tb_d_group -radix hex
+## set tbcinputgroup [add_wave_group "C Inputs" -into $testbenchgroup]
+## set tb_c_group [add_wave_group c(wire) -into $tbcinputgroup]
+## add_wave /apatb_simple_combinational_circuit_top/c -into $tb_c_group -radix hex
+## set tb_b_group [add_wave_group b(wire) -into $tbcinputgroup]
+## add_wave /apatb_simple_combinational_circuit_top/b -into $tb_b_group -radix hex
+## set tb_a_group [add_wave_group a(wire) -into $tbcinputgroup]
+## add_wave /apatb_simple_combinational_circuit_top/a -into $tb_a_group -radix hex
+## save_wave_config simple_combinational_circuit.wcfg
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 8 [n/a] @ "125000"
+// RTL Simulation : 1 / 8 [n/a] @ "145000"
+// RTL Simulation : 2 / 8 [n/a] @ "155000"
+// RTL Simulation : 3 / 8 [n/a] @ "165000"
+// RTL Simulation : 4 / 8 [n/a] @ "175000"
+// RTL Simulation : 5 / 8 [n/a] @ "185000"
+// RTL Simulation : 6 / 8 [n/a] @ "195000"
+// RTL Simulation : 7 / 8 [n/a] @ "205000"
+// RTL Simulation : 8 / 8 [n/a] @ "215000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 245 ns : File "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/testbench_vhls/solution1/sim/verilog/simple_combinational_circuit.autotb.v" Line 358
+## quit
+INFO: [Common 17-206] Exiting xsim at Fri Jan  8 10:31:32 2021...
+Design test SUCCESSFUL

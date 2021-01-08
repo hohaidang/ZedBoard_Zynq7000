@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="assignment.cpp" path="C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\data_types_vhls\assignment.cpp"/>
+    <originFiles name="assignment.hpp" path="C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\data_types_vhls\assignment.hpp"/>
+  </source>
+  <testbench>
+    <originFiles name="assignment-tb.cpp" path="C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\data_types_vhls\assignment-tb.cpp"/>
+    <originFiles name="assignment-tb.hpp" path="C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\data_types_vhls\assignment-tb.hpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
