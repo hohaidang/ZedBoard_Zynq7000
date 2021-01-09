@@ -1,0 +1,8 @@
+<annotationInfo>
+<annotationInfo>
+<item  id="9" filename="combinational_loop_vlhs_002/combinational_loop.cpp" linenumber="7" name="icmp_ln7" contextFuncName="combinational_loop" moduleName="combinational_loop" rtlName="icmp_ln7_fu_56_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="9" fileDirectory="C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000"><\/item>
+<item  id="11" filename="combinational_loop_vlhs_002/combinational_loop.cpp" linenumber="7" name="i" contextFuncName="combinational_loop" moduleName="combinational_loop" rtlName="i_fu_62_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="12" fileDirectory="C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000"><\/item>
+<item  id="15" filename="combinational_loop_vlhs_002/combinational_loop.cpp" linenumber="12" name="zext_ln700" contextFuncName="combinational_loop" moduleName="combinational_loop" rtlName="zext_ln700_fu_68_p1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000"><\/item>
+<item  id="16" filename="combinational_loop_vlhs_002/combinational_loop.cpp" linenumber="12" name="add_ln700" contextFuncName="combinational_loop" moduleName="combinational_loop" rtlName="add_ln700_fu_72_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="15" fileDirectory="C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000"><\/item>
+<\/annotationInfo>
+</annotationInfo>

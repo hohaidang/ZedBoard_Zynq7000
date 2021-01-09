@@ -1,0 +1,6 @@
+<annotationInfo>
+<annotationInfo>
+<item  id="7" filename="test_vhls/main.cpp" linenumber="5" name="icmp_ln879" contextFuncName="test_vhls" moduleName="test_vhls" rtlName="icmp_ln879_fu_33_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="11" fileDirectory="C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000"><\/item>
+<item  id="8" filename="test_vhls/main.cpp" linenumber="5" name="select_ln5" contextFuncName="test_vhls" moduleName="test_vhls" rtlName="led_V" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="6" fileDirectory="C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000"><\/item>
+<\/annotationInfo>
+</annotationInfo>

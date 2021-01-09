@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"combinational_loop": {
+			"proto_instances": {
+			}
+		}
+	}
+}
