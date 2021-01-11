@@ -6,21 +6,21 @@
 LD_SRCS += \
 ../src/lscript.ld 
 
-CC_SRCS += \
-../src/main.cc 
-
-CC_DEPS += \
-./src/main.d 
+CPP_SRCS += \
+../src/main.cpp 
 
 OBJS += \
 ./src/main.o 
 
+CPP_DEPS += \
+./src/main.d 
+
 
 # Each subdirectory must supply rules for building sources it contributes
-src/%.o: ../src/%.cc
+src/%.o: ../src/%.cpp
 	@echo 'Building file: $<'
 	@echo 'Invoking: ARM v7 g++ compiler'
-	arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"$@" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../008_HelloWorld_UART_sdk_bsp/ps7_cortexa9_0/include -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"$@" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/hohai/workspace/vitis/hw_platform/export/hw_platform/sw/hw_platform/standalone_domain/bspinclude/include -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

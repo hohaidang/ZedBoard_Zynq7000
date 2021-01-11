@@ -1,0 +1,25 @@
+2021-01-11T18:08:58.596230100255-18:08:58 **** Build of configuration Debug for project 008_HelloWorld_UART_vitas ****
+000-make all 
+000-make --no-print-directory pre-build
+000-a9-linaro-pre-build-step
+000-' '
+000-make --no-print-directory main-build
+000-'Building file: ../src/main.cpp'
+000-'Invoking: ARM v7 g++ compiler'
+000-arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/hohai/workspace/vitis/hw_platform/export/hw_platform/sw/hw_platform/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+000-'Finished building: ../src/main.cpp'
+000-' '
+000-'Building target: 008_HelloWorld_UART_vitas.elf'
+000-'Invoking: ARM v7 g++ linker'
+000-arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/hohai/workspace/vitis/hw_platform/export/hw_platform/sw/hw_platform/standalone_domain/bsplib/lib -o "008_HelloWorld_UART_vitas.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+000-'Finished building target: 008_HelloWorld_UART_vitas.elf'
+000-' '
+000-'Invoking: ARM v7 Print Size'
+000-arm-none-eabi-size 008_HelloWorld_UART_vitas.elf  |tee "008_HelloWorld_UART_vitas.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000-  37980	   2584	  23320	  63884	   f98c	008_HelloWorld_UART_vitas.elf
+000-'Finished building: 008_HelloWorld_UART_vitas.elf.size'
+000-' '
+00255-
+18:09:00 Build Finished (took 1s.749ms)
+
