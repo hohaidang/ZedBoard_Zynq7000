@@ -29,37 +29,37 @@
 		<link>
 			<name>source</name>
 			<type>2</type>
-			<location>C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/basic_output-vhls/basic_output-vhls/.apc/.src</location>
+			<location>/home/haidang/Code/ZedBoard_Zynq7000/Training/001_basic_output_vhls/basic_output-vhls/.apc/.src</location>
 		</link>
 		<link>
 			<name>testbench</name>
 			<type>2</type>
-			<location>C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/basic_output-vhls/basic_output-vhls/.apc/.tb</location>
+			<location>/home/haidang/Code/ZedBoard_Zynq7000/Training/001_basic_output_vhls/basic_output-vhls/.apc/.tb</location>
 		</link>
 		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
-			<location>C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/basic_output-vhls/basic_output-vhls/solution1/.tcls</location>
+			<location>/home/haidang/Code/ZedBoard_Zynq7000/Training/001_basic_output_vhls/basic_output-vhls/solution1/.tcls</location>
 		</link>
 		<link>
 			<name>source/basic_output.cpp</name>
 			<type>1</type>
-			<location>C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/basic_output-vhls/basic_output-vhls/basic_output.cpp</location>
+			<location>/home/haidang/Code/ZedBoard_Zynq7000/Training/001_basic_output_vhls/basic_output-vhls/basic_output.cpp</location>
 		</link>
 		<link>
 			<name>solution1/constraints/.xml.directive</name>
 			<type>1</type>
-			<location>C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/basic_output-vhls/basic_output-vhls/solution1/solution1.directive</location>
+			<location>/home/haidang/Code/ZedBoard_Zynq7000/Training/001_basic_output_vhls/basic_output-vhls/solution1/solution1.directive</location>
 		</link>
 		<link>
 			<name>solution1/constraints/directives.tcl</name>
 			<type>1</type>
-			<location>C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/basic_output-vhls/basic_output-vhls/solution1/directives.tcl</location>
+			<location>/home/haidang/Code/ZedBoard_Zynq7000/Training/001_basic_output_vhls/basic_output-vhls/solution1/directives.tcl</location>
 		</link>
 		<link>
 			<name>solution1/constraints/script.tcl</name>
 			<type>1</type>
-			<location>C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/basic_output-vhls/basic_output-vhls/solution1/script.tcl</location>
+			<location>/home/haidang/Code/ZedBoard_Zynq7000/Training/001_basic_output_vhls/basic_output-vhls/solution1/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>

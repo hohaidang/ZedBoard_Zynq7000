@@ -42,7 +42,7 @@ set SCTraceOption all
 set TargetInfo xc7z020:-clg484:-1
 set SourceFiles {sc {} c ../basic_output.cpp}
 set SourceFlags {sc {} c {{}}}
-set DirectiveFile C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/basic_output-vhls/basic_output-vhls/solution1/solution1.directive
+set DirectiveFile /home/haidang/Code/ZedBoard_Zynq7000/Training/001_basic_output_vhls/basic_output-vhls/solution1/solution1.directive
 set TBFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}

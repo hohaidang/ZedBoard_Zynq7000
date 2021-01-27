@@ -1,20 +1,48 @@
-INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/vivado_hls.exe'
-INFO: [HLS 200-10] For user 'hohai' on host 'desktop-o8t2gmt' (Windows NT_amd64 version 6.2) on Thu Jan 07 08:59:16 +0900 2021
-INFO: [HLS 200-10] In directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/basic_output-vhls'
-Sourcing Tcl script 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/basic_output-vhls/basic_output-vhls/solution1/export.tcl'
-INFO: [HLS 200-10] Opening project 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/basic_output-vhls/basic_output-vhls'.
-INFO: [HLS 200-10] Opening solution 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/basic_output-vhls/basic_output-vhls/solution1'.
+INFO: [HLS 200-10] Running '/home/haidang/Vivado/2019.2/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'haidang' on host 'haidang' (Linux_x86_64 version 4.18.0-15-generic) on Mon Jan 25 14:56:57 JST 2021
+INFO: [HLS 200-10] On os Ubuntu 18.04.2 LTS
+INFO: [HLS 200-10] In directory '/home/haidang/Code/ZedBoard_Zynq7000/Training/001_basic_output_vhls'
+Sourcing Tcl script '/home/haidang/Code/ZedBoard_Zynq7000/Training/001_basic_output_vhls/basic_output-vhls/solution1/csynth.tcl'
+INFO: [HLS 200-10] Opening project '/home/haidang/Code/ZedBoard_Zynq7000/Training/001_basic_output_vhls/basic_output-vhls'.
+INFO: [HLS 200-10] Adding design file 'basic_output-vhls/basic_output.cpp' to the project
+INFO: [HLS 200-10] Opening solution '/home/haidang/Code/ZedBoard_Zynq7000/Training/001_basic_output_vhls/basic_output-vhls/solution1'.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
-INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
-
-****** Vivado v2019.2 (64-bit)
-  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
-  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
-
-source run_ippack.tcl -notrace
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
-INFO: [Common 17-206] Exiting Vivado at Thu Jan  7 08:59:25 2021...
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'basic_output-vhls/basic_output.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 963.766 ; gain = 523.035 ; free physical = 5771 ; free virtual = 9328
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 963.766 ; gain = 523.035 ; free physical = 5771 ; free virtual = 9328
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 963.766 ; gain = 523.035 ; free physical = 5765 ; free virtual = 9327
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 963.766 ; gain = 523.035 ; free physical = 5765 ; free virtual = 9327
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 963.766 ; gain = 523.035 ; free physical = 5748 ; free virtual = 9310
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 963.766 ; gain = 523.035 ; free physical = 5748 ; free virtual = 9310
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'basic_output' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'basic_output' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 7.91 seconds; current allocated memory: 95.864 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.03 seconds; current allocated memory: 95.916 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'basic_output' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'basic_output/o' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'o' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on function 'basic_output' to 'ap_ctrl_none'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'basic_output'.
+INFO: [HLS 200-111]  Elapsed time: 0.02 seconds; current allocated memory: 96.117 MB.
+INFO: [HLS 200-789] **** Estimated Fmax: 0.00 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 963.766 ; gain = 523.035 ; free physical = 5735 ; free virtual = 9304
+INFO: [VHDL 208-304] Generating VHDL RTL for basic_output.
+INFO: [VLOG 209-307] Generating Verilog RTL for basic_output.
+INFO: [HLS 200-112] Total elapsed time: 8.46 seconds; peak allocated memory: 96.117 MB.

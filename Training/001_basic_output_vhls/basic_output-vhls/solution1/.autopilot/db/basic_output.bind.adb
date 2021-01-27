@@ -49,14 +49,14 @@
 						<id>6</id>
 						<name>o_write_ln5</name>
 						<fileName>basic_output-vhls/basic_output.cpp</fileName>
-						<fileDirectory>C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\basic_output-vhls</fileDirectory>
+						<fileDirectory>/home/haidang/Code/ZedBoard_Zynq7000/Training/001_basic_output_vhls</fileDirectory>
 						<lineNumber>5</lineNumber>
 						<contextFuncName>basic_output</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="10" tracking_level="0" version="0">
-								<first>C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\basic_output-vhls</first>
+								<first>/home/haidang/Code/ZedBoard_Zynq7000/Training/001_basic_output_vhls</first>
 								<second class_id="11" tracking_level="0" version="0">
 									<count>1</count>
 									<item_version>0</item_version>
@@ -99,14 +99,14 @@
 						<id>7</id>
 						<name>_ln6</name>
 						<fileName>basic_output-vhls/basic_output.cpp</fileName>
-						<fileDirectory>C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\basic_output-vhls</fileDirectory>
+						<fileDirectory>/home/haidang/Code/ZedBoard_Zynq7000/Training/001_basic_output_vhls</fileDirectory>
 						<lineNumber>6</lineNumber>
 						<contextFuncName>basic_output</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\basic_output-vhls</first>
+								<first>/home/haidang/Code/ZedBoard_Zynq7000/Training/001_basic_output_vhls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
