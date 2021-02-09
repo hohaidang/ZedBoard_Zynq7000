@@ -6,10 +6,14 @@
 # Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 # 
 
+echo "This script was generated under a different operating system."
+echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executing this script"
+exit
+
 if [ -z "$PATH" ]; then
-  PATH=/home/haidang/Vivado/2019.2/ids_lite/ISE/bin/lin64:/home/haidang/Vivado/2019.2/bin
+  PATH=C:/Xilinx/Vivado/2019.2/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2019.2/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2019.2/bin
 else
-  PATH=/home/haidang/Vivado/2019.2/ids_lite/ISE/bin/lin64:/home/haidang/Vivado/2019.2/bin:$PATH
+  PATH=C:/Xilinx/Vivado/2019.2/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2019.2/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2019.2/bin:$PATH
 fi
 export PATH
 
@@ -20,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/haidang/Code/ZedBoard_Zynq7000/Training/004_sw_control_led_vivado/sw_control_led_vivado.runs/impl_1'
+HD_PWD='C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/sw_control_led_vivado/sw_control_led_vivado.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

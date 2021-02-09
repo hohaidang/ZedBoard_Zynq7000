@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="basic_output.cpp" path="/home/haidang/Code/ZedBoard_Zynq7000/Training/001_basic_output_vhls/basic_output-vhls/basic_output.cpp"/>
+    <originFiles name="basic_output.cpp" path="C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\basic_output-vhls\basic_output-vhls\basic_output.cpp"/>
   </source>
   <testbench/>
 </autopilotfilemapping:AutoPilotFileMapping>

@@ -5,6 +5,9 @@
     <downStreamTool>
         <DownStreamTool name="vivado"/>
     </downStreamTool>
+    <clockList>
+        <clock name="default" period="10"/>
+    </clockList>
     <config>
         <schedule model="basic_output"/>
         <config_export format="ip_catalog" rtl="verilog"/>
@@ -67,8 +70,5 @@
         <library name="DefaultPlatform" value="xilinx/zynq/zynq"/>
         <library value="xilinx/zynq/zynq_fpv6" name="DefaultPlatform"/>
     </libraryList>
-    <clockList>
-        <clock default="false" name="default" period="10"/>
-    </clockList>
 </solution>
 
