@@ -1,0 +1,63 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'hohai' on host 'desktop-o8t2gmt' (Windows NT_amd64 version 6.2) on Tue Feb 09 11:53:17 +0900 2021
+INFO: [HLS 200-10] In directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training'
+Sourcing Tcl script 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/009_cosimulation_vivado/solution1/cosim.tcl'
+INFO: [HLS 200-10] Opening project 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/009_cosimulation_vivado'.
+INFO: [HLS 200-10] Opening solution 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/009_cosimulation_vivado/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "C:/Xilinx/Vivado/2019.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling apatb_top.cpp
+   Compiling top.cpp_pre.cpp.tb.cpp
+   Compiling test-tb.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+Completed testing
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+
+C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\Training\009_cosimulation_vivado\solution1\sim\verilog>set PATH= 
+
+C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\Training\009_cosimulation_vivado\solution1\sim\verilog>call C:/Xilinx/Vivado/2019.2/bin/xelab xil_defaultlib.apatb_top_top glbl -prj top.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile "C:/Xilinx/Vivado/2019.2/data/xsim/ip/xsim_ip.ini" --lib "ieee_proposed=./ieee_proposed" -s top -debug wave 
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "C:/Xilinx/Vivado/2019.2/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_top_top glbl -prj top.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile C:/Xilinx/Vivado/2019.2/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s top -debug wave 
+Multi-threading is on. Using 10 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/009_cosimulation_vivado/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/009_cosimulation_vivado/solution1/sim/verilog/top.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_top_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/009_cosimulation_vivado/solution1/sim/verilog/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.apatb_top_top
+Compiling module work.glbl
+Built simulation snapshot top
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/009_cosimulation_vivado/solution1/sim/verilog/xsim.dir/top/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/009_cosimulation_vivado/solution1/sim/verilog/xsim.dir/top/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Feb  9 11:53:37 2021. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Feb  9 11:53:37 2021...
+
+****** xsim v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+start_gui

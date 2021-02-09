@@ -1,0 +1,56 @@
+#-----------------------------------------------------------
+# xsim v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Feb  9 11:53:37 2021
+# Process ID: 9332
+# Current directory: C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/009_cosimulation_vivado/solution1/sim/verilog
+# Command line: xsim.exe -source {xsim.dir/top/xsim_script.tcl}
+# Log file: C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/009_cosimulation_vivado/solution1/sim/verilog/xsim.log
+# Journal file: C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/009_cosimulation_vivado/solution1/sim/verilog\xsim.jou
+#-----------------------------------------------------------
+start_gui
+source xsim.dir/top/xsim_script.tcl
+open_wave_config top_dataflow_ana.wcfg
+source top.tcl
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run all
+restart
+run all
+run 10 us
+run 10 us
+run 10 us
+restart
+run 10 us
+run 10 us
+restart
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run all

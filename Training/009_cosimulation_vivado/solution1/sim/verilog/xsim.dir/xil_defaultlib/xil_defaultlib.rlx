@@ -1,0 +1,6 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/009_cosimulation_vivado/solution1/sim/verilog/top.autotb.v,1612839211,systemVerilog,,,,apatb_top_top,C:/Xilinx/Vivado/2019.2/data/xsim/ip/xsim_ip.ini,axi_protocol_checker_v1_1_12;axi_protocol_checker_v1_1_13;axis_protocol_checker_v1_1_11;axis_protocol_checker_v1_1_12;ieee_proposed=./ieee_proposed;smartconnect_v1_0;unisims_ver;xil_defaultlib;xpm,,,,,,
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/009_cosimulation_vivado/solution1/sim/verilog/top.v,1612837663,systemVerilog,,,,top,C:/Xilinx/Vivado/2019.2/data/xsim/ip/xsim_ip.ini,axi_protocol_checker_v1_1_12;axi_protocol_checker_v1_1_13;axis_protocol_checker_v1_1_11;axis_protocol_checker_v1_1_12;ieee_proposed=./ieee_proposed;smartconnect_v1_0;unisims_ver;xil_defaultlib;xpm,,,,,,

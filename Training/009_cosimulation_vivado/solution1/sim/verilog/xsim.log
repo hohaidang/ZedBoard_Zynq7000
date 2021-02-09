@@ -1,0 +1,200 @@
+#-----------------------------------------------------------
+# xsim v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Feb  9 11:53:37 2021
+# Process ID: 9332
+# Current directory: C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/009_cosimulation_vivado/solution1/sim/verilog
+# Command line: xsim.exe -source {xsim.dir/top/xsim_script.tcl}
+# Log file: C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/009_cosimulation_vivado/solution1/sim/verilog/xsim.log
+# Journal file: C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/009_cosimulation_vivado/solution1/sim/verilog\xsim.jou
+#-----------------------------------------------------------
+start_gui
+source xsim.dir/top/xsim_script.tcl
+# set_param project.enableReportConfiguration 0
+# load_feature core
+# current_fileset
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+# xsim {top} -view {{top_dataflow_ana.wcfg}} -tclbatch {top.tcl} -protoinst {top.protoinst}
+Vivado Simulator 2019.2
+INFO: [Wavedata 42-565] Reading protoinst file top.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_top_top/AESL_inst_top//AESL_inst_top_activity
+WARNING: [Wavedata 42-559] Protocol instance "/apatb_top_top/AESL_inst_top//AESL_inst_top_activity" was created but is non-functional for the following reason(s):
+Couldn't find port object "ap_clk" for protocol analyzer port "AP_CLK".
+Couldn't find port object "ap_rst" for protocol analyzer port "AP_RESET".
+Protocol instance has no valid analyzer.  Please configure the protocol instance again.
+
+Time resolution is 1 ps
+open_wave_config top_dataflow_ana.wcfg
+WARNING: [Wavedata 42-572] Protocol instance "/apatb_top_top/AESL_inst_top/AESL_inst_top_activity" is non-functional for the following reason(s):
+Protocol instance has no valid analyzer.  Please configure the protocol instance again.
+
+WARNING: [Wavedata 42-572] Protocol instance "/apatb_top_top/AESL_inst_top/AESL_inst_top_activity" is non-functional for the following reason(s):
+Protocol instance has no valid analyzer.  Please configure the protocol instance again.
+
+source top.tcl
+## log_wave [get_objects -filter {type == in_port || type == out_port || type == inout_port || type == port} /apatb_top_top/AESL_inst_top/*]
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
+## set led_group [add_wave_group led(wire) -into $coutputgroup]
+## add_wave /apatb_top_top/AESL_inst_top/led_V_ap_vld -into $led_group -color #ffff00 -radix hex
+## add_wave /apatb_top_top/AESL_inst_top/led_V -into $led_group -radix hex
+## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
+## set sw_group [add_wave_group sw(wire) -into $cinputgroup]
+## add_wave /apatb_top_top/AESL_inst_top/sw_V -into $sw_group -radix hex
+## set blocksiggroup [add_wave_group "Block-level IO Handshake" -into $designtopgroup]
+## add_wave /apatb_top_top/AESL_inst_top/ap_start -into $blocksiggroup
+## add_wave /apatb_top_top/AESL_inst_top/ap_done -into $blocksiggroup
+## add_wave /apatb_top_top/AESL_inst_top/ap_idle -into $blocksiggroup
+## add_wave /apatb_top_top/AESL_inst_top/ap_ready -into $blocksiggroup
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## save_wave_config top.wcfg
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 16 [n/a] @ "125000"
+// RTL Simulation : 1 / 16 [n/a] @ "145000"
+// RTL Simulation : 2 / 16 [n/a] @ "155000"
+// RTL Simulation : 3 / 16 [n/a] @ "165000"
+// RTL Simulation : 4 / 16 [n/a] @ "175000"
+// RTL Simulation : 5 / 16 [n/a] @ "185000"
+// RTL Simulation : 6 / 16 [n/a] @ "195000"
+// RTL Simulation : 7 / 16 [n/a] @ "205000"
+// RTL Simulation : 8 / 16 [n/a] @ "215000"
+// RTL Simulation : 9 / 16 [n/a] @ "225000"
+// RTL Simulation : 10 / 16 [n/a] @ "235000"
+// RTL Simulation : 11 / 16 [n/a] @ "245000"
+// RTL Simulation : 12 / 16 [n/a] @ "255000"
+// RTL Simulation : 13 / 16 [n/a] @ "265000"
+// RTL Simulation : 14 / 16 [n/a] @ "275000"
+// RTL Simulation : 15 / 16 [n/a] @ "285000"
+// RTL Simulation : 16 / 16 [n/a] @ "295000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 335 ns : File "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/009_cosimulation_vivado/solution1/sim/verilog/top.autotb.v" Line 273
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run all
+run: Time (s): cpu = 00:00:24 ; elapsed = 00:00:18 . Memory (MB): peak = 1074.941 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 16 [n/a] @ "125000"
+// RTL Simulation : 1 / 16 [n/a] @ "145000"
+// RTL Simulation : 2 / 16 [n/a] @ "155000"
+// RTL Simulation : 3 / 16 [n/a] @ "165000"
+// RTL Simulation : 4 / 16 [n/a] @ "175000"
+// RTL Simulation : 5 / 16 [n/a] @ "185000"
+// RTL Simulation : 6 / 16 [n/a] @ "195000"
+// RTL Simulation : 7 / 16 [n/a] @ "205000"
+// RTL Simulation : 8 / 16 [n/a] @ "215000"
+// RTL Simulation : 9 / 16 [n/a] @ "225000"
+// RTL Simulation : 10 / 16 [n/a] @ "235000"
+// RTL Simulation : 11 / 16 [n/a] @ "245000"
+// RTL Simulation : 12 / 16 [n/a] @ "255000"
+// RTL Simulation : 13 / 16 [n/a] @ "265000"
+// RTL Simulation : 14 / 16 [n/a] @ "275000"
+// RTL Simulation : 15 / 16 [n/a] @ "285000"
+// RTL Simulation : 16 / 16 [n/a] @ "295000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 335 ns : File "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/009_cosimulation_vivado/solution1/sim/verilog/top.autotb.v" Line 273
+run 10 us
+run 10 us
+run 10 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 us
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 16 [n/a] @ "125000"
+// RTL Simulation : 1 / 16 [n/a] @ "145000"
+// RTL Simulation : 2 / 16 [n/a] @ "155000"
+// RTL Simulation : 3 / 16 [n/a] @ "165000"
+// RTL Simulation : 4 / 16 [n/a] @ "175000"
+// RTL Simulation : 5 / 16 [n/a] @ "185000"
+// RTL Simulation : 6 / 16 [n/a] @ "195000"
+// RTL Simulation : 7 / 16 [n/a] @ "205000"
+// RTL Simulation : 8 / 16 [n/a] @ "215000"
+// RTL Simulation : 9 / 16 [n/a] @ "225000"
+// RTL Simulation : 10 / 16 [n/a] @ "235000"
+// RTL Simulation : 11 / 16 [n/a] @ "245000"
+// RTL Simulation : 12 / 16 [n/a] @ "255000"
+// RTL Simulation : 13 / 16 [n/a] @ "265000"
+// RTL Simulation : 14 / 16 [n/a] @ "275000"
+// RTL Simulation : 15 / 16 [n/a] @ "285000"
+// RTL Simulation : 16 / 16 [n/a] @ "295000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 335 ns : File "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/009_cosimulation_vivado/solution1/sim/verilog/top.autotb.v" Line 273
+run 10 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 16 [n/a] @ "125000"
+run 10 ns
+run 10 ns
+// RTL Simulation : 1 / 16 [n/a] @ "145000"
+run 10 ns
+// RTL Simulation : 2 / 16 [n/a] @ "155000"
+run 10 ns
+// RTL Simulation : 3 / 16 [n/a] @ "165000"
+run 10 ns
+// RTL Simulation : 4 / 16 [n/a] @ "175000"
+run all
+// RTL Simulation : 5 / 16 [n/a] @ "185000"
+// RTL Simulation : 6 / 16 [n/a] @ "195000"
+// RTL Simulation : 7 / 16 [n/a] @ "205000"
+// RTL Simulation : 8 / 16 [n/a] @ "215000"
+// RTL Simulation : 9 / 16 [n/a] @ "225000"
+// RTL Simulation : 10 / 16 [n/a] @ "235000"
+// RTL Simulation : 11 / 16 [n/a] @ "245000"
+// RTL Simulation : 12 / 16 [n/a] @ "255000"
+// RTL Simulation : 13 / 16 [n/a] @ "265000"
+// RTL Simulation : 14 / 16 [n/a] @ "275000"
+// RTL Simulation : 15 / 16 [n/a] @ "285000"
+// RTL Simulation : 16 / 16 [n/a] @ "295000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 335 ns : File "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/009_cosimulation_vivado/solution1/sim/verilog/top.autotb.v" Line 273

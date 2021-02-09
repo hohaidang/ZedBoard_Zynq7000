@@ -1,0 +1,4 @@
+sv work "glbl.v"
+sv xil_defaultlib "simple_combinational_circuit.autotb.v"
+sv xil_defaultlib "simple_combinational_circuit.v"
+

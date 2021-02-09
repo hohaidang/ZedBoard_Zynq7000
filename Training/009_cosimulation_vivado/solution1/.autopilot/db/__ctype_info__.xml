@@ -1,0 +1,23 @@
+<InterfaceSummary>
+<RtlPorts>
+<name>sw_V</name>
+<CType>
+<TypeName>ap_uint 4</TypeName>
+<TypeWidth>4</TypeWidth>
+<PhysicalWidth>4</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>led_V</name>
+<CType>
+<TypeName>ap_uint 3</TypeName>
+<TypeWidth>3</TypeWidth>
+<PhysicalWidth>3</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+</InterfaceSummary>
+
