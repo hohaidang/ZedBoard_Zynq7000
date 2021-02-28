@@ -1,0 +1,10 @@
+#include <iostream>
+//#include "platform.hpp"
+#include "xil_printf.h"
+
+int main() {
+//	init_platform();
+	xil_printf("HelloWorld\n");
+//	cleanup_platform();
+	return 0;
+}

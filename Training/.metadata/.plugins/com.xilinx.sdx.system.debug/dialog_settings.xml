@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="008_HelloWorld_UART_vitis_system" key="programflash.hwplatform"/>
+	<item value="Auto Detect" key="008_HelloWorld_UART_vitis_system-device"/>
+	<item value="" key="008_HelloWorld_UART_vitis_system-imgFile"/>
+	<item value="" key="008_HelloWorld_UART_vitis_system-offSet"/>
+	<item value="Local" key="008_HelloWorld_UART_vitis_system-target"/>
+	<item value="C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/008_platform/export/008_platform/sw/008_platform/boot/fsbl.elf" key="008_HelloWorld_UART_vitis_system-fsblFile"/>
+	<item value="false" key="008_HelloWorld_UART_vitis_system-verifyFlash"/>
+	<item value="qspi-x4-single" key="008_HelloWorld_UART_vitis_system-flashType"/>
+	<item value="false" key="008_HelloWorld_UART_vitis_system-blankCheck"/>
+</section>

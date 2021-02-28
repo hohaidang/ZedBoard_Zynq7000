@@ -1,0 +1,6 @@
+#include <iostream>
+#include "platform.hpp"
+
+int main() {
+	return 0;
+}

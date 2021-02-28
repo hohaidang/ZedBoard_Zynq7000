@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="" key="008_HelloWorld_UART_vitis-bmmFile"/>
+	<item value="Local" key="008_HelloWorld_UART_vitis-target"/>
+	<item value="false" key="008_HelloWorld_UART_vitis-skip_rev_check"/>
+	<item value="{&quot;cables&quot;:[{&quot;name&quot;:&quot;Digilent Zed 210248AC8994&quot;,&quot;indexContextMap&quot;:{&quot;2&quot;:&quot;jsn-Zed-210248AC8994-4ba00477-0&quot;,&quot;3&quot;:&quot;jsn-Zed-210248AC8994-23727093-0&quot;}}]}" key="devices_info_Local"/>
+	<item value="false" key="008_HelloWorld_UART_vitis-partial_bit"/>
+	<item value="008_HelloWorld_UART_vitis" key="programfpga.sdxproject"/>
+	<item value="Auto Detect" key="008_HelloWorld_UART_vitis-device"/>
+	<item value="C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\Training\008_HelloWorld_UART_vivado\design_1_wrapper.bit" key="008_HelloWorld_UART_vitis-bitFile"/>
+</section>
