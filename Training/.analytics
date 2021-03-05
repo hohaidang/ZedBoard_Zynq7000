@@ -30,3 +30,13 @@ timestamp=[2021-02-28 17:10:32], mode=BUILD, duration=0:00:01.143, duration_ms=1
 timestamp=[2021-02-28 17:10:39], mode=BUILD, duration=0:00:06.739, duration_ms=6739, data={name=008_HelloWorld_UART_vitis_system, configuration=Debug, clean_build=false}
 timestamp=[2021-02-28 17:11:22], mode=BUILD, duration=0:00:01.194, duration_ms=1194, data={name=008_HelloWorld_UART_vitis, configuration=Debug, clean_build=false}
 timestamp=[2021-02-28 17:11:29], mode=BUILD, duration=0:00:07.157, duration_ms=7157, data={name=008_HelloWorld_UART_vitis_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-05 13:48:12], mode=WORKBENCH_START, duration=0:00:12.292, duration_ms=12292, data={}
+timestamp=[2021-03-05 13:48:13], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.067, duration_ms=67, data={}
+timestamp=[2021-03-05 13:48:13], mode=WORKBENCH_UI_INIT, duration=0:00:01.192, duration_ms=1192, data={editors_count=2, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=008_HelloWorld_UART_vitis,008_HelloWorld_UART_vitis_system,008_platform,RemoteSystemsTempFiles}
+timestamp=[2021-03-05 14:05:33], mode=BUILD, duration=0:00:01.830, duration_ms=1830, data={name=008_HelloWorld_UART_vitis, configuration=Debug, clean_build=false}
+timestamp=[2021-03-05 14:13:28], mode=BUILD, duration=0:00:00.460, duration_ms=460, data={name=008_HelloWorld_UART_vitis, configuration=Debug, clean_build=false}
+timestamp=[2021-03-05 14:14:05], mode=BUILD, duration=0:00:00.411, duration_ms=411, data={name=008_HelloWorld_UART_vitis, configuration=Debug, clean_build=false}
+timestamp=[2021-03-05 14:14:16], mode=BUILD, duration=0:00:00.416, duration_ms=416, data={name=008_HelloWorld_UART_vitis, configuration=Debug, clean_build=false}
+timestamp=[2021-03-05 14:17:53], mode=BUILD, duration=0:00:01.041, duration_ms=1041, data={name=008_HelloWorld_UART_vitis, configuration=Debug, clean_build=false}
+timestamp=[2021-03-05 14:18:14], mode=BUILD, duration=0:00:00.927, duration_ms=927, data={name=008_HelloWorld_UART_vitis, configuration=Debug, clean_build=false}
+timestamp=[2021-03-05 14:20:17], mode=BUILD, duration=0:00:00.945, duration_ms=945, data={name=008_HelloWorld_UART_vitis, configuration=Debug, clean_build=false}

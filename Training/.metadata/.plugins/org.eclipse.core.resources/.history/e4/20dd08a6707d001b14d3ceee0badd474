@@ -1,0 +1,67 @@
+//#include <iostream>
+//#include "xil_printf.h"
+//
+//int main() {
+//	xil_printf("Hello World\n");
+//	return 0;
+//}
+
+
+#include "xparameters.h"
+#include "xuartps.h"
+#include "xil_printf.h"
+
+#define UART_DEVICE_ID              XPAR_XUARTPS_0_DEVICE_ID
+
+
+
+int main(void){
+
+	XUartPs Uart_PS;
+	XUartPs_Config *Config;
+
+	 u8 SBuffer[5];	/* Buffer for Transmitting Data */
+	 unsigned int I,SCount;
+	 int Status;
+
+
+///////////////////Initialization //////////////////////////////////
+	Config = XUartPs_LookupConfig(UART_DEVICE_ID);
+	if (NULL == Config) {
+		xil_printf("Config Failed");
+	}
+
+	Status = XUartPs_CfgInitialize(&Uart_PS, Config, Config->BaseAddress);
+	if (Status != XST_SUCCESS) {
+		xil_printf("Initialization Failed");
+	}
+
+	///////////////////Making Sure Hardware is ready to send and receive Data
+	Status = XUartPs_SelfTest(&Uart_PS);
+	if (Status != XST_SUCCESS) {
+		xil_printf("Self Test Failed");
+	}
+
+	////////////////////Operating UART in LOOP BACK Mode /////////////////////////////////
+
+	XUartPs_SetOperMode(&Uart_PS, XUARTPS_OPER_MODE_NORMAL);
+
+	/////////////////////////////////////////////////////////////////////////////////////
+	//////////////////////Adding Data to Send Buffer //////////////////////////////////
+	for (I = 0; I < 5; I++) {
+		SBuffer[I] = '0' + I;
+	}
+
+	/////////////////Start Sending DATA onto UART ////////////////////////////////
+	SCount = 0;
+	SCount = XUartPs_Send(&Uart_PS, SBuffer, 5);
+
+	/////////////////////////////////////////////////////////////////////////////
+
+	//////////////////////Wait till all the data is sent //////////////////////////
+	while (XUartPs_IsSending(&Uart_PS));
+
+	//////////////////////////////////////////////////////////////////////////
+
+
+}
