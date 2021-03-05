@@ -1,6 +1,6 @@
 /******************************************************************************
 *
-* Copyright (C) 2010-2019 <Xilinx Inc.>
+* Copyright (C) 2010-2020 <Xilinx Inc.>
 * 
 *  This program is free software; you can redistribute it and/or modify
 *  it under the terms of the GNU General Public License as published by
@@ -102,7 +102,7 @@ extern unsigned long  * ps7_peripherals_init_data;
 #define CAN_FREQ  10000000
 #define PCAP_FREQ  200000000
 #define TPIU_FREQ  200000000
-#define FPGA0_FREQ  10000000
+#define FPGA0_FREQ  100000000
 #define FPGA1_FREQ  10000000
 #define FPGA2_FREQ  10000000
 #define FPGA3_FREQ  10000000

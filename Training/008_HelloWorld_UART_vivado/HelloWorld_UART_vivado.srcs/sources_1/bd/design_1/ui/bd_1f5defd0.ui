@@ -1,19 +1,31 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"2.0",
-   "Default View_TopLeft":"-176,-308",
+   "Default View_ScaleFactor":"1.70156",
+   "Default View_TopLeft":"0,-659",
    "ExpandedHierarchyInLayout":"",
-   "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
 #  -string -flagsOSRD
-preplace port DDR -pg 1 -lvl 2 -x 420 -y -170 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -lvl 2 -x 420 -y -140 -defaultsOSRD
-preplace inst processing_system7_0 -pg 1 -lvl 1 -x 200 -y -80 -defaultsOSRD
-preplace netloc processing_system7_0_DDR 1 1 1 340J -170n
-preplace netloc processing_system7_0_FIXED_IO 1 1 1 350J -140n
-levelinfo -pg 1 -10 200 420
-pagesize -pg 1 -db -bbox -sgen -10 -220 530 200
+preplace port DDR -pg 1 -lvl 6 -x 1360 -y -170 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 6 -x 1360 -y -140 -defaultsOSRD
+preplace port leds_8bits -pg 1 -lvl 6 -x 1360 -y -390 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 3 -x 480 -y -80 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 2 -x 180 -y -390 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 5 -x 1200 -y -510 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 4 -x 870 -y -220 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_CLK0 1 1 4 50 -180 290 -180 690 -400 1050
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 3 1 700 -240n
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 4 70 -300 NJ -300 700J -320 1060
+preplace netloc processing_system7_0_DDR 1 3 3 NJ -120 1050 -170 N
+preplace netloc processing_system7_0_FIXED_IO 1 3 3 NJ -100 N -100 1340
+preplace netloc axi_gpio_0_GPIO 1 2 4 NJ -390 NJ -390 N -390 N
+preplace netloc processing_system7_0_M_AXI_GP0 1 3 2 670J -410 1040
+preplace netloc ps7_0_axi_periph_M00_AXI 1 1 5 60 -310 NJ -310 680J -330 NJ -330 1340
+levelinfo -pg 1 0 30 180 480 870 1200 1360
+pagesize -pg 1 -db -bbox -sgen 0 -630 1480 200
 "
 }
 {
+   "da_axi4_cnt":"1",
+   "da_board_cnt":"1",
    "da_ps7_cnt":"1"
 }

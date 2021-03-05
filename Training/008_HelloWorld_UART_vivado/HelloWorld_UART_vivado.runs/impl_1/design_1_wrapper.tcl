@@ -133,6 +133,7 @@ OPTRACE "set parameters" START { }
   set_property parent.project_path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/008_HelloWorld_UART_vivado/HelloWorld_UART_vivado.xpr [current_project]
   set_property ip_output_repo C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/008_HelloWorld_UART_vivado/HelloWorld_UART_vivado.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
+  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
   add_files -quiet C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/008_HelloWorld_UART_vivado/HelloWorld_UART_vivado.runs/synth_1/design_1_wrapper.dcp
@@ -308,6 +309,7 @@ set rc [catch {
   create_msg_db write_bitstream.pb
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }
+  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
   catch { write_mem_info -force design_1_wrapper.mmi }
 OPTRACE "write_bitstream setup" END { }
 OPTRACE "write_bitstream" START { }

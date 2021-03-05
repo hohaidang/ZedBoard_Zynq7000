@@ -1,7 +1,7 @@
-//Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+//Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
-//Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-//Date        : Sun Jan 10 16:50:45 2021
+//Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+//Date        : Fri Mar  5 16:19:38 2021
 //Host        : DESKTOP-O8T2GMT running 64-bit major release  (build 9200)
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
@@ -30,7 +30,8 @@ module design_1_wrapper
     FIXED_IO_mio,
     FIXED_IO_ps_clk,
     FIXED_IO_ps_porb,
-    FIXED_IO_ps_srstb);
+    FIXED_IO_ps_srstb,
+    leds_8bits_tri_o);
   inout [14:0]DDR_addr;
   inout [2:0]DDR_ba;
   inout DDR_cas_n;
@@ -52,6 +53,7 @@ module design_1_wrapper
   inout FIXED_IO_ps_clk;
   inout FIXED_IO_ps_porb;
   inout FIXED_IO_ps_srstb;
+  output [7:0]leds_8bits_tri_o;
 
   wire [14:0]DDR_addr;
   wire [2:0]DDR_ba;
@@ -74,6 +76,7 @@ module design_1_wrapper
   wire FIXED_IO_ps_clk;
   wire FIXED_IO_ps_porb;
   wire FIXED_IO_ps_srstb;
+  wire [7:0]leds_8bits_tri_o;
 
   design_1 design_1_i
        (.DDR_addr(DDR_addr),
@@ -96,5 +99,6 @@ module design_1_wrapper
         .FIXED_IO_mio(FIXED_IO_mio),
         .FIXED_IO_ps_clk(FIXED_IO_ps_clk),
         .FIXED_IO_ps_porb(FIXED_IO_ps_porb),
-        .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb));
+        .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb),
+        .leds_8bits_tri_o(leds_8bits_tri_o));
 endmodule

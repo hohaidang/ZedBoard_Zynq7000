@@ -133,6 +133,9 @@ class processing_system7_v5_5_tlm : public sc_core::sc_module   {
     
     public:
     // Non-AXI ports are declared here
+    sc_core::sc_in<bool> M_AXI_GP0_ACLK;
+    sc_core::sc_out<bool> FCLK_CLK0;
+    sc_core::sc_out<bool> FCLK_RESET0_N;
     sc_core::sc_inout<sc_dt::sc_bv<54> >  MIO;
     sc_core::sc_inout<bool> DDR_CAS_n;
     sc_core::sc_inout<bool> DDR_CKE;
@@ -155,6 +158,8 @@ class processing_system7_v5_5_tlm : public sc_core::sc_module   {
     sc_core::sc_inout<bool> PS_CLK;
     sc_core::sc_inout<bool> PS_PORB;
 
+    xtlm::xtlm_aximm_initiator_socket*      M_AXI_GP0_wr_socket;
+    xtlm::xtlm_aximm_initiator_socket*      M_AXI_GP0_rd_socket;
 
     //constructor having three paramters
     // 1. module name in sc_module_name objec, 
@@ -186,12 +191,20 @@ processing_system7_v5_5_tlm(sc_core::sc_module_name name,
     // Bridge's tlm simple target socket binds with 
     // simple initiator socket of xilinx_zynqmp and xtlm 
     // socket with xilinx_zynq's simple target socket
+    rptlm2xtlm_converter<32, 32> m_rp_bridge_M_AXI_GP0;     
     
     // sc_clocks for generating pl clocks
     // output pins FCLK_CLK0..3 are drived by these clocks
+    sc_core::sc_clock FCLK_CLK0_clk;
 
     
+    //Method which is sentive to FCLK_CLK0_clk sc_clock object
+    //FCLK_CLK0 pin written based on FCLK_CLK0_clk clock value 
+    void trigger_FCLK_CLK0_pin();
     
+    //FCLK_RESET0 output reset pin get toggle when emio bank 2's 31th signal gets toggled
+    //EMIO[2] bank 31th(GPIO[95] signal)acts as reset signal to the PL(refer Zynq UltraScale+ TRM, page no:761)
+    void FCLK_RESET0_N_trigger();
 
     sc_signal<bool> qemu_rst;
     void start_of_simulation();

@@ -1,4 +1,4 @@
-14:20:16 **** Incremental Build of configuration Debug for project 008_HelloWorld_UART_vitis ****
+16:40:49 **** Incremental Build of configuration Debug for project 008_HelloWorld_UART_vitis ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -17,9 +17,9 @@ arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size 008_HelloWorld_UART_vitis.elf  |tee "008_HelloWorld_UART_vitis.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  33112	   2232	  22672	  58016	   e2a0	008_HelloWorld_UART_vitis.elf
+  34908	   2248	  22752	  59908	   ea04	008_HelloWorld_UART_vitis.elf
 'Finished building: 008_HelloWorld_UART_vitis.elf.size'
 ' '
 
-14:20:17 Build Finished (took 929ms)
+16:40:50 Build Finished (took 857ms)
 

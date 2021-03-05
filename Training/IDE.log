@@ -775,3 +775,124 @@ con
 ----------------End of Script----------------
 
 14:21:30 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\Training\.sdk\launch_scripts\single_application_debug\debugger_008_helloworld_uart_vitis-default.tcl'
+16:24:45 INFO  : Hardware specification for platform project '008_platform' is updated.
+16:26:37 INFO  : Successfully done sdx_reload_mss "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/008_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss"
+16:26:38 INFO  : Successfully done sdx_reload_mss "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/008_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+16:27:08 INFO  : Example project xgpio_example_1 has been created successfully.
+16:29:33 INFO  : Result from executing command 'getProjects': 008_platform
+16:29:33 INFO  : Result from executing command 'getPlatforms': 008_platform|C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/008_platform/export/008_platform/008_platform.xpfm
+16:29:33 INFO  : Checking for BSP changes to sync application flags for project '008_HelloWorld_UART_vitis'...
+16:29:35 INFO  : Updating application flags with new BSP settings...
+16:29:35 ERROR : Failed to update application flags from BSP for '008_HelloWorld_UART_vitis'. Reason: null
+java.lang.NullPointerException
+	at com.xilinx.sdk.sw.internal.SwDb.getComponentAppCompilerFlags(SwDb.java:762)
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.getSwPlatformCompilerFlags(SDxSwPlatform.java:1155)
+	at com.xilinx.sdx.sdk.core.build.AppSwBuildOptionsHelper.inferSwPlatformFlags(AppSwBuildOptionsHelper.java:54)
+	at com.xilinx.sdx.sdk.core.build.AppSwBuildOptionsHelper.updateBuildOptions(AppSwBuildOptionsHelper.java:46)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.updateSwBuildOptions(SdkMakefileGenerationListener.java:215)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.syncAppFlags(SdkMakefileGenerationListener.java:99)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.preMakefileGeneration(SdkMakefileGenerationListener.java:48)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.notifyPreMakefileGenerationListeners(XilinxGnuMakefileGenerator.java:91)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.generateMakefiles(XilinxGnuMakefileGenerator.java:40)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performMakefileGeneration(CommonBuilder.java:1008)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:873)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:795)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:216)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:259)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:312)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:315)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:367)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:388)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:501)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:408)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:288)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+16:40:49 INFO  : Checking for BSP changes to sync application flags for project '008_HelloWorld_UART_vitis'...
+16:40:49 INFO  : Updating application flags with new BSP settings...
+16:40:49 ERROR : Failed to update application flags from BSP for '008_HelloWorld_UART_vitis'. Reason: null
+java.lang.NullPointerException
+	at com.xilinx.sdk.sw.internal.SwDb.getComponentAppCompilerFlags(SwDb.java:762)
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.getSwPlatformCompilerFlags(SDxSwPlatform.java:1155)
+	at com.xilinx.sdx.sdk.core.build.AppSwBuildOptionsHelper.inferSwPlatformFlags(AppSwBuildOptionsHelper.java:54)
+	at com.xilinx.sdx.sdk.core.build.AppSwBuildOptionsHelper.updateBuildOptions(AppSwBuildOptionsHelper.java:46)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.updateSwBuildOptions(SdkMakefileGenerationListener.java:215)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.syncAppFlags(SdkMakefileGenerationListener.java:99)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.preMakefileGeneration(SdkMakefileGenerationListener.java:48)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.notifyPreMakefileGenerationListeners(XilinxGnuMakefileGenerator.java:91)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.generateMakefiles(XilinxGnuMakefileGenerator.java:40)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performMakefileGeneration(CommonBuilder.java:1008)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:873)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:795)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:216)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:259)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:312)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:315)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:367)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:388)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:501)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:408)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:288)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+16:41:09 INFO  : Disconnected from the channel tcfchan#6.
+16:41:10 INFO  : The hardware specfication used by project '008_HelloWorld_UART_vitis' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+16:41:10 INFO  : The file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\Training\008_HelloWorld_UART_vitis\_ide\bitstream\design_1_wrapper.bit' stored in project is removed.
+16:41:10 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\Training\008_HelloWorld_UART_vitis\_ide\bitstream' in project '008_HelloWorld_UART_vitis'.
+16:41:10 INFO  : The file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\Training\008_HelloWorld_UART_vitis\_ide\psinit\ps7_init.tcl' stored in project is removed.
+16:41:15 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\Training\008_HelloWorld_UART_vitis\_ide\psinit' in project '008_HelloWorld_UART_vitis'.
+16:41:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:41:15 INFO  : Jtag cable 'Digilent Zed 210248AC8994' is selected.
+16:41:15 INFO  : 'jtag frequency' command is executed.
+16:41:15 INFO  : Context for 'APU' is selected.
+16:41:15 INFO  : System reset is completed.
+16:41:18 INFO  : 'after 3000' command is executed.
+16:41:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}' command is executed.
+16:41:21 INFO  : FPGA configured successfully with bitstream "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/008_HelloWorld_UART_vitis/_ide/bitstream/design_1_wrapper.bit"
+16:41:21 INFO  : Context for 'APU' is selected.
+16:41:21 INFO  : Hardware design and registers information is loaded from 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/008_platform/export/008_platform/hw/design_1_wrapper.xsa'.
+16:41:21 INFO  : 'configparams force-mem-access 1' command is executed.
+16:41:21 INFO  : Context for 'APU' is selected.
+16:41:21 INFO  : Sourcing of 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/008_HelloWorld_UART_vitis/_ide/psinit/ps7_init.tcl' is done.
+16:41:21 INFO  : 'ps7_init' command is executed.
+16:41:21 INFO  : 'ps7_post_config' command is executed.
+16:41:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:41:22 INFO  : The application 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/008_HelloWorld_UART_vitis/Debug/008_HelloWorld_UART_vitis.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:41:22 INFO  : 'configparams force-mem-access 0' command is executed.
+16:41:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}
+fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/008_HelloWorld_UART_vitis/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/008_platform/export/008_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/008_HelloWorld_UART_vitis/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/008_HelloWorld_UART_vitis/Debug/008_HelloWorld_UART_vitis.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:41:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:41:22 INFO  : 'con' command is executed.
+16:41:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:41:22 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\Training\.sdk\launch_scripts\single_application_debug\debugger_008_helloworld_uart_vitis-default.tcl'
