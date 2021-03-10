@@ -1,0 +1,25 @@
+21:39:32 **** Build of configuration Debug for project 001_temperature_sensor_vivado ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/main.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/001_platform/export/001_platform/sw/001_platform/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+'Finished building: ../src/main.cpp'
+' '
+'Building target: 001_temperature_sensor_vivado.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/001_platform/export/001_platform/sw/001_platform/standalone_domain/bsplib/lib -o "001_temperature_sensor_vivado.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: 001_temperature_sensor_vivado.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size 001_temperature_sensor_vivado.elf  |tee "001_temperature_sensor_vivado.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33164	   2232	  22744	  58140	   e31c	001_temperature_sensor_vivado.elf
+'Finished building: 001_temperature_sensor_vivado.elf.size'
+' '
+
+21:39:33 Build Finished (took 1s.604ms)
+

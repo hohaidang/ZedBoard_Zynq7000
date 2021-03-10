@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/sw_control_led_vivado/sw_control_led_vivado.srcs/constrs_1/new/sw_control_led.xdc rfile:../../../sw_control_led_vivado.srcs/constrs_1/new/sw_control_led.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/004_sw_control_led_vivado/sw_control_led_vivado.srcs/constrs_1/new/sw_control_led.xdc rfile:../../../sw_control_led_vivado.srcs/constrs_1/new/sw_control_led.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:4 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN T22 [get_ports {led[0]}];  # "LD0"
 set_property src_info {type:XDC file:1 line:5 export:INPUT save:INPUT read:READ} [current_design]

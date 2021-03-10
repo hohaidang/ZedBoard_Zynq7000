@@ -1,8 +1,10 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-configDescList=org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_008_HelloWorld_UART_vitis_system,org.eclipse.launchbar.core.descriptorType.default\:Debugger_008_HelloWorld_UART_vitis-Default
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_008_HelloWorld_UART_vitis_system,org.eclipse.launchbar.core.descriptorType.default\:Debugger_008_HelloWorld_UART_vitis-Default,org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_001_temperature_sensor_vivado_system
 eclipse.preferences.version=1
 org.eclipse.launchbar.core.descriptorType.default\:Debugger_008_HelloWorld_UART_vitis-Default/activeLaunchMode=embrun
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_008_HelloWorld_UART_vitis-Default/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_001_temperature_sensor_vivado_system/activeLaunchMode=systemrun
 org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_008_HelloWorld_UART_vitis_system/activeLaunchMode=systemrun
 org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_008_HelloWorld_UART_vitis_system/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

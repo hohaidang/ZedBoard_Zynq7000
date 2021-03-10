@@ -1,7 +1,0 @@
-#include <iostream>
-#include "platform.hpp"
-#include "xil_printf.h"
-
-int main() {
-	return 0;
-}

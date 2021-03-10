@@ -896,3 +896,68 @@ con
 ----------------End of Script----------------
 
 16:41:22 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\Training\.sdk\launch_scripts\single_application_debug\debugger_008_helloworld_uart_vitis-default.tcl'
+18:23:08 INFO  : Disconnected from the channel tcfchan#8.
+21:31:41 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\Training\temp_xsdb_launch_script.tcl
+21:31:44 INFO  : XSCT server has started successfully.
+21:31:44 INFO  : plnx-install-location is set to ''
+21:31:44 INFO  : Successfully done setting XSCT server connection channel  
+21:31:44 INFO  : Successfully done setting workspace for the tool. 
+21:31:47 INFO  : Platform repository initialization has completed.
+21:31:47 INFO  : Registering command handlers for Vitis TCF services
+21:31:49 INFO  : Successfully done query RDI_DATADIR 
+21:32:57 INFO  : Result from executing command 'getProjects': 001_platform;008_platform
+21:32:57 INFO  : Result from executing command 'getPlatforms': 008_platform|C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/008_platform/export/008_platform/008_platform.xpfm
+21:35:17 INFO  : Successfully done sdx_reload_mss "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+21:35:17 INFO  : Successfully done sdx_reload_mss "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss"
+21:37:15 INFO  : Result from executing command 'getProjects': 001_platform;008_platform
+21:37:15 INFO  : Result from executing command 'getPlatforms': 001_platform|C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/001_platform/export/001_platform/001_platform.xpfm;008_platform|C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/008_platform/export/008_platform/008_platform.xpfm
+21:37:15 INFO  : Checking for BSP changes to sync application flags for project '001_temperature_sensor_vitis'...
+21:37:54 INFO  : Checking for BSP changes to sync application flags for project '001_temperature_sensor_vitis'...
+21:38:27 INFO  : Checking for BSP changes to sync application flags for project '001_temperature_sensor_vitis'...
+21:39:32 INFO  : Checking for BSP changes to sync application flags for project '001_temperature_sensor_vivado'...
+21:39:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:39:52 INFO  : Jtag cable 'Digilent Zed 210248AC8994' is selected.
+21:39:52 INFO  : 'jtag frequency' command is executed.
+21:39:52 INFO  : Context for 'APU' is selected.
+21:39:52 INFO  : System reset is completed.
+21:39:55 INFO  : 'after 3000' command is executed.
+21:39:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}' command is executed.
+21:39:57 INFO  : FPGA configured successfully with bitstream "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/001_temperature_sensor_vivado/_ide/bitstream/design_1_wrapper.bit"
+21:39:57 INFO  : Context for 'APU' is selected.
+21:39:57 INFO  : Hardware design and registers information is loaded from 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/001_platform/export/001_platform/hw/design_1_wrapper.xsa'.
+21:39:57 INFO  : 'configparams force-mem-access 1' command is executed.
+21:39:57 INFO  : Context for 'APU' is selected.
+21:39:57 INFO  : Sourcing of 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/001_temperature_sensor_vivado/_ide/psinit/ps7_init.tcl' is done.
+21:39:58 INFO  : 'ps7_init' command is executed.
+21:39:58 INFO  : 'ps7_post_config' command is executed.
+21:39:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:39:58 INFO  : The application 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/001_temperature_sensor_vivado/Debug/001_temperature_sensor_vivado.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:39:58 INFO  : 'configparams force-mem-access 0' command is executed.
+21:39:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}
+fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/001_temperature_sensor_vivado/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/001_platform/export/001_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/001_temperature_sensor_vivado/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/001_temperature_sensor_vivado/Debug/001_temperature_sensor_vivado.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:39:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:39:58 INFO  : 'con' command is executed.
+21:39:58 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:39:58 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\Training\.sdk\launch_scripts\single_application_debug\systemdebugger_001_temperature_sensor_vivado_system_standalone.tcl'
+22:35:29 INFO  : Disconnected from the channel tcfchan#3.
