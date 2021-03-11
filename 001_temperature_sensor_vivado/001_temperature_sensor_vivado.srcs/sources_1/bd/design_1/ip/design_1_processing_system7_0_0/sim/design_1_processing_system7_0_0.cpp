@@ -61,10 +61,13 @@
 
 
 #ifdef XILINX_SIMULATOR
-design_1_processing_system7_0_0::design_1_processing_system7_0_0(const sc_core::sc_module_name& nm) : design_1_processing_system7_0_0_sc(nm), SPI0_SCLK_I("SPI0_SCLK_I"), SPI0_SCLK_O("SPI0_SCLK_O"), SPI0_SCLK_T("SPI0_SCLK_T"), SPI0_MOSI_I("SPI0_MOSI_I"), SPI0_MOSI_O("SPI0_MOSI_O"), SPI0_MOSI_T("SPI0_MOSI_T"), SPI0_MISO_I("SPI0_MISO_I"), SPI0_MISO_O("SPI0_MISO_O"), SPI0_MISO_T("SPI0_MISO_T"), SPI0_SS_I("SPI0_SS_I"), SPI0_SS_O("SPI0_SS_O"), SPI0_SS1_O("SPI0_SS1_O"), SPI0_SS2_O("SPI0_SS2_O"), SPI0_SS_T("SPI0_SS_T"), FCLK_CLK0("FCLK_CLK0"), FCLK_RESET0_N("FCLK_RESET0_N"), MIO("MIO"), DDR_CAS_n("DDR_CAS_n"), DDR_CKE("DDR_CKE"), DDR_Clk_n("DDR_Clk_n"), DDR_Clk("DDR_Clk"), DDR_CS_n("DDR_CS_n"), DDR_DRSTB("DDR_DRSTB"), DDR_ODT("DDR_ODT"), DDR_RAS_n("DDR_RAS_n"), DDR_WEB("DDR_WEB"), DDR_BankAddr("DDR_BankAddr"), DDR_Addr("DDR_Addr"), DDR_VRN("DDR_VRN"), DDR_VRP("DDR_VRP"), DDR_DM("DDR_DM"), DDR_DQ("DDR_DQ"), DDR_DQS_n("DDR_DQS_n"), DDR_DQS("DDR_DQS"), PS_SRSTB("PS_SRSTB"), PS_CLK("PS_CLK"), PS_PORB("PS_PORB")
+design_1_processing_system7_0_0::design_1_processing_system7_0_0(const sc_core::sc_module_name& nm) : design_1_processing_system7_0_0_sc(nm), GPIO_I("GPIO_I"), GPIO_O("GPIO_O"), GPIO_T("GPIO_T"), SPI0_SCLK_I("SPI0_SCLK_I"), SPI0_SCLK_O("SPI0_SCLK_O"), SPI0_SCLK_T("SPI0_SCLK_T"), SPI0_MOSI_I("SPI0_MOSI_I"), SPI0_MOSI_O("SPI0_MOSI_O"), SPI0_MOSI_T("SPI0_MOSI_T"), SPI0_MISO_I("SPI0_MISO_I"), SPI0_MISO_O("SPI0_MISO_O"), SPI0_MISO_T("SPI0_MISO_T"), SPI0_SS_I("SPI0_SS_I"), SPI0_SS_O("SPI0_SS_O"), SPI0_SS1_O("SPI0_SS1_O"), SPI0_SS2_O("SPI0_SS2_O"), SPI0_SS_T("SPI0_SS_T"), FCLK_CLK0("FCLK_CLK0"), FCLK_RESET0_N("FCLK_RESET0_N"), MIO("MIO"), DDR_CAS_n("DDR_CAS_n"), DDR_CKE("DDR_CKE"), DDR_Clk_n("DDR_Clk_n"), DDR_Clk("DDR_Clk"), DDR_CS_n("DDR_CS_n"), DDR_DRSTB("DDR_DRSTB"), DDR_ODT("DDR_ODT"), DDR_RAS_n("DDR_RAS_n"), DDR_WEB("DDR_WEB"), DDR_BankAddr("DDR_BankAddr"), DDR_Addr("DDR_Addr"), DDR_VRN("DDR_VRN"), DDR_VRP("DDR_VRP"), DDR_DM("DDR_DM"), DDR_DQ("DDR_DQ"), DDR_DQS_n("DDR_DQS_n"), DDR_DQS("DDR_DQS"), PS_SRSTB("PS_SRSTB"), PS_CLK("PS_CLK"), PS_PORB("PS_PORB")
 {
 
   // initialize pins
+  mp_impl->GPIO_I(GPIO_I);
+  mp_impl->GPIO_O(GPIO_O);
+  mp_impl->GPIO_T(GPIO_T);
   mp_impl->SPI0_SCLK_I(SPI0_SCLK_I);
   mp_impl->SPI0_SCLK_O(SPI0_SCLK_O);
   mp_impl->SPI0_SCLK_T(SPI0_SCLK_T);
@@ -115,10 +118,13 @@ void design_1_processing_system7_0_0::before_end_of_elaboration()
 
 
 #ifdef XM_SYSTEMC
-design_1_processing_system7_0_0::design_1_processing_system7_0_0(const sc_core::sc_module_name& nm) : design_1_processing_system7_0_0_sc(nm), SPI0_SCLK_I("SPI0_SCLK_I"), SPI0_SCLK_O("SPI0_SCLK_O"), SPI0_SCLK_T("SPI0_SCLK_T"), SPI0_MOSI_I("SPI0_MOSI_I"), SPI0_MOSI_O("SPI0_MOSI_O"), SPI0_MOSI_T("SPI0_MOSI_T"), SPI0_MISO_I("SPI0_MISO_I"), SPI0_MISO_O("SPI0_MISO_O"), SPI0_MISO_T("SPI0_MISO_T"), SPI0_SS_I("SPI0_SS_I"), SPI0_SS_O("SPI0_SS_O"), SPI0_SS1_O("SPI0_SS1_O"), SPI0_SS2_O("SPI0_SS2_O"), SPI0_SS_T("SPI0_SS_T"), FCLK_CLK0("FCLK_CLK0"), FCLK_RESET0_N("FCLK_RESET0_N"), MIO("MIO"), DDR_CAS_n("DDR_CAS_n"), DDR_CKE("DDR_CKE"), DDR_Clk_n("DDR_Clk_n"), DDR_Clk("DDR_Clk"), DDR_CS_n("DDR_CS_n"), DDR_DRSTB("DDR_DRSTB"), DDR_ODT("DDR_ODT"), DDR_RAS_n("DDR_RAS_n"), DDR_WEB("DDR_WEB"), DDR_BankAddr("DDR_BankAddr"), DDR_Addr("DDR_Addr"), DDR_VRN("DDR_VRN"), DDR_VRP("DDR_VRP"), DDR_DM("DDR_DM"), DDR_DQ("DDR_DQ"), DDR_DQS_n("DDR_DQS_n"), DDR_DQS("DDR_DQS"), PS_SRSTB("PS_SRSTB"), PS_CLK("PS_CLK"), PS_PORB("PS_PORB")
+design_1_processing_system7_0_0::design_1_processing_system7_0_0(const sc_core::sc_module_name& nm) : design_1_processing_system7_0_0_sc(nm), GPIO_I("GPIO_I"), GPIO_O("GPIO_O"), GPIO_T("GPIO_T"), SPI0_SCLK_I("SPI0_SCLK_I"), SPI0_SCLK_O("SPI0_SCLK_O"), SPI0_SCLK_T("SPI0_SCLK_T"), SPI0_MOSI_I("SPI0_MOSI_I"), SPI0_MOSI_O("SPI0_MOSI_O"), SPI0_MOSI_T("SPI0_MOSI_T"), SPI0_MISO_I("SPI0_MISO_I"), SPI0_MISO_O("SPI0_MISO_O"), SPI0_MISO_T("SPI0_MISO_T"), SPI0_SS_I("SPI0_SS_I"), SPI0_SS_O("SPI0_SS_O"), SPI0_SS1_O("SPI0_SS1_O"), SPI0_SS2_O("SPI0_SS2_O"), SPI0_SS_T("SPI0_SS_T"), FCLK_CLK0("FCLK_CLK0"), FCLK_RESET0_N("FCLK_RESET0_N"), MIO("MIO"), DDR_CAS_n("DDR_CAS_n"), DDR_CKE("DDR_CKE"), DDR_Clk_n("DDR_Clk_n"), DDR_Clk("DDR_Clk"), DDR_CS_n("DDR_CS_n"), DDR_DRSTB("DDR_DRSTB"), DDR_ODT("DDR_ODT"), DDR_RAS_n("DDR_RAS_n"), DDR_WEB("DDR_WEB"), DDR_BankAddr("DDR_BankAddr"), DDR_Addr("DDR_Addr"), DDR_VRN("DDR_VRN"), DDR_VRP("DDR_VRP"), DDR_DM("DDR_DM"), DDR_DQ("DDR_DQ"), DDR_DQS_n("DDR_DQS_n"), DDR_DQS("DDR_DQS"), PS_SRSTB("PS_SRSTB"), PS_CLK("PS_CLK"), PS_PORB("PS_PORB")
 {
 
   // initialize pins
+  mp_impl->GPIO_I(GPIO_I);
+  mp_impl->GPIO_O(GPIO_O);
+  mp_impl->GPIO_T(GPIO_T);
   mp_impl->SPI0_SCLK_I(SPI0_SCLK_I);
   mp_impl->SPI0_SCLK_O(SPI0_SCLK_O);
   mp_impl->SPI0_SCLK_T(SPI0_SCLK_T);
@@ -169,10 +175,13 @@ void design_1_processing_system7_0_0::before_end_of_elaboration()
 
 
 #ifdef RIVIERA
-design_1_processing_system7_0_0::design_1_processing_system7_0_0(const sc_core::sc_module_name& nm) : design_1_processing_system7_0_0_sc(nm), SPI0_SCLK_I("SPI0_SCLK_I"), SPI0_SCLK_O("SPI0_SCLK_O"), SPI0_SCLK_T("SPI0_SCLK_T"), SPI0_MOSI_I("SPI0_MOSI_I"), SPI0_MOSI_O("SPI0_MOSI_O"), SPI0_MOSI_T("SPI0_MOSI_T"), SPI0_MISO_I("SPI0_MISO_I"), SPI0_MISO_O("SPI0_MISO_O"), SPI0_MISO_T("SPI0_MISO_T"), SPI0_SS_I("SPI0_SS_I"), SPI0_SS_O("SPI0_SS_O"), SPI0_SS1_O("SPI0_SS1_O"), SPI0_SS2_O("SPI0_SS2_O"), SPI0_SS_T("SPI0_SS_T"), FCLK_CLK0("FCLK_CLK0"), FCLK_RESET0_N("FCLK_RESET0_N"), MIO("MIO"), DDR_CAS_n("DDR_CAS_n"), DDR_CKE("DDR_CKE"), DDR_Clk_n("DDR_Clk_n"), DDR_Clk("DDR_Clk"), DDR_CS_n("DDR_CS_n"), DDR_DRSTB("DDR_DRSTB"), DDR_ODT("DDR_ODT"), DDR_RAS_n("DDR_RAS_n"), DDR_WEB("DDR_WEB"), DDR_BankAddr("DDR_BankAddr"), DDR_Addr("DDR_Addr"), DDR_VRN("DDR_VRN"), DDR_VRP("DDR_VRP"), DDR_DM("DDR_DM"), DDR_DQ("DDR_DQ"), DDR_DQS_n("DDR_DQS_n"), DDR_DQS("DDR_DQS"), PS_SRSTB("PS_SRSTB"), PS_CLK("PS_CLK"), PS_PORB("PS_PORB")
+design_1_processing_system7_0_0::design_1_processing_system7_0_0(const sc_core::sc_module_name& nm) : design_1_processing_system7_0_0_sc(nm), GPIO_I("GPIO_I"), GPIO_O("GPIO_O"), GPIO_T("GPIO_T"), SPI0_SCLK_I("SPI0_SCLK_I"), SPI0_SCLK_O("SPI0_SCLK_O"), SPI0_SCLK_T("SPI0_SCLK_T"), SPI0_MOSI_I("SPI0_MOSI_I"), SPI0_MOSI_O("SPI0_MOSI_O"), SPI0_MOSI_T("SPI0_MOSI_T"), SPI0_MISO_I("SPI0_MISO_I"), SPI0_MISO_O("SPI0_MISO_O"), SPI0_MISO_T("SPI0_MISO_T"), SPI0_SS_I("SPI0_SS_I"), SPI0_SS_O("SPI0_SS_O"), SPI0_SS1_O("SPI0_SS1_O"), SPI0_SS2_O("SPI0_SS2_O"), SPI0_SS_T("SPI0_SS_T"), FCLK_CLK0("FCLK_CLK0"), FCLK_RESET0_N("FCLK_RESET0_N"), MIO("MIO"), DDR_CAS_n("DDR_CAS_n"), DDR_CKE("DDR_CKE"), DDR_Clk_n("DDR_Clk_n"), DDR_Clk("DDR_Clk"), DDR_CS_n("DDR_CS_n"), DDR_DRSTB("DDR_DRSTB"), DDR_ODT("DDR_ODT"), DDR_RAS_n("DDR_RAS_n"), DDR_WEB("DDR_WEB"), DDR_BankAddr("DDR_BankAddr"), DDR_Addr("DDR_Addr"), DDR_VRN("DDR_VRN"), DDR_VRP("DDR_VRP"), DDR_DM("DDR_DM"), DDR_DQ("DDR_DQ"), DDR_DQS_n("DDR_DQS_n"), DDR_DQS("DDR_DQS"), PS_SRSTB("PS_SRSTB"), PS_CLK("PS_CLK"), PS_PORB("PS_PORB")
 {
 
   // initialize pins
+  mp_impl->GPIO_I(GPIO_I);
+  mp_impl->GPIO_O(GPIO_O);
+  mp_impl->GPIO_T(GPIO_T);
   mp_impl->SPI0_SCLK_I(SPI0_SCLK_I);
   mp_impl->SPI0_SCLK_O(SPI0_SCLK_O);
   mp_impl->SPI0_SCLK_T(SPI0_SCLK_T);
@@ -223,9 +232,12 @@ void design_1_processing_system7_0_0::before_end_of_elaboration()
 
 
 #ifdef VCSSYSTEMC
-design_1_processing_system7_0_0::design_1_processing_system7_0_0(const sc_core::sc_module_name& nm) : design_1_processing_system7_0_0_sc(nm),  SPI0_SCLK_I("SPI0_SCLK_I"), SPI0_SCLK_O("SPI0_SCLK_O"), SPI0_SCLK_T("SPI0_SCLK_T"), SPI0_MOSI_I("SPI0_MOSI_I"), SPI0_MOSI_O("SPI0_MOSI_O"), SPI0_MOSI_T("SPI0_MOSI_T"), SPI0_MISO_I("SPI0_MISO_I"), SPI0_MISO_O("SPI0_MISO_O"), SPI0_MISO_T("SPI0_MISO_T"), SPI0_SS_I("SPI0_SS_I"), SPI0_SS_O("SPI0_SS_O"), SPI0_SS1_O("SPI0_SS1_O"), SPI0_SS2_O("SPI0_SS2_O"), SPI0_SS_T("SPI0_SS_T"), FCLK_CLK0("FCLK_CLK0"), FCLK_RESET0_N("FCLK_RESET0_N"), MIO("MIO"), DDR_CAS_n("DDR_CAS_n"), DDR_CKE("DDR_CKE"), DDR_Clk_n("DDR_Clk_n"), DDR_Clk("DDR_Clk"), DDR_CS_n("DDR_CS_n"), DDR_DRSTB("DDR_DRSTB"), DDR_ODT("DDR_ODT"), DDR_RAS_n("DDR_RAS_n"), DDR_WEB("DDR_WEB"), DDR_BankAddr("DDR_BankAddr"), DDR_Addr("DDR_Addr"), DDR_VRN("DDR_VRN"), DDR_VRP("DDR_VRP"), DDR_DM("DDR_DM"), DDR_DQ("DDR_DQ"), DDR_DQS_n("DDR_DQS_n"), DDR_DQS("DDR_DQS"), PS_SRSTB("PS_SRSTB"), PS_CLK("PS_CLK"), PS_PORB("PS_PORB")
+design_1_processing_system7_0_0::design_1_processing_system7_0_0(const sc_core::sc_module_name& nm) : design_1_processing_system7_0_0_sc(nm),  GPIO_I("GPIO_I"), GPIO_O("GPIO_O"), GPIO_T("GPIO_T"), SPI0_SCLK_I("SPI0_SCLK_I"), SPI0_SCLK_O("SPI0_SCLK_O"), SPI0_SCLK_T("SPI0_SCLK_T"), SPI0_MOSI_I("SPI0_MOSI_I"), SPI0_MOSI_O("SPI0_MOSI_O"), SPI0_MOSI_T("SPI0_MOSI_T"), SPI0_MISO_I("SPI0_MISO_I"), SPI0_MISO_O("SPI0_MISO_O"), SPI0_MISO_T("SPI0_MISO_T"), SPI0_SS_I("SPI0_SS_I"), SPI0_SS_O("SPI0_SS_O"), SPI0_SS1_O("SPI0_SS1_O"), SPI0_SS2_O("SPI0_SS2_O"), SPI0_SS_T("SPI0_SS_T"), FCLK_CLK0("FCLK_CLK0"), FCLK_RESET0_N("FCLK_RESET0_N"), MIO("MIO"), DDR_CAS_n("DDR_CAS_n"), DDR_CKE("DDR_CKE"), DDR_Clk_n("DDR_Clk_n"), DDR_Clk("DDR_Clk"), DDR_CS_n("DDR_CS_n"), DDR_DRSTB("DDR_DRSTB"), DDR_ODT("DDR_ODT"), DDR_RAS_n("DDR_RAS_n"), DDR_WEB("DDR_WEB"), DDR_BankAddr("DDR_BankAddr"), DDR_Addr("DDR_Addr"), DDR_VRN("DDR_VRN"), DDR_VRP("DDR_VRP"), DDR_DM("DDR_DM"), DDR_DQ("DDR_DQ"), DDR_DQS_n("DDR_DQS_n"), DDR_DQS("DDR_DQS"), PS_SRSTB("PS_SRSTB"), PS_CLK("PS_CLK"), PS_PORB("PS_PORB")
 {
   // initialize pins
+  mp_impl->GPIO_I(GPIO_I);
+  mp_impl->GPIO_O(GPIO_O);
+  mp_impl->GPIO_T(GPIO_T);
   mp_impl->SPI0_SCLK_I(SPI0_SCLK_I);
   mp_impl->SPI0_SCLK_O(SPI0_SCLK_O);
   mp_impl->SPI0_SCLK_T(SPI0_SCLK_T);
@@ -278,9 +290,12 @@ void design_1_processing_system7_0_0::before_end_of_elaboration()
 
 
 #ifdef MTI_SYSTEMC
-design_1_processing_system7_0_0::design_1_processing_system7_0_0(const sc_core::sc_module_name& nm) : design_1_processing_system7_0_0_sc(nm),  SPI0_SCLK_I("SPI0_SCLK_I"), SPI0_SCLK_O("SPI0_SCLK_O"), SPI0_SCLK_T("SPI0_SCLK_T"), SPI0_MOSI_I("SPI0_MOSI_I"), SPI0_MOSI_O("SPI0_MOSI_O"), SPI0_MOSI_T("SPI0_MOSI_T"), SPI0_MISO_I("SPI0_MISO_I"), SPI0_MISO_O("SPI0_MISO_O"), SPI0_MISO_T("SPI0_MISO_T"), SPI0_SS_I("SPI0_SS_I"), SPI0_SS_O("SPI0_SS_O"), SPI0_SS1_O("SPI0_SS1_O"), SPI0_SS2_O("SPI0_SS2_O"), SPI0_SS_T("SPI0_SS_T"), FCLK_CLK0("FCLK_CLK0"), FCLK_RESET0_N("FCLK_RESET0_N"), MIO("MIO"), DDR_CAS_n("DDR_CAS_n"), DDR_CKE("DDR_CKE"), DDR_Clk_n("DDR_Clk_n"), DDR_Clk("DDR_Clk"), DDR_CS_n("DDR_CS_n"), DDR_DRSTB("DDR_DRSTB"), DDR_ODT("DDR_ODT"), DDR_RAS_n("DDR_RAS_n"), DDR_WEB("DDR_WEB"), DDR_BankAddr("DDR_BankAddr"), DDR_Addr("DDR_Addr"), DDR_VRN("DDR_VRN"), DDR_VRP("DDR_VRP"), DDR_DM("DDR_DM"), DDR_DQ("DDR_DQ"), DDR_DQS_n("DDR_DQS_n"), DDR_DQS("DDR_DQS"), PS_SRSTB("PS_SRSTB"), PS_CLK("PS_CLK"), PS_PORB("PS_PORB")
+design_1_processing_system7_0_0::design_1_processing_system7_0_0(const sc_core::sc_module_name& nm) : design_1_processing_system7_0_0_sc(nm),  GPIO_I("GPIO_I"), GPIO_O("GPIO_O"), GPIO_T("GPIO_T"), SPI0_SCLK_I("SPI0_SCLK_I"), SPI0_SCLK_O("SPI0_SCLK_O"), SPI0_SCLK_T("SPI0_SCLK_T"), SPI0_MOSI_I("SPI0_MOSI_I"), SPI0_MOSI_O("SPI0_MOSI_O"), SPI0_MOSI_T("SPI0_MOSI_T"), SPI0_MISO_I("SPI0_MISO_I"), SPI0_MISO_O("SPI0_MISO_O"), SPI0_MISO_T("SPI0_MISO_T"), SPI0_SS_I("SPI0_SS_I"), SPI0_SS_O("SPI0_SS_O"), SPI0_SS1_O("SPI0_SS1_O"), SPI0_SS2_O("SPI0_SS2_O"), SPI0_SS_T("SPI0_SS_T"), FCLK_CLK0("FCLK_CLK0"), FCLK_RESET0_N("FCLK_RESET0_N"), MIO("MIO"), DDR_CAS_n("DDR_CAS_n"), DDR_CKE("DDR_CKE"), DDR_Clk_n("DDR_Clk_n"), DDR_Clk("DDR_Clk"), DDR_CS_n("DDR_CS_n"), DDR_DRSTB("DDR_DRSTB"), DDR_ODT("DDR_ODT"), DDR_RAS_n("DDR_RAS_n"), DDR_WEB("DDR_WEB"), DDR_BankAddr("DDR_BankAddr"), DDR_Addr("DDR_Addr"), DDR_VRN("DDR_VRN"), DDR_VRP("DDR_VRP"), DDR_DM("DDR_DM"), DDR_DQ("DDR_DQ"), DDR_DQS_n("DDR_DQS_n"), DDR_DQS("DDR_DQS"), PS_SRSTB("PS_SRSTB"), PS_CLK("PS_CLK"), PS_PORB("PS_PORB")
 {
   // initialize pins
+  mp_impl->GPIO_I(GPIO_I);
+  mp_impl->GPIO_O(GPIO_O);
+  mp_impl->GPIO_T(GPIO_T);
   mp_impl->SPI0_SCLK_I(SPI0_SCLK_I);
   mp_impl->SPI0_SCLK_O(SPI0_SCLK_O);
   mp_impl->SPI0_SCLK_T(SPI0_SCLK_T);

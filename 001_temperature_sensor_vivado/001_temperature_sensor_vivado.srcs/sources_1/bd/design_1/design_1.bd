@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x8023C78808B80E3E",
+      "boundary_crc": "0xD4A1C00F8A3E8250",
       "device": "xc7z020clg484-1",
       "name": "design_1",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
@@ -120,6 +120,11 @@
       },
       "SPI0_SS_O": {
         "direction": "O"
+      },
+      "led": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
       }
     },
     "components": {
@@ -217,6 +222,9 @@
           "PCW_ENET0_PERIPHERAL_ENABLE": {
             "value": "0"
           },
+          "PCW_EN_EMIO_GPIO": {
+            "value": "1"
+          },
           "PCW_EN_EMIO_SPI0": {
             "value": "1"
           },
@@ -254,10 +262,19 @@
             "value": "150.000000"
           },
           "PCW_FPGA2_PERIPHERAL_FREQMHZ": {
-            "value": "50.000000"
+            "value": "50"
           },
           "PCW_FPGA_FCLK0_ENABLE": {
             "value": "1"
+          },
+          "PCW_GPIO_EMIO_GPIO_ENABLE": {
+            "value": "1"
+          },
+          "PCW_GPIO_EMIO_GPIO_IO": {
+            "value": "8"
+          },
+          "PCW_GPIO_EMIO_GPIO_WIDTH": {
+            "value": "8"
           },
           "PCW_GPIO_MIO_GPIO_ENABLE": {
             "value": "0"
@@ -310,9 +327,6 @@
           "PCW_SD0_PERIPHERAL_ENABLE": {
             "value": "0"
           },
-          "PCW_SDIO_PERIPHERAL_FREQMHZ": {
-            "value": "50"
-          },
           "PCW_SDIO_PERIPHERAL_VALID": {
             "value": "0"
           },
@@ -330,9 +344,6 @@
           },
           "PCW_TTC0_PERIPHERAL_ENABLE": {
             "value": "0"
-          },
-          "PCW_TTC_PERIPHERAL_FREQMHZ": {
-            "value": "50"
           },
           "PCW_UART1_GRP_FULL_ENABLE": {
             "value": "0"
@@ -413,16 +424,16 @@
       }
     },
     "interface_nets": {
-      "processing_system7_0_DDR": {
-        "interface_ports": [
-          "DDR",
-          "processing_system7_0/DDR"
-        ]
-      },
       "processing_system7_0_FIXED_IO": {
         "interface_ports": [
           "FIXED_IO",
           "processing_system7_0/FIXED_IO"
+        ]
+      },
+      "processing_system7_0_DDR": {
+        "interface_ports": [
+          "DDR",
+          "processing_system7_0/DDR"
         ]
       }
     },
@@ -449,6 +460,12 @@
         "ports": [
           "processing_system7_0/SPI0_SS_O",
           "SPI0_SS_O"
+        ]
+      },
+      "processing_system7_0_GPIO_O": {
+        "ports": [
+          "processing_system7_0/GPIO_O",
+          "led"
         ]
       }
     }

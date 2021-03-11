@@ -1,26 +1,28 @@
 {
    "ActiveEmotionalView":"Default View",
    "Default View_ScaleFactor":"2.0",
-   "Default View_TopLeft":"-453,-17",
+   "Default View_TopLeft":"-452,-77",
    "ExpandedHierarchyInLayout":"",
    "PinnedPorts":"",
-   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:9.0 non-TLS-threadsafe
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
 #  -string -flagsOSRD
-preplace port DDR -pg 1 -lvl 2 -x 340 -y 60 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -lvl 2 -x 340 -y 90 -defaultsOSRD
-preplace port SPI0_SCLK_O -pg 1 -lvl 2 -x 340 -y 140 -defaultsOSRD
-preplace port SPI0_MOSI_O -pg 1 -lvl 2 -x 340 -y 200 -defaultsOSRD
-preplace port SPI0_MISO_I -pg 1 -lvl 0 -x 0 -y 480 -defaultsOSRD
-preplace port SPI0_SS_O -pg 1 -lvl 2 -x 340 -y 320 -defaultsOSRD
-preplace inst processing_system7_0 -pg 1 -lvl 1 -x 170 -y 240 -defaultsOSRD
-preplace netloc processing_system7_0_SPI0_SCLK_O 1 1 1 NJ 140
-preplace netloc processing_system7_0_SPI0_MOSI_O 1 1 1 NJ 200
-preplace netloc SPI0_MISO_I_1 1 0 2 NJ 480 320
-preplace netloc processing_system7_0_SPI0_SS_O 1 1 1 NJ 320
-preplace netloc processing_system7_0_FIXED_IO 1 1 1 320J 80n
-preplace netloc processing_system7_0_DDR 1 1 1 NJ 60
+preplace port DDR -pg 1 -lvl 2 -x 340 -y 130 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 2 -x 340 -y 160 -defaultsOSRD
+preplace port SPI0_SCLK_O -pg 1 -lvl 2 -x 340 -y 190 -defaultsOSRD
+preplace port SPI0_MOSI_O -pg 1 -lvl 2 -x 340 -y 220 -defaultsOSRD
+preplace port SPI0_MISO_I -pg 1 -lvl 0 -x 0 -y 360 -defaultsOSRD
+preplace port SPI0_SS_O -pg 1 -lvl 2 -x 340 -y 260 -defaultsOSRD
+preplace portBus led -pg 1 -lvl 2 -x 340 -y 100 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -x 170 -y 180 -defaultsOSRD
+preplace netloc processing_system7_0_SPI0_SCLK_O 1 1 1 320J 190n
+preplace netloc processing_system7_0_SPI0_MOSI_O 1 1 1 NJ 220
+preplace netloc SPI0_MISO_I_1 1 0 2 NJ 360 320
+preplace netloc processing_system7_0_SPI0_SS_O 1 1 1 NJ 260
+preplace netloc processing_system7_0_GPIO_O 1 1 1 NJ 100
+preplace netloc processing_system7_0_DDR 1 1 1 320J 130n
+preplace netloc processing_system7_0_FIXED_IO 1 1 1 NJ 160
 levelinfo -pg 1 0 170 340
-pagesize -pg 1 -db -bbox -sgen -130 0 480 500
+pagesize -pg 1 -db -bbox -sgen -130 0 480 380
 "
 }
 {

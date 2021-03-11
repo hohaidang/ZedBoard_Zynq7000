@@ -961,3 +961,23 @@ con
 
 21:39:58 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\Training\.sdk\launch_scripts\single_application_debug\systemdebugger_001_temperature_sensor_vivado_system_standalone.tcl'
 22:35:29 INFO  : Disconnected from the channel tcfchan#3.
+19:50:14 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\Training\temp_xsdb_launch_script.tcl
+19:50:17 INFO  : XSCT server has started successfully.
+19:50:17 INFO  : plnx-install-location is set to ''
+19:50:17 INFO  : Successfully done setting XSCT server connection channel  
+19:50:17 INFO  : Successfully done setting workspace for the tool. 
+19:50:23 INFO  : Platform repository initialization has completed.
+19:50:23 INFO  : Registering command handlers for Vitis TCF services
+19:50:27 INFO  : Successfully done query RDI_DATADIR 
+20:17:44 INFO  : Hardware specification for platform project '001_platform' is updated.
+20:20:30 INFO  : Result from executing command 'getProjects': 001_platform;008_platform
+20:20:30 INFO  : Result from executing command 'getPlatforms': 001_platform|C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/001_platform/export/001_platform/001_platform.xpfm;008_platform|C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/Training/008_platform/export/008_platform/008_platform.xpfm
+20:20:30 INFO  : Checking for BSP changes to sync application flags for project '001_temperature_sensor_vivado'...
+20:20:32 INFO  : Updating application flags with new BSP settings...
+20:20:32 INFO  : Successfully updated application flags for project 001_temperature_sensor_vivado.
+20:20:34 INFO  : The hardware specfication used by project '001_temperature_sensor_vivado' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+20:20:34 INFO  : The file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\Training\001_temperature_sensor_vivado\_ide\bitstream\design_1_wrapper.bit' stored in project is removed.
+20:20:34 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\Training\001_temperature_sensor_vivado\_ide\bitstream' in project '001_temperature_sensor_vivado'.
+20:20:34 INFO  : The file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\Training\001_temperature_sensor_vivado\_ide\psinit\ps7_init.tcl' stored in project is removed.
+20:20:39 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\Training\001_temperature_sensor_vivado\_ide\psinit' in project '001_temperature_sensor_vivado'.
+20:25:46 ERROR : An unexpected exception occurred in the module 'reading platform'

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_bvZM8XmXEeuKkcfcnzvLlw" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_bvZM8nmXEeuKkcfcnzvLlw" bindingContexts="_bvZM-HmXEeuKkcfcnzvLlw">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;main.cpp&quot; tooltip=&quot;001_temperature_sensor_vivado/src/main.cpp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/001_temperature_sensor_vivado/src/main.cpp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.xilinx.sdx.ui.settingseditor&quot; name=&quot;001_temperature_sensor_vivado.prj&quot; tooltip=&quot;001_temperature_sensor_vivado/001_temperature_sensor_vivado.prj&quot;>&#xD;&#xA;&lt;persistable path=&quot;/001_temperature_sensor_vivado/001_temperature_sensor_vivado.prj&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;main.cpp&quot; tooltip=&quot;001_temperature_sensor_vitis/src/main.cpp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/001_temperature_sensor_vitis/src/main.cpp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;helloworld.c&quot; tooltip=&quot;001_temperature_sensor_vitis/src/helloworld.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/001_temperature_sensor_vitis/src/helloworld.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;helloworld.cpp&quot; tooltip=&quot;008_HelloWorld_UART_vitis/src/helloworld.cpp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/008_HelloWorld_UART_vitis/src/helloworld.cpp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.xilinx.sdx.scw.ui.editor.ScwEditor&quot; name=&quot;platform.spr&quot; tooltip=&quot;001_platform/platform.spr&quot;>&#xD;&#xA;&lt;persistable path=&quot;/001_platform/platform.spr&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.xilinx.sdx.ui.settingseditor&quot; name=&quot;001_temperature_sensor_vitis.prj&quot; tooltip=&quot;001_temperature_sensor_vitis/001_temperature_sensor_vitis.prj&quot;>&#xD;&#xA;&lt;persistable path=&quot;/001_temperature_sensor_vitis/001_temperature_sensor_vitis.prj&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;xgpio.c&quot; tooltip=&quot;008_platform/ps7_cortexa9_0/standalone_domain/bsp/ps7_cortexa9_0/libsrc/gpio_v4_6/src/xgpio.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/008_platform/ps7_cortexa9_0/standalone_domain/bsp/ps7_cortexa9_0/libsrc/gpio_v4_6/src/xgpio.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;xgpio_example.c&quot; tooltip=&quot;xgpio_example_1/src/xgpio_example.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/xgpio_example_1/src/xgpio_example.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;xgpio.h&quot; tooltip=&quot;008_platform/export/008_platform/sw/008_platform/standalone_domain/bspinclude/include/xgpio.h&quot;>&#xD;&#xA;&lt;persistable path=&quot;/008_platform/export/008_platform/sw/008_platform/standalone_domain/bspinclude/include/xgpio.h&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.xilinx.sdx.ui.settingseditor&quot; name=&quot;xgpio_example_1.prj&quot; tooltip=&quot;xgpio_example_1/xgpio_example_1.prj&quot;>&#xD;&#xA;&lt;persistable path=&quot;/xgpio_example_1/xgpio_example_1.prj&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.xilinx.sdx.scw.ui.editor.ScwEditor&quot; name=&quot;platform.spr&quot; tooltip=&quot;008_platform/platform.spr&quot;>&#xD;&#xA;&lt;persistable path=&quot;/008_platform/platform.spr&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;xuartps.h&quot; tooltip=&quot;008_platform/export/008_platform/sw/008_platform/standalone_domain/bspinclude/include/xuartps.h&quot;>&#xD;&#xA;&lt;persistable path=&quot;/008_platform/export/008_platform/sw/008_platform/standalone_domain/bspinclude/include/xuartps.h&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;xuartps.h&quot; tooltip=&quot;008_platform/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/include/xuartps.h&quot;>&#xD;&#xA;&lt;persistable path=&quot;/008_platform/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/include/xuartps.h&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;platform.hpp&quot; tooltip=&quot;008_HelloWorld_UART_vitis/src/platform.hpp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/008_HelloWorld_UART_vitis/src/platform.hpp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;xil_printf.h&quot; tooltip=&quot;008_platform/export/008_platform/sw/008_platform/standalone_domain/bspinclude/include/xil_printf.h&quot;>&#xD;&#xA;&lt;persistable path=&quot;/008_platform/export/008_platform/sw/008_platform/standalone_domain/bspinclude/include/xil_printf.h&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;platform.cpp&quot; tooltip=&quot;008_HelloWorld_UART_vitis/src/platform.cpp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/008_HelloWorld_UART_vitis/src/platform.cpp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;platform_config.hpp&quot; tooltip=&quot;008_HelloWorld_UART_vitis/src/platform_config.hpp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/008_HelloWorld_UART_vitis/src/platform_config.hpp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;platform.c&quot; tooltip=&quot;008_HelloWorld_UART_vitis/src/platform.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/008_HelloWorld_UART_vitis/src/platform.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.xilinx.sdx.ui.settingseditor&quot; name=&quot;008_HelloWorld_UART_vitis.prj&quot; tooltip=&quot;008_HelloWorld_UART_vitis/008_HelloWorld_UART_vitis.prj&quot;>&#xD;&#xA;&lt;persistable path=&quot;/008_HelloWorld_UART_vitis/008_HelloWorld_UART_vitis.prj&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;xgpiops.h&quot; tooltip=&quot;001_platform/export/001_platform/sw/001_platform/standalone_domain/bspinclude/include/xgpiops.h&quot;>&#xD;&#xA;&lt;persistable path=&quot;/001_platform/export/001_platform/sw/001_platform/standalone_domain/bspinclude/include/xgpiops.h&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;xuartps.h&quot; tooltip=&quot;001_platform/export/001_platform/sw/001_platform/standalone_domain/bspinclude/include/xuartps.h&quot;>&#xD;&#xA;&lt;persistable path=&quot;/001_platform/export/001_platform/sw/001_platform/standalone_domain/bspinclude/include/xuartps.h&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;helloworld.cpp&quot; tooltip=&quot;008_HelloWorld_UART_vitis/src/helloworld.cpp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/008_HelloWorld_UART_vitis/src/helloworld.cpp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;main.cpp&quot; tooltip=&quot;001_temperature_sensor_vivado/src/main.cpp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/001_temperature_sensor_vivado/src/main.cpp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.xilinx.sdx.ui.settingseditor&quot; name=&quot;001_temperature_sensor_vivado.prj&quot; tooltip=&quot;001_temperature_sensor_vivado/001_temperature_sensor_vivado.prj&quot;>&#xD;&#xA;&lt;persistable path=&quot;/001_temperature_sensor_vivado/001_temperature_sensor_vivado.prj&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;main.cpp&quot; tooltip=&quot;001_temperature_sensor_vitis/src/main.cpp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/001_temperature_sensor_vitis/src/main.cpp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;helloworld.c&quot; tooltip=&quot;001_temperature_sensor_vitis/src/helloworld.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/001_temperature_sensor_vitis/src/helloworld.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.xilinx.sdx.scw.ui.editor.ScwEditor&quot; name=&quot;platform.spr&quot; tooltip=&quot;001_platform/platform.spr&quot;>&#xD;&#xA;&lt;persistable path=&quot;/001_platform/platform.spr&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.xilinx.sdx.ui.settingseditor&quot; name=&quot;001_temperature_sensor_vitis.prj&quot; tooltip=&quot;001_temperature_sensor_vitis/001_temperature_sensor_vitis.prj&quot;>&#xD;&#xA;&lt;persistable path=&quot;/001_temperature_sensor_vitis/001_temperature_sensor_vitis.prj&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;xgpio.c&quot; tooltip=&quot;008_platform/ps7_cortexa9_0/standalone_domain/bsp/ps7_cortexa9_0/libsrc/gpio_v4_6/src/xgpio.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/008_platform/ps7_cortexa9_0/standalone_domain/bsp/ps7_cortexa9_0/libsrc/gpio_v4_6/src/xgpio.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;xgpio_example.c&quot; tooltip=&quot;xgpio_example_1/src/xgpio_example.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/xgpio_example_1/src/xgpio_example.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;xgpio.h&quot; tooltip=&quot;008_platform/export/008_platform/sw/008_platform/standalone_domain/bspinclude/include/xgpio.h&quot;>&#xD;&#xA;&lt;persistable path=&quot;/008_platform/export/008_platform/sw/008_platform/standalone_domain/bspinclude/include/xgpio.h&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.xilinx.sdx.ui.settingseditor&quot; name=&quot;xgpio_example_1.prj&quot; tooltip=&quot;xgpio_example_1/xgpio_example_1.prj&quot;>&#xD;&#xA;&lt;persistable path=&quot;/xgpio_example_1/xgpio_example_1.prj&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.xilinx.sdx.scw.ui.editor.ScwEditor&quot; name=&quot;platform.spr&quot; tooltip=&quot;008_platform/platform.spr&quot;>&#xD;&#xA;&lt;persistable path=&quot;/008_platform/platform.spr&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;xuartps.h&quot; tooltip=&quot;008_platform/export/008_platform/sw/008_platform/standalone_domain/bspinclude/include/xuartps.h&quot;>&#xD;&#xA;&lt;persistable path=&quot;/008_platform/export/008_platform/sw/008_platform/standalone_domain/bspinclude/include/xuartps.h&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;xuartps.h&quot; tooltip=&quot;008_platform/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/include/xuartps.h&quot;>&#xD;&#xA;&lt;persistable path=&quot;/008_platform/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/include/xuartps.h&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;platform.hpp&quot; tooltip=&quot;008_HelloWorld_UART_vitis/src/platform.hpp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/008_HelloWorld_UART_vitis/src/platform.hpp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;xil_printf.h&quot; tooltip=&quot;008_platform/export/008_platform/sw/008_platform/standalone_domain/bspinclude/include/xil_printf.h&quot;>&#xD;&#xA;&lt;persistable path=&quot;/008_platform/export/008_platform/sw/008_platform/standalone_domain/bspinclude/include/xil_printf.h&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;platform.cpp&quot; tooltip=&quot;008_HelloWorld_UART_vitis/src/platform.cpp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/008_HelloWorld_UART_vitis/src/platform.cpp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;platform_config.hpp&quot; tooltip=&quot;008_HelloWorld_UART_vitis/src/platform_config.hpp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/008_HelloWorld_UART_vitis/src/platform_config.hpp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
   <children xsi:type="basic:TrimmedWindow" xmi:id="_bvZM8nmXEeuKkcfcnzvLlw" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_b8t3Q3mXEeuKkcfcnzvLlw" x="-2157" y="-67" width="1280" height="720">
@@ -38,23 +38,24 @@
           <tags>persp.newWizSC:com.xilinx.sdx.npw.revisedLibraryWizard</tags>
           <tags>persp.newWizSC:com.xilinx.sdx.npw.revisedKernelWizard</tags>
           <tags>persp.newWizSC:com.xilinx.sdx.npw.revisedPlatformWizard</tags>
-          <children xsi:type="basic:PartSashContainer" xmi:id="_b8yIsXmXEeuKkcfcnzvLlw" selectedElement="_b8yIt3mXEeuKkcfcnzvLlw" horizontal="true">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_b8yIsXmXEeuKkcfcnzvLlw" selectedElement="_b8yIsnmXEeuKkcfcnzvLlw" horizontal="true">
             <children xsi:type="basic:PartSashContainer" xmi:id="_b8yIsnmXEeuKkcfcnzvLlw" containerData="2231" selectedElement="_b8yIs3mXEeuKkcfcnzvLlw">
-              <children xsi:type="basic:PartStack" xmi:id="_b8yIs3mXEeuKkcfcnzvLlw" elementId="com.xilinx.ide.projectExplorerMStack" containerData="5966" selectedElement="_b8yItHmXEeuKkcfcnzvLlw">
+              <children xsi:type="basic:PartStack" xmi:id="_b8yIs3mXEeuKkcfcnzvLlw" elementId="com.xilinx.ide.projectExplorerMStack" containerData="7097" selectedElement="_b8yItHmXEeuKkcfcnzvLlw">
+                <tags>active</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_b8yItHmXEeuKkcfcnzvLlw" elementId="com.xilinx.ide.projectExplorer" ref="_b8qM4HmXEeuKkcfcnzvLlw" closeable="true">
                   <tags>View</tags>
                   <tags>categoryTag:Xilinx</tags>
                 </children>
               </children>
-              <children xsi:type="basic:PartStack" xmi:id="_b8yItXmXEeuKkcfcnzvLlw" elementId="com.xilinx.sdx.assistant.assistantViewMStack" containerData="4034" selectedElement="_b8yItnmXEeuKkcfcnzvLlw">
+              <children xsi:type="basic:PartStack" xmi:id="_b8yItXmXEeuKkcfcnzvLlw" elementId="com.xilinx.sdx.assistant.assistantViewMStack" containerData="2903" selectedElement="_b8yItnmXEeuKkcfcnzvLlw">
                 <children xsi:type="advanced:Placeholder" xmi:id="_b8yItnmXEeuKkcfcnzvLlw" elementId="com.xilinx.sdx.assistant.assistantView" ref="_b8rbAHmXEeuKkcfcnzvLlw" closeable="true">
                   <tags>View</tags>
                   <tags>categoryTag:Xilinx</tags>
                 </children>
               </children>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_b8yIt3mXEeuKkcfcnzvLlw" containerData="7769" selectedElement="_b8yIvHmXEeuKkcfcnzvLlw">
-              <children xsi:type="basic:PartSashContainer" xmi:id="_b8yIuHmXEeuKkcfcnzvLlw" containerData="5955" selectedElement="_b8yIuXmXEeuKkcfcnzvLlw" horizontal="true">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_b8yIt3mXEeuKkcfcnzvLlw" containerData="7769" selectedElement="_b8yIuHmXEeuKkcfcnzvLlw">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_b8yIuHmXEeuKkcfcnzvLlw" containerData="7716" selectedElement="_b8yIuXmXEeuKkcfcnzvLlw" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_b8yIuXmXEeuKkcfcnzvLlw" elementId="org.eclipse.ui.editorss" containerData="8000" ref="_b8i4IHmXEeuKkcfcnzvLlw"/>
                 <children xsi:type="basic:PartStack" xmi:id="_b8yIunmXEeuKkcfcnzvLlw" elementId="org.eclipse.ui.views.ContentOutlineMStack" containerData="2000" selectedElement="_b8yIu3mXEeuKkcfcnzvLlw">
                   <children xsi:type="advanced:Placeholder" xmi:id="_b8yIu3mXEeuKkcfcnzvLlw" elementId="org.eclipse.ui.views.ContentOutline" ref="_b8tQMHmXEeuKkcfcnzvLlw" closeable="true">
@@ -63,7 +64,7 @@
                   </children>
                 </children>
               </children>
-              <children xsi:type="basic:PartSashContainer" xmi:id="_b8yIvHmXEeuKkcfcnzvLlw" containerData="4045" selectedElement="_b8yIwnmXEeuKkcfcnzvLlw" horizontal="true">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_b8yIvHmXEeuKkcfcnzvLlw" containerData="2284" selectedElement="_b8yIvXmXEeuKkcfcnzvLlw" horizontal="true">
                 <children xsi:type="basic:PartStack" xmi:id="_b8yIvXmXEeuKkcfcnzvLlw" elementId="org.eclipse.ui.console.ConsoleViewMStack" containerData="7102" selectedElement="_b8yIvnmXEeuKkcfcnzvLlw">
                   <children xsi:type="advanced:Placeholder" xmi:id="_b8yIvnmXEeuKkcfcnzvLlw" elementId="org.eclipse.ui.console.ConsoleView" ref="_b8sCEHmXEeuKkcfcnzvLlw" closeable="true">
                     <tags>View</tags>
@@ -84,7 +85,6 @@
                 </children>
                 <children xsi:type="basic:PartStack" xmi:id="_b8yIwnmXEeuKkcfcnzvLlw" elementId="com.xilinx.sdk.targetmanager.ui.TargetManagementViewMStack" containerData="2898" selectedElement="_An8XIHmaEeuKkcfcnzvLlw">
                   <tags>Xilinx</tags>
-                  <tags>active</tags>
                   <children xsi:type="advanced:Placeholder" xmi:id="_b8yIw3mXEeuKkcfcnzvLlw" elementId="com.xilinx.sdk.targetmanager.ui.TargetManagementView" toBeRendered="false" ref="_b8spIXmXEeuKkcfcnzvLlw" closeable="true">
                     <tags>View</tags>
                     <tags>categoryTag:Xilinx</tags>
@@ -369,35 +369,11 @@
       </children>
     </children>
     <sharedElements xsi:type="advanced:Area" xmi:id="_b8i4IHmXEeuKkcfcnzvLlw" elementId="org.eclipse.ui.editorss" selectedElement="_b8i4IXmXEeuKkcfcnzvLlw">
-      <children xsi:type="basic:PartStack" xmi:id="_b8i4IXmXEeuKkcfcnzvLlw" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_pwoiwIGdEeuqT-_eWLQMYA">
+      <children xsi:type="basic:PartStack" xmi:id="_b8i4IXmXEeuKkcfcnzvLlw" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_UZp-IIGdEeuqT-_eWLQMYA">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
-        <children xsi:type="basic:Part" xmi:id="_D5Z34IGdEeuqT-_eWLQMYA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="001_platform" iconURI="platform:/plugin/com.xilinx.sdx.scw/icons/ide_16.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.xilinx.sdx.scw.ui.editor.ScwEditor&quot; name=&quot;platform.spr&quot; partName=&quot;001_platform&quot; title=&quot;001_platform&quot; tooltip=&quot;001_platform/platform.spr&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/001_platform/platform.spr&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>com.xilinx.sdx.scw.ui.editor.ScwEditor</tags>
-          <tags>removeOnHide</tags>
-        </children>
         <children xsi:type="basic:Part" xmi:id="_UZp-IIGdEeuqT-_eWLQMYA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="helloworld.cpp" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;helloworld.cpp&quot; partName=&quot;helloworld.cpp&quot; title=&quot;helloworld.cpp&quot; tooltip=&quot;008_HelloWorld_UART_vitis/src/helloworld.cpp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/008_HelloWorld_UART_vitis/src/helloworld.cpp&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;1839&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_nZJG8IGdEeuqT-_eWLQMYA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="001_temperature_sensor_vivado_system" iconURI="platform:/plugin/com.xilinx.sdx.system/icons/solutionpadded.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.xilinx.sdx.system.systemProjectSettingsEditor&quot; name=&quot;001_temperature_sensor_vivado_system.sprj&quot; partName=&quot;001_temperature_sensor_vivado_system&quot; title=&quot;001_temperature_sensor_vivado_system&quot; tooltip=&quot;001_temperature_sensor_vivado_system/001_temperature_sensor_vivado_system.sprj&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/001_temperature_sensor_vivado_system/001_temperature_sensor_vivado_system.sprj&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>com.xilinx.sdx.system.systemProjectSettingsEditor</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_oZ9DsIGdEeuqT-_eWLQMYA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="001_temperature_sensor_vivado" iconURI="platform:/plugin/com.xilinx.sdx.core/icons/settings.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.xilinx.sdx.ui.settingseditor&quot; name=&quot;001_temperature_sensor_vivado.prj&quot; partName=&quot;001_temperature_sensor_vivado&quot; title=&quot;001_temperature_sensor_vivado&quot; tooltip=&quot;001_temperature_sensor_vivado/001_temperature_sensor_vivado.prj&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/001_temperature_sensor_vivado/001_temperature_sensor_vivado.prj&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>com.xilinx.sdx.ui.settingseditor</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_pwoiwIGdEeuqT-_eWLQMYA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="main.cpp" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;main.cpp&quot; partName=&quot;main.cpp&quot; title=&quot;main.cpp&quot; tooltip=&quot;001_temperature_sensor_vivado/src/main.cpp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/001_temperature_sensor_vivado/src/main.cpp&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1166&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;helloworld.cpp&quot; partName=&quot;helloworld.cpp&quot; title=&quot;helloworld.cpp&quot; tooltip=&quot;008_HelloWorld_UART_vitis/src/helloworld.cpp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/008_HelloWorld_UART_vitis/src/helloworld.cpp&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;18&quot; selectionOffset=&quot;173&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
           <tags>removeOnHide</tags>
@@ -410,6 +386,8 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view CommonNavigator.LINKING_ENABLED=&quot;1&quot; org.eclipse.cdt.ui.cview.groupincludes=&quot;false&quot; org.eclipse.cdt.ui.cview.groupmacros=&quot;false&quot; org.eclipse.cdt.ui.editor.CUChildren=&quot;true&quot;>&#xD;&#xA;&lt;lastRecentlyUsedFilters/>&#xD;&#xA;&lt;/view>"/>
       <tags>View</tags>
       <tags>categoryTag:Xilinx</tags>
+      <tags>active</tags>
+      <tags>activeOnClose</tags>
       <menus xmi:id="_cCquQHmXEeuKkcfcnzvLlw" elementId="com.xilinx.ide.projectExplorer">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -425,73 +403,55 @@
       </menus>
       <menus xsi:type="menu:PopupMenu" xmi:id="_lEXdYIGcEeuqT-_eWLQMYA" elementId="com.xilinx.ide.projectExplorer#PopupMenu">
         <tags>menuContribution:popup</tags>
-        <children xsi:type="menu:MenuSeparator" xmi:id="_sU4oMIGdEeuqT-_eWLQMYA" elementId="group.new" visible="false">
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_gbD0EIJZEeugkPxLtcEqEA" elementId="com.xilinx.ide.projectExplorer#PopupMenu">
+        <tags>menuContribution:popup</tags>
+        <children xsi:type="menu:MenuSeparator" xmi:id="_iQe9QIJcEeugkPxLtcEqEA" elementId="group.new" visible="false">
           <tags>Opaque</tags>
         </children>
-        <children xsi:type="menu:MenuSeparator" xmi:id="_sU5PQIGdEeuqT-_eWLQMYA" elementId="group.open">
+        <children xsi:type="menu:MenuSeparator" xmi:id="_iQjOsIJcEeugkPxLtcEqEA" elementId="group.open">
           <tags>Opaque</tags>
         </children>
-        <children xsi:type="menu:MenuSeparator" xmi:id="_sU5PQYGdEeuqT-_eWLQMYA" elementId="group.openWith" visible="false">
+        <children xsi:type="menu:MenuSeparator" xmi:id="_iQjOsYJcEeugkPxLtcEqEA" elementId="group.openWith" visible="false">
           <tags>Opaque</tags>
         </children>
-        <children xsi:type="menu:MenuSeparator" xmi:id="_sU5PQoGdEeuqT-_eWLQMYA" elementId="group.edit">
+        <children xsi:type="menu:MenuSeparator" xmi:id="_iQjOsoJcEeugkPxLtcEqEA" elementId="group.edit">
           <tags>Opaque</tags>
         </children>
-        <children xsi:type="menu:DirectMenuItem" xmi:id="_sU5PQ4GdEeuqT-_eWLQMYA" elementId="org.eclipse.ui.PasteAction">
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_iQjOs4JcEeugkPxLtcEqEA" elementId="org.eclipse.ui.CopyAction">
           <tags>Opaque</tags>
         </children>
-        <children xsi:type="menu:DirectMenuItem" xmi:id="_sU5PRIGdEeuqT-_eWLQMYA" elementId="org.eclipse.ui.DeleteResourceAction">
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_iQj1wIJcEeugkPxLtcEqEA" elementId="org.eclipse.ui.PasteAction">
           <tags>Opaque</tags>
         </children>
-        <children xsi:type="menu:DirectMenuItem" xmi:id="_sU5PRYGdEeuqT-_eWLQMYA" elementId="org.eclipse.ui.RefreshAction">
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_iQj1wYJcEeugkPxLtcEqEA" elementId="org.eclipse.ui.RefreshAction">
           <tags>Opaque</tags>
         </children>
-        <children xsi:type="menu:MenuSeparator" xmi:id="_sU5PRoGdEeuqT-_eWLQMYA" elementId="group.port">
+        <children xsi:type="menu:MenuSeparator" xmi:id="_iQj1woJcEeugkPxLtcEqEA" elementId="group.port">
           <tags>Opaque</tags>
         </children>
-        <children xsi:type="menu:DirectMenuItem" xmi:id="_sU5PR4GdEeuqT-_eWLQMYA">
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_iQj1w4JcEeugkPxLtcEqEA">
           <tags>Opaque</tags>
         </children>
-        <children xsi:type="menu:MenuSeparator" xmi:id="_sU5PSIGdEeuqT-_eWLQMYA" elementId="group.reorganize" visible="false">
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_iQj1xIJcEeugkPxLtcEqEA">
           <tags>Opaque</tags>
         </children>
-        <children xsi:type="menu:MenuSeparator" xmi:id="_sU5PSYGdEeuqT-_eWLQMYA">
+        <children xsi:type="menu:MenuSeparator" xmi:id="_iQj1xYJcEeugkPxLtcEqEA" elementId="group.reorganize" visible="false">
           <tags>Opaque</tags>
         </children>
-        <children xsi:type="menu:DirectMenuItem" xmi:id="_sU5PSoGdEeuqT-_eWLQMYA">
+        <children xsi:type="menu:MenuSeparator" xmi:id="_iQj1xoJcEeugkPxLtcEqEA" elementId="group.build">
           <tags>Opaque</tags>
         </children>
-        <children xsi:type="menu:MenuSeparator" xmi:id="_sU5PS4GdEeuqT-_eWLQMYA" elementId="group.build">
+        <children xsi:type="menu:MenuSeparator" xmi:id="_iQj1x4JcEeugkPxLtcEqEA" elementId="group.search">
           <tags>Opaque</tags>
         </children>
-        <children xsi:type="menu:DirectMenuItem" xmi:id="_sU5PTIGdEeuqT-_eWLQMYA" elementId="org.eclipse.ui.BuildAction">
+        <children xsi:type="menu:MenuSeparator" xmi:id="_iQj1yIJcEeugkPxLtcEqEA" elementId="additions">
           <tags>Opaque</tags>
         </children>
-        <children xsi:type="menu:DirectMenuItem" xmi:id="_sU5PTYGdEeuqT-_eWLQMYA" elementId="org.eclipse.ui.RebuildAllAction">
+        <children xsi:type="menu:MenuSeparator" xmi:id="_iQj1yYJcEeugkPxLtcEqEA" elementId="group.launch">
           <tags>Opaque</tags>
         </children>
-        <children xsi:type="menu:MenuSeparator" xmi:id="_sU5PT4GdEeuqT-_eWLQMYA" elementId="end-buildGroup" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:MenuSeparator" xmi:id="_sU5PUIGdEeuqT-_eWLQMYA" elementId="group.search">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:MenuSeparator" xmi:id="_sU5PUYGdEeuqT-_eWLQMYA" elementId="additions">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:MenuSeparator" xmi:id="_sU5PUoGdEeuqT-_eWLQMYA" elementId="group.launch">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectMenuItem" xmi:id="_sU5PU4GdEeuqT-_eWLQMYA">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectMenuItem" xmi:id="_sU5PVIGdEeuqT-_eWLQMYA">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:MenuSeparator" xmi:id="_sU52UIGdEeuqT-_eWLQMYA" elementId="group.properties">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectMenuItem" xmi:id="_sU52UYGdEeuqT-_eWLQMYA">
+        <children xsi:type="menu:MenuSeparator" xmi:id="_iQj1yoJcEeugkPxLtcEqEA" elementId="group.properties">
           <tags>Opaque</tags>
         </children>
       </menus>
@@ -670,8 +630,6 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:Xilinx</tags>
-      <tags>active</tags>
-      <tags>activeOnClose</tags>
       <menus xmi:id="_AoHWQHmaEeuKkcfcnzvLlw" elementId="com.xilinx.sdk.terminal.sdkterminal">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -3331,12 +3289,13 @@
   <addons xmi:id="_bvZNBHmXEeuKkcfcnzvLlw" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
   <addons xmi:id="_bvZNBXmXEeuKkcfcnzvLlw" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_bvc3UHmXEeuKkcfcnzvLlw" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
-  <addons xmi:id="_jrrzMYGcEeuqT-_eWLQMYA" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
+  <addons xmi:id="_IYS0IKimEeS11vbz3f9ezw" elementId="org.eclipse.ui.ide.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <addons xmi:id="_dz0JgGOlEeSMMaPQU2nlzw" elementId="org.eclipse.ui.ide.application.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.ide.application/org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon"/>
   <addons xmi:id="_bwkRoHmXEeuKkcfcnzvLlw" elementId="com.xilinx.sdk.targetmanager.ui.addon.view" contributionURI="bundleclass://com.xilinx.sdk.targetmanager/com.xilinx.sdk.targetmanager.ui.ViewVisibilityAdapterAddon"/>
   <addons xmi:id="_3OWVEHmaEeuRxY1PZMWJyQ" elementId="com.xilinx.sdk.targetmanager.ui.addon.view" contributionURI="bundleclass://com.xilinx.sdk.targetmanager/com.xilinx.sdk.targetmanager.ui.ViewVisibilityAdapterAddon"/>
   <addons xmi:id="_9rPVIX1tEeuCZ7-RagbXEA" elementId="com.xilinx.sdk.targetmanager.ui.addon.view" contributionURI="bundleclass://com.xilinx.sdk.targetmanager/com.xilinx.sdk.targetmanager.ui.ViewVisibilityAdapterAddon"/>
   <addons xmi:id="_jr09IIGcEeuqT-_eWLQMYA" elementId="com.xilinx.sdk.targetmanager.ui.addon.view" contributionURI="bundleclass://com.xilinx.sdk.targetmanager/com.xilinx.sdk.targetmanager.ui.ViewVisibilityAdapterAddon"/>
+  <addons xmi:id="_jFN_IYJXEeugkPxLtcEqEA" elementId="com.xilinx.sdk.targetmanager.ui.addon.view" contributionURI="bundleclass://com.xilinx.sdk.targetmanager/com.xilinx.sdk.targetmanager.ui.ViewVisibilityAdapterAddon"/>
   <categories xmi:id="_bvq5wHmXEeuKkcfcnzvLlw" elementId="org.eclipse.team.ui.category.team" name="Team" description="Actions that apply when working with a Team"/>
   <categories xmi:id="_bvq5wXmXEeuKkcfcnzvLlw" elementId="org.eclipse.ui.category.views" name="Views" description="Commands for opening views"/>
   <categories xmi:id="_bvq5wnmXEeuKkcfcnzvLlw" elementId="org.eclipse.ui.category.edit" name="Edit"/>

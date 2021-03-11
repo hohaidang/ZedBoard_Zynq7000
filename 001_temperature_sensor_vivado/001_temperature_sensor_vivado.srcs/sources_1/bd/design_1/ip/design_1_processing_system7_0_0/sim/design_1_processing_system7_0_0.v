@@ -56,6 +56,9 @@
 `timescale 1ns/1ps
 
 module design_1_processing_system7_0_0 (
+GPIO_I, 
+GPIO_O, 
+GPIO_T, 
 SPI0_SCLK_I, 
 SPI0_SCLK_O, 
 SPI0_SCLK_T, 
@@ -94,6 +97,9 @@ PS_SRSTB,
 PS_CLK, 
 PS_PORB 
 );
+input [7 : 0] GPIO_I;
+output [7 : 0] GPIO_O;
+output [7 : 0] GPIO_T;
 input SPI0_SCLK_I;
 output SPI0_SCLK_O;
 output SPI0_SCLK_T;

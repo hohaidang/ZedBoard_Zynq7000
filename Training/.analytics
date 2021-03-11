@@ -57,3 +57,9 @@ timestamp=[2021-03-10 21:38:27], mode=BUILD, duration=0:00:00.199, duration_ms=1
 timestamp=[2021-03-10 21:38:28], mode=BUILD, duration=0:00:00.632, duration_ms=632, data={name=001_temperature_sensor_vitis, configuration=Debug, clean_build=false}
 timestamp=[2021-03-10 21:39:18], mode=APP_CREATION, duration=0:00:06.924, duration_ms=6924, data={name=001_temperature_sensor_vivado, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=001_platform, application_type=application}
 timestamp=[2021-03-10 21:39:33], mode=BUILD, duration=0:00:01.639, duration_ms=1639, data={name=001_temperature_sensor_vivado, configuration=Debug, clean_build=false}
+timestamp=[2021-03-11 19:50:22], mode=WORKBENCH_START, duration=0:00:13.610, duration_ms=13610, data={}
+timestamp=[2021-03-11 19:50:23], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.125, duration_ms=125, data={}
+timestamp=[2021-03-11 19:50:23], mode=WORKBENCH_UI_INIT, duration=0:00:01.465, duration_ms=1465, data={editors_count=5, platform_editors_count=1, projects_count=7, platform_projects_count=2, active_platform_editor=false, projects=001_platform,001_temperature_sensor_vivado,001_temperature_sensor_vivado_system,008_HelloWorld_UART_vitis,008_HelloWorld_UART_vitis_system,008_platform,RemoteSystemsTempFiles}
+timestamp=[2021-03-11 20:20:30], mode=PLATFORM_GENERATION, duration=0:00:18.468, duration_ms=18468, data={name=001_platform}
+timestamp=[2021-03-11 20:20:33], mode=BUILD, duration=0:00:00.894, duration_ms=894, data={name=001_temperature_sensor_vivado, configuration=Debug, clean_build=false}
+timestamp=[2021-03-11 20:20:42], mode=BUILD, duration=0:00:02.987, duration_ms=2987, data={name=001_temperature_sensor_vivado_system, configuration=Debug, clean_build=false}

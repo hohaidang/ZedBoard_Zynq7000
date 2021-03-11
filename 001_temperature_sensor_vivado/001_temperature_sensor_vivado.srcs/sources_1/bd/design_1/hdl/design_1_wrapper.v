@@ -1,7 +1,7 @@
 //Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-//Date        : Wed Mar 10 21:03:02 2021
+//Date        : Thu Mar 11 20:10:15 2021
 //Host        : DESKTOP-O8T2GMT running 64-bit major release  (build 9200)
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
@@ -34,7 +34,8 @@ module design_1_wrapper
     SPI0_MISO_I,
     SPI0_MOSI_O,
     SPI0_SCLK_O,
-    SPI0_SS_O);
+    SPI0_SS_O,
+    led);
   inout [14:0]DDR_addr;
   inout [2:0]DDR_ba;
   inout DDR_cas_n;
@@ -60,6 +61,7 @@ module design_1_wrapper
   output SPI0_MOSI_O;
   output SPI0_SCLK_O;
   output SPI0_SS_O;
+  output [7:0]led;
 
   wire [14:0]DDR_addr;
   wire [2:0]DDR_ba;
@@ -86,6 +88,7 @@ module design_1_wrapper
   wire SPI0_MOSI_O;
   wire SPI0_SCLK_O;
   wire SPI0_SS_O;
+  wire [7:0]led;
 
   design_1 design_1_i
        (.DDR_addr(DDR_addr),
@@ -112,5 +115,6 @@ module design_1_wrapper
         .SPI0_MISO_I(SPI0_MISO_I),
         .SPI0_MOSI_O(SPI0_MOSI_O),
         .SPI0_SCLK_O(SPI0_SCLK_O),
-        .SPI0_SS_O(SPI0_SS_O));
+        .SPI0_SS_O(SPI0_SS_O),
+        .led(led));
 endmodule

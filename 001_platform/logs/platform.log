@@ -1,0 +1,1463 @@
+TRACE::2021-03-11.20:27:34::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:34::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:34::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:36::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:36::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:36::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:36::SCWPlatform::Do not have an existing db opened. 
+TRACE::2021-03-11.20:27:38::SCWPlatform::Opened new HwDB with name design_1_wrapper_0
+TRACE::2021-03-11.20:27:38::SCWWriter::formatted JSON is {
+	"platformName":	"001_platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"001_platform",
+	"platHandOff":	"C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_temperature_sensor_vivado/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	""
+}
+TRACE::2021-03-11.20:27:38::SCWWriter::formatted JSON is {
+	"platformName":	"001_platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"001_platform",
+	"platHandOff":	"C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_temperature_sensor_vivado/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"001_platform",
+	"systems":	[{
+			"systemName":	"001_platform",
+			"systemDesc":	"001_platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"001_platform"
+		}]
+}
+TRACE::2021-03-11.20:27:38::SCWPlatform::Boot application domains not present, creating them
+TRACE::2021-03-11.20:27:38::SCWDomain::checking for install qemu data   : 
+TRACE::2021-03-11.20:27:38::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx2020/Vitis/2020.1/data/emulation/platforms/zynq/qemu/
+TRACE::2021-03-11.20:27:38::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx2020/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2021-03-11.20:27:38::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:38::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:38::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:38::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:38::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:38::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:38::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-11.20:27:38::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-11.20:27:38::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:38::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:38::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:38::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:38::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:38::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:38::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:38::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-11.20:27:38::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-11.20:27:38::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:38::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:38::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:38::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:38::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:38::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:38::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:38::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-11.20:27:38::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-11.20:27:38::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:38::SCWPlatform::Boot application domain added for zynq_fsbl
+TRACE::2021-03-11.20:27:38::SCWPlatform::Generating the sources  .
+TRACE::2021-03-11.20:27:38::SCWBDomain::Generating boot domain sources.
+TRACE::2021-03-11.20:27:38::SCWBDomain:: Generating the zynq_fsbl Application.
+TRACE::2021-03-11.20:27:38::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:38::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:38::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:38::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:38::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:38::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:38::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-11.20:27:38::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-11.20:27:38::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:38::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:38::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2021-03-11.20:27:38::SCWMssOS::No sw design opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:38::SCWMssOS::mss does not exists at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:38::SCWMssOS::Creating sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:38::SCWMssOS::Adding the swdes entry, created swdb C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:38::SCWMssOS::updating the scw layer changes to swdes at   C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:38::SCWMssOS::Writing mss at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:38::SCWMssOS::Completed writing the mss file at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp
+TRACE::2021-03-11.20:27:38::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2021-03-11.20:27:38::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2021-03-11.20:27:38::SCWBDomain::Completed writing the mss file at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp
+TRACE::2021-03-11.20:27:46::SCWPlatform::Generating sources Done.
+TRACE::2021-03-11.20:27:46::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:46::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:46::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:46::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:46::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:46::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:46::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-11.20:27:46::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-11.20:27:46::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:46::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:46::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss||
+
+KEYINFO::2021-03-11.20:27:46::SCWMssOS::Could not open the swdb for C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+KEYINFO::2021-03-11.20:27:46::SCWMssOS::Could not open the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+ERROR: [Hsi 55-1558] Software Design C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss is not found
+
+TRACE::2021-03-11.20:27:46::SCWMssOS::Cleared the swdb table entry
+TRACE::2021-03-11.20:27:46::SCWMssOS::No sw design opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:46::SCWMssOS::mss exists loading the mss file  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:46::SCWMssOS::Opened the sw design from mss  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:46::SCWMssOS::Adding the swdes entry C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2021-03-11.20:27:46::SCWMssOS::updating the scw layer about changes
+TRACE::2021-03-11.20:27:46::SCWMssOS::Opened the sw design.  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:46::SCWMssOS::Saving the mss changes C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:46::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-03-11.20:27:46::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-03-11.20:27:46::SCWMssOS::Commit changes completed.
+TRACE::2021-03-11.20:27:46::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:46::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:46::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:46::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:46::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:46::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:46::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-11.20:27:46::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-11.20:27:46::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:46::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:46::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-11.20:27:46::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:46::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:46::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:46::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:46::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:46::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:46::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:46::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-11.20:27:46::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-11.20:27:46::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:46::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:46::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-11.20:27:46::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:46::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:47::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:47::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:47::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:47::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:47::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:47::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-11.20:27:47::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-11.20:27:47::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:47::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:47::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-11.20:27:47::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:47::SCWWriter::formatted JSON is {
+	"platformName":	"001_platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"001_platform",
+	"platHandOff":	"C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_temperature_sensor_vivado/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"001_platform",
+	"systems":	[{
+			"systemName":	"001_platform",
+			"systemDesc":	"001_platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"001_platform",
+			"sysActiveDom":	"zynq_fsbl",
+			"sysDefaultDom":	"",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"f61c59c13f0dd6973ddd70868e244d2a",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.3", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2021-03-11.20:27:47::SCWDomain::checking for install qemu data   : 
+TRACE::2021-03-11.20:27:47::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx2020/Vitis/2020.1/data/emulation/platforms/zynq/qemu/
+TRACE::2021-03-11.20:27:47::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx2020/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2021-03-11.20:27:47::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:47::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:47::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:47::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:47::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:47::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:47::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-11.20:27:47::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-11.20:27:47::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:47::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:47::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:47::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:47::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:47::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:47::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:47::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-11.20:27:47::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-11.20:27:47::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:47::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:47::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:47::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:47::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:47::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:47::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:47::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-11.20:27:47::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-11.20:27:47::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:47::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:47::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-11.20:27:47::SCWMssOS::No sw design opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:47::SCWMssOS::mss does not exists at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:47::SCWMssOS::Creating sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:47::SCWMssOS::Adding the swdes entry, created swdb C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:47::SCWMssOS::updating the scw layer changes to swdes at   C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:47::SCWMssOS::Writing mss at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:47::SCWMssOS::Completed writing the mss file at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp
+TRACE::2021-03-11.20:27:47::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2021-03-11.20:27:47::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2021-03-11.20:27:47::SCWMssOS::Completed writing the mss file at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp
+TRACE::2021-03-11.20:27:47::SCWMssOS::Forcing BSP Sources regeneration.
+TRACE::2021-03-11.20:27:48::SCWMssOS::Saving the mss changes C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:48::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-03-11.20:27:48::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-03-11.20:27:48::SCWMssOS::Commit changes completed.
+TRACE::2021-03-11.20:27:48::SCWMssOS::Saving the mss changes C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:48::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-03-11.20:27:48::SCWMssOS::Running validate of swdbs.
+KEYINFO::2021-03-11.20:27:48::SCWMssOS::Could not open the swdb for C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+KEYINFO::2021-03-11.20:27:48::SCWMssOS::Could not open the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+ERROR: [Hsi 55-1558] Software Design C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss is not found
+
+TRACE::2021-03-11.20:27:48::SCWMssOS::Cleared the swdb table entry
+TRACE::2021-03-11.20:27:48::SCWMssOS::Adding the swdes entry, mss present, able to open swdb C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2021-03-11.20:27:48::SCWMssOS::Writing the mss file completed C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:48::SCWMssOS::Commit changes completed.
+TRACE::2021-03-11.20:27:48::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:48::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:48::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:48::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:48::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:48::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:48::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-11.20:27:48::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-11.20:27:48::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:48::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:48::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-11.20:27:48::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:48::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:48::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:48::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:48::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:48::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:48::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:48::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-11.20:27:48::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-11.20:27:48::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:48::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:48::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-11.20:27:48::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:48::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:48::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:48::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:48::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:48::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:48::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:48::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-11.20:27:48::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-11.20:27:48::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:48::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:48::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-11.20:27:48::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:48::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:48::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:48::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:48::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:49::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:49::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-11.20:27:49::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-11.20:27:49::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:49::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:49::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-11.20:27:49::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:49::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:49::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:49::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-11.20:27:49::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-11.20:27:49::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:49::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:49::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-11.20:27:49::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:49::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:49::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:49::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-11.20:27:49::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-11.20:27:49::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:49::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:49::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-11.20:27:49::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:49::SCWWriter::formatted JSON is {
+	"platformName":	"001_platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"001_platform",
+	"platHandOff":	"C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_temperature_sensor_vivado/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"001_platform",
+	"systems":	[{
+			"systemName":	"001_platform",
+			"systemDesc":	"001_platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"001_platform",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"f61c59c13f0dd6973ddd70868e244d2a",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.3", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone_domain",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx2020/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx2020/Vitis/2020.1/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"8dc40afb3a87b7d0cd2fdf594d888f1b",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2021-03-11.20:27:49::SCWPlatform::Started generating the artifacts platform 001_platform
+TRACE::2021-03-11.20:27:49::SCWPlatform::Sanity checking of platform is completed
+LOG::2021-03-11.20:27:49::SCWPlatform::Started generating the artifacts for system configuration 001_platform
+LOG::2021-03-11.20:27:49::SCWSystem::Checking the domain zynq_fsbl
+LOG::2021-03-11.20:27:49::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2021-03-11.20:27:49::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2021-03-11.20:27:49::SCWDomain::Skipping the build for domain :  zynq_fsbl
+LOG::2021-03-11.20:27:49::SCWSystem::Checking the domain standalone_domain
+LOG::2021-03-11.20:27:49::SCWSystem::Not a boot domain 
+LOG::2021-03-11.20:27:49::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2021-03-11.20:27:49::SCWDomain::Generating domain artifcats
+TRACE::2021-03-11.20:27:49::SCWMssOS::Generating standalone artifcats
+TRACE::2021-03-11.20:27:49::SCWMssOS::Copying the qemu file from  C:/Xilinx2020/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt To C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/export/001_platform/sw/001_platform/qemu/
+TRACE::2021-03-11.20:27:49::SCWMssOS::Copying the qemu file from  C:/Xilinx2020/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt To C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/export/001_platform/sw/001_platform/standalone_domain/qemu/
+TRACE::2021-03-11.20:27:49::SCWMssOS:: Copying the user libraries. 
+TRACE::2021-03-11.20:27:49::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:49::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:49::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-11.20:27:49::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-11.20:27:49::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:49::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:49::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-11.20:27:49::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:49::SCWMssOS::Completed writing the mss file at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp
+TRACE::2021-03-11.20:27:49::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:49::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2021-03-11.20:27:49::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2021-03-11.20:27:49::SCWDomain::Skipping the build for domain :  standalone_domain
+TRACE::2021-03-11.20:27:49::SCWMssOS::skipping the bsp build ... 
+TRACE::2021-03-11.20:27:49::SCWMssOS::Copying to export directory.
+TRACE::2021-03-11.20:27:49::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2021-03-11.20:27:49::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+TRACE::2021-03-11.20:27:49::SCWMssOS:: Completed Standalone Artifacts creation 
+LOG::2021-03-11.20:27:49::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2021-03-11.20:27:49::SCWSystem::Completed Processing the sysconfig 001_platform
+LOG::2021-03-11.20:27:49::SCWPlatform::Completed generating the artifacts for system configuration 001_platform
+TRACE::2021-03-11.20:27:49::SCWPlatform::Started preparing the platform 
+TRACE::2021-03-11.20:27:49::SCWSystem::Writing the bif file for system config 001_platform
+TRACE::2021-03-11.20:27:49::SCWSystem::dir created 
+TRACE::2021-03-11.20:27:49::SCWSystem::Writing the bif 
+TRACE::2021-03-11.20:27:49::SCWPlatform::Started writing the spfm file 
+TRACE::2021-03-11.20:27:49::SCWPlatform::Started writing the xpfm file 
+TRACE::2021-03-11.20:27:49::SCWPlatform::Completed generating the platform
+TRACE::2021-03-11.20:27:49::SCWMssOS::Saving the mss changes C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:49::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-03-11.20:27:49::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-03-11.20:27:49::SCWMssOS::Commit changes completed.
+TRACE::2021-03-11.20:27:49::SCWMssOS::Saving the mss changes C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:49::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-03-11.20:27:49::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-03-11.20:27:49::SCWMssOS::Commit changes completed.
+TRACE::2021-03-11.20:27:49::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:49::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:49::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-11.20:27:49::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-11.20:27:49::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:49::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:49::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-11.20:27:49::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:49::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:49::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:49::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-11.20:27:49::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-11.20:27:49::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:49::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:49::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-11.20:27:49::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:49::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:49::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:49::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-11.20:27:49::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-11.20:27:49::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:49::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:49::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-11.20:27:49::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:49::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:49::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:49::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-11.20:27:49::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-11.20:27:49::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:49::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:49::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-11.20:27:49::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:49::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:49::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:49::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-11.20:27:49::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-11.20:27:49::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:49::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:49::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-11.20:27:49::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:49::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:49::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:49::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-11.20:27:49::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-11.20:27:49::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:49::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:49::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-11.20:27:49::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:49::SCWWriter::formatted JSON is {
+	"platformName":	"001_platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"001_platform",
+	"platHandOff":	"C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_temperature_sensor_vivado/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"001_platform",
+	"systems":	[{
+			"systemName":	"001_platform",
+			"systemDesc":	"001_platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"001_platform",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"f61c59c13f0dd6973ddd70868e244d2a",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.3", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone_domain",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx2020/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx2020/Vitis/2020.1/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"8dc40afb3a87b7d0cd2fdf594d888f1b",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2021-03-11.20:27:49::SCWPlatform::updated the xpfm file.
+TRACE::2021-03-11.20:27:49::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:49::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:49::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-11.20:27:49::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-11.20:27:49::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:49::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:49::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-11.20:27:49::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:49::SCWMssOS::Saving the mss changes C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:49::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-03-11.20:27:49::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-03-11.20:27:49::SCWMssOS::Commit changes completed.
+TRACE::2021-03-11.20:27:49::SCWMssOS::Saving the mss changes C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:49::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-03-11.20:27:49::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-03-11.20:27:49::SCWMssOS::Commit changes completed.
+TRACE::2021-03-11.20:27:49::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:49::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:49::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-11.20:27:49::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-11.20:27:49::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:49::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:49::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-11.20:27:49::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:49::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:49::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:49::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-11.20:27:49::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-11.20:27:49::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:49::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:49::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-11.20:27:49::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:49::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:49::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:49::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-11.20:27:49::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-11.20:27:49::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:49::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:49::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-11.20:27:49::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:49::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:49::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:50::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:50::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-11.20:27:50::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-11.20:27:50::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:50::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:50::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-11.20:27:50::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:50::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:50::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:50::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-11.20:27:50::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-11.20:27:50::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:50::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:50::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-11.20:27:50::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:50::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:50::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:50::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-11.20:27:50::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-11.20:27:50::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:50::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:50::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-11.20:27:50::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:50::SCWWriter::formatted JSON is {
+	"platformName":	"001_platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"001_platform",
+	"platHandOff":	"C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_temperature_sensor_vivado/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"001_platform",
+	"systems":	[{
+			"systemName":	"001_platform",
+			"systemDesc":	"001_platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"001_platform",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"f61c59c13f0dd6973ddd70868e244d2a",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.3", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone_domain",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx2020/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx2020/Vitis/2020.1/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"8dc40afb3a87b7d0cd2fdf594d888f1b",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2021-03-11.20:27:50::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:50::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:50::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-11.20:27:50::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-11.20:27:50::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:50::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:50::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-11.20:27:50::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:50::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:50::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:50::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-11.20:27:50::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-11.20:27:50::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:50::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:50::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-11.20:27:50::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:50::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:50::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:50::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-11.20:27:50::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-11.20:27:50::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:50::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:50::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-11.20:27:50::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:50::SCWMssOS::Saving the mss changes C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:50::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-03-11.20:27:50::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-03-11.20:27:50::SCWMssOS::Commit changes completed.
+TRACE::2021-03-11.20:27:50::SCWMssOS::Saving the mss changes C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:50::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-03-11.20:27:50::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-03-11.20:27:50::SCWMssOS::Commit changes completed.
+TRACE::2021-03-11.20:27:50::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:50::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:50::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-11.20:27:50::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-11.20:27:50::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:50::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:50::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-11.20:27:50::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:50::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:50::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:50::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-11.20:27:50::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-11.20:27:50::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:50::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:50::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-11.20:27:50::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:50::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:50::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:50::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-11.20:27:50::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-11.20:27:50::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:50::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:50::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-11.20:27:50::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:50::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:50::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:50::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-11.20:27:50::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-11.20:27:50::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:50::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:50::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-11.20:27:50::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:50::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:50::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:50::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-11.20:27:50::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-11.20:27:50::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:50::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:50::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-11.20:27:50::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:50::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:50::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:50::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-11.20:27:50::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-11.20:27:50::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:50::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:50::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-11.20:27:50::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:50::SCWWriter::formatted JSON is {
+	"platformName":	"001_platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"001_platform",
+	"platHandOff":	"C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_temperature_sensor_vivado/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"001_platform",
+	"systems":	[{
+			"systemName":	"001_platform",
+			"systemDesc":	"001_platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"001_platform",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"f61c59c13f0dd6973ddd70868e244d2a",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.3", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx2020/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx2020/Vitis/2020.1/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"8dc40afb3a87b7d0cd2fdf594d888f1b",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2021-03-11.20:27:50::SCWMssOS::Saving the mss changes C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:50::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-03-11.20:27:50::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-03-11.20:27:50::SCWMssOS::Commit changes completed.
+TRACE::2021-03-11.20:27:50::SCWMssOS::Saving the mss changes C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:50::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-03-11.20:27:50::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-03-11.20:27:50::SCWMssOS::Commit changes completed.
+TRACE::2021-03-11.20:27:50::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:50::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:50::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-11.20:27:50::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-11.20:27:50::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:50::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:50::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-11.20:27:50::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:50::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:50::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:50::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:50::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-11.20:27:51::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-11.20:27:51::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:51::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:51::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-11.20:27:51::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:51::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:51::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:51::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:51::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:51::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:51::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:51::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-11.20:27:51::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-11.20:27:51::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:51::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:51::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-11.20:27:51::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:51::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:51::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:51::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:51::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:51::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:51::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:51::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-11.20:27:51::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-11.20:27:51::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:51::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:51::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-11.20:27:51::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:51::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:51::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:51::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:51::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:51::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:51::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:51::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-11.20:27:51::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-11.20:27:51::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:51::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:51::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-11.20:27:51::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:51::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:51::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:51::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:51::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:51::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:51::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:51::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-11.20:27:51::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-11.20:27:51::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:51::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:51::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-11.20:27:51::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:51::SCWWriter::formatted JSON is {
+	"platformName":	"001_platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"001_platform",
+	"platHandOff":	"C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_temperature_sensor_vivado/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"001_platform",
+	"systems":	[{
+			"systemName":	"001_platform",
+			"systemDesc":	"001_platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"001_platform",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"f61c59c13f0dd6973ddd70868e244d2a",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.3", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx2020/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx2020/Vitis/2020.1/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"8dc40afb3a87b7d0cd2fdf594d888f1b",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2021-03-11.20:27:51::SCWPlatform::Clearing the existing platform
+TRACE::2021-03-11.20:27:51::SCWSystem::Clearing the existing sysconfig
+TRACE::2021-03-11.20:27:51::SCWBDomain::clearing the fsbl build
+TRACE::2021-03-11.20:27:51::SCWMssOS::Removing the swdes entry for  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:51::SCWMssOS::Removing the swdes entry for  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:51::SCWSystem::Clearing the domains completed.
+TRACE::2021-03-11.20:27:51::SCWPlatform::Clearing the opened hw db.
+TRACE::2021-03-11.20:27:51::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:51::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:51::SCWPlatform:: Platform location is C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:51::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:51::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:51::SCWPlatform::Removing the HwDB with name C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:51::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:51::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:51::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:51::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:51::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:51::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:51::SCWPlatform::Do not have an existing db opened. 
+TRACE::2021-03-11.20:27:53::SCWPlatform::Opened new HwDB with name design_1_wrapper_1
+TRACE::2021-03-11.20:27:53::SCWReader::Active system found as  001_platform
+TRACE::2021-03-11.20:27:53::SCWReader::Handling sysconfig 001_platform
+TRACE::2021-03-11.20:27:53::SCWDomain::checking for install qemu data   : 
+TRACE::2021-03-11.20:27:53::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx2020/Vitis/2020.1/data/emulation/platforms/zynq/qemu/
+TRACE::2021-03-11.20:27:53::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx2020/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2021-03-11.20:27:53::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:53::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:53::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:53::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:53::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:53::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:53::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2021-03-11.20:27:53::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2021-03-11.20:27:53::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:53::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:53::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:53::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:53::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:53::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:53::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:53::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2021-03-11.20:27:53::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2021-03-11.20:27:53::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:53::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:53::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:53::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:53::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:53::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:53::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:53::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2021-03-11.20:27:53::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2021-03-11.20:27:53::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:53::SCWReader::Boot application domain added for zynq_fsbl
+TRACE::2021-03-11.20:27:53::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:53::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:53::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:53::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:53::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:53::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:53::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2021-03-11.20:27:53::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2021-03-11.20:27:53::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:53::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:53::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2021-03-11.20:27:53::SCWMssOS::No sw design opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:53::SCWMssOS::mss exists loading the mss file  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:53::SCWMssOS::Opened the sw design from mss  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:53::SCWMssOS::Adding the swdes entry C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2021-03-11.20:27:53::SCWMssOS::updating the scw layer about changes
+TRACE::2021-03-11.20:27:53::SCWMssOS::Opened the sw design.  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:53::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:53::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:53::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:53::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:53::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:53::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:53::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2021-03-11.20:27:53::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2021-03-11.20:27:53::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:53::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:53::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-11.20:27:53::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:53::SCWMssOS:: library already available in sw design:  xilffs:4.3
+TRACE::2021-03-11.20:27:53::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:53::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:53::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:53::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:53::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:53::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:53::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2021-03-11.20:27:53::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2021-03-11.20:27:53::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:53::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:53::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-11.20:27:53::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:53::SCWMssOS:: library already available in sw design:  xilrsa:1.6
+TRACE::2021-03-11.20:27:53::SCWMssOS::Saving the mss changes C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:53::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-03-11.20:27:53::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-03-11.20:27:53::SCWMssOS::Commit changes completed.
+TRACE::2021-03-11.20:27:53::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2021-03-11.20:27:53::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2021-03-11.20:27:53::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:53::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:53::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:53::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:54::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:54::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:54::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2021-03-11.20:27:54::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2021-03-11.20:27:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:54::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:54::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-11.20:27:54::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-11.20:27:54::SCWReader::No isolation master present  
+TRACE::2021-03-11.20:27:54::SCWDomain::checking for install qemu data   : 
+TRACE::2021-03-11.20:27:54::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx2020/Vitis/2020.1/data/emulation/platforms/zynq/qemu/
+TRACE::2021-03-11.20:27:54::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx2020/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2021-03-11.20:27:54::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:54::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:54::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:54::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:54::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:54::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:54::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2021-03-11.20:27:54::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2021-03-11.20:27:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:54::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:54::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:54::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:54::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:54::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:54::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:54::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2021-03-11.20:27:54::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2021-03-11.20:27:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:54::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:54::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:54::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:54::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:54::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:54::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:54::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2021-03-11.20:27:54::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2021-03-11.20:27:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:54::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:54::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-11.20:27:54::SCWMssOS::No sw design opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:54::SCWMssOS::mss exists loading the mss file  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:54::SCWMssOS::Opened the sw design from mss  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:54::SCWMssOS::Adding the swdes entry C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2021-03-11.20:27:54::SCWMssOS::updating the scw layer about changes
+TRACE::2021-03-11.20:27:54::SCWMssOS::Opened the sw design.  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:54::SCWMssOS::Saving the mss changes C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:54::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-03-11.20:27:54::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-03-11.20:27:54::SCWMssOS::Commit changes completed.
+TRACE::2021-03-11.20:27:54::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2021-03-11.20:27:54::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2021-03-11.20:27:54::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:54::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:54::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:54::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw
+TRACE::2021-03-11.20:27:54::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-11.20:27:54::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-11.20:27:54::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2021-03-11.20:27:54::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2021-03-11.20:27:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-11.20:27:54::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:54::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-11.20:27:54::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-11.20:27:54::SCWReader::No isolation master present  
