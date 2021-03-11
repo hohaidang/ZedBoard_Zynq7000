@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xD4A1C00F8A3E8250",
+      "boundary_crc": "0x5EB1952F57586D1C",
       "device": "xc7z020clg484-1",
       "name": "design_1",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
@@ -76,10 +76,30 @@
             "value_src": "default"
           }
         }
+      },
+      "gpio": {
+        "mode": "Master",
+        "vlnv": "xilinx.com:interface:gpio_rtl:1.0"
       }
     },
     "ports": {
-      "SPI0_SCLK_O": {
+      "spi0_mosi": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "spi0_miso": {
+        "direction": "I"
+      },
+      "spi0_ss": {
+        "direction": "O"
+      },
+      "spi0_sclk": {
         "type": "clk",
         "direction": "O",
         "parameters": {
@@ -104,27 +124,6 @@
             "value_src": "default"
           }
         }
-      },
-      "SPI0_MOSI_O": {
-        "type": "data",
-        "direction": "O",
-        "parameters": {
-          "LAYERED_METADATA": {
-            "value": "undef",
-            "value_src": "default"
-          }
-        }
-      },
-      "SPI0_MISO_I": {
-        "direction": "I"
-      },
-      "SPI0_SS_O": {
-        "direction": "O"
-      },
-      "led": {
-        "direction": "O",
-        "left": "7",
-        "right": "0"
       }
     },
     "components": {
@@ -271,10 +270,10 @@
             "value": "1"
           },
           "PCW_GPIO_EMIO_GPIO_IO": {
-            "value": "8"
+            "value": "2"
           },
           "PCW_GPIO_EMIO_GPIO_WIDTH": {
-            "value": "8"
+            "value": "2"
           },
           "PCW_GPIO_MIO_GPIO_ENABLE": {
             "value": "0"
@@ -435,37 +434,37 @@
           "DDR",
           "processing_system7_0/DDR"
         ]
+      },
+      "processing_system7_0_GPIO_0": {
+        "interface_ports": [
+          "gpio",
+          "processing_system7_0/GPIO_0"
+        ]
       }
     },
     "nets": {
-      "processing_system7_0_SPI0_SCLK_O": {
-        "ports": [
-          "processing_system7_0/SPI0_SCLK_O",
-          "SPI0_SCLK_O"
-        ]
-      },
       "processing_system7_0_SPI0_MOSI_O": {
         "ports": [
           "processing_system7_0/SPI0_MOSI_O",
-          "SPI0_MOSI_O"
+          "spi0_mosi"
         ]
       },
       "SPI0_MISO_I_1": {
         "ports": [
-          "SPI0_MISO_I",
+          "spi0_miso",
           "processing_system7_0/SPI0_MISO_I"
         ]
       },
       "processing_system7_0_SPI0_SS_O": {
         "ports": [
           "processing_system7_0/SPI0_SS_O",
-          "SPI0_SS_O"
+          "spi0_ss"
         ]
       },
-      "processing_system7_0_GPIO_O": {
+      "processing_system7_0_SPI0_SCLK_O": {
         "ports": [
-          "processing_system7_0/GPIO_O",
-          "led"
+          "processing_system7_0/SPI0_SCLK_O",
+          "spi0_sclk"
         ]
       }
     }

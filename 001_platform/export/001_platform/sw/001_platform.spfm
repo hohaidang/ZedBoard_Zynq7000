@@ -27,7 +27,7 @@
                             />
             </sdx:bootImages>
             <sdx:processorGroup sdx:name="standalone_domain"
-                                sdx:displayName="standalone_domain"
+                                sdx:displayName="standalone on ps7_cortexa9_0"
                                 sdx:cpuType="cortex-a9"
                                 sdx:cpuInstance="ps7_cortexa9_0">
                 <sdx:os sdx:name="standalone"

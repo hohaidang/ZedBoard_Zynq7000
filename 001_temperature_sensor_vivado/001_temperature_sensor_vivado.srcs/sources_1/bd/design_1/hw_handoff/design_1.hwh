@@ -1,25 +1,20 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Mar 11 20:10:34 2021" VIVADOVERSION="2020.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Mar 11 21:37:13 2021" VIVADOVERSION="2020.1">
 
   <SYSTEMINFO ARCH="zynq" BOARD="em.avnet.com:zed:part0:1.4" DEVICE="7z020" NAME="design_1" PACKAGE="clg484" SPEEDGRADE="-1"/>
 
   <EXTERNALPORTS>
-    <PORT CLKFREQUENCY="100000000" DIR="O" NAME="SPI0_SCLK_O" SIGIS="clk" SIGNAME="processing_system7_0_SPI0_SCLK_O">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="processing_system7_0" PORT="SPI0_SCLK_O"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="SPI0_MOSI_O" SIGIS="data" SIGNAME="processing_system7_0_SPI0_MOSI_O">
+    <PORT DIR="O" NAME="spi0_mosi" SIGIS="data" SIGNAME="processing_system7_0_SPI0_MOSI_O">
       <CONNECTIONS>
         <CONNECTION INSTANCE="processing_system7_0" PORT="SPI0_MOSI_O"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" NAME="SPI0_MISO_I" SIGIS="undef" SIGNAME="External_Ports_SPI0_MISO_I">
+    <PORT DIR="I" NAME="spi0_miso" SIGIS="undef" SIGNAME="External_Ports_spi0_miso">
       <CONNECTIONS>
         <CONNECTION INSTANCE="processing_system7_0" PORT="SPI0_MISO_I"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="SPI0_SS_O" SIGIS="undef" SIGNAME="processing_system7_0_SPI0_SS_O">
+    <PORT DIR="O" NAME="spi0_ss" SIGIS="undef" SIGNAME="processing_system7_0_SPI0_SS_O">
       <CONNECTIONS>
         <CONNECTION INSTANCE="processing_system7_0" PORT="SPI0_SS_O"/>
       </CONNECTIONS>
@@ -129,9 +124,24 @@
         <CONNECTION INSTANCE="processing_system7_0" PORT="PS_PORB"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" LEFT="7" NAME="led" RIGHT="0" SIGIS="undef" SIGNAME="processing_system7_0_GPIO_O">
+    <PORT DIR="I" LEFT="1" NAME="gpio_tri_i" RIGHT="0" SIGIS="undef" SIGNAME="processing_system7_0_GPIO_I">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="processing_system7_0" PORT="GPIO_I"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="gpio_tri_o" RIGHT="0" SIGIS="undef" SIGNAME="processing_system7_0_GPIO_O">
       <CONNECTIONS>
         <CONNECTION INSTANCE="processing_system7_0" PORT="GPIO_O"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="gpio_tri_t" RIGHT="0" SIGIS="undef" SIGNAME="processing_system7_0_GPIO_T">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="processing_system7_0" PORT="GPIO_T"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="O" NAME="spi0_sclk" SIGIS="clk" SIGNAME="processing_system7_0_SPI0_SCLK_O">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="processing_system7_0" PORT="SPI0_SCLK_O"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
@@ -181,6 +191,13 @@
         <PORTMAP LOGICAL="PS_PORB" PHYSICAL="FIXED_IO_ps_porb"/>
       </PORTMAPS>
     </BUSINTERFACE>
+    <BUSINTERFACE BUSNAME="processing_system7_0_GPIO_0" NAME="gpio" TYPE="INITIATOR">
+      <PORTMAPS>
+        <PORTMAP LOGICAL="TRI_I" PHYSICAL="gpio_tri_i"/>
+        <PORTMAP LOGICAL="TRI_O" PHYSICAL="gpio_tri_o"/>
+        <PORTMAP LOGICAL="TRI_T" PHYSICAL="gpio_tri_t"/>
+      </PORTMAPS>
+    </BUSINTERFACE>
   </EXTERNALINTERFACES>
 
   <MODULES>
@@ -198,7 +215,7 @@
         <PARAMETER NAME="USE_TRACE_DATA_EDGE_DETECTOR" VALUE="0"/>
         <PARAMETER NAME="C_TRACE_PIPELINE_WIDTH" VALUE="8"/>
         <PARAMETER NAME="C_TRACE_BUFFER_CLOCK_DELAY" VALUE="12"/>
-        <PARAMETER NAME="C_EMIO_GPIO_WIDTH" VALUE="8"/>
+        <PARAMETER NAME="C_EMIO_GPIO_WIDTH" VALUE="2"/>
         <PARAMETER NAME="C_INCLUDE_ACP_TRANS_CHECK" VALUE="0"/>
         <PARAMETER NAME="C_USE_DEFAULT_ACP_USER_VAL" VALUE="0"/>
         <PARAMETER NAME="C_S_AXI_ACP_ARUSER_VAL" VALUE="31"/>
@@ -532,7 +549,7 @@
         <PARAMETER NAME="PCW_USE_EXPANDED_PS_SLCR_REGISTERS" VALUE="0"/>
         <PARAMETER NAME="PCW_USE_CORESIGHT" VALUE="0"/>
         <PARAMETER NAME="PCW_EN_EMIO_SRAM_INT" VALUE="0"/>
-        <PARAMETER NAME="PCW_GPIO_EMIO_GPIO_WIDTH" VALUE="8"/>
+        <PARAMETER NAME="PCW_GPIO_EMIO_GPIO_WIDTH" VALUE="2"/>
         <PARAMETER NAME="PCW_GP0_NUM_WRITE_THREADS" VALUE="4"/>
         <PARAMETER NAME="PCW_GP0_NUM_READ_THREADS" VALUE="4"/>
         <PARAMETER NAME="PCW_GP1_NUM_WRITE_THREADS" VALUE="4"/>
@@ -820,7 +837,7 @@
         <PARAMETER NAME="PCW_GPIO_MIO_GPIO_ENABLE" VALUE="0"/>
         <PARAMETER NAME="PCW_GPIO_MIO_GPIO_IO" VALUE="&lt;Select>"/>
         <PARAMETER NAME="PCW_GPIO_EMIO_GPIO_ENABLE" VALUE="1"/>
-        <PARAMETER NAME="PCW_GPIO_EMIO_GPIO_IO" VALUE="8"/>
+        <PARAMETER NAME="PCW_GPIO_EMIO_GPIO_IO" VALUE="2"/>
         <PARAMETER NAME="PCW_APU_CLK_RATIO_ENABLE" VALUE="6:2:1"/>
         <PARAMETER NAME="PCW_ENET0_PERIPHERAL_FREQMHZ" VALUE="1000 Mbps"/>
         <PARAMETER NAME="PCW_ENET1_PERIPHERAL_FREQMHZ" VALUE="1000 Mbps"/>
@@ -1126,30 +1143,38 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="7" NAME="GPIO_I" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="7" NAME="GPIO_O" RIGHT="0" SIGIS="undef" SIGNAME="processing_system7_0_GPIO_O">
+        <PORT DIR="I" LEFT="1" NAME="GPIO_I" RIGHT="0" SIGIS="undef" SIGNAME="processing_system7_0_GPIO_I">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="led"/>
+            <CONNECTION INSTANCE="design_1_imp" PORT="gpio_tri_i"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="7" NAME="GPIO_T" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="1" NAME="GPIO_O" RIGHT="0" SIGIS="undef" SIGNAME="processing_system7_0_GPIO_O">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="gpio_tri_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="GPIO_T" RIGHT="0" SIGIS="undef" SIGNAME="processing_system7_0_GPIO_T">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="gpio_tri_t"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="I" NAME="SPI0_SCLK_I" SIGIS="undef"/>
         <PORT DIR="O" NAME="SPI0_SCLK_O" SIGIS="undef" SIGNAME="processing_system7_0_SPI0_SCLK_O">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="SPI0_SCLK_O"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="spi0_sclk"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="SPI0_SCLK_T" SIGIS="undef"/>
         <PORT DIR="I" NAME="SPI0_MOSI_I" SIGIS="undef"/>
         <PORT DIR="O" NAME="SPI0_MOSI_O" SIGIS="undef" SIGNAME="processing_system7_0_SPI0_MOSI_O">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="SPI0_MOSI_O"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="spi0_mosi"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="SPI0_MOSI_T" SIGIS="undef"/>
-        <PORT DIR="I" NAME="SPI0_MISO_I" SIGIS="undef" SIGNAME="External_Ports_SPI0_MISO_I">
+        <PORT DIR="I" NAME="SPI0_MISO_I" SIGIS="undef" SIGNAME="External_Ports_spi0_miso">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="SPI0_MISO_I"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="spi0_miso"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="SPI0_MISO_O" SIGIS="undef"/>
@@ -1157,7 +1182,7 @@
         <PORT DIR="I" NAME="SPI0_SS_I" SIGIS="undef"/>
         <PORT DIR="O" NAME="SPI0_SS_O" SIGIS="undef" SIGNAME="processing_system7_0_SPI0_SS_O">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="SPI0_SS_O"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="spi0_ss"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="SPI0_SS1_O" SIGIS="undef"/>
@@ -1272,7 +1297,7 @@
         </PORT>
       </PORTS>
       <BUSINTERFACES>
-        <BUSINTERFACE BUSNAME="__NOC__" NAME="GPIO_0" TYPE="INITIATOR" VLNV="xilinx.com:interface:gpio:1.0">
+        <BUSINTERFACE BUSNAME="processing_system7_0_GPIO_0" NAME="GPIO_0" TYPE="INITIATOR" VLNV="xilinx.com:interface:gpio:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="TRI_I" PHYSICAL="GPIO_I"/>
             <PORTMAP LOGICAL="TRI_O" PHYSICAL="GPIO_O"/>

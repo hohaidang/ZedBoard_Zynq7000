@@ -2,70 +2,43 @@
    USB cam vao board va control LED thong qua bo Axi GPIO duoc tao ra trong
    vivado
   */
-#include "xil_printf.h"
-#include "xparameters.h"
-#include "xuartps.h"
 #include "xgpiops.h"
+#include "xil_printf.h"
+#include "xstatus.h"
 #include <array>
 
-#define UART_DEVICE_ID XPAR_XUARTPS_0_DEVICE_ID
-#define GPIO_EXAMPLE_DEVICE_ID XPAR_GPIO_0_DEVICE_ID
-#define LED_CHANNEL 1
-#define LED_DELAY 10000000
+#define PIN_OFFSET 54 // [0:53] is MIO pins, so EMIO from 54
 
-XUartPs Uart_PS;
-XGpios Gpio;
+XGpioPs gpio;
+XGpioPs_Config *gpio_config;
+int status;
 
-void uart_control() {
-
-  XUartPs_Config *Config;
-  std::array<u8, 50> sendBuffer = {};
-  char data[] = "DANG This is my UART Sending\n";
-
-  memcpy(sendBuffer.begin(), data, strlen(data));
-  int Status;
-
-  Config = XUartPs_LookupConfig(UART_DEVICE_ID);
-  if (NULL == Config) {
-    xil_printf("Config Failed");
+void small_delay() {
+  for (u32 i = 0; i < 25000000; ++i) {
   }
-  Status = XUartPs_CfgInitialize(&Uart_PS, Config, Config->BaseAddress);
-  if (Status != XST_SUCCESS) {
-    xil_printf("Initialization Failed");
-  }
-
-  Status = XUartPs_SelfTest(&Uart_PS);
-  if (Status != XST_SUCCESS) {
-    xil_printf("Self Test Failed");
-  }
-  XUartPs_SetOperMode(&Uart_PS, XUARTPS_OPER_MODE_NORMAL);
-
-  XUartPs_Send(&Uart_PS, sendBuffer.begin(), sendBuffer.size());
-  while (XUartPs_IsSending(&Uart_PS))
-    ;
 }
 
 void gpio_control() {
-  int status;
-  volatile int delay;
-
-  status = XGpio_Initialize(&Gpio, GPIO_EXAMPLE_DEVICE_ID);
+  gpio_config = XGpioPs_LookupConfig(XPAR_XGPIOPS_0_DEVICE_ID);
+  status = XGpioPs_CfgInitialize(&gpio, gpio_config, gpio_config->BaseAddr);
   if (status != XST_SUCCESS) {
-    xil_printf("Gpio initialization failed\n");
+    xil_printf("GPIO Initialize failed");
     return;
   }
-  XGpio_SetDataDirection(&Gpio, LED_CHANNEL, 0);
-  while (1) {
-    XGpio_DiscreteWrite(&Gpio, LED_CHANNEL, 0xff);
-    for (delay = 0; delay < LED_DELAY; ++delay)
-      ;
-    XGpio_DiscreteClear(&Gpio, LED_CHANNEL, 0xff);
-    for (delay = 0; delay < LED_DELAY; ++delay)
-      ;
-  }
+  XGpioPs_SetDirectionPin(&gpio, PIN_OFFSET, 1); // LED
+  XGpioPs_SetOutputEnablePin(&gpio, PIN_OFFSET, 1);
+  XGpioPs_SetDirectionPin(&gpio, PIN_OFFSET + 1, 0); // BUTTON
+  XGpioPs_SetOutputEnablePin(&gpio, PIN_OFFSET + 1, 1);
 }
 
 int main(void) {
-  uart_control();
+  gpio_control();
+  while (1) {
+    if (XGpioPs_ReadPin(&gpio, PIN_OFFSET + 1)) {
+      XGpioPs_WritePin(&gpio, PIN_OFFSET,
+                       1 ^ XGpioPs_ReadPin(&gpio, PIN_OFFSET));
+      small_delay();
+    }
+  }
   return 0;
 }

@@ -160,13 +160,14 @@ proc create_root_design { parentCell } {
 
   set FIXED_IO [ create_bd_intf_port -mode Master -vlnv xilinx.com:display_processing_system7:fixedio_rtl:1.0 FIXED_IO ]
 
+  set gpio [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 gpio ]
+
 
   # Create ports
-  set SPI0_MISO_I [ create_bd_port -dir I SPI0_MISO_I ]
-  set SPI0_MOSI_O [ create_bd_port -dir O -type data SPI0_MOSI_O ]
-  set SPI0_SCLK_O [ create_bd_port -dir O -type clk SPI0_SCLK_O ]
-  set SPI0_SS_O [ create_bd_port -dir O SPI0_SS_O ]
-  set led [ create_bd_port -dir O -from 7 -to 0 led ]
+  set spi0_miso [ create_bd_port -dir I spi0_miso ]
+  set spi0_mosi [ create_bd_port -dir O -type data spi0_mosi ]
+  set spi0_sclk [ create_bd_port -dir O -type clk spi0_sclk ]
+  set spi0_ss [ create_bd_port -dir O spi0_ss ]
 
   # Create instance: processing_system7_0, and set properties
   set processing_system7_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0 ]
@@ -251,8 +252,8 @@ proc create_root_design { parentCell } {
    CONFIG.PCW_FPGA_FCLK2_ENABLE {0} \
    CONFIG.PCW_FPGA_FCLK3_ENABLE {0} \
    CONFIG.PCW_GPIO_EMIO_GPIO_ENABLE {1} \
-   CONFIG.PCW_GPIO_EMIO_GPIO_IO {8} \
-   CONFIG.PCW_GPIO_EMIO_GPIO_WIDTH {8} \
+   CONFIG.PCW_GPIO_EMIO_GPIO_IO {2} \
+   CONFIG.PCW_GPIO_EMIO_GPIO_WIDTH {2} \
    CONFIG.PCW_GPIO_MIO_GPIO_ENABLE {0} \
    CONFIG.PCW_GPIO_MIO_GPIO_IO {<Select>} \
    CONFIG.PCW_I2C0_GRP_INT_ENABLE {0} \
@@ -583,13 +584,13 @@ proc create_root_design { parentCell } {
   # Create interface connections
   connect_bd_intf_net -intf_net processing_system7_0_DDR [get_bd_intf_ports DDR] [get_bd_intf_pins processing_system7_0/DDR]
   connect_bd_intf_net -intf_net processing_system7_0_FIXED_IO [get_bd_intf_ports FIXED_IO] [get_bd_intf_pins processing_system7_0/FIXED_IO]
+  connect_bd_intf_net -intf_net processing_system7_0_GPIO_0 [get_bd_intf_ports gpio] [get_bd_intf_pins processing_system7_0/GPIO_0]
 
   # Create port connections
-  connect_bd_net -net SPI0_MISO_I_1 [get_bd_ports SPI0_MISO_I] [get_bd_pins processing_system7_0/SPI0_MISO_I]
-  connect_bd_net -net processing_system7_0_GPIO_O [get_bd_ports led] [get_bd_pins processing_system7_0/GPIO_O]
-  connect_bd_net -net processing_system7_0_SPI0_MOSI_O [get_bd_ports SPI0_MOSI_O] [get_bd_pins processing_system7_0/SPI0_MOSI_O]
-  connect_bd_net -net processing_system7_0_SPI0_SCLK_O [get_bd_ports SPI0_SCLK_O] [get_bd_pins processing_system7_0/SPI0_SCLK_O]
-  connect_bd_net -net processing_system7_0_SPI0_SS_O [get_bd_ports SPI0_SS_O] [get_bd_pins processing_system7_0/SPI0_SS_O]
+  connect_bd_net -net SPI0_MISO_I_1 [get_bd_ports spi0_miso] [get_bd_pins processing_system7_0/SPI0_MISO_I]
+  connect_bd_net -net processing_system7_0_SPI0_MOSI_O [get_bd_ports spi0_mosi] [get_bd_pins processing_system7_0/SPI0_MOSI_O]
+  connect_bd_net -net processing_system7_0_SPI0_SCLK_O [get_bd_ports spi0_sclk] [get_bd_pins processing_system7_0/SPI0_SCLK_O]
+  connect_bd_net -net processing_system7_0_SPI0_SS_O [get_bd_ports spi0_ss] [get_bd_pins processing_system7_0/SPI0_SS_O]
 
   # Create address segments
 

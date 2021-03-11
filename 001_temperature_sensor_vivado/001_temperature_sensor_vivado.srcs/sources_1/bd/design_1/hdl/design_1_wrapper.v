@@ -1,7 +1,7 @@
 //Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-//Date        : Thu Mar 11 20:10:15 2021
+//Date        : Thu Mar 11 21:37:13 2021
 //Host        : DESKTOP-O8T2GMT running 64-bit major release  (build 9200)
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
@@ -31,11 +31,11 @@ module design_1_wrapper
     FIXED_IO_ps_clk,
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
-    SPI0_MISO_I,
-    SPI0_MOSI_O,
-    SPI0_SCLK_O,
-    SPI0_SS_O,
-    led);
+    gpio_tri_io,
+    spi0_miso,
+    spi0_mosi,
+    spi0_sclk,
+    spi0_ss);
   inout [14:0]DDR_addr;
   inout [2:0]DDR_ba;
   inout DDR_cas_n;
@@ -57,11 +57,11 @@ module design_1_wrapper
   inout FIXED_IO_ps_clk;
   inout FIXED_IO_ps_porb;
   inout FIXED_IO_ps_srstb;
-  input SPI0_MISO_I;
-  output SPI0_MOSI_O;
-  output SPI0_SCLK_O;
-  output SPI0_SS_O;
-  output [7:0]led;
+  inout [1:0]gpio_tri_io;
+  input spi0_miso;
+  output spi0_mosi;
+  output spi0_sclk;
+  output spi0_ss;
 
   wire [14:0]DDR_addr;
   wire [2:0]DDR_ba;
@@ -84,11 +84,18 @@ module design_1_wrapper
   wire FIXED_IO_ps_clk;
   wire FIXED_IO_ps_porb;
   wire FIXED_IO_ps_srstb;
-  wire SPI0_MISO_I;
-  wire SPI0_MOSI_O;
-  wire SPI0_SCLK_O;
-  wire SPI0_SS_O;
-  wire [7:0]led;
+  wire [0:0]gpio_tri_i_0;
+  wire [1:1]gpio_tri_i_1;
+  wire [0:0]gpio_tri_io_0;
+  wire [1:1]gpio_tri_io_1;
+  wire [0:0]gpio_tri_o_0;
+  wire [1:1]gpio_tri_o_1;
+  wire [0:0]gpio_tri_t_0;
+  wire [1:1]gpio_tri_t_1;
+  wire spi0_miso;
+  wire spi0_mosi;
+  wire spi0_sclk;
+  wire spi0_ss;
 
   design_1 design_1_i
        (.DDR_addr(DDR_addr),
@@ -112,9 +119,21 @@ module design_1_wrapper
         .FIXED_IO_ps_clk(FIXED_IO_ps_clk),
         .FIXED_IO_ps_porb(FIXED_IO_ps_porb),
         .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb),
-        .SPI0_MISO_I(SPI0_MISO_I),
-        .SPI0_MOSI_O(SPI0_MOSI_O),
-        .SPI0_SCLK_O(SPI0_SCLK_O),
-        .SPI0_SS_O(SPI0_SS_O),
-        .led(led));
+        .gpio_tri_i({gpio_tri_i_1,gpio_tri_i_0}),
+        .gpio_tri_o({gpio_tri_o_1,gpio_tri_o_0}),
+        .gpio_tri_t({gpio_tri_t_1,gpio_tri_t_0}),
+        .spi0_miso(spi0_miso),
+        .spi0_mosi(spi0_mosi),
+        .spi0_sclk(spi0_sclk),
+        .spi0_ss(spi0_ss));
+  IOBUF gpio_tri_iobuf_0
+       (.I(gpio_tri_o_0),
+        .IO(gpio_tri_io[0]),
+        .O(gpio_tri_i_0),
+        .T(gpio_tri_t_0));
+  IOBUF gpio_tri_iobuf_1
+       (.I(gpio_tri_o_1),
+        .IO(gpio_tri_io[1]),
+        .O(gpio_tri_i_1),
+        .T(gpio_tri_t_1));
 endmodule

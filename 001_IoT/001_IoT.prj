@@ -2,6 +2,7 @@
 <sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="001_IoT" location="C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_IoT" platform="C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/export/001_platform/001_platform.xpfm" platformUID="xilinx:zed::0.0(custom)" systemProject="001_IoT_system" sysConfig="001_platform" runtime="C/C++" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" language="CPP" mssSignature="c037fade64695860f75efd6d8e335b5c">
   <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.1149261115" dirty="true">
     <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
   </configuration>
   <configuration name="Release" id="xilinx.gnu.armv7.exe.release.1757471795" dirty="true">
     <configBuildOptions xsi:type="sdkproject:SdkOptions"/>

@@ -97,9 +97,9 @@ PS_SRSTB,
 PS_CLK, 
 PS_PORB 
 );
-input [7 : 0] GPIO_I;
-output [7 : 0] GPIO_O;
-output [7 : 0] GPIO_T;
+input [1 : 0] GPIO_I;
+output [1 : 0] GPIO_O;
+output [1 : 0] GPIO_T;
 input SPI0_SCLK_I;
 output SPI0_SCLK_O;
 output SPI0_SCLK_T;

@@ -5,30 +5,20 @@ set_property src_info {type:SCOPED_XDC file:1 line:2 export:INPUT save:INPUT rea
 create_clock -period 10.000 [get_ports {}]
 current_instance
 set_property src_info {type:XDC file:2 line:4 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN Y11 [get_ports SPI0_SCLK_O]
+set_property PACKAGE_PIN Y11 [get_ports spi0_sclk];
 set_property src_info {type:XDC file:2 line:5 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN AA11 [get_ports SPI0_MISO_I]
+set_property PACKAGE_PIN AA11 [get_ports spi0_miso];
 set_property src_info {type:XDC file:2 line:6 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN Y19 [get_ports SPI0_MOSI_O]
+set_property PACKAGE_PIN Y19 [get_ports spi0_mosi];
 set_property src_info {type:XDC file:2 line:7 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN AA9 [get_ports SPI0_SS_O]
+set_property PACKAGE_PIN AA9 [get_ports spi0_ss];
 set_property src_info {type:XDC file:2 line:12 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN T22 [get_ports {led[0]}];  # "LD0"
-set_property src_info {type:XDC file:2 line:13 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN T21 [get_ports {led[1]}];  # "LD1"
-set_property src_info {type:XDC file:2 line:14 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN U22 [get_ports {led[2]}];  # "LD2"
-set_property src_info {type:XDC file:2 line:15 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN U21 [get_ports {led[3]}];  # "LD3"
-set_property src_info {type:XDC file:2 line:16 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN V22 [get_ports {led[4]}];  # "LD4"
+set_property PACKAGE_PIN T22 [get_ports {gpio_tri_io[0]}];  # "LD0"
 set_property src_info {type:XDC file:2 line:17 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN W22 [get_ports {led[5]}];  # "LD5"
-set_property src_info {type:XDC file:2 line:18 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN U19 [get_ports {led[6]}];  # "LD6"
-set_property src_info {type:XDC file:2 line:19 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN U14 [get_ports {led[7]}];  # "LD7"
+set_property PACKAGE_PIN P16 [get_ports {gpio_tri_io[1]}];  # "BTNC"
+set_property src_info {type:XDC file:2 line:20 export:INPUT save:INPUT read:READ} [current_design]
+set_property IOSTANDARD LVCMOS33 [get_ports -of_objects [get_iobanks 13]];
+set_property src_info {type:XDC file:2 line:21 export:INPUT save:INPUT read:READ} [current_design]
+set_property IOSTANDARD LVCMOS33 [get_ports -of_objects [get_iobanks 33]];
 set_property src_info {type:XDC file:2 line:22 export:INPUT save:INPUT read:READ} [current_design]
-set_property IOSTANDARD LVCMOS33 [get_ports -of_objects [get_iobanks 33]]
-set_property src_info {type:XDC file:2 line:23 export:INPUT save:INPUT read:READ} [current_design]
-set_property IOSTANDARD LVCMOS33 [get_ports -of_objects [get_iobanks 13]]
+set_property IOSTANDARD LVCMOS18 [get_ports -of_objects [get_iobanks 34]];
