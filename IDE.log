@@ -864,3 +864,145 @@ con
 ----------------End of Script----------------
 
 21:52:10 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\.sdk\launch_scripts\single_application_debug\systemdebugger_001_iot_system_standalone.tcl'
+21:55:49 INFO  : Disconnected from the channel tcfchan#37.
+15:48:37 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\temp_xsdb_launch_script.tcl
+15:48:40 INFO  : XSCT server has started successfully.
+15:48:40 INFO  : Successfully done setting XSCT server connection channel  
+15:48:40 INFO  : plnx-install-location is set to ''
+15:48:40 INFO  : Successfully done setting workspace for the tool. 
+15:48:44 INFO  : Platform repository initialization has completed.
+15:48:44 INFO  : Registering command handlers for Vitis TCF services
+15:48:47 INFO  : Successfully done query RDI_DATADIR 
+15:52:49 INFO  : Successfully done sdx_reload_mss "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss"
+15:52:50 INFO  : Successfully done sdx_reload_mss "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+15:53:31 INFO  : Example project xspips_selftest_example_1 has been created successfully.
+15:53:38 INFO  : Example project xspips_slave_polled_example_1 has been created successfully.
+15:56:27 INFO  : Result from executing command 'getProjects': 001_platform
+15:56:27 INFO  : Result from executing command 'getPlatforms': 001_platform|C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/export/001_platform/001_platform.xpfm
+15:56:27 INFO  : Checking for BSP changes to sync application flags for project 'xspips_selftest_example_1'...
+15:57:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:57:28 INFO  : Jtag cable 'Digilent Zed 210248AC8994' is selected.
+15:57:28 INFO  : 'jtag frequency' command is executed.
+15:57:28 INFO  : Context for 'APU' is selected.
+15:57:28 INFO  : System reset is completed.
+15:57:31 INFO  : 'after 3000' command is executed.
+15:57:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}' command is executed.
+15:57:33 INFO  : FPGA configured successfully with bitstream "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/xspips_selftest_example_1/_ide/bitstream/design_1_wrapper.bit"
+15:57:33 INFO  : Context for 'APU' is selected.
+15:57:33 INFO  : Hardware design and registers information is loaded from 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/export/001_platform/hw/design_1_wrapper.xsa'.
+15:57:33 INFO  : 'configparams force-mem-access 1' command is executed.
+15:57:33 INFO  : Context for 'APU' is selected.
+15:57:33 INFO  : Sourcing of 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/xspips_selftest_example_1/_ide/psinit/ps7_init.tcl' is done.
+15:57:34 INFO  : 'ps7_init' command is executed.
+15:57:34 INFO  : 'ps7_post_config' command is executed.
+15:57:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:57:34 INFO  : The application 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/xspips_selftest_example_1/Debug/xspips_selftest_example_1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:57:34 INFO  : 'configparams force-mem-access 0' command is executed.
+15:57:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}
+fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/xspips_selftest_example_1/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/export/001_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/xspips_selftest_example_1/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/xspips_selftest_example_1/Debug/xspips_selftest_example_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:57:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:57:34 INFO  : 'con' command is executed.
+15:57:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:57:34 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\.sdk\launch_scripts\single_application_debug\systemdebugger_xspips_selftest_example_1_system_standalone.tcl'
+15:57:42 INFO  : Disconnected from the channel tcfchan#3.
+16:19:09 INFO  : Checking for BSP changes to sync application flags for project '002_gpio_interrupt'...
+16:19:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:19:28 INFO  : Jtag cable 'Digilent Zed 210248AC8994' is selected.
+16:19:28 INFO  : 'jtag frequency' command is executed.
+16:19:28 INFO  : Context for 'APU' is selected.
+16:19:28 INFO  : System reset is completed.
+16:19:31 INFO  : 'after 3000' command is executed.
+16:19:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}' command is executed.
+16:19:33 INFO  : FPGA configured successfully with bitstream "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002_gpio_interrupt/_ide/bitstream/design_1_wrapper.bit"
+16:19:33 INFO  : Context for 'APU' is selected.
+16:19:33 INFO  : Hardware design and registers information is loaded from 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/export/001_platform/hw/design_1_wrapper.xsa'.
+16:19:33 INFO  : 'configparams force-mem-access 1' command is executed.
+16:19:33 INFO  : Context for 'APU' is selected.
+16:19:33 INFO  : Sourcing of 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002_gpio_interrupt/_ide/psinit/ps7_init.tcl' is done.
+16:19:34 INFO  : 'ps7_init' command is executed.
+16:19:34 INFO  : 'ps7_post_config' command is executed.
+16:19:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:19:34 INFO  : The application 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002_gpio_interrupt/Debug/002_gpio_interrupt.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:19:34 INFO  : 'configparams force-mem-access 0' command is executed.
+16:19:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}
+fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002_gpio_interrupt/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/export/001_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002_gpio_interrupt/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002_gpio_interrupt/Debug/002_gpio_interrupt.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:19:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:19:34 INFO  : 'con' command is executed.
+16:19:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:19:34 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\.sdk\launch_scripts\single_application_debug\systemdebugger_002_gpio_interrupt_system_standalone.tcl'
+16:59:07 INFO  : Result from executing command 'getProjects': 001_platform;002_gpio_isr_axi
+16:59:07 INFO  : Result from executing command 'getPlatforms': 001_platform|C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/export/001_platform/001_platform.xpfm
+17:09:29 INFO  : Result from executing command 'getProjects': 001_platform;002_gpio_isr_axi
+17:09:29 INFO  : Result from executing command 'getPlatforms': 001_platform|C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_platform/export/001_platform/001_platform.xpfm;002_gpio_isr_axi|C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002_gpio_isr_axi/export/002_gpio_isr_axi/002_gpio_isr_axi.xpfm
+17:09:30 INFO  : Checking for BSP changes to sync application flags for project '002_gpio_isr_axi_vitis'...
+17:09:45 INFO  : Checking for BSP changes to sync application flags for project '002_gpio_isr_axi_vitis'...
+17:12:12 INFO  : Checking for BSP changes to sync application flags for project 'temp'...
+17:17:42 INFO  : Checking for BSP changes to sync application flags for project '002_gpio_isr_axi_vitis'...
+17:18:25 INFO  : Checking for BSP changes to sync application flags for project '002_gpio_isr_axi_vitis'...
+17:29:28 INFO  : Disconnected from the channel tcfchan#5.
+17:31:32 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\temp_xsdb_launch_script.tcl
+17:31:34 INFO  : XSCT server has started successfully.
+17:31:34 INFO  : plnx-install-location is set to ''
+17:31:34 INFO  : Successfully done setting XSCT server connection channel  
+17:31:34 INFO  : Successfully done setting workspace for the tool. 
+17:31:39 INFO  : Platform repository initialization has completed.
+17:31:39 INFO  : Registering command handlers for Vitis TCF services
+17:31:41 INFO  : Successfully done query RDI_DATADIR 
+17:33:45 ERROR : An unexpected exception occurred in the module 'reading platform'
+17:33:45 ERROR : An unexpected exception occurred in the module 'updating project references'
+17:34:34 ERROR : An unexpected exception occurred in the module 'reading platform'
+17:34:34 ERROR : An unexpected exception occurred in the module 'updating project references'
+17:39:09 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\temp_xsdb_launch_script.tcl
+17:39:10 INFO  : Registering command handlers for Vitis TCF services
+17:39:11 INFO  : XSCT server has started successfully.
+17:39:11 INFO  : Successfully done setting XSCT server connection channel  
+17:39:11 INFO  : plnx-install-location is set to ''
+17:39:12 INFO  : Successfully done setting workspace for the tool. 
+17:39:12 INFO  : Successfully done query RDI_DATADIR 
+17:39:12 ERROR : Error encountered while initializing user repository paths
+Reason: No Platforms Found.
+
+
+17:39:12 INFO  : Platform repository initialization has completed.

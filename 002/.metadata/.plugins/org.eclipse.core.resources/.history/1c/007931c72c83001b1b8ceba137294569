@@ -1,0 +1,50 @@
+#include "xgpio.h"
+#include "xgpio_l.h"
+#include "xil_exception.h"
+#include "xil_printf.h"
+#include "xparameters.h"
+#include "xscugic.h"
+#include "xstatus.h"
+
+class gpio_handler {
+private:
+  XGpio_Config *config_;
+  XGpio gpio_;
+  XScuGic_Config *irq_config_;
+  XScuGic irq_;
+  u32 irq_channel_;
+
+public:
+  gpio_handler() : config_(nullptr), irq_config_(nullptr), irq_channel_(0) {
+    memset(&gpio_, 0x00, sizeof(gpio_));
+  }
+  inline int gpio_init(u32 deviceID, u8 channel, u32 direction_mask) {
+    int status = XST_FAILURE;
+    config_ = XGpio_LookupConfig(deviceID);
+    status = XGpio_CfgInitialize(&gpio_, config_, config_->BaseAddress);
+    XGpio_SetDataDirection(&gpio_, channel, direction_mask);
+    return status;
+  }
+
+  template <typename irq_fn>
+  inline int gpio_irq_init(u8 irq_deviceID, u32 farbric_irq_num, irq_fn func, u32 irq_channel) {
+    irq_channel_ = irq_channel;
+    int status = XST_FAILURE;
+    irq_config_ = XScuGic_LookupConfig(irq_deviceID);
+    status =
+        XScuGic_CfgInitialize(&irq_, irq_config_, irq_config_->CpuBaseAddress);
+    XScuGic_Connect(&irq_, farbric_irq_num,
+                    static_cast<Xil_InterruptHandler>(func), nullptr);
+    XScuGic_Enable(&irq_, farbric_irq_num);
+    
+    Xil_ExceptionInit();
+    Xil_ExceptionRegisterHandler(
+        XIL_EXCEPTION_ID_INT,
+        static_cast<Xil_ExceptionHandler>(XScuGic_InterruptHandler), &irq_);
+    Xil_ExceptionEnable();
+    XGpio_InterruptGlobalEnable(&gpio_);
+    XGpio_InterruptEnable(channel);
+  }
+
+  
+};

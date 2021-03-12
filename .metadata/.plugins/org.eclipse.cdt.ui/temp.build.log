@@ -1,0 +1,53 @@
+17:12:12 **** Build of configuration Debug for project temp ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002_gpio_isr_axi/export/002_gpio_isr_axi/sw/002_gpio_isr_axi/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'gpioInit':
+../src/helloworld.c:40:30: error: 'XPAR_AXI_GPIO_1_DEVICE_ID' undeclared (first use in this function); did you mean 'XPAR_GPIO_1_DEVICE_ID'?
+   40 |  gpiobC = XGpio_LookupConfig(XPAR_AXI_GPIO_1_DEVICE_ID);
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~~
+      |                              XPAR_GPIO_1_DEVICE_ID
+../src/helloworld.c:40:30: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:41:38: error: 'XPAR_AXI_GPIO_1_BASEADDR' undeclared (first use in this function); did you mean 'XPAR_GPIO_1_BASEADDR'?
+   41 |  XGpio_CfgInitialize(&gpiobI,gpiobC, XPAR_AXI_GPIO_1_BASEADDR);
+      |                                      ^~~~~~~~~~~~~~~~~~~~~~~~
+      |                                      XPAR_GPIO_1_BASEADDR
+../src/helloworld.c:44:30: error: 'XPAR_AXI_GPIO_0_DEVICE_ID' undeclared (first use in this function); did you mean 'XPAR_GPIO_0_DEVICE_ID'?
+   44 |  gpiolC = XGpio_LookupConfig(XPAR_AXI_GPIO_0_DEVICE_ID);
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~~
+      |                              XPAR_GPIO_0_DEVICE_ID
+../src/helloworld.c:45:38: error: 'XPAR_AXI_GPIO_0_BASEADDR' undeclared (first use in this function); did you mean 'XPAR_GPIO_0_BASEADDR'?
+   45 |  XGpio_CfgInitialize(&gpiolI,gpiolC, XPAR_AXI_GPIO_0_BASEADDR);
+      |                                      ^~~~~~~~~~~~~~~~~~~~~~~~
+      |                                      XPAR_GPIO_0_BASEADDR
+../src/helloworld.c: In function 'IntrInit':
+../src/helloworld.c:57:26: error: 'XPAR_FABRIC_GPIO_1_VEC_ID' undeclared (first use in this function); did you mean 'XPAR_FABRIC_GPIO_0_VEC_ID'?
+   57 |  XScuGic_Connect(&bIntrI,XPAR_FABRIC_GPIO_1_VEC_ID,(Xil_InterruptHandler)btn_handler,&bIntrI);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~
+      |                          XPAR_FABRIC_GPIO_0_VEC_ID
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002_gpio_isr_axi/export/002_gpio_isr_axi/sw/002_gpio_isr_axi/standalone_domain/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: temp.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002_gpio_isr_axi/export/002_gpio_isr_axi/sw/002_gpio_isr_axi/standalone_domain/bsplib/lib -o "temp.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+arm-xilinx-eabi-gcc.exe: error: ./src/helloworld.o: No such file or directory
+'Finished building target: temp.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size temp.elf  |tee "temp.elf.size"
+arm-none-eabi-size: 'temp.elf': No such file
+'Finished building: temp.elf.size'
+' '
+
+17:12:13 Build Finished (took 779ms)
+

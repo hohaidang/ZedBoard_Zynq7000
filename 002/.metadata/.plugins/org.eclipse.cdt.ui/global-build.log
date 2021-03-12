@@ -1,0 +1,31 @@
+Nothing to build in platform '002_platform'
+
+00:35:11 **** Incremental Build of configuration Debug for project 002_btm_led_axi_isr_vitis ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/001_btm_led_axi_isr.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -IC:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002/002_platform/export/002_platform/sw/002_platform/standalone_domain/bspinclude/include -I"C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\driver" -c -fmessage-length=0 -MT"src/001_btm_led_axi_isr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/001_btm_led_axi_isr.d" -MT"src/001_btm_led_axi_isr.o" -o "src/001_btm_led_axi_isr.o" "../src/001_btm_led_axi_isr.cpp"
+'Finished building: ../src/001_btm_led_axi_isr.cpp'
+' '
+'Building target: 002_btm_led_axi_isr_vitis.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002/002_platform/export/002_platform/sw/002_platform/standalone_domain/bsplib/lib -o "002_btm_led_axi_isr_vitis.elf"  ./src/001_btm_led_axi_isr.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: 002_btm_led_axi_isr_vitis.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size 002_btm_led_axi_isr_vitis.elf  |tee "002_btm_led_axi_isr_vitis.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34872	   2996	  22732	  60600	   ecb8	002_btm_led_axi_isr_vitis.elf
+'Finished building: 002_btm_led_axi_isr_vitis.elf.size'
+' '
+00:35:12 **** Incremental Build of configuration Debug for project 002_btm_led_axi_isr_vitis_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 50797 C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002/002_platform/export/002_platform/002_platform.xpfm standalone_domain C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002/002_btm_led_axi_isr_vitis_system/Debug/system.bif
+sdcard_gen --xpfm C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002/002_platform/export/002_platform/002_platform.xpfm --sys_config 002_platform --bif C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002/002_btm_led_axi_isr_vitis_system/Debug/system.bif --bitstream C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002/002_btm_led_axi_isr_vitis/_ide/bitstream/design_1_wrapper.bit --elf C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002/002_btm_led_axi_isr_vitis/Debug/002_btm_led_axi_isr_vitis.elf,ps7_cortexa9_0
+creating BOOT.BIN using C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002/002_btm_led_axi_isr_vitis/_ide/bitstream/design_1_wrapper.bit
+Running C:/Xilinx2020/Vitis/2020.1/bin/bootgen  -image C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002/002_btm_led_axi_isr_vitis_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN

@@ -1,0 +1,70 @@
+#include "xgpio.h"
+#include "xgpio_l.h"
+#include "xil_exception.h"
+#include "xil_printf.h"
+#include "xparameters.h"
+#include "xscugic.h"
+#include "gpio_driver.hpp"
+#include <stdio.h>
+
+extern "C" {
+void btm_isr_handler(void);
+}
+
+XGpio_Config *btm_config, *led_config;
+XGpio btm, led;
+
+XScuGic_Config *isr_config;
+XScuGic isr;
+
+void gpio_init() {
+  btm_config = XGpio_LookupConfig(XPAR_BUTTON_DEVICE_ID);
+  XGpio_CfgInitialize(&btm, btm_config, btm_config->BaseAddress);
+
+  led_config = XGpio_LookupConfig(XPAR_LED_DEVICE_ID);
+  XGpio_CfgInitialize(&led, led_config, led_config->BaseAddress);
+
+  XGpio_SetDataDirection(&btm, 1, 0xf);
+  XGpio_SetDataDirection(&led, 1, 0x0);
+}
+
+void isr_init() {
+  isr_config = XScuGic_LookupConfig(XPAR_PS7_SCUGIC_0_DEVICE_ID);
+  XScuGic_CfgInitialize(&isr, isr_config, isr_config->CpuBaseAddress);
+
+  XScuGic_Connect(&isr, XPAR_FABRIC_BUTTON_IP2INTC_IRPT_INTR,
+                  (Xil_InterruptHandler)btm_isr_handler, nullptr);
+  XScuGic_Enable(&isr, XPAR_FABRIC_BUTTON_IP2INTC_IRPT_INTR);
+
+  Xil_ExceptionInit();
+  Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,
+                               (Xil_ExceptionHandler)XScuGic_InterruptHandler,
+                               &isr);
+  Xil_ExceptionEnable();
+
+  XGpio_InterruptGlobalEnable(&btm);
+  XGpio_InterruptEnable(&btm, XGPIO_IR_CH1_MASK);
+}
+
+int main(void) {
+  xil_printf("Program Starting\n");
+  gpio_init();
+  isr_init();
+  int b = DANG;
+  while (1)
+    ;
+  return 0;
+}
+
+
+extern "C" {
+void btm_isr_handler() {
+  XGpio_InterruptDisable(&btm, XGPIO_IR_CH1_MASK);
+  if ((XGpio_InterruptGetStatus(&btm) & XGPIO_IR_CH1_MASK) != XGPIO_IR_CH1_MASK)
+    return;
+  xil_printf("Interrupt is called\n");
+	XGpio_DiscreteWrite(&led, 1, XGpio_DiscreteRead(&led, 1) ^ 0x0f);
+  XGpio_InterruptClear(&btm, XGPIO_IR_CH1_MASK);
+  XGpio_InterruptEnable(&btm, XGPIO_IR_CH1_MASK);
+}
+}

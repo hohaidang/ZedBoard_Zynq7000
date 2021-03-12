@@ -1,0 +1,17 @@
+#include "gpio_driver.hpp"
+
+
+int gpio_handler::init(u32 deviceID, u8 channel, u32 direction_mask) {
+  channel_ = channel;
+  int status = XST_FAILURE;
+  config_ = XGpio_LookupConfig(deviceID);
+  status = XGpio_CfgInitialize(&gpio_, config_, config_->BaseAddress);
+  XGpio_SetDataDirection(&gpio_, channel, direction_mask);
+  return status;
+}
+
+template <typename irq_fn>
+int gpio_handler::init_irq(u8 irq_deviceID, u32 farbric_irq_num,
+                                irq_fn func, u32 irq_channel_mask) {
+
+}

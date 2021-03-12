@@ -41,3 +41,33 @@ timestamp=[2021-03-11 21:51:05], mode=BUILD, duration=0:00:00.858, duration_ms=8
 timestamp=[2021-03-11 21:51:11], mode=BUILD, duration=0:00:05.816, duration_ms=5816, data={name=001_IoT_system, configuration=Debug, clean_build=false}
 timestamp=[2021-03-11 21:51:54], mode=BUILD, duration=0:00:00.870, duration_ms=870, data={name=001_IoT, configuration=Debug, clean_build=false}
 timestamp=[2021-03-11 21:52:00], mode=BUILD, duration=0:00:05.916, duration_ms=5916, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 15:48:43], mode=WORKBENCH_START, duration=0:00:11.252, duration_ms=11252, data={}
+timestamp=[2021-03-12 15:48:44], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.061, duration_ms=61, data={}
+timestamp=[2021-03-12 15:48:44], mode=WORKBENCH_UI_INIT, duration=0:00:00.986, duration_ms=986, data={editors_count=7, platform_editors_count=4, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=001_IoT,001_IoT_system,001_platform,RemoteSystemsTempFiles}
+timestamp=[2021-03-12 15:53:31], mode=APP_CREATION, duration=0:00:08.755, duration_ms=8755, data={name=xspips_selftest_example_1, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=001_platform, application_type=application}
+timestamp=[2021-03-12 15:53:38], mode=APP_CREATION, duration=0:00:06.906, duration_ms=6906, data={name=xspips_slave_polled_example_1, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=001_platform, application_type=application}
+timestamp=[2021-03-12 15:56:27], mode=PLATFORM_GENERATION, duration=0:00:02.870, duration_ms=2870, data={name=001_platform}
+timestamp=[2021-03-12 15:56:29], mode=BUILD, duration=0:00:01.319, duration_ms=1319, data={name=xspips_selftest_example_1, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 15:56:36], mode=BUILD, duration=0:00:06.344, duration_ms=6344, data={name=xspips_selftest_example_1_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:17:22], mode=APP_CREATION, duration=0:00:07.135, duration_ms=7135, data={name=002_gpio_interrupt, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=001_platform, application_type=application}
+timestamp=[2021-03-12 16:19:11], mode=BUILD, duration=0:00:01.443, duration_ms=1443, data={name=002_gpio_interrupt, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:19:17], mode=BUILD, duration=0:00:05.993, duration_ms=5993, data={name=002_gpio_interrupt_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:59:08], mode=PLATFORM_CREATION, duration=0:00:19.042, duration_ms=19042, data={platform_source=dsa, os=standalone, processor=ps7_cortexa9, platform=null}
+timestamp=[2021-03-12 16:59:48], mode=APP_CREATION, duration=0:00:07.666, duration_ms=7666, data={name=002_gpio_isr_axi_vitis, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=002_gpio_isr_axi, application_type=application}
+timestamp=[2021-03-12 17:09:29], mode=PLATFORM_GENERATION, duration=0:00:24.953, duration_ms=24953, data={name=002_gpio_isr_axi}
+timestamp=[2021-03-12 17:09:30], mode=BUILD, duration=0:00:00.728, duration_ms=728, data={name=002_gpio_isr_axi_vitis, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 17:09:45], mode=BUILD, duration=0:00:00.661, duration_ms=661, data={name=002_gpio_isr_axi_vitis, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 17:09:48], mode=BUILD, duration=0:00:02.809, duration_ms=2809, data={name=002_gpio_isr_axi_vitis_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 17:11:16], mode=APP_CREATION, duration=0:00:06.655, duration_ms=6655, data={name=temp, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=002_gpio_isr_axi, application_type=application}
+timestamp=[2021-03-12 17:12:13], mode=BUILD, duration=0:00:00.796, duration_ms=796, data={name=temp, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 17:12:16], mode=BUILD, duration=0:00:02.936, duration_ms=2936, data={name=temp_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 17:17:43], mode=BUILD, duration=0:00:00.688, duration_ms=688, data={name=002_gpio_isr_axi_vitis, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 17:17:50], mode=BUILD, duration=0:00:06.110, duration_ms=6110, data={name=002_gpio_isr_axi_vitis_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 17:18:25], mode=BUILD, duration=0:00:00.285, duration_ms=285, data={name=002_gpio_isr_axi_vitis, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 17:18:31], mode=BUILD, duration=0:00:06.229, duration_ms=6229, data={name=002_gpio_isr_axi_vitis_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 17:31:38], mode=WORKBENCH_START, duration=0:00:11.849, duration_ms=11849, data={}
+timestamp=[2021-03-12 17:31:39], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.053, duration_ms=53, data={}
+timestamp=[2021-03-12 17:31:39], mode=WORKBENCH_UI_INIT, duration=0:00:01.475, duration_ms=1475, data={editors_count=2, platform_editors_count=0, projects_count=13, platform_projects_count=1, active_platform_editor=false, projects=001_IoT,001_IoT_system,001_platform,002_gpio_isr_axi,002_gpio_isr_axi_vitis,002_gpio_isr_axi_vitis_system,RemoteSystemsTempFiles,temp,temp_system,xspips_selftest_example_1,xspips_selftest_example_1_system,xspips_slave_polled_example_1,xspips_slave_polled_example_1_system}
+timestamp=[2021-03-12 17:39:09], mode=WORKBENCH_START, duration=0:00:05.328, duration_ms=5328, data={}
+timestamp=[2021-03-12 17:39:09], mode=WORKBENCH_UI_INIT, duration=0:00:00.635, duration_ms=635, data={editors_count=1, platform_editors_count=0, projects_count=2, platform_projects_count=0, active_platform_editor=false, projects=002_gpio_isr_axi,RemoteSystemsTempFiles}
+timestamp=[2021-03-12 17:39:12], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:02.385, duration_ms=2385, data={}

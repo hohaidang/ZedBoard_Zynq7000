@@ -1,8 +1,0 @@
-INFO: [SIM 2] *************** CSIM start ***************
-INFO: [SIM 4] CSIM will launch GCC as the compiler.
-   Compiling ../../../simple_combination_circuit-tb.cpp in debug mode
-   Compiling ../../../simple_combination_circuit.cpp in debug mode
-   Generating csim.exe
-Design test SUCCESSFUL
-INFO: [SIM 1] CSim done with 0 errors.
-INFO: [SIM 3] *************** CSIM finish ***************

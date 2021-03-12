@@ -1,0 +1,34 @@
+#include "gpio_driver.hpp"
+
+
+int gpio_handler::init(u32 deviceID, u8 channel, u32 direction_mask) {
+  channel_ = channel;
+  int status = XST_FAILURE;
+  config_ = XGpio_LookupConfig(deviceID);
+  status = XGpio_CfgInitialize(&gpio_, config_, config_->BaseAddress);
+  XGpio_SetDataDirection(&gpio_, channel, direction_mask);
+  return status;
+}
+
+template <typename irq_fn>
+int gpio_handler::init_irq(u8 irq_deviceID, u32 farbric_irq_num,
+                                irq_fn func, u32 irq_channel_mask) {
+  irq_channel_mask_ = irq_channel_mask;
+  int status = XST_FAILURE;
+  irq_config_ = XScuGic_LookupConfig(irq_deviceID);
+  status =
+      XScuGic_CfgInitialize(&irq_, irq_config_, irq_config_->CpuBaseAddress);
+  XScuGic_Connect(&irq_, farbric_irq_num,
+                  static_cast<Xil_InterruptHandler>(func), nullptr);
+  XScuGic_Enable(&irq_, farbric_irq_num);
+
+  Xil_ExceptionInit();
+  // TODO: sua ve static cast sau
+  Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,
+                               (Xil_ExceptionHandler)XScuGic_InterruptHandler,
+                               &irq_);
+  Xil_ExceptionEnable();
+  XGpio_InterruptGlobalEnable(&gpio_);
+  XGpio_InterruptEnable(&gpio_, irq_channel_mask_);
+  return status;
+}
