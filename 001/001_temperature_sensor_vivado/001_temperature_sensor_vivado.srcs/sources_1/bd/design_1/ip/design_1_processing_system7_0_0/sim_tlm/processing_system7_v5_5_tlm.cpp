@@ -144,6 +144,20 @@ void add_extensions_to_tlm(const xtlm::aximm_payload* xtlm_pay, tlm::tlm_generic
 
 processing_system7_v5_5_tlm :: processing_system7_v5_5_tlm (sc_core::sc_module_name name,
     xsc::common_cpp::properties& _prop): sc_module(name)//registering module name with parent
+        ,SPI0_SCLK_I("SPI0_SCLK_I")
+        ,SPI0_SCLK_O("SPI0_SCLK_O")
+        ,SPI0_SCLK_T("SPI0_SCLK_T")
+        ,SPI0_MOSI_I("SPI0_MOSI_I")
+        ,SPI0_MOSI_O("SPI0_MOSI_O")
+        ,SPI0_MOSI_T("SPI0_MOSI_T")
+        ,SPI0_MISO_I("SPI0_MISO_I")
+        ,SPI0_MISO_O("SPI0_MISO_O")
+        ,SPI0_MISO_T("SPI0_MISO_T")
+        ,SPI0_SS_I("SPI0_SS_I")
+        ,SPI0_SS_O("SPI0_SS_O")
+        ,SPI0_SS1_O("SPI0_SS1_O")
+        ,SPI0_SS2_O("SPI0_SS2_O")
+        ,SPI0_SS_T("SPI0_SS_T")
         ,M_AXI_GP0_ACLK("M_AXI_GP0_ACLK")
         ,IRQ_F2P("IRQ_F2P")
         ,FCLK_CLK0("FCLK_CLK0")

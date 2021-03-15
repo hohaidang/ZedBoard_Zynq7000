@@ -80,6 +80,20 @@ public:
 
   // module pin-to-pin RTL interface
 
+  sc_core::sc_in< bool > SPI0_SCLK_I;
+  sc_core::sc_out< bool > SPI0_SCLK_O;
+  sc_core::sc_out< bool > SPI0_SCLK_T;
+  sc_core::sc_in< bool > SPI0_MOSI_I;
+  sc_core::sc_out< bool > SPI0_MOSI_O;
+  sc_core::sc_out< bool > SPI0_MOSI_T;
+  sc_core::sc_in< bool > SPI0_MISO_I;
+  sc_core::sc_out< bool > SPI0_MISO_O;
+  sc_core::sc_out< bool > SPI0_MISO_T;
+  sc_core::sc_in< bool > SPI0_SS_I;
+  sc_core::sc_out< bool > SPI0_SS_O;
+  sc_core::sc_out< bool > SPI0_SS1_O;
+  sc_core::sc_out< bool > SPI0_SS2_O;
+  sc_core::sc_out< bool > SPI0_SS_T;
   sc_core::sc_out< bool > M_AXI_GP0_ARVALID;
   sc_core::sc_out< bool > M_AXI_GP0_AWVALID;
   sc_core::sc_out< bool > M_AXI_GP0_BREADY;
@@ -177,6 +191,20 @@ public:
 
   // module pin-to-pin RTL interface
 
+  sc_core::sc_in< bool > SPI0_SCLK_I;
+  sc_core::sc_out< bool > SPI0_SCLK_O;
+  sc_core::sc_out< bool > SPI0_SCLK_T;
+  sc_core::sc_in< bool > SPI0_MOSI_I;
+  sc_core::sc_out< bool > SPI0_MOSI_O;
+  sc_core::sc_out< bool > SPI0_MOSI_T;
+  sc_core::sc_in< bool > SPI0_MISO_I;
+  sc_core::sc_out< bool > SPI0_MISO_O;
+  sc_core::sc_out< bool > SPI0_MISO_T;
+  sc_core::sc_in< bool > SPI0_SS_I;
+  sc_core::sc_out< bool > SPI0_SS_O;
+  sc_core::sc_out< bool > SPI0_SS1_O;
+  sc_core::sc_out< bool > SPI0_SS2_O;
+  sc_core::sc_out< bool > SPI0_SS_T;
   sc_core::sc_out< bool > M_AXI_GP0_ARVALID;
   sc_core::sc_out< bool > M_AXI_GP0_AWVALID;
   sc_core::sc_out< bool > M_AXI_GP0_BREADY;
@@ -274,6 +302,20 @@ public:
 
   // module pin-to-pin RTL interface
 
+  sc_core::sc_in< bool > SPI0_SCLK_I;
+  sc_core::sc_out< bool > SPI0_SCLK_O;
+  sc_core::sc_out< bool > SPI0_SCLK_T;
+  sc_core::sc_in< bool > SPI0_MOSI_I;
+  sc_core::sc_out< bool > SPI0_MOSI_O;
+  sc_core::sc_out< bool > SPI0_MOSI_T;
+  sc_core::sc_in< bool > SPI0_MISO_I;
+  sc_core::sc_out< bool > SPI0_MISO_O;
+  sc_core::sc_out< bool > SPI0_MISO_T;
+  sc_core::sc_in< bool > SPI0_SS_I;
+  sc_core::sc_out< bool > SPI0_SS_O;
+  sc_core::sc_out< bool > SPI0_SS1_O;
+  sc_core::sc_out< bool > SPI0_SS2_O;
+  sc_core::sc_out< bool > SPI0_SS_T;
   sc_core::sc_out< bool > M_AXI_GP0_ARVALID;
   sc_core::sc_out< bool > M_AXI_GP0_AWVALID;
   sc_core::sc_out< bool > M_AXI_GP0_BREADY;
@@ -373,6 +415,20 @@ public:
 
   // module pin-to-pin RTL interface
 
+  sc_core::sc_in< bool > SPI0_SCLK_I;
+  sc_core::sc_out< bool > SPI0_SCLK_O;
+  sc_core::sc_out< bool > SPI0_SCLK_T;
+  sc_core::sc_in< bool > SPI0_MOSI_I;
+  sc_core::sc_out< bool > SPI0_MOSI_O;
+  sc_core::sc_out< bool > SPI0_MOSI_T;
+  sc_core::sc_in< bool > SPI0_MISO_I;
+  sc_core::sc_out< bool > SPI0_MISO_O;
+  sc_core::sc_out< bool > SPI0_MISO_T;
+  sc_core::sc_in< bool > SPI0_SS_I;
+  sc_core::sc_out< bool > SPI0_SS_O;
+  sc_core::sc_out< bool > SPI0_SS1_O;
+  sc_core::sc_out< bool > SPI0_SS2_O;
+  sc_core::sc_out< bool > SPI0_SS_T;
   sc_core::sc_out< bool > M_AXI_GP0_ARVALID;
   sc_core::sc_out< bool > M_AXI_GP0_AWVALID;
   sc_core::sc_out< bool > M_AXI_GP0_BREADY;
@@ -478,6 +534,20 @@ public:
 
   // module pin-to-pin RTL interface
 
+  sc_core::sc_in< bool > SPI0_SCLK_I;
+  sc_core::sc_out< bool > SPI0_SCLK_O;
+  sc_core::sc_out< bool > SPI0_SCLK_T;
+  sc_core::sc_in< bool > SPI0_MOSI_I;
+  sc_core::sc_out< bool > SPI0_MOSI_O;
+  sc_core::sc_out< bool > SPI0_MOSI_T;
+  sc_core::sc_in< bool > SPI0_MISO_I;
+  sc_core::sc_out< bool > SPI0_MISO_O;
+  sc_core::sc_out< bool > SPI0_MISO_T;
+  sc_core::sc_in< bool > SPI0_SS_I;
+  sc_core::sc_out< bool > SPI0_SS_O;
+  sc_core::sc_out< bool > SPI0_SS1_O;
+  sc_core::sc_out< bool > SPI0_SS2_O;
+  sc_core::sc_out< bool > SPI0_SS_T;
   sc_core::sc_out< bool > M_AXI_GP0_ARVALID;
   sc_core::sc_out< bool > M_AXI_GP0_AWVALID;
   sc_core::sc_out< bool > M_AXI_GP0_BREADY;

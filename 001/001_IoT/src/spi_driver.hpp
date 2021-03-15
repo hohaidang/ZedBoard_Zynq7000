@@ -27,7 +27,7 @@ public:
     memset(&spi_, 0x00, sizeof(spi_));
     memset(&irq_, 0x00, sizeof(irq_));
   }
-  inline s32 init(u16 deviceID, u16 irq_deviceID) {
+  inline s32 init(u16 deviceID) {
     s32 status = XST_FAILURE;
     config_ = XSpiPs_LookupConfig(deviceID);
     if (!config_)
@@ -36,31 +36,6 @@ public:
     if (XST_SUCCESS != status)
       return status;
     status = XSpiPs_SelfTest(&spi_);
-
-
-    // Xil_ExceptionInit();
-    // irq_config_ = XScuGic_LookupConfig(XPAR_SCUGIC_SINGLE_DEVICE_ID);
-    // if (!irq_config_)
-    //   return status;
-    // status =
-    //     XScuGic_CfgInitialize(&irq_, irq_config_, irq_config_->CpuBaseAddress);
-    // if (XST_SUCCESS != status)
-    //   return status;
-    // Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,
-    //                              (Xil_ExceptionHandler)XScuGic_InterruptHandler,
-    //                              &irq_);
-    // status = XScuGic_Connect(&irq_, irq_deviceID,
-    //                          (Xil_ExceptionHandler)XSpiPs_InterruptHandler,
-    //                          (void *)&spi_);
-    // if (XST_SUCCESS != status)
-    //   return status;
-    // XScuGic_Enable(&irq_, irq_deviceID);
-    // Xil_ExceptionEnable();
-    // if (XST_SUCCESS != status)
-    //   return status;
-
-
-
     // TODO: giai quyet ham SpiHandler
     XSpiPs_SetStatusHandler(&spi_, &spi_, (XSpiPs_StatusHandler)SpiHandler);
     status = XSpiPs_SetOptions(&spi_, XSPIPS_MASTER_OPTION |

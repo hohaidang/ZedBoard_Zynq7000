@@ -1,7 +1,7 @@
 //Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-//Date        : Mon Mar 15 20:46:36 2021
+//Date        : Mon Mar 15 21:28:17 2021
 //Host        : DESKTOP-O8T2GMT running 64-bit major release  (build 9200)
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -33,7 +33,11 @@ module design_1
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
     btns_5bits_tri_i,
-    leds_8bits_tri_o);
+    leds_8bits_tri_o,
+    spi0_miso,
+    spi0_mosi,
+    spi0_sclk,
+    spi0_ss);
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR ADDR" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DDR, AXI_ARBITRATION_SCHEME TDM, BURST_LENGTH 8, CAN_DEBUG false, CAS_LATENCY 11, CAS_WRITE_LATENCY 11, CS_ENABLED true, DATA_MASK_ENABLED true, DATA_WIDTH 8, MEMORY_TYPE COMPONENTS, MEM_ADDR_MAP ROW_COLUMN_BANK, SLOT Single, TIMEPERIOD_PS 1250" *) inout [14:0]DDR_addr;
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR BA" *) inout [2:0]DDR_ba;
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR CAS_N" *) inout DDR_cas_n;
@@ -57,6 +61,10 @@ module design_1
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_SRSTB" *) inout FIXED_IO_ps_srstb;
   (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 btns_5bits TRI_I" *) input [4:0]btns_5bits_tri_i;
   (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 leds_8bits TRI_O" *) output [7:0]leds_8bits_tri_o;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 DATA.SPI0_MISO DATA" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DATA.SPI0_MISO, LAYERED_METADATA undef" *) input spi0_miso;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 DATA.SPI0_MOSI DATA" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DATA.SPI0_MOSI, LAYERED_METADATA undef" *) output spi0_mosi;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.SPI0_SCLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.SPI0_SCLK, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.000" *) output spi0_sclk;
+  output spi0_ss;
 
   wire [4:0]button_GPIO_TRI_I;
   wire button_ip2intc_irpt;
@@ -122,6 +130,9 @@ module design_1
   wire processing_system7_0_M_AXI_GP0_WREADY;
   wire [3:0]processing_system7_0_M_AXI_GP0_WSTRB;
   wire processing_system7_0_M_AXI_GP0_WVALID;
+  wire processing_system7_0_SPI0_MOSI_O;
+  wire processing_system7_0_SPI0_SCLK_O;
+  wire processing_system7_0_SPI0_SS_O;
   wire [31:0]ps7_0_axi_periph_M00_AXI_ARADDR;
   wire ps7_0_axi_periph_M00_AXI_ARREADY;
   wire [0:0]ps7_0_axi_periph_M00_AXI_ARVALID;
@@ -157,9 +168,14 @@ module design_1
   wire [3:0]ps7_0_axi_periph_M01_AXI_WSTRB;
   wire [0:0]ps7_0_axi_periph_M01_AXI_WVALID;
   wire [0:0]rst_ps7_0_100M_peripheral_aresetn;
+  wire spi0_miso_1;
 
   assign button_GPIO_TRI_I = btns_5bits_tri_i[4:0];
   assign leds_8bits_tri_o[7:0] = led_GPIO_TRI_O;
+  assign spi0_miso_1 = spi0_miso;
+  assign spi0_mosi = processing_system7_0_SPI0_MOSI_O;
+  assign spi0_sclk = processing_system7_0_SPI0_SCLK_O;
+  assign spi0_ss = processing_system7_0_SPI0_SS_O;
   design_1_axi_gpio_0_1 button
        (.gpio_io_i(button_GPIO_TRI_I),
         .ip2intc_irpt(button_ip2intc_irpt),
@@ -266,7 +282,14 @@ module design_1
         .M_AXI_GP0_WVALID(processing_system7_0_M_AXI_GP0_WVALID),
         .PS_CLK(FIXED_IO_ps_clk),
         .PS_PORB(FIXED_IO_ps_porb),
-        .PS_SRSTB(FIXED_IO_ps_srstb));
+        .PS_SRSTB(FIXED_IO_ps_srstb),
+        .SPI0_MISO_I(spi0_miso_1),
+        .SPI0_MOSI_I(1'b0),
+        .SPI0_MOSI_O(processing_system7_0_SPI0_MOSI_O),
+        .SPI0_SCLK_I(1'b0),
+        .SPI0_SCLK_O(processing_system7_0_SPI0_SCLK_O),
+        .SPI0_SS_I(1'b0),
+        .SPI0_SS_O(processing_system7_0_SPI0_SS_O));
   design_1_ps7_0_axi_periph_0 ps7_0_axi_periph
        (.ACLK(processing_system7_0_FCLK_CLK0),
         .ARESETN(rst_ps7_0_100M_peripheral_aresetn),

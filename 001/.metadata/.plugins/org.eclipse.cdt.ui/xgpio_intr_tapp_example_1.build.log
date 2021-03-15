@@ -1,0 +1,32 @@
+22:01:30 **** Incremental Build of configuration Debug for project xgpio_intr_tapp_example_1 ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/xgpio_intr_tapp_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xgpio_intr_tapp_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/sw/001_platform/standalone_domain/bspinclude/include -MMD -MP -MF"src/xgpio_intr_tapp_example.d" -MT"src/xgpio_intr_tapp_example.o" -o "src/xgpio_intr_tapp_example.o" "../src/xgpio_intr_tapp_example.c"
+../src/xgpio_intr_tapp_example.c: In function 'main':
+../src/xgpio_intr_tapp_example.c:183:5: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
+  183 |     while(1);
+      |     ^~~~~
+../src/xgpio_intr_tapp_example.c:184:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'while'
+  184 |  return XST_SUCCESS;
+      |  ^~~~~~
+'Finished building: ../src/xgpio_intr_tapp_example.c'
+' '
+'Building target: xgpio_intr_tapp_example_1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/sw/001_platform/standalone_domain/bsplib/lib -o "xgpio_intr_tapp_example_1.elf"  ./src/xgpio_intr_tapp_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: xgpio_intr_tapp_example_1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size xgpio_intr_tapp_example_1.elf  |tee "xgpio_intr_tapp_example_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25296	   1952	  22616	  49864	   c2c8	xgpio_intr_tapp_example_1.elf
+'Finished building: xgpio_intr_tapp_example_1.elf.size'
+' '
+
+22:01:31 Build Finished (took 724ms)
+

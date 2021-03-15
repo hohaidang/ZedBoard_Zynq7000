@@ -1,4 +1,4 @@
-20:57:02 **** Incremental Build of configuration Debug for project 001_IoT_system ****
+22:21:41 **** Incremental Build of configuration Debug for project 001_IoT_system ****
 make all 
 Generating bif file for the system project
 generate_system_bif.bat 59521 C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/001_platform.xpfm standalone_domain C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT_system/Debug/system.bif
@@ -6,5 +6,5 @@ sdcard_gen --xpfm C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001
 creating BOOT.BIN using C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit
 Running C:/Xilinx2020/Vitis/2020.1/bin/bootgen  -image C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
 
-20:57:08 Build Finished (took 6s.325ms)
+22:21:47 Build Finished (took 5s.849ms)
 

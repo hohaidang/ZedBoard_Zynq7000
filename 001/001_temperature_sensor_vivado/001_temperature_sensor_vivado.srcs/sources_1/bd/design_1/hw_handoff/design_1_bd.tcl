@@ -166,6 +166,10 @@ proc create_root_design { parentCell } {
 
 
   # Create ports
+  set spi0_miso [ create_bd_port -dir I -type data spi0_miso ]
+  set spi0_mosi [ create_bd_port -dir O -type data spi0_mosi ]
+  set spi0_sclk [ create_bd_port -dir O -type clk spi0_sclk ]
+  set spi0_ss [ create_bd_port -dir O spi0_ss ]
 
   # Create instance: button, and set properties
   set button [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 button ]
@@ -239,15 +243,15 @@ proc create_root_design { parentCell } {
    CONFIG.PCW_ENET_RESET_ENABLE {0} \
    CONFIG.PCW_ENET_RESET_SELECT {<Select>} \
    CONFIG.PCW_EN_EMIO_GPIO {0} \
-   CONFIG.PCW_EN_EMIO_SPI0 {0} \
+   CONFIG.PCW_EN_EMIO_SPI0 {1} \
    CONFIG.PCW_EN_EMIO_SPI1 {0} \
    CONFIG.PCW_EN_EMIO_TTC0 {0} \
    CONFIG.PCW_EN_ENET0 {0} \
    CONFIG.PCW_EN_GPIO {0} \
    CONFIG.PCW_EN_QSPI {0} \
    CONFIG.PCW_EN_SDIO0 {0} \
-   CONFIG.PCW_EN_SPI0 {0} \
-   CONFIG.PCW_EN_SPI1 {1} \
+   CONFIG.PCW_EN_SPI0 {1} \
+   CONFIG.PCW_EN_SPI1 {0} \
    CONFIG.PCW_EN_TTC0 {0} \
    CONFIG.PCW_EN_UART1 {1} \
    CONFIG.PCW_EN_USB0 {0} \
@@ -534,20 +538,22 @@ proc create_root_design { parentCell } {
    CONFIG.PCW_SDIO_PERIPHERAL_VALID {0} \
    CONFIG.PCW_SINGLE_QSPI_DATA_MODE {<Select>} \
    CONFIG.PCW_SMC_PERIPHERAL_DIVISOR0 {1} \
-   CONFIG.PCW_SPI0_GRP_SS0_ENABLE {0} \
-   CONFIG.PCW_SPI0_GRP_SS0_IO {<Select>} \
-   CONFIG.PCW_SPI0_GRP_SS1_ENABLE {0} \
-   CONFIG.PCW_SPI0_GRP_SS1_IO {<Select>} \
-   CONFIG.PCW_SPI0_GRP_SS2_ENABLE {0} \
-   CONFIG.PCW_SPI0_GRP_SS2_IO {<Select>} \
-   CONFIG.PCW_SPI0_PERIPHERAL_ENABLE {0} \
-   CONFIG.PCW_SPI0_SPI0_IO {<Select>} \
-   CONFIG.PCW_SPI1_GRP_SS0_ENABLE {1} \
-   CONFIG.PCW_SPI1_GRP_SS0_IO {MIO 13} \
+   CONFIG.PCW_SPI0_GRP_SS0_ENABLE {1} \
+   CONFIG.PCW_SPI0_GRP_SS0_IO {EMIO} \
+   CONFIG.PCW_SPI0_GRP_SS1_ENABLE {1} \
+   CONFIG.PCW_SPI0_GRP_SS1_IO {EMIO} \
+   CONFIG.PCW_SPI0_GRP_SS2_ENABLE {1} \
+   CONFIG.PCW_SPI0_GRP_SS2_IO {EMIO} \
+   CONFIG.PCW_SPI0_PERIPHERAL_ENABLE {1} \
+   CONFIG.PCW_SPI0_SPI0_IO {EMIO} \
+   CONFIG.PCW_SPI1_GRP_SS0_ENABLE {0} \
+   CONFIG.PCW_SPI1_GRP_SS0_IO {<Select>} \
    CONFIG.PCW_SPI1_GRP_SS1_ENABLE {0} \
+   CONFIG.PCW_SPI1_GRP_SS1_IO {<Select>} \
    CONFIG.PCW_SPI1_GRP_SS2_ENABLE {0} \
-   CONFIG.PCW_SPI1_PERIPHERAL_ENABLE {1} \
-   CONFIG.PCW_SPI1_SPI1_IO {MIO 10 .. 15} \
+   CONFIG.PCW_SPI1_GRP_SS2_IO {<Select>} \
+   CONFIG.PCW_SPI1_PERIPHERAL_ENABLE {0} \
+   CONFIG.PCW_SPI1_SPI1_IO {<Select>} \
    CONFIG.PCW_SPI_PERIPHERAL_DIVISOR0 {6} \
    CONFIG.PCW_SPI_PERIPHERAL_FREQMHZ {166.666666} \
    CONFIG.PCW_SPI_PERIPHERAL_VALID {1} \
@@ -628,7 +634,11 @@ proc create_root_design { parentCell } {
   connect_bd_net -net button_ip2intc_irpt [get_bd_pins button/ip2intc_irpt] [get_bd_pins processing_system7_0/IRQ_F2P]
   connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins button/s_axi_aclk] [get_bd_pins led/s_axi_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins ps7_0_axi_periph/ACLK] [get_bd_pins ps7_0_axi_periph/M00_ACLK] [get_bd_pins ps7_0_axi_periph/M01_ACLK] [get_bd_pins ps7_0_axi_periph/S00_ACLK] [get_bd_pins rst_ps7_0_100M/slowest_sync_clk]
   connect_bd_net -net processing_system7_0_FCLK_RESET0_N [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins rst_ps7_0_100M/ext_reset_in]
+  connect_bd_net -net processing_system7_0_SPI0_MOSI_O [get_bd_ports spi0_mosi] [get_bd_pins processing_system7_0/SPI0_MOSI_O]
+  connect_bd_net -net processing_system7_0_SPI0_SCLK_O [get_bd_ports spi0_sclk] [get_bd_pins processing_system7_0/SPI0_SCLK_O]
+  connect_bd_net -net processing_system7_0_SPI0_SS_O [get_bd_ports spi0_ss] [get_bd_pins processing_system7_0/SPI0_SS_O]
   connect_bd_net -net rst_ps7_0_100M_peripheral_aresetn [get_bd_pins button/s_axi_aresetn] [get_bd_pins led/s_axi_aresetn] [get_bd_pins ps7_0_axi_periph/ARESETN] [get_bd_pins ps7_0_axi_periph/M00_ARESETN] [get_bd_pins ps7_0_axi_periph/M01_ARESETN] [get_bd_pins ps7_0_axi_periph/S00_ARESETN] [get_bd_pins rst_ps7_0_100M/peripheral_aresetn]
+  connect_bd_net -net spi0_miso_1 [get_bd_ports spi0_miso] [get_bd_pins processing_system7_0/SPI0_MISO_I]
 
   # Create address segments
   assign_bd_address -offset 0x41200000 -range 0x00010000 -target_address_space [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs button/S_AXI/Reg] -force

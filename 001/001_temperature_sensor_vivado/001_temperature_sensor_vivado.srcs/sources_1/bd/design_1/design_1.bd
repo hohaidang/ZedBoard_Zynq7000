@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xA56BFA17CE01F3AA",
+      "boundary_crc": "0x1DCD3C457EDE582D",
       "device": "xc7z020clg484-1",
       "name": "design_1",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
@@ -95,6 +95,57 @@
       "leds_8bits": {
         "mode": "Master",
         "vlnv": "xilinx.com:interface:gpio_rtl:1.0"
+      }
+    },
+    "ports": {
+      "spi0_sclk": {
+        "type": "clk",
+        "direction": "O",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "spi0_mosi": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "spi0_miso": {
+        "type": "data",
+        "direction": "I",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "spi0_ss": {
+        "direction": "O"
       }
     },
     "components": {
@@ -196,7 +247,7 @@
             "value": "0"
           },
           "PCW_EN_EMIO_SPI0": {
-            "value": "0"
+            "value": "1"
           },
           "PCW_EN_EMIO_SPI1": {
             "value": "0"
@@ -217,10 +268,10 @@
             "value": "0"
           },
           "PCW_EN_SPI0": {
-            "value": "0"
+            "value": "1"
           },
           "PCW_EN_SPI1": {
-            "value": "1"
+            "value": "0"
           },
           "PCW_EN_TTC0": {
             "value": "0"
@@ -330,6 +381,9 @@
           "PCW_NOR_PERIPHERAL_ENABLE": {
             "value": "0"
           },
+          "PCW_P2F_SPI0_INTR": {
+            "value": "0"
+          },
           "PCW_PJTAG_PERIPHERAL_ENABLE": {
             "value": "0"
           },
@@ -349,19 +403,13 @@
             "value": "0"
           },
           "PCW_SPI0_PERIPHERAL_ENABLE": {
-            "value": "0"
-          },
-          "PCW_SPI1_GRP_SS1_ENABLE": {
-            "value": "0"
-          },
-          "PCW_SPI1_GRP_SS2_ENABLE": {
-            "value": "0"
-          },
-          "PCW_SPI1_PERIPHERAL_ENABLE": {
             "value": "1"
           },
-          "PCW_SPI1_SPI1_IO": {
-            "value": "MIO 10 .. 15"
+          "PCW_SPI0_SPI0_IO": {
+            "value": "EMIO"
+          },
+          "PCW_SPI1_PERIPHERAL_ENABLE": {
+            "value": "0"
           },
           "PCW_SPI_PERIPHERAL_FREQMHZ": {
             "value": "166.666666"
@@ -835,16 +883,16 @@
               "m00_couplers/M_AXI"
             ]
           },
-          "m01_couplers_to_ps7_0_axi_periph": {
-            "interface_ports": [
-              "M01_AXI",
-              "m01_couplers/M_AXI"
-            ]
-          },
           "xbar_to_m00_couplers": {
             "interface_ports": [
               "xbar/M00_AXI",
               "m00_couplers/S_AXI"
+            ]
+          },
+          "m01_couplers_to_ps7_0_axi_periph": {
+            "interface_ports": [
+              "M01_AXI",
+              "m01_couplers/M_AXI"
             ]
           },
           "xbar_to_m01_couplers": {
@@ -965,6 +1013,30 @@
         "ports": [
           "button/ip2intc_irpt",
           "processing_system7_0/IRQ_F2P"
+        ]
+      },
+      "processing_system7_0_SPI0_SCLK_O": {
+        "ports": [
+          "processing_system7_0/SPI0_SCLK_O",
+          "spi0_sclk"
+        ]
+      },
+      "processing_system7_0_SPI0_MOSI_O": {
+        "ports": [
+          "processing_system7_0/SPI0_MOSI_O",
+          "spi0_mosi"
+        ]
+      },
+      "spi0_miso_1": {
+        "ports": [
+          "spi0_miso",
+          "processing_system7_0/SPI0_MISO_I"
+        ]
+      },
+      "processing_system7_0_SPI0_SS_O": {
+        "ports": [
+          "processing_system7_0/SPI0_SS_O",
+          "spi0_ss"
         ]
       }
     },

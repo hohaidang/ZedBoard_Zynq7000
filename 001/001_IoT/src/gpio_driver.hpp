@@ -26,6 +26,7 @@ public:
   template <typename irq_fn>
   s32 init_irq(u16 irq_deviceID, u32 farbric_irq_num, irq_fn func,
                u32 irq_channel_mask) {
+    // TODO: issue, irq gpio may conflict with another irq
     irq_channel_mask_ = irq_channel_mask;
     s32 status = XST_FAILURE;
     irq_config_ = XScuGic_LookupConfig(irq_deviceID);
@@ -48,7 +49,7 @@ public:
   inline void write(const u32 &data) {
     XGpio_DiscreteWrite(&gpio_, channel_, data);
   }
-  inline void write_toggle(u32 toggle_mask) {
+  inline void toggle(u32 toggle_mask) {
     XGpio_DiscreteWrite(&gpio_, channel_, read() ^ toggle_mask);
   }
   inline void disable_irq() {

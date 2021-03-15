@@ -10119,3 +10119,2168 @@ TRACE::2021-03-15.20:56:51::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDriv
 C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
 
 TRACE::2021-03-15.20:56:51::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:31:33::SCWPlatform::Clearing the existing platform
+TRACE::2021-03-15.21:31:33::SCWSystem::Clearing the existing sysconfig
+TRACE::2021-03-15.21:31:33::SCWBDomain::clearing the fsbl build
+TRACE::2021-03-15.21:31:33::SCWMssOS::Removing the swdes entry for  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:31:33::SCWMssOS::Removing the swdes entry for  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:31:33::SCWSystem::Clearing the domains completed.
+TRACE::2021-03-15.21:31:33::SCWPlatform::Clearing the opened hw db.
+TRACE::2021-03-15.21:31:33::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:33::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:33::SCWPlatform:: Platform location is C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:31:33::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:33::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:31:33::SCWPlatform::Removing the HwDB with name C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:33::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:33::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:33::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:33::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:31:33::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:33::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:31:33::SCWPlatform::Do not have an existing db opened. 
+TRACE::2021-03-15.21:31:35::SCWPlatform::Opened new HwDB with name design_1_wrapper_9
+TRACE::2021-03-15.21:31:35::SCWReader::Active system found as  001_platform
+TRACE::2021-03-15.21:31:35::SCWReader::Handling sysconfig 001_platform
+TRACE::2021-03-15.21:31:35::SCWDomain::checking for install qemu data   : 
+TRACE::2021-03-15.21:31:35::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx2020/Vitis/2020.1/data/emulation/platforms/zynq/qemu/
+TRACE::2021-03-15.21:31:35::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx2020/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2021-03-15.21:31:35::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:35::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:35::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:35::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:31:35::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:35::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:31:35::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_9
+TRACE::2021-03-15.21:31:35::SCWPlatform::Opened existing hwdb design_1_wrapper_9
+TRACE::2021-03-15.21:31:35::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-15.21:31:35::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:35::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:35::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:35::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:31:35::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:35::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:31:36::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_9
+TRACE::2021-03-15.21:31:36::SCWPlatform::Opened existing hwdb design_1_wrapper_9
+TRACE::2021-03-15.21:31:36::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-15.21:31:36::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:36::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:36::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:36::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:31:36::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:36::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:31:36::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_9
+TRACE::2021-03-15.21:31:36::SCWPlatform::Opened existing hwdb design_1_wrapper_9
+TRACE::2021-03-15.21:31:36::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-15.21:31:36::SCWReader::Boot application domain added for zynq_fsbl
+TRACE::2021-03-15.21:31:36::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:36::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:36::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:36::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:31:36::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:36::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:31:36::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_9
+TRACE::2021-03-15.21:31:36::SCWPlatform::Opened existing hwdb design_1_wrapper_9
+TRACE::2021-03-15.21:31:36::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-15.21:31:36::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:31:36::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2021-03-15.21:31:36::SCWMssOS::No sw design opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:31:36::SCWMssOS::mss exists loading the mss file  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:31:36::SCWMssOS::Opened the sw design from mss  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:31:36::SCWMssOS::Adding the swdes entry C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2021-03-15.21:31:36::SCWMssOS::updating the scw layer about changes
+TRACE::2021-03-15.21:31:36::SCWMssOS::Opened the sw design.  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:31:36::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:36::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:36::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:36::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:31:36::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:36::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:31:36::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_9
+TRACE::2021-03-15.21:31:36::SCWPlatform::Opened existing hwdb design_1_wrapper_9
+TRACE::2021-03-15.21:31:36::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-15.21:31:36::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:31:36::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-15.21:31:36::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:31:36::SCWMssOS:: library already available in sw design:  xilffs:4.3
+TRACE::2021-03-15.21:31:36::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:36::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:36::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:36::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:31:36::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:36::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:31:36::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_9
+TRACE::2021-03-15.21:31:36::SCWPlatform::Opened existing hwdb design_1_wrapper_9
+TRACE::2021-03-15.21:31:36::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-15.21:31:36::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:31:36::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-15.21:31:36::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:31:36::SCWMssOS:: library already available in sw design:  xilrsa:1.6
+TRACE::2021-03-15.21:31:36::SCWMssOS::Saving the mss changes C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:31:36::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-03-15.21:31:36::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-03-15.21:31:36::SCWMssOS::Commit changes completed.
+TRACE::2021-03-15.21:31:36::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2021-03-15.21:31:36::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2021-03-15.21:31:36::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:36::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:36::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:36::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:31:36::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:36::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:31:36::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_9
+TRACE::2021-03-15.21:31:36::SCWPlatform::Opened existing hwdb design_1_wrapper_9
+TRACE::2021-03-15.21:31:36::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-15.21:31:36::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:31:36::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-15.21:31:36::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:31:36::SCWReader::No isolation master present  
+TRACE::2021-03-15.21:31:36::SCWDomain::checking for install qemu data   : 
+TRACE::2021-03-15.21:31:36::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx2020/Vitis/2020.1/data/emulation/platforms/zynq/qemu/
+TRACE::2021-03-15.21:31:36::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx2020/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2021-03-15.21:31:36::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:36::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:36::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:36::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:31:36::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:36::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:31:36::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_9
+TRACE::2021-03-15.21:31:36::SCWPlatform::Opened existing hwdb design_1_wrapper_9
+TRACE::2021-03-15.21:31:36::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-15.21:31:36::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:36::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:36::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:36::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:31:36::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:36::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:31:36::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_9
+TRACE::2021-03-15.21:31:36::SCWPlatform::Opened existing hwdb design_1_wrapper_9
+TRACE::2021-03-15.21:31:36::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-15.21:31:36::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:36::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:36::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:36::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:31:36::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:36::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:31:36::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_9
+TRACE::2021-03-15.21:31:36::SCWPlatform::Opened existing hwdb design_1_wrapper_9
+TRACE::2021-03-15.21:31:36::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-15.21:31:36::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:31:36::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-15.21:31:36::SCWMssOS::No sw design opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:31:36::SCWMssOS::mss exists loading the mss file  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:31:36::SCWMssOS::Opened the sw design from mss  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:31:36::SCWMssOS::Adding the swdes entry C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2021-03-15.21:31:36::SCWMssOS::updating the scw layer about changes
+TRACE::2021-03-15.21:31:36::SCWMssOS::Opened the sw design.  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:31:36::SCWMssOS::Saving the mss changes C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:31:36::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-03-15.21:31:36::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-03-15.21:31:36::SCWMssOS::Commit changes completed.
+TRACE::2021-03-15.21:31:36::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2021-03-15.21:31:36::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2021-03-15.21:31:36::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:36::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:36::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:36::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:31:36::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:36::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:31:36::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_9
+TRACE::2021-03-15.21:31:36::SCWPlatform::Opened existing hwdb design_1_wrapper_9
+TRACE::2021-03-15.21:31:36::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-15.21:31:36::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:31:36::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-15.21:31:36::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:31:36::SCWReader::No isolation master present  
+TRACE::2021-03-15.21:31:38::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:38::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:38::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:38::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:31:38::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:38::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:31:38::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_9
+TRACE::2021-03-15.21:31:38::SCWPlatform::Opened existing hwdb design_1_wrapper_9
+TRACE::2021-03-15.21:31:38::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-15.21:31:38::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/tempdsa/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:38::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/tempdsa/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:38::SCWPlatform:: Platform location is C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/tempdsa
+TRACE::2021-03-15.21:31:38::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/tempdsa/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:38::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:31:40::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-15.21:31:40::SCWMssOS::Doing hw sync for the mss in domain: zynq_fsbl
+TRACE::2021-03-15.21:31:40::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:40::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:40::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:40::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:31:40::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:40::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:31:40::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_9
+TRACE::2021-03-15.21:31:40::SCWPlatform::Opened existing hwdb design_1_wrapper_9
+TRACE::2021-03-15.21:31:40::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-15.21:31:40::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:40::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:40::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:40::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:31:40::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:40::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:31:40::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_9
+TRACE::2021-03-15.21:31:40::SCWPlatform::Opened existing hwdb design_1_wrapper_9
+TRACE::2021-03-15.21:31:40::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-15.21:31:40::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:31:40::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-15.21:31:40::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:31:40::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/tempdsa/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:40::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/tempdsa/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:40::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/tempdsa/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:40::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/tempdsa
+TRACE::2021-03-15.21:31:40::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/tempdsa/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:40::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:31:40::SCWPlatform::update - Opened existing hwdb design_1_wrapper_10
+TRACE::2021-03-15.21:31:40::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-15.21:31:40::SCWMssOS::Doing hw sync for the mss in domain: standalone_domain
+TRACE::2021-03-15.21:31:40::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:40::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:40::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:40::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:31:40::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:41::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:31:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_9
+TRACE::2021-03-15.21:31:41::SCWPlatform::Opened existing hwdb design_1_wrapper_9
+TRACE::2021-03-15.21:31:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-15.21:31:41::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:41::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:41::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:41::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:31:41::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:41::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:31:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_9
+TRACE::2021-03-15.21:31:41::SCWPlatform::Opened existing hwdb design_1_wrapper_9
+TRACE::2021-03-15.21:31:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-15.21:31:41::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:31:41::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-15.21:31:41::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:31:41::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/tempdsa/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:41::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/tempdsa/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:41::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/tempdsa/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:41::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/tempdsa
+TRACE::2021-03-15.21:31:41::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/tempdsa/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:41::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:31:41::SCWPlatform::update - Opened existing hwdb design_1_wrapper_10
+TRACE::2021-03-15.21:31:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-15.21:31:41::SCWMssOS::Saving the mss changes C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:31:41::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-03-15.21:31:41::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-03-15.21:31:41::SCWMssOS::Commit changes completed.
+TRACE::2021-03-15.21:31:41::SCWMssOS::Completed hw sync for the mss in domain: zynq_fsbl
+TRACE::2021-03-15.21:31:41::SCWMssOS::Removing the swdes entry for  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:31:41::SCWMssOS::Saving the mss changes C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:31:41::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-03-15.21:31:41::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-03-15.21:31:41::SCWMssOS::Commit changes completed.
+TRACE::2021-03-15.21:31:41::SCWMssOS::Completed hw sync for the mss in domain: standalone_domain
+TRACE::2021-03-15.21:31:41::SCWMssOS::Removing the swdes entry for  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:31:41::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:41::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:41::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:41::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:31:41::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:41::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:31:41::SCWPlatform::Do not have an existing db opened. 
+TRACE::2021-03-15.21:31:43::SCWPlatform::Opened new HwDB with name design_1_wrapper_11
+TRACE::2021-03-15.21:31:43::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:43::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:43::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:43::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:31:43::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:43::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:31:43::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_11
+TRACE::2021-03-15.21:31:43::SCWPlatform::Opened existing hwdb design_1_wrapper_11
+TRACE::2021-03-15.21:31:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-15.21:31:43::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:31:43::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2021-03-15.21:31:43::SCWMssOS::No sw design opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:31:43::SCWMssOS::mss exists loading the mss file  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:31:43::SCWMssOS::Opened the sw design from mss  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:31:43::SCWMssOS::Adding the swdes entry C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2021-03-15.21:31:43::SCWMssOS::updating the scw layer about changes
+TRACE::2021-03-15.21:31:43::SCWMssOS::Opened the sw design.  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:31:43::SCWMssOS::Saving the mss changes C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:31:43::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-03-15.21:31:43::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-03-15.21:31:43::SCWMssOS::Commit changes completed.
+TRACE::2021-03-15.21:31:43::SCWMssOS::Saving the mss changes C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:31:43::SCWMssOS::Adding the swdes entry, mss present, able to open swdb C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2021-03-15.21:31:43::SCWMssOS::Writing the mss file completed C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:31:43::SCWMssOS::Commit changes completed.
+TRACE::2021-03-15.21:31:43::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:43::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:43::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:43::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:31:43::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:43::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:31:43::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_11
+TRACE::2021-03-15.21:31:43::SCWPlatform::Opened existing hwdb design_1_wrapper_11
+TRACE::2021-03-15.21:31:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-15.21:31:43::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:31:43::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-15.21:31:43::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:31:43::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:43::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:43::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:43::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:31:43::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:43::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:31:43::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_11
+TRACE::2021-03-15.21:31:43::SCWPlatform::Opened existing hwdb design_1_wrapper_11
+TRACE::2021-03-15.21:31:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-15.21:31:43::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:31:43::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-15.21:31:43::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:31:43::SCWWriter::formatted JSON is {
+	"platformName":	"001_platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"001_platform",
+	"platHandOff":	"C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_temperature_sensor_vivado/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"001_platform",
+	"systems":	[{
+			"systemName":	"001_platform",
+			"systemDesc":	"001_platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"001_platform",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"0fc742df0f1f404b39814563f82c49d1",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.3", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx2020/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx2020/Vitis/2020.1/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"ece9a8513c15db06e74131144f30a7a9",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2021-03-15.21:31:50::SCWPlatform::Started generating the artifacts platform 001_platform
+TRACE::2021-03-15.21:31:50::SCWPlatform::Sanity checking of platform is completed
+LOG::2021-03-15.21:31:50::SCWPlatform::Started generating the artifacts for system configuration 001_platform
+LOG::2021-03-15.21:31:50::SCWSystem::Checking the domain zynq_fsbl
+LOG::2021-03-15.21:31:50::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2021-03-15.21:31:50::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2021-03-15.21:31:50::SCWDomain::Skipping the build for domain :  zynq_fsbl
+LOG::2021-03-15.21:31:50::SCWSystem::Checking the domain standalone_domain
+LOG::2021-03-15.21:31:50::SCWSystem::Not a boot domain 
+LOG::2021-03-15.21:31:50::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2021-03-15.21:31:50::SCWDomain::Generating domain artifcats
+TRACE::2021-03-15.21:31:50::SCWMssOS::Generating standalone artifcats
+TRACE::2021-03-15.21:31:50::SCWMssOS::Copying the qemu file from  C:/Xilinx2020/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt To C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/sw/001_platform/qemu/
+TRACE::2021-03-15.21:31:50::SCWMssOS::Copying the qemu file from  C:/Xilinx2020/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt To C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/sw/001_platform/standalone_domain/qemu/
+TRACE::2021-03-15.21:31:50::SCWMssOS:: Copying the user libraries. 
+TRACE::2021-03-15.21:31:50::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:50::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:50::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:50::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:31:50::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:31:50::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:31:50::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_11
+TRACE::2021-03-15.21:31:50::SCWPlatform::Opened existing hwdb design_1_wrapper_11
+TRACE::2021-03-15.21:31:50::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-15.21:31:50::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:31:50::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-15.21:31:50::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:31:50::SCWMssOS::Completed writing the mss file at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp
+TRACE::2021-03-15.21:31:50::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:31:50::SCWMssOS::bsp generated is stale removing and regenerating. 
+TRACE::2021-03-15.21:31:52::SCWMssOS::doing bsp build ... 
+TRACE::2021-03-15.21:31:52::SCWMssOS::System Command Ran  C: & cd  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp & make 
+TRACE::2021-03-15.21:31:52::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_7/src"
+
+TRACE::2021-03-15.21:31:52::SCWMssOS::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none
+TRACE::2021-03-15.21:31:52::SCWMssOS::-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=h
+TRACE::2021-03-15.21:31:52::SCWMssOS::ard -nostartfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:31:52::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_9/src"
+
+TRACE::2021-03-15.21:31:52::SCWMssOS::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2021-03-15.21:31:52::SCWMssOS::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2021-03-15.21:31:52::SCWMssOS:: -nostartfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:31:53::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_1/src"
+
+TRACE::2021-03-15.21:31:53::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ddrps_v1_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2021-03-15.21:31:53::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2021-03-15.21:31:53::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:31:53::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_6/src"
+
+TRACE::2021-03-15.21:31:53::SCWMssOS::make -C ps7_cortexa9_0/libsrc/devcfg_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-03-15.21:31:53::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-03-15.21:31:53::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:31:53::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_6/src"
+
+TRACE::2021-03-15.21:31:53::SCWMssOS::make -C ps7_cortexa9_0/libsrc/dmaps_v2_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2021-03-15.21:31:53::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2021-03-15.21:31:53::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:31:53::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_6/src"
+
+TRACE::2021-03-15.21:31:53::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpio_v4_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2021-03-15.21:31:53::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2021-03-15.21:31:53::SCWMssOS::tfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:31:53::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_2/src"
+
+TRACE::2021-03-15.21:31:53::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scugic_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-03-15.21:31:53::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-03-15.21:31:53::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:31:53::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_2/src"
+
+TRACE::2021-03-15.21:31:53::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scutimer_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2021-03-15.21:31:53::SCWMssOS::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2021-03-15.21:31:53::SCWMssOS::startfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:31:53::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_2/src"
+
+TRACE::2021-03-15.21:31:53::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-03-15.21:31:53::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-03-15.21:31:53::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:31:53::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/spips_v3_4/src"
+
+TRACE::2021-03-15.21:31:53::SCWMssOS::make -C ps7_cortexa9_0/libsrc/spips_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2021-03-15.21:31:53::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2021-03-15.21:31:53::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:31:53::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_2/src"
+
+TRACE::2021-03-15.21:31:53::SCWMssOS::make -C ps7_cortexa9_0/libsrc/standalone_v7_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2021-03-15.21:31:53::SCWMssOS::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2021-03-15.21:31:53::SCWMssOS::nostartfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:31:53::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_9/src"
+
+TRACE::2021-03-15.21:31:53::SCWMssOS::make -C ps7_cortexa9_0/libsrc/uartps_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-03-15.21:31:53::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-03-15.21:31:53::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:31:53::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_4/src"
+
+TRACE::2021-03-15.21:31:53::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xadcps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-03-15.21:31:53::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-03-15.21:31:53::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:31:53::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_7/src"
+
+TRACE::2021-03-15.21:31:53::SCWMssOS::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2021-03-15.21:31:53::SCWMssOS::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2021-03-15.21:31:53::SCWMssOS:: -nostartfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:31:53::SCWMssOS::"Compiling coresightps_dcc"
+
+TRACE::2021-03-15.21:31:53::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_9/src"
+
+TRACE::2021-03-15.21:31:54::SCWMssOS::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+TRACE::2021-03-15.21:31:54::SCWMssOS::as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+TRACE::2021-03-15.21:31:54::SCWMssOS::ostartfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:31:54::SCWMssOS::"Compiling cpu_cortexa9"
+
+TRACE::2021-03-15.21:31:54::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_1/src"
+
+TRACE::2021-03-15.21:31:54::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ddrps_v1_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2021-03-15.21:31:54::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2021-03-15.21:31:54::SCWMssOS::iles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:31:54::SCWMssOS::"Compiling ddrps"
+
+TRACE::2021-03-15.21:31:54::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_6/src"
+
+TRACE::2021-03-15.21:31:54::SCWMssOS::make -C ps7_cortexa9_0/libsrc/devcfg_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2021-03-15.21:31:54::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2021-03-15.21:31:54::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:31:54::SCWMssOS::"Compiling devcfg"
+
+TRACE::2021-03-15.21:31:54::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_6/src"
+
+TRACE::2021-03-15.21:31:54::SCWMssOS::make -C ps7_cortexa9_0/libsrc/dmaps_v2_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2021-03-15.21:31:54::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2021-03-15.21:31:54::SCWMssOS::iles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:31:54::SCWMssOS::"Compiling dmaps"
+
+TRACE::2021-03-15.21:31:55::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_6/src"
+
+TRACE::2021-03-15.21:31:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpio_v4_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARC
+TRACE::2021-03-15.21:31:55::SCWMssOS::HIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfi
+TRACE::2021-03-15.21:31:55::SCWMssOS::les -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:31:55::SCWMssOS::"Compiling gpio"
+
+TRACE::2021-03-15.21:31:56::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_2/src"
+
+TRACE::2021-03-15.21:31:56::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scugic_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2021-03-15.21:31:56::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2021-03-15.21:31:56::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:31:56::SCWMssOS::"Compiling scugic"
+
+TRACE::2021-03-15.21:31:56::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_2/src"
+
+TRACE::2021-03-15.21:31:56::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scutimer_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2021-03-15.21:31:56::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2021-03-15.21:31:56::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:31:56::SCWMssOS::"Compiling scutimer"
+
+TRACE::2021-03-15.21:31:57::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_2/src"
+
+TRACE::2021-03-15.21:31:57::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2021-03-15.21:31:57::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2021-03-15.21:31:57::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:31:57::SCWMssOS::"Compiling scuwdt"
+
+TRACE::2021-03-15.21:31:57::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/spips_v3_4/src"
+
+TRACE::2021-03-15.21:31:57::SCWMssOS::make -C ps7_cortexa9_0/libsrc/spips_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2021-03-15.21:31:57::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2021-03-15.21:31:57::SCWMssOS::iles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:31:57::SCWMssOS::"Compiling spips"
+
+TRACE::2021-03-15.21:31:58::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v7_2/src"
+
+TRACE::2021-03-15.21:31:58::SCWMssOS::make -C ps7_cortexa9_0/libsrc/standalone_v7_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2021-03-15.21:31:58::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2021-03-15.21:31:58::SCWMssOS::tartfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:31:58::SCWMssOS::"Compiling standalone"
+
+TRACE::2021-03-15.21:32:01::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_9/src"
+
+TRACE::2021-03-15.21:32:01::SCWMssOS::make -C ps7_cortexa9_0/libsrc/uartps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2021-03-15.21:32:01::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2021-03-15.21:32:01::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:32:01::SCWMssOS::"Compiling uartps"
+
+TRACE::2021-03-15.21:32:02::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_4/src"
+
+TRACE::2021-03-15.21:32:02::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xadcps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2021-03-15.21:32:02::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2021-03-15.21:32:02::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:32:02::SCWMssOS::"Compiling xadcps"
+
+TRACE::2021-03-15.21:32:03::SCWMssOS::'Finished building libraries'
+
+TRACE::2021-03-15.21:32:03::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2021-03-15.21:32:03::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2021-03-15.21:32:03::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2021-03-15.21:32:03::SCWSystem::Completed Processing the sysconfig 001_platform
+LOG::2021-03-15.21:32:03::SCWPlatform::Completed generating the artifacts for system configuration 001_platform
+TRACE::2021-03-15.21:32:03::SCWPlatform::Started preparing the platform 
+TRACE::2021-03-15.21:32:03::SCWSystem::Writing the bif file for system config 001_platform
+TRACE::2021-03-15.21:32:03::SCWSystem::dir created 
+TRACE::2021-03-15.21:32:03::SCWSystem::Writing the bif 
+TRACE::2021-03-15.21:32:03::SCWPlatform::Started writing the spfm file 
+TRACE::2021-03-15.21:32:03::SCWPlatform::Started writing the xpfm file 
+TRACE::2021-03-15.21:32:03::SCWPlatform::Completed generating the platform
+TRACE::2021-03-15.21:32:03::SCWMssOS::Saving the mss changes C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:32:03::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-03-15.21:32:03::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-03-15.21:32:03::SCWMssOS::Commit changes completed.
+TRACE::2021-03-15.21:32:03::SCWMssOS::Saving the mss changes C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:32:03::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-03-15.21:32:03::SCWMssOS::Running validate of swdbs.
+KEYINFO::2021-03-15.21:32:03::SCWMssOS::Could not open the swdb for system_0
+KEYINFO::2021-03-15.21:32:03::SCWMssOS::Could not open the sw design at  system_0
+ERROR: [Hsi 55-1558] Software Design system_0 is not found
+
+TRACE::2021-03-15.21:32:03::SCWMssOS::Cleared the swdb table entry
+TRACE::2021-03-15.21:32:03::SCWMssOS::Adding the swdes entry, mss present, able to open swdb C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2021-03-15.21:32:03::SCWMssOS::Writing the mss file completed C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:32:03::SCWMssOS::Commit changes completed.
+TRACE::2021-03-15.21:32:03::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:32:03::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:32:03::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:32:03::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:32:03::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:32:03::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:32:03::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_11
+TRACE::2021-03-15.21:32:03::SCWPlatform::Opened existing hwdb design_1_wrapper_11
+TRACE::2021-03-15.21:32:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-15.21:32:03::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:32:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-15.21:32:03::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:32:03::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:32:03::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:32:03::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:32:03::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:32:03::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:32:03::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:32:03::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_11
+TRACE::2021-03-15.21:32:03::SCWPlatform::Opened existing hwdb design_1_wrapper_11
+TRACE::2021-03-15.21:32:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-15.21:32:03::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:32:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-15.21:32:03::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:32:03::SCWWriter::formatted JSON is {
+	"platformName":	"001_platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"001_platform",
+	"platHandOff":	"C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_temperature_sensor_vivado/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"001_platform",
+	"systems":	[{
+			"systemName":	"001_platform",
+			"systemDesc":	"001_platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"001_platform",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"0fc742df0f1f404b39814563f82c49d1",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.3", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx2020/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx2020/Vitis/2020.1/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"e030d84abc1933be90dfffbaf100d3e3",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2021-03-15.21:32:03::SCWPlatform::updated the xpfm file.
+TRACE::2021-03-15.21:32:03::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:32:03::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:32:03::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:32:03::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:32:03::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:32:03::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:32:03::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_11
+TRACE::2021-03-15.21:32:03::SCWPlatform::Opened existing hwdb design_1_wrapper_11
+TRACE::2021-03-15.21:32:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-15.21:32:03::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:32:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-15.21:32:03::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:39:46::SCWBDomain::System Command Ran  C:&  cd  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl & make clean
+TRACE::2021-03-15.21:39:46::SCWBDomain::rm -rf  sd.o  nand.o  image_mover.o  md5.o  fsbl_hooks.o  main.o  nor.o  qspi.o  rsa.o  ps7_init.o  pcap.o  fsbl_handoff.o zynq
+TRACE::2021-03-15.21:39:46::SCWBDomain::_fsbl_bsp/ps7_cortexa9_0/lib/libxil.a executable.elf *.o
+
+TRACE::2021-03-15.21:39:46::SCWBDomain::System Command Ran  C:&  cd  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp & make clean
+TRACE::2021-03-15.21:39:46::SCWBDomain::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_7/src -s clean 
+
+TRACE::2021-03-15.21:39:46::SCWBDomain::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_9/src -s clean 
+
+TRACE::2021-03-15.21:39:46::SCWBDomain::make -C ps7_cortexa9_0/libsrc/ddrps_v1_1/src -s clean 
+
+TRACE::2021-03-15.21:39:46::SCWBDomain::make -C ps7_cortexa9_0/libsrc/devcfg_v3_6/src -s clean 
+
+TRACE::2021-03-15.21:39:46::SCWBDomain::make -C ps7_cortexa9_0/libsrc/dmaps_v2_6/src -s clean 
+
+TRACE::2021-03-15.21:39:46::SCWBDomain::make -C ps7_cortexa9_0/libsrc/gpio_v4_6/src -s clean 
+
+TRACE::2021-03-15.21:39:46::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scugic_v4_2/src -s clean 
+
+TRACE::2021-03-15.21:39:46::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scutimer_v2_2/src -s clean 
+
+TRACE::2021-03-15.21:39:46::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_2/src -s clean 
+
+TRACE::2021-03-15.21:39:46::SCWBDomain::make -C ps7_cortexa9_0/libsrc/spips_v3_4/src -s clean 
+
+TRACE::2021-03-15.21:39:46::SCWBDomain::make -C ps7_cortexa9_0/libsrc/standalone_v7_2/src -s clean 
+
+TRACE::2021-03-15.21:39:46::SCWBDomain::make -C ps7_cortexa9_0/libsrc/uartps_v3_9/src -s clean 
+
+TRACE::2021-03-15.21:39:46::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xadcps_v2_4/src -s clean 
+
+TRACE::2021-03-15.21:39:46::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilffs_v4_3/src -s clean 
+
+TRACE::2021-03-15.21:39:46::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilrsa_v1_6/src -s clean 
+
+TRACE::2021-03-15.21:39:46::SCWBDomain::rm -f ps7_cortexa9_0/lib/libxil.a
+
+TRACE::2021-03-15.21:39:46::SCWMssOS::cleaning the bsp 
+TRACE::2021-03-15.21:39:46::SCWMssOS::System Command Ran  C: & cd  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp & make clean 
+TRACE::2021-03-15.21:39:46::SCWMssOS::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_7/src -s clean 
+
+TRACE::2021-03-15.21:39:46::SCWMssOS::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_9/src -s clean 
+
+TRACE::2021-03-15.21:39:46::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ddrps_v1_1/src -s clean 
+
+TRACE::2021-03-15.21:39:46::SCWMssOS::make -C ps7_cortexa9_0/libsrc/devcfg_v3_6/src -s clean 
+
+TRACE::2021-03-15.21:39:46::SCWMssOS::make -C ps7_cortexa9_0/libsrc/dmaps_v2_6/src -s clean 
+
+TRACE::2021-03-15.21:39:46::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpio_v4_6/src -s clean 
+
+TRACE::2021-03-15.21:39:46::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scugic_v4_2/src -s clean 
+
+TRACE::2021-03-15.21:39:46::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scutimer_v2_2/src -s clean 
+
+TRACE::2021-03-15.21:39:46::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_2/src -s clean 
+
+TRACE::2021-03-15.21:39:46::SCWMssOS::make -C ps7_cortexa9_0/libsrc/spips_v3_4/src -s clean 
+
+TRACE::2021-03-15.21:39:46::SCWMssOS::make -C ps7_cortexa9_0/libsrc/standalone_v7_2/src -s clean 
+
+TRACE::2021-03-15.21:39:47::SCWMssOS::make -C ps7_cortexa9_0/libsrc/uartps_v3_9/src -s clean 
+
+TRACE::2021-03-15.21:39:47::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xadcps_v2_4/src -s clean 
+
+TRACE::2021-03-15.21:39:47::SCWMssOS::rm -f ps7_cortexa9_0/lib/libxil.a
+
+LOG::2021-03-15.21:39:52::SCWPlatform::Started generating the artifacts platform 001_platform
+TRACE::2021-03-15.21:39:52::SCWPlatform::Sanity checking of platform is completed
+LOG::2021-03-15.21:39:52::SCWPlatform::Started generating the artifacts for system configuration 001_platform
+LOG::2021-03-15.21:39:52::SCWSystem::Checking the domain zynq_fsbl
+LOG::2021-03-15.21:39:52::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2021-03-15.21:39:52::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2021-03-15.21:39:52::SCWDomain::Building the domain as part of full build :  zynq_fsbl
+TRACE::2021-03-15.21:39:52::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:39:52::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:39:52::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:39:52::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:39:52::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:39:52::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:39:52::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_11
+TRACE::2021-03-15.21:39:52::SCWPlatform::Opened existing hwdb design_1_wrapper_11
+TRACE::2021-03-15.21:39:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-15.21:39:52::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:39:52::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-15.21:39:52::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:39:52::SCWBDomain::Completed writing the mss file at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp
+TRACE::2021-03-15.21:39:52::SCWBDomain::bsp generated is stale removing and regenerating. 
+TRACE::2021-03-15.21:39:54::SCWBDomain::Updating the makefile used for building the Application zynq_fsbl
+TRACE::2021-03-15.21:39:54::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:39:54::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:39:54::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:39:54::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:39:54::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:39:54::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:39:54::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_11
+TRACE::2021-03-15.21:39:54::SCWPlatform::Opened existing hwdb design_1_wrapper_11
+TRACE::2021-03-15.21:39:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-15.21:39:54::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:39:54::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+KEYINFO::2021-03-15.21:39:54::SCWMssOS::Could not open the swdb for system
+KEYINFO::2021-03-15.21:39:54::SCWMssOS::Could not open the sw design at  system
+ERROR: [Hsi 55-1558] Software Design system is not found
+
+TRACE::2021-03-15.21:39:54::SCWMssOS::Cleared the swdb table entry
+TRACE::2021-03-15.21:39:54::SCWMssOS::No sw design opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:39:54::SCWMssOS::mss exists loading the mss file  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:39:54::SCWMssOS::Opened the sw design from mss  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:39:54::SCWMssOS::Adding the swdes entry C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2021-03-15.21:39:54::SCWMssOS::updating the scw layer about changes
+TRACE::2021-03-15.21:39:54::SCWMssOS::Opened the sw design.  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:40:01::SCWBDomain::removing the temporary location in _platform.
+TRACE::2021-03-15.21:40:01::SCWBDomain::Makefile is Updated.
+TRACE::2021-03-15.21:40:01::SCWBDomain::doing clean.
+TRACE::2021-03-15.21:40:01::SCWBDomain::System Command Ran  C:&  cd  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl & make clean
+TRACE::2021-03-15.21:40:01::SCWBDomain::rm -rf  sd.o  nand.o  image_mover.o  md5.o  fsbl_hooks.o  main.o  rsa.o  nor.o  qspi.o  ps7_init.o  pcap.o  fsbl_handoff.o zynq
+TRACE::2021-03-15.21:40:01::SCWBDomain::_fsbl_bsp/ps7_cortexa9_0/lib/libxil.a executable.elf *.o
+
+TRACE::2021-03-15.21:40:01::SCWBDomain::System Command Ran  C:&  cd  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl & make 
+TRACE::2021-03-15.21:40:01::SCWBDomain::make -C zynq_fsbl_bsp
+
+TRACE::2021-03-15.21:40:01::SCWBDomain::make[1]: Entering directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp'
+
+TRACE::2021-03-15.21:40:01::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_7/src"
+
+TRACE::2021-03-15.21:40:01::SCWBDomain::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none
+TRACE::2021-03-15.21:40:01::SCWBDomain::-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=h
+TRACE::2021-03-15.21:40:01::SCWBDomain::ard -nostartfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:01::SCWBDomain::make[2]: Entering directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps
+TRACE::2021-03-15.21:40:01::SCWBDomain::7_cortexa9_0/libsrc/coresightps_dcc_v1_7/src'
+
+TRACE::2021-03-15.21:40:01::SCWBDomain::make[2]: Leaving directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps7
+TRACE::2021-03-15.21:40:01::SCWBDomain::_cortexa9_0/libsrc/coresightps_dcc_v1_7/src'
+
+TRACE::2021-03-15.21:40:01::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_9/src"
+
+TRACE::2021-03-15.21:40:01::SCWBDomain::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2021-03-15.21:40:01::SCWBDomain::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2021-03-15.21:40:01::SCWBDomain:: -nostartfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:01::SCWBDomain::make[2]: Entering directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps
+TRACE::2021-03-15.21:40:01::SCWBDomain::7_cortexa9_0/libsrc/cpu_cortexa9_v2_9/src'
+
+TRACE::2021-03-15.21:40:01::SCWBDomain::make[2]: Leaving directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps7
+TRACE::2021-03-15.21:40:01::SCWBDomain::_cortexa9_0/libsrc/cpu_cortexa9_v2_9/src'
+
+TRACE::2021-03-15.21:40:01::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_1/src"
+
+TRACE::2021-03-15.21:40:01::SCWBDomain::make -C ps7_cortexa9_0/libsrc/ddrps_v1_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2021-03-15.21:40:01::SCWBDomain::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2021-03-15.21:40:01::SCWBDomain::rtfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:01::SCWBDomain::make[2]: Entering directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps
+TRACE::2021-03-15.21:40:01::SCWBDomain::7_cortexa9_0/libsrc/ddrps_v1_1/src'
+
+TRACE::2021-03-15.21:40:01::SCWBDomain::make[2]: Leaving directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps7
+TRACE::2021-03-15.21:40:01::SCWBDomain::_cortexa9_0/libsrc/ddrps_v1_1/src'
+
+TRACE::2021-03-15.21:40:01::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_6/src"
+
+TRACE::2021-03-15.21:40:01::SCWBDomain::make -C ps7_cortexa9_0/libsrc/devcfg_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-03-15.21:40:01::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-03-15.21:40:01::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:01::SCWBDomain::make[2]: Entering directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps
+TRACE::2021-03-15.21:40:01::SCWBDomain::7_cortexa9_0/libsrc/devcfg_v3_6/src'
+
+TRACE::2021-03-15.21:40:01::SCWBDomain::make[2]: Leaving directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps7
+TRACE::2021-03-15.21:40:01::SCWBDomain::_cortexa9_0/libsrc/devcfg_v3_6/src'
+
+TRACE::2021-03-15.21:40:01::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_6/src"
+
+TRACE::2021-03-15.21:40:01::SCWBDomain::make -C ps7_cortexa9_0/libsrc/dmaps_v2_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2021-03-15.21:40:01::SCWBDomain::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2021-03-15.21:40:01::SCWBDomain::rtfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:01::SCWBDomain::make[2]: Entering directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps
+TRACE::2021-03-15.21:40:01::SCWBDomain::7_cortexa9_0/libsrc/dmaps_v2_6/src'
+
+TRACE::2021-03-15.21:40:01::SCWBDomain::make[2]: Leaving directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps7
+TRACE::2021-03-15.21:40:01::SCWBDomain::_cortexa9_0/libsrc/dmaps_v2_6/src'
+
+TRACE::2021-03-15.21:40:01::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_6/src"
+
+TRACE::2021-03-15.21:40:01::SCWBDomain::make -C ps7_cortexa9_0/libsrc/gpio_v4_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2021-03-15.21:40:01::SCWBDomain::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2021-03-15.21:40:01::SCWBDomain::tfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:01::SCWBDomain::make[2]: Entering directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps
+TRACE::2021-03-15.21:40:01::SCWBDomain::7_cortexa9_0/libsrc/gpio_v4_6/src'
+
+TRACE::2021-03-15.21:40:01::SCWBDomain::make[2]: Leaving directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps7
+TRACE::2021-03-15.21:40:01::SCWBDomain::_cortexa9_0/libsrc/gpio_v4_6/src'
+
+TRACE::2021-03-15.21:40:01::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_2/src"
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scugic_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-03-15.21:40:02::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-03-15.21:40:02::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::make[2]: Entering directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps
+TRACE::2021-03-15.21:40:02::SCWBDomain::7_cortexa9_0/libsrc/scugic_v4_2/src'
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::make[2]: Leaving directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps7
+TRACE::2021-03-15.21:40:02::SCWBDomain::_cortexa9_0/libsrc/scugic_v4_2/src'
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_2/src"
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scutimer_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2021-03-15.21:40:02::SCWBDomain::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2021-03-15.21:40:02::SCWBDomain::startfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::make[2]: Entering directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps
+TRACE::2021-03-15.21:40:02::SCWBDomain::7_cortexa9_0/libsrc/scutimer_v2_2/src'
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::make[2]: Leaving directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps7
+TRACE::2021-03-15.21:40:02::SCWBDomain::_cortexa9_0/libsrc/scutimer_v2_2/src'
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_2/src"
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-03-15.21:40:02::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-03-15.21:40:02::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::make[2]: Entering directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps
+TRACE::2021-03-15.21:40:02::SCWBDomain::7_cortexa9_0/libsrc/scuwdt_v2_2/src'
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::make[2]: Leaving directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps7
+TRACE::2021-03-15.21:40:02::SCWBDomain::_cortexa9_0/libsrc/scuwdt_v2_2/src'
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/spips_v3_4/src"
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::make -C ps7_cortexa9_0/libsrc/spips_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2021-03-15.21:40:02::SCWBDomain::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2021-03-15.21:40:02::SCWBDomain::rtfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::make[2]: Entering directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps
+TRACE::2021-03-15.21:40:02::SCWBDomain::7_cortexa9_0/libsrc/spips_v3_4/src'
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::make[2]: Leaving directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps7
+TRACE::2021-03-15.21:40:02::SCWBDomain::_cortexa9_0/libsrc/spips_v3_4/src'
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_2/src"
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::make -C ps7_cortexa9_0/libsrc/standalone_v7_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2021-03-15.21:40:02::SCWBDomain::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2021-03-15.21:40:02::SCWBDomain::nostartfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::make[2]: Entering directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps
+TRACE::2021-03-15.21:40:02::SCWBDomain::7_cortexa9_0/libsrc/standalone_v7_2/src'
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::make[3]: Entering directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps
+TRACE::2021-03-15.21:40:02::SCWBDomain::7_cortexa9_0/libsrc/standalone_v7_2/src/profile'
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::make[3]: Leaving directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps7
+TRACE::2021-03-15.21:40:02::SCWBDomain::_cortexa9_0/libsrc/standalone_v7_2/src/profile'
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::make[2]: Leaving directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps7
+TRACE::2021-03-15.21:40:02::SCWBDomain::_cortexa9_0/libsrc/standalone_v7_2/src'
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_9/src"
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::make -C ps7_cortexa9_0/libsrc/uartps_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-03-15.21:40:02::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-03-15.21:40:02::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::make[2]: Entering directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps
+TRACE::2021-03-15.21:40:02::SCWBDomain::7_cortexa9_0/libsrc/uartps_v3_9/src'
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::make[2]: Leaving directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps7
+TRACE::2021-03-15.21:40:02::SCWBDomain::_cortexa9_0/libsrc/uartps_v3_9/src'
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_4/src"
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xadcps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-03-15.21:40:02::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-03-15.21:40:02::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::make[2]: Entering directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps
+TRACE::2021-03-15.21:40:02::SCWBDomain::7_cortexa9_0/libsrc/xadcps_v2_4/src'
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::make[2]: Leaving directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps7
+TRACE::2021-03-15.21:40:02::SCWBDomain::_cortexa9_0/libsrc/xadcps_v2_4/src'
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/xilffs_v4_3/src"
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilffs_v4_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-03-15.21:40:02::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-03-15.21:40:02::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::make[2]: Entering directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps
+TRACE::2021-03-15.21:40:02::SCWBDomain::7_cortexa9_0/libsrc/xilffs_v4_3/src'
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::make[2]: Leaving directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps7
+TRACE::2021-03-15.21:40:02::SCWBDomain::_cortexa9_0/libsrc/xilffs_v4_3/src'
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/xilrsa_v1_6/src"
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilrsa_v1_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-03-15.21:40:02::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-03-15.21:40:02::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::make[2]: Entering directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps
+TRACE::2021-03-15.21:40:02::SCWBDomain::7_cortexa9_0/libsrc/xilrsa_v1_6/src'
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::make[2]: Leaving directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps7
+TRACE::2021-03-15.21:40:02::SCWBDomain::_cortexa9_0/libsrc/xilrsa_v1_6/src'
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_7/src"
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2021-03-15.21:40:02::SCWBDomain::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2021-03-15.21:40:02::SCWBDomain:: -nostartfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::make[2]: Entering directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps
+TRACE::2021-03-15.21:40:02::SCWBDomain::7_cortexa9_0/libsrc/coresightps_dcc_v1_7/src'
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::"Compiling coresightps_dcc"
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::make[2]: Leaving directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps7
+TRACE::2021-03-15.21:40:02::SCWBDomain::_cortexa9_0/libsrc/coresightps_dcc_v1_7/src'
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_9/src"
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+TRACE::2021-03-15.21:40:02::SCWBDomain::as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+TRACE::2021-03-15.21:40:02::SCWBDomain::ostartfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::make[2]: Entering directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps
+TRACE::2021-03-15.21:40:02::SCWBDomain::7_cortexa9_0/libsrc/cpu_cortexa9_v2_9/src'
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::"Compiling cpu_cortexa9"
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::make[2]: Leaving directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps7
+TRACE::2021-03-15.21:40:02::SCWBDomain::_cortexa9_0/libsrc/cpu_cortexa9_v2_9/src'
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_1/src"
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::make -C ps7_cortexa9_0/libsrc/ddrps_v1_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2021-03-15.21:40:02::SCWBDomain::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2021-03-15.21:40:02::SCWBDomain::iles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::make[2]: Entering directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps
+TRACE::2021-03-15.21:40:02::SCWBDomain::7_cortexa9_0/libsrc/ddrps_v1_1/src'
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::"Compiling ddrps"
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::make[2]: Leaving directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps7
+TRACE::2021-03-15.21:40:02::SCWBDomain::_cortexa9_0/libsrc/ddrps_v1_1/src'
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_6/src"
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::make -C ps7_cortexa9_0/libsrc/devcfg_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2021-03-15.21:40:02::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2021-03-15.21:40:02::SCWBDomain::files -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:02::SCWBDomain::make[2]: Entering directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps
+TRACE::2021-03-15.21:40:03::SCWBDomain::7_cortexa9_0/libsrc/devcfg_v3_6/src'
+
+TRACE::2021-03-15.21:40:03::SCWBDomain::"Compiling devcfg"
+
+TRACE::2021-03-15.21:40:03::SCWBDomain::make[2]: Leaving directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps7
+TRACE::2021-03-15.21:40:03::SCWBDomain::_cortexa9_0/libsrc/devcfg_v3_6/src'
+
+TRACE::2021-03-15.21:40:03::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_6/src"
+
+TRACE::2021-03-15.21:40:03::SCWBDomain::make -C ps7_cortexa9_0/libsrc/dmaps_v2_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2021-03-15.21:40:03::SCWBDomain::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2021-03-15.21:40:03::SCWBDomain::iles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:03::SCWBDomain::make[2]: Entering directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps
+TRACE::2021-03-15.21:40:03::SCWBDomain::7_cortexa9_0/libsrc/dmaps_v2_6/src'
+
+TRACE::2021-03-15.21:40:03::SCWBDomain::"Compiling dmaps"
+
+TRACE::2021-03-15.21:40:04::SCWBDomain::make[2]: Leaving directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps7
+TRACE::2021-03-15.21:40:04::SCWBDomain::_cortexa9_0/libsrc/dmaps_v2_6/src'
+
+TRACE::2021-03-15.21:40:04::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_6/src"
+
+TRACE::2021-03-15.21:40:04::SCWBDomain::make -C ps7_cortexa9_0/libsrc/gpio_v4_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARC
+TRACE::2021-03-15.21:40:04::SCWBDomain::HIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfi
+TRACE::2021-03-15.21:40:04::SCWBDomain::les -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:04::SCWBDomain::make[2]: Entering directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps
+TRACE::2021-03-15.21:40:04::SCWBDomain::7_cortexa9_0/libsrc/gpio_v4_6/src'
+
+TRACE::2021-03-15.21:40:04::SCWBDomain::"Compiling gpio"
+
+TRACE::2021-03-15.21:40:05::SCWBDomain::make[2]: Leaving directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps7
+TRACE::2021-03-15.21:40:05::SCWBDomain::_cortexa9_0/libsrc/gpio_v4_6/src'
+
+TRACE::2021-03-15.21:40:05::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_2/src"
+
+TRACE::2021-03-15.21:40:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scugic_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2021-03-15.21:40:05::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2021-03-15.21:40:05::SCWBDomain::files -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:05::SCWBDomain::make[2]: Entering directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps
+TRACE::2021-03-15.21:40:05::SCWBDomain::7_cortexa9_0/libsrc/scugic_v4_2/src'
+
+TRACE::2021-03-15.21:40:05::SCWBDomain::"Compiling scugic"
+
+TRACE::2021-03-15.21:40:05::SCWBDomain::make[2]: Leaving directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps7
+TRACE::2021-03-15.21:40:05::SCWBDomain::_cortexa9_0/libsrc/scugic_v4_2/src'
+
+TRACE::2021-03-15.21:40:05::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_2/src"
+
+TRACE::2021-03-15.21:40:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scutimer_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2021-03-15.21:40:05::SCWBDomain::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2021-03-15.21:40:05::SCWBDomain::rtfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:05::SCWBDomain::make[2]: Entering directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps
+TRACE::2021-03-15.21:40:05::SCWBDomain::7_cortexa9_0/libsrc/scutimer_v2_2/src'
+
+TRACE::2021-03-15.21:40:05::SCWBDomain::"Compiling scutimer"
+
+TRACE::2021-03-15.21:40:06::SCWBDomain::make[2]: Leaving directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps7
+TRACE::2021-03-15.21:40:06::SCWBDomain::_cortexa9_0/libsrc/scutimer_v2_2/src'
+
+TRACE::2021-03-15.21:40:06::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_2/src"
+
+TRACE::2021-03-15.21:40:06::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2021-03-15.21:40:06::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2021-03-15.21:40:06::SCWBDomain::files -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:06::SCWBDomain::make[2]: Entering directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps
+TRACE::2021-03-15.21:40:06::SCWBDomain::7_cortexa9_0/libsrc/scuwdt_v2_2/src'
+
+TRACE::2021-03-15.21:40:06::SCWBDomain::"Compiling scuwdt"
+
+TRACE::2021-03-15.21:40:06::SCWBDomain::make[2]: Leaving directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps7
+TRACE::2021-03-15.21:40:06::SCWBDomain::_cortexa9_0/libsrc/scuwdt_v2_2/src'
+
+TRACE::2021-03-15.21:40:06::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/spips_v3_4/src"
+
+TRACE::2021-03-15.21:40:06::SCWBDomain::make -C ps7_cortexa9_0/libsrc/spips_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2021-03-15.21:40:06::SCWBDomain::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2021-03-15.21:40:06::SCWBDomain::iles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:06::SCWBDomain::make[2]: Entering directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps
+TRACE::2021-03-15.21:40:06::SCWBDomain::7_cortexa9_0/libsrc/spips_v3_4/src'
+
+TRACE::2021-03-15.21:40:06::SCWBDomain::"Compiling spips"
+
+TRACE::2021-03-15.21:40:07::SCWBDomain::make[2]: Leaving directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps7
+TRACE::2021-03-15.21:40:07::SCWBDomain::_cortexa9_0/libsrc/spips_v3_4/src'
+
+TRACE::2021-03-15.21:40:07::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v7_2/src"
+
+TRACE::2021-03-15.21:40:07::SCWBDomain::make -C ps7_cortexa9_0/libsrc/standalone_v7_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2021-03-15.21:40:07::SCWBDomain::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2021-03-15.21:40:07::SCWBDomain::tartfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:07::SCWBDomain::make[2]: Entering directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps
+TRACE::2021-03-15.21:40:07::SCWBDomain::7_cortexa9_0/libsrc/standalone_v7_2/src'
+
+TRACE::2021-03-15.21:40:07::SCWBDomain::"Compiling standalone"
+
+TRACE::2021-03-15.21:40:10::SCWBDomain::make[3]: Entering directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps
+TRACE::2021-03-15.21:40:10::SCWBDomain::7_cortexa9_0/libsrc/standalone_v7_2/src/profile'
+
+TRACE::2021-03-15.21:40:10::SCWBDomain::make[3]: Leaving directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps7
+TRACE::2021-03-15.21:40:10::SCWBDomain::_cortexa9_0/libsrc/standalone_v7_2/src/profile'
+
+TRACE::2021-03-15.21:40:10::SCWBDomain::make[2]: Leaving directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps7
+TRACE::2021-03-15.21:40:10::SCWBDomain::_cortexa9_0/libsrc/standalone_v7_2/src'
+
+TRACE::2021-03-15.21:40:10::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_9/src"
+
+TRACE::2021-03-15.21:40:10::SCWBDomain::make -C ps7_cortexa9_0/libsrc/uartps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2021-03-15.21:40:10::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2021-03-15.21:40:10::SCWBDomain::files -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:10::SCWBDomain::make[2]: Entering directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps
+TRACE::2021-03-15.21:40:10::SCWBDomain::7_cortexa9_0/libsrc/uartps_v3_9/src'
+
+TRACE::2021-03-15.21:40:10::SCWBDomain::"Compiling uartps"
+
+TRACE::2021-03-15.21:40:11::SCWBDomain::make[2]: Leaving directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps7
+TRACE::2021-03-15.21:40:11::SCWBDomain::_cortexa9_0/libsrc/uartps_v3_9/src'
+
+TRACE::2021-03-15.21:40:11::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_4/src"
+
+TRACE::2021-03-15.21:40:11::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xadcps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2021-03-15.21:40:11::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2021-03-15.21:40:11::SCWBDomain::files -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:11::SCWBDomain::make[2]: Entering directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps
+TRACE::2021-03-15.21:40:11::SCWBDomain::7_cortexa9_0/libsrc/xadcps_v2_4/src'
+
+TRACE::2021-03-15.21:40:11::SCWBDomain::"Compiling xadcps"
+
+TRACE::2021-03-15.21:40:12::SCWBDomain::make[2]: Leaving directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps7
+TRACE::2021-03-15.21:40:12::SCWBDomain::_cortexa9_0/libsrc/xadcps_v2_4/src'
+
+TRACE::2021-03-15.21:40:12::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/xilffs_v4_3/src"
+
+TRACE::2021-03-15.21:40:12::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilffs_v4_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2021-03-15.21:40:12::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2021-03-15.21:40:12::SCWBDomain::files -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:12::SCWBDomain::make[2]: Entering directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps
+TRACE::2021-03-15.21:40:12::SCWBDomain::7_cortexa9_0/libsrc/xilffs_v4_3/src'
+
+TRACE::2021-03-15.21:40:12::SCWBDomain::"Compiling XilFFs Library"
+
+TRACE::2021-03-15.21:40:12::SCWBDomain::make[2]: Leaving directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps7
+TRACE::2021-03-15.21:40:12::SCWBDomain::_cortexa9_0/libsrc/xilffs_v4_3/src'
+
+TRACE::2021-03-15.21:40:12::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/xilrsa_v1_6/src"
+
+TRACE::2021-03-15.21:40:12::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilrsa_v1_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2021-03-15.21:40:12::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2021-03-15.21:40:12::SCWBDomain::files -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:12::SCWBDomain::make[2]: Entering directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps
+TRACE::2021-03-15.21:40:12::SCWBDomain::7_cortexa9_0/libsrc/xilrsa_v1_6/src'
+
+TRACE::2021-03-15.21:40:12::SCWBDomain::make[2]: Leaving directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/ps7
+TRACE::2021-03-15.21:40:12::SCWBDomain::_cortexa9_0/libsrc/xilrsa_v1_6/src'
+
+TRACE::2021-03-15.21:40:12::SCWBDomain::'Finished building libraries'
+
+TRACE::2021-03-15.21:40:12::SCWBDomain::make[1]: Leaving directory 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp'
+
+TRACE::2021-03-15.21:40:12::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -O2 -c -c sd.c -o sd.o -Izynq_fsbl_bsp/ps7_cort
+TRACE::2021-03-15.21:40:12::SCWBDomain::exa9_0/include -I.
+
+TRACE::2021-03-15.21:40:12::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -O2 -c -c nand.c -o nand.o -Izynq_fsbl_bsp/ps7_
+TRACE::2021-03-15.21:40:12::SCWBDomain::cortexa9_0/include -I.
+
+TRACE::2021-03-15.21:40:13::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -O2 -c -c image_mover.c -o image_mover.o -Izynq
+TRACE::2021-03-15.21:40:13::SCWBDomain::_fsbl_bsp/ps7_cortexa9_0/include -I.
+
+TRACE::2021-03-15.21:40:13::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -O2 -c -c md5.c -o md5.o -Izynq_fsbl_bsp/ps7_co
+TRACE::2021-03-15.21:40:13::SCWBDomain::rtexa9_0/include -I.
+
+TRACE::2021-03-15.21:40:13::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -O2 -c -c fsbl_hooks.c -o fsbl_hooks.o -Izynq_f
+TRACE::2021-03-15.21:40:13::SCWBDomain::sbl_bsp/ps7_cortexa9_0/include -I.
+
+TRACE::2021-03-15.21:40:13::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -O2 -c -c main.c -o main.o -Izynq_fsbl_bsp/ps7_
+TRACE::2021-03-15.21:40:13::SCWBDomain::cortexa9_0/include -I.
+
+TRACE::2021-03-15.21:40:13::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -O2 -c -c rsa.c -o rsa.o -Izynq_fsbl_bsp/ps7_co
+TRACE::2021-03-15.21:40:13::SCWBDomain::rtexa9_0/include -I.
+
+TRACE::2021-03-15.21:40:13::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -O2 -c -c nor.c -o nor.o -Izynq_fsbl_bsp/ps7_co
+TRACE::2021-03-15.21:40:13::SCWBDomain::rtexa9_0/include -I.
+
+TRACE::2021-03-15.21:40:13::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -O2 -c -c qspi.c -o qspi.o -Izynq_fsbl_bsp/ps7_
+TRACE::2021-03-15.21:40:13::SCWBDomain::cortexa9_0/include -I.
+
+TRACE::2021-03-15.21:40:13::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -O2 -c -c ps7_init.c -o ps7_init.o -Izynq_fsbl_
+TRACE::2021-03-15.21:40:13::SCWBDomain::bsp/ps7_cortexa9_0/include -I.
+
+TRACE::2021-03-15.21:40:13::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -O2 -c -c pcap.c -o pcap.o -Izynq_fsbl_bsp/ps7_
+TRACE::2021-03-15.21:40:14::SCWBDomain::cortexa9_0/include -I.
+
+TRACE::2021-03-15.21:40:14::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -O2 -c -c fsbl_handoff.S -o fsbl_handoff.o -Izy
+TRACE::2021-03-15.21:40:14::SCWBDomain::nq_fsbl_bsp/ps7_cortexa9_0/include -I.
+
+TRACE::2021-03-15.21:40:14::SCWBDomain::arm-none-eabi-gcc -o executable.elf  sd.o  nand.o  image_mover.o  md5.o  fsbl_hooks.o  main.o  rsa.o  nor.o  qspi.o  ps7_init.o
+TRACE::2021-03-15.21:40:14::SCWBDomain::  pcap.o  fsbl_handoff.o -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=
+TRACE::2021-03-15.21:40:14::SCWBDomain::hard -Wl,-build-id=none -specs=Xilinx.spec  -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxi
+TRACE::2021-03-15.21:40:14::SCWBDomain::l,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group                                -Wl,--gc-sections -L
+TRACE::2021-03-15.21:40:14::SCWBDomain::zynq_fsbl_bsp/ps7_cortexa9_0/lib -L./ -Tlscript.ld
+
+LOG::2021-03-15.21:40:14::SCWSystem::Checking the domain standalone_domain
+LOG::2021-03-15.21:40:14::SCWSystem::Not a boot domain 
+LOG::2021-03-15.21:40:14::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2021-03-15.21:40:14::SCWDomain::Generating domain artifcats
+TRACE::2021-03-15.21:40:14::SCWMssOS::Generating standalone artifcats
+TRACE::2021-03-15.21:40:14::SCWMssOS::Copying the qemu file from  C:/Xilinx2020/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt To C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/sw/001_platform/qemu/
+TRACE::2021-03-15.21:40:14::SCWMssOS::Copying the qemu file from  C:/Xilinx2020/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt To C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/sw/001_platform/standalone_domain/qemu/
+TRACE::2021-03-15.21:40:14::SCWMssOS:: Copying the user libraries. 
+TRACE::2021-03-15.21:40:14::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:40:14::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:40:14::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:40:14::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:40:14::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:40:14::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:40:14::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_11
+TRACE::2021-03-15.21:40:14::SCWPlatform::Opened existing hwdb design_1_wrapper_11
+TRACE::2021-03-15.21:40:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-15.21:40:14::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:40:14::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-15.21:40:14::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:40:14::SCWMssOS::Completed writing the mss file at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp
+TRACE::2021-03-15.21:40:14::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:40:14::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2021-03-15.21:40:14::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2021-03-15.21:40:14::SCWDomain::Building the domain as part of full build :  standalone_domain
+TRACE::2021-03-15.21:40:14::SCWMssOS::doing bsp build ... 
+TRACE::2021-03-15.21:40:14::SCWMssOS::System Command Ran  C: & cd  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp & make 
+TRACE::2021-03-15.21:40:14::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_7/src"
+
+TRACE::2021-03-15.21:40:14::SCWMssOS::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none
+TRACE::2021-03-15.21:40:14::SCWMssOS::-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=h
+TRACE::2021-03-15.21:40:14::SCWMssOS::ard -nostartfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:14::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_9/src"
+
+TRACE::2021-03-15.21:40:14::SCWMssOS::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2021-03-15.21:40:14::SCWMssOS::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2021-03-15.21:40:14::SCWMssOS:: -nostartfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:14::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_1/src"
+
+TRACE::2021-03-15.21:40:14::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ddrps_v1_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2021-03-15.21:40:14::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2021-03-15.21:40:14::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:14::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_6/src"
+
+TRACE::2021-03-15.21:40:14::SCWMssOS::make -C ps7_cortexa9_0/libsrc/devcfg_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-03-15.21:40:14::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-03-15.21:40:14::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:14::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_6/src"
+
+TRACE::2021-03-15.21:40:14::SCWMssOS::make -C ps7_cortexa9_0/libsrc/dmaps_v2_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2021-03-15.21:40:14::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2021-03-15.21:40:14::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:14::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_6/src"
+
+TRACE::2021-03-15.21:40:14::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpio_v4_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2021-03-15.21:40:14::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2021-03-15.21:40:14::SCWMssOS::tfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:14::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_2/src"
+
+TRACE::2021-03-15.21:40:14::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scugic_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-03-15.21:40:14::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-03-15.21:40:14::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:14::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_2/src"
+
+TRACE::2021-03-15.21:40:14::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scutimer_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2021-03-15.21:40:14::SCWMssOS::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2021-03-15.21:40:14::SCWMssOS::startfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:14::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_2/src"
+
+TRACE::2021-03-15.21:40:14::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-03-15.21:40:14::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-03-15.21:40:14::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:14::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/spips_v3_4/src"
+
+TRACE::2021-03-15.21:40:14::SCWMssOS::make -C ps7_cortexa9_0/libsrc/spips_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2021-03-15.21:40:14::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2021-03-15.21:40:14::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:14::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_2/src"
+
+TRACE::2021-03-15.21:40:14::SCWMssOS::make -C ps7_cortexa9_0/libsrc/standalone_v7_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2021-03-15.21:40:14::SCWMssOS::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2021-03-15.21:40:14::SCWMssOS::nostartfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:15::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_9/src"
+
+TRACE::2021-03-15.21:40:15::SCWMssOS::make -C ps7_cortexa9_0/libsrc/uartps_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-03-15.21:40:15::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-03-15.21:40:15::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:15::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_4/src"
+
+TRACE::2021-03-15.21:40:15::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xadcps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-03-15.21:40:15::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-03-15.21:40:15::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:15::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_7/src"
+
+TRACE::2021-03-15.21:40:15::SCWMssOS::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2021-03-15.21:40:15::SCWMssOS::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2021-03-15.21:40:15::SCWMssOS:: -nostartfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:15::SCWMssOS::"Compiling coresightps_dcc"
+
+TRACE::2021-03-15.21:40:15::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_9/src"
+
+TRACE::2021-03-15.21:40:15::SCWMssOS::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+TRACE::2021-03-15.21:40:15::SCWMssOS::as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+TRACE::2021-03-15.21:40:15::SCWMssOS::ostartfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:15::SCWMssOS::"Compiling cpu_cortexa9"
+
+TRACE::2021-03-15.21:40:15::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_1/src"
+
+TRACE::2021-03-15.21:40:15::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ddrps_v1_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2021-03-15.21:40:15::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2021-03-15.21:40:15::SCWMssOS::iles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:15::SCWMssOS::"Compiling ddrps"
+
+TRACE::2021-03-15.21:40:15::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_6/src"
+
+TRACE::2021-03-15.21:40:15::SCWMssOS::make -C ps7_cortexa9_0/libsrc/devcfg_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2021-03-15.21:40:15::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2021-03-15.21:40:15::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:15::SCWMssOS::"Compiling devcfg"
+
+TRACE::2021-03-15.21:40:16::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_6/src"
+
+TRACE::2021-03-15.21:40:16::SCWMssOS::make -C ps7_cortexa9_0/libsrc/dmaps_v2_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2021-03-15.21:40:16::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2021-03-15.21:40:16::SCWMssOS::iles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:16::SCWMssOS::"Compiling dmaps"
+
+TRACE::2021-03-15.21:40:16::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_6/src"
+
+TRACE::2021-03-15.21:40:16::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpio_v4_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARC
+TRACE::2021-03-15.21:40:16::SCWMssOS::HIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfi
+TRACE::2021-03-15.21:40:16::SCWMssOS::les -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:16::SCWMssOS::"Compiling gpio"
+
+TRACE::2021-03-15.21:40:17::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_2/src"
+
+TRACE::2021-03-15.21:40:17::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scugic_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2021-03-15.21:40:17::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2021-03-15.21:40:17::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:17::SCWMssOS::"Compiling scugic"
+
+TRACE::2021-03-15.21:40:18::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_2/src"
+
+TRACE::2021-03-15.21:40:18::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scutimer_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2021-03-15.21:40:18::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2021-03-15.21:40:18::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:18::SCWMssOS::"Compiling scutimer"
+
+TRACE::2021-03-15.21:40:18::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_2/src"
+
+TRACE::2021-03-15.21:40:18::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2021-03-15.21:40:18::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2021-03-15.21:40:18::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:18::SCWMssOS::"Compiling scuwdt"
+
+TRACE::2021-03-15.21:40:19::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/spips_v3_4/src"
+
+TRACE::2021-03-15.21:40:19::SCWMssOS::make -C ps7_cortexa9_0/libsrc/spips_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2021-03-15.21:40:19::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2021-03-15.21:40:19::SCWMssOS::iles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:19::SCWMssOS::"Compiling spips"
+
+TRACE::2021-03-15.21:40:19::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v7_2/src"
+
+TRACE::2021-03-15.21:40:19::SCWMssOS::make -C ps7_cortexa9_0/libsrc/standalone_v7_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2021-03-15.21:40:19::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2021-03-15.21:40:19::SCWMssOS::tartfiles -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:19::SCWMssOS::"Compiling standalone"
+
+TRACE::2021-03-15.21:40:22::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_9/src"
+
+TRACE::2021-03-15.21:40:22::SCWMssOS::make -C ps7_cortexa9_0/libsrc/uartps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2021-03-15.21:40:22::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2021-03-15.21:40:22::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:22::SCWMssOS::"Compiling uartps"
+
+TRACE::2021-03-15.21:40:23::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_4/src"
+
+TRACE::2021-03-15.21:40:23::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xadcps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2021-03-15.21:40:23::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2021-03-15.21:40:23::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2021-03-15.21:40:23::SCWMssOS::"Compiling xadcps"
+
+TRACE::2021-03-15.21:40:24::SCWMssOS::'Finished building libraries'
+
+TRACE::2021-03-15.21:40:24::SCWMssOS::Copying to export directory.
+TRACE::2021-03-15.21:40:24::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2021-03-15.21:40:24::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2021-03-15.21:40:24::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2021-03-15.21:40:24::SCWSystem::Completed Processing the sysconfig 001_platform
+LOG::2021-03-15.21:40:24::SCWPlatform::Completed generating the artifacts for system configuration 001_platform
+TRACE::2021-03-15.21:40:24::SCWPlatform::Started preparing the platform 
+TRACE::2021-03-15.21:40:24::SCWSystem::Writing the bif file for system config 001_platform
+TRACE::2021-03-15.21:40:24::SCWSystem::dir created 
+TRACE::2021-03-15.21:40:24::SCWSystem::Writing the bif 
+TRACE::2021-03-15.21:40:24::SCWPlatform::Started writing the spfm file 
+TRACE::2021-03-15.21:40:24::SCWPlatform::Started writing the xpfm file 
+TRACE::2021-03-15.21:40:24::SCWPlatform::Completed generating the platform
+TRACE::2021-03-15.21:40:24::SCWMssOS::Saving the mss changes C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:40:24::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-03-15.21:40:24::SCWMssOS::Running validate of swdbs.
+KEYINFO::2021-03-15.21:40:24::SCWMssOS::Could not open the swdb for system
+KEYINFO::2021-03-15.21:40:24::SCWMssOS::Could not open the sw design at  system
+ERROR: [Hsi 55-1558] Software Design system is not found
+
+TRACE::2021-03-15.21:40:24::SCWMssOS::Cleared the swdb table entry
+TRACE::2021-03-15.21:40:24::SCWMssOS::Adding the swdes entry, mss present, able to open swdb C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2021-03-15.21:40:24::SCWMssOS::Writing the mss file completed C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:40:24::SCWMssOS::Commit changes completed.
+TRACE::2021-03-15.21:40:24::SCWMssOS::Saving the mss changes C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:40:24::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-03-15.21:40:24::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-03-15.21:40:24::SCWMssOS::Commit changes completed.
+TRACE::2021-03-15.21:40:24::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:40:24::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:40:24::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:40:24::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:40:24::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:40:24::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:40:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_11
+TRACE::2021-03-15.21:40:24::SCWPlatform::Opened existing hwdb design_1_wrapper_11
+TRACE::2021-03-15.21:40:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-15.21:40:24::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:40:24::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-15.21:40:24::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:40:24::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:40:24::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:40:24::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:40:24::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:40:24::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:40:24::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:40:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_11
+TRACE::2021-03-15.21:40:24::SCWPlatform::Opened existing hwdb design_1_wrapper_11
+TRACE::2021-03-15.21:40:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-15.21:40:24::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:40:24::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-15.21:40:24::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:40:24::SCWWriter::formatted JSON is {
+	"platformName":	"001_platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"001_platform",
+	"platHandOff":	"C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_temperature_sensor_vivado/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"001_platform",
+	"systems":	[{
+			"systemName":	"001_platform",
+			"systemDesc":	"001_platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"001_platform",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"239b5207dfff4ff3f360b1bac1166fc6",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.3", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx2020/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx2020/Vitis/2020.1/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"e030d84abc1933be90dfffbaf100d3e3",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2021-03-15.21:40:24::SCWPlatform::updated the xpfm file.
+TRACE::2021-03-15.21:40:24::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:40:24::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:40:24::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:40:24::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:40:24::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:40:24::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:40:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_11
+TRACE::2021-03-15.21:40:24::SCWPlatform::Opened existing hwdb design_1_wrapper_11
+TRACE::2021-03-15.21:40:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-15.21:40:24::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:40:24::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-15.21:40:24::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:57:58::SCWPlatform::Clearing the existing platform
+TRACE::2021-03-15.21:57:58::SCWSystem::Clearing the existing sysconfig
+TRACE::2021-03-15.21:57:58::SCWBDomain::clearing the fsbl build
+TRACE::2021-03-15.21:57:58::SCWMssOS::Removing the swdes entry for  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:57:58::SCWMssOS::Removing the swdes entry for  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:57:58::SCWSystem::Clearing the domains completed.
+TRACE::2021-03-15.21:57:58::SCWPlatform::Clearing the opened hw db.
+TRACE::2021-03-15.21:57:58::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:57:58::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:57:58::SCWPlatform:: Platform location is C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:57:58::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:57:58::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:57:58::SCWPlatform::Removing the HwDB with name C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:57:58::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:57:58::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:57:58::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:57:58::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:57:58::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:57:58::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:57:58::SCWPlatform::Do not have an existing db opened. 
+TRACE::2021-03-15.21:58:00::SCWPlatform::Opened new HwDB with name design_1_wrapper_13
+TRACE::2021-03-15.21:58:00::SCWReader::Active system found as  001_platform
+TRACE::2021-03-15.21:58:00::SCWReader::Handling sysconfig 001_platform
+TRACE::2021-03-15.21:58:00::SCWDomain::checking for install qemu data   : 
+TRACE::2021-03-15.21:58:00::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx2020/Vitis/2020.1/data/emulation/platforms/zynq/qemu/
+TRACE::2021-03-15.21:58:00::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx2020/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2021-03-15.21:58:00::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:00::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:00::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:00::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:58:00::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:00::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:58:00::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_13
+TRACE::2021-03-15.21:58:00::SCWPlatform::Opened existing hwdb design_1_wrapper_13
+TRACE::2021-03-15.21:58:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-15.21:58:00::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:00::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:00::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:00::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:58:00::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:00::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:58:00::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_13
+TRACE::2021-03-15.21:58:00::SCWPlatform::Opened existing hwdb design_1_wrapper_13
+TRACE::2021-03-15.21:58:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-15.21:58:00::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:00::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:00::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:00::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:58:00::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:00::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:58:00::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_13
+TRACE::2021-03-15.21:58:00::SCWPlatform::Opened existing hwdb design_1_wrapper_13
+TRACE::2021-03-15.21:58:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-15.21:58:00::SCWReader::Boot application domain added for zynq_fsbl
+TRACE::2021-03-15.21:58:00::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:00::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:00::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:00::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:58:00::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:00::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:58:00::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_13
+TRACE::2021-03-15.21:58:00::SCWPlatform::Opened existing hwdb design_1_wrapper_13
+TRACE::2021-03-15.21:58:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-15.21:58:00::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:58:00::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2021-03-15.21:58:00::SCWMssOS::No sw design opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:58:00::SCWMssOS::mss exists loading the mss file  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:58:00::SCWMssOS::Opened the sw design from mss  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:58:00::SCWMssOS::Adding the swdes entry C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2021-03-15.21:58:00::SCWMssOS::updating the scw layer about changes
+TRACE::2021-03-15.21:58:00::SCWMssOS::Opened the sw design.  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:58:00::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:00::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:00::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:00::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:58:00::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:00::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:58:00::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_13
+TRACE::2021-03-15.21:58:00::SCWPlatform::Opened existing hwdb design_1_wrapper_13
+TRACE::2021-03-15.21:58:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-15.21:58:00::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:58:00::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-15.21:58:00::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:58:00::SCWMssOS:: library already available in sw design:  xilffs:4.3
+TRACE::2021-03-15.21:58:00::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:00::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:00::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:00::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:58:00::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:00::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:58:00::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_13
+TRACE::2021-03-15.21:58:00::SCWPlatform::Opened existing hwdb design_1_wrapper_13
+TRACE::2021-03-15.21:58:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-15.21:58:00::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:58:00::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-15.21:58:00::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:58:00::SCWMssOS:: library already available in sw design:  xilrsa:1.6
+TRACE::2021-03-15.21:58:00::SCWMssOS::Saving the mss changes C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:58:00::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-03-15.21:58:00::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-03-15.21:58:00::SCWMssOS::Commit changes completed.
+TRACE::2021-03-15.21:58:00::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2021-03-15.21:58:00::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2021-03-15.21:58:00::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:00::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:00::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:00::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:58:00::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:00::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:58:00::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_13
+TRACE::2021-03-15.21:58:00::SCWPlatform::Opened existing hwdb design_1_wrapper_13
+TRACE::2021-03-15.21:58:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-15.21:58:00::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:58:00::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-15.21:58:00::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:58:00::SCWReader::No isolation master present  
+TRACE::2021-03-15.21:58:00::SCWDomain::checking for install qemu data   : 
+TRACE::2021-03-15.21:58:00::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx2020/Vitis/2020.1/data/emulation/platforms/zynq/qemu/
+TRACE::2021-03-15.21:58:00::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx2020/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2021-03-15.21:58:00::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:00::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:00::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:00::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:58:00::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:00::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:58:00::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_13
+TRACE::2021-03-15.21:58:00::SCWPlatform::Opened existing hwdb design_1_wrapper_13
+TRACE::2021-03-15.21:58:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-15.21:58:00::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:00::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:00::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:00::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:58:00::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:00::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:58:00::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_13
+TRACE::2021-03-15.21:58:00::SCWPlatform::Opened existing hwdb design_1_wrapper_13
+TRACE::2021-03-15.21:58:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-15.21:58:00::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:00::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:00::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:00::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:58:00::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:00::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:58:00::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_13
+TRACE::2021-03-15.21:58:00::SCWPlatform::Opened existing hwdb design_1_wrapper_13
+TRACE::2021-03-15.21:58:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-15.21:58:00::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:58:00::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-15.21:58:00::SCWMssOS::No sw design opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:58:00::SCWMssOS::mss exists loading the mss file  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:58:00::SCWMssOS::Opened the sw design from mss  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:58:00::SCWMssOS::Adding the swdes entry C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2021-03-15.21:58:00::SCWMssOS::updating the scw layer about changes
+TRACE::2021-03-15.21:58:00::SCWMssOS::Opened the sw design.  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:58:00::SCWMssOS::Saving the mss changes C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:58:00::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-03-15.21:58:00::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-03-15.21:58:00::SCWMssOS::Commit changes completed.
+TRACE::2021-03-15.21:58:00::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2021-03-15.21:58:00::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2021-03-15.21:58:00::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:00::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:00::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:00::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:58:00::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:00::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:58:01::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_13
+TRACE::2021-03-15.21:58:01::SCWPlatform::Opened existing hwdb design_1_wrapper_13
+TRACE::2021-03-15.21:58:01::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-15.21:58:01::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:58:01::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-15.21:58:01::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:58:01::SCWReader::No isolation master present  
+TRACE::2021-03-15.21:58:02::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:02::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:02::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:02::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:58:02::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:02::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:58:02::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_13
+TRACE::2021-03-15.21:58:02::SCWPlatform::Could not get the HWDB from existing dbname
+TRACE::2021-03-15.21:58:02::SCWPlatform::Do not have an existing db opened. Attempting to open the hwDb. 
+TRACE::2021-03-15.21:58:03::SCWPlatform::Opened new HwDB with name design_1_wrapper_14
+TRACE::2021-03-15.21:58:03::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:58:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-15.21:58:03::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:58:03::SCWMssOS::In reload Mss file.
+TRACE::2021-03-15.21:58:03::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:03::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:03::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:03::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:58:03::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:03::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:58:03::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_14
+TRACE::2021-03-15.21:58:03::SCWPlatform::Opened existing hwdb design_1_wrapper_14
+TRACE::2021-03-15.21:58:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-15.21:58:03::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:58:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+KEYINFO::2021-03-15.21:58:03::SCWMssOS::Could not open the swdb for system_0
+KEYINFO::2021-03-15.21:58:03::SCWMssOS::Could not open the sw design at  system_0
+ERROR: [Hsi 55-1558] Software Design system_0 is not found
+
+TRACE::2021-03-15.21:58:03::SCWMssOS::Cleared the swdb table entry
+TRACE::2021-03-15.21:58:03::SCWMssOS::No sw design opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:58:03::SCWMssOS::mss exists loading the mss file  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:58:03::SCWMssOS::Opened the sw design from mss  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:58:03::SCWMssOS::Adding the swdes entry C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2021-03-15.21:58:03::SCWMssOS::updating the scw layer about changes
+TRACE::2021-03-15.21:58:03::SCWMssOS::Opened the sw design.  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:58:03::SCWMssOS::Saving the mss changes C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:58:03::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-03-15.21:58:03::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-03-15.21:58:03::SCWMssOS::Commit changes completed.
+TRACE::2021-03-15.21:58:03::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:03::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:03::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:03::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:58:03::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:58:03::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:58:03::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_14
+TRACE::2021-03-15.21:58:03::SCWPlatform::Opened existing hwdb design_1_wrapper_14
+TRACE::2021-03-15.21:58:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-15.21:58:03::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:58:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-15.21:58:03::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:58:03::SCWMssOS::Removing the swdes entry for  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+LOG::2021-03-15.21:59:21::SCWPlatform::Started generating the artifacts platform 001_platform
+TRACE::2021-03-15.21:59:21::SCWPlatform::Sanity checking of platform is completed
+LOG::2021-03-15.21:59:21::SCWPlatform::Started generating the artifacts for system configuration 001_platform
+LOG::2021-03-15.21:59:21::SCWSystem::Checking the domain zynq_fsbl
+LOG::2021-03-15.21:59:21::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2021-03-15.21:59:21::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2021-03-15.21:59:21::SCWDomain::Skipping the build for domain :  zynq_fsbl
+LOG::2021-03-15.21:59:21::SCWSystem::Checking the domain standalone_domain
+LOG::2021-03-15.21:59:21::SCWSystem::Not a boot domain 
+LOG::2021-03-15.21:59:21::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2021-03-15.21:59:21::SCWDomain::Generating domain artifcats
+TRACE::2021-03-15.21:59:21::SCWMssOS::Generating standalone artifcats
+TRACE::2021-03-15.21:59:21::SCWMssOS::Copying the qemu file from  C:/Xilinx2020/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt To C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/sw/001_platform/qemu/
+TRACE::2021-03-15.21:59:21::SCWMssOS::Copying the qemu file from  C:/Xilinx2020/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt To C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/sw/001_platform/standalone_domain/qemu/
+TRACE::2021-03-15.21:59:21::SCWMssOS:: Copying the user libraries. 
+TRACE::2021-03-15.21:59:21::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:59:21::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:59:21::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:59:21::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:59:21::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:59:21::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:59:21::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_14
+TRACE::2021-03-15.21:59:21::SCWPlatform::Opened existing hwdb design_1_wrapper_14
+TRACE::2021-03-15.21:59:21::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-15.21:59:21::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:59:21::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-15.21:59:21::SCWMssOS::No sw design opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:59:21::SCWMssOS::mss exists loading the mss file  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:59:21::SCWMssOS::Opened the sw design from mss  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:59:21::SCWMssOS::Adding the swdes entry C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2021-03-15.21:59:21::SCWMssOS::updating the scw layer about changes
+TRACE::2021-03-15.21:59:22::SCWMssOS::Opened the sw design.  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:59:22::SCWMssOS::Completed writing the mss file at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp
+TRACE::2021-03-15.21:59:22::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:59:22::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2021-03-15.21:59:22::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2021-03-15.21:59:22::SCWDomain::Skipping the build for domain :  standalone_domain
+TRACE::2021-03-15.21:59:22::SCWMssOS::skipping the bsp build ... 
+TRACE::2021-03-15.21:59:22::SCWMssOS::Copying to export directory.
+TRACE::2021-03-15.21:59:22::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2021-03-15.21:59:22::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2021-03-15.21:59:22::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2021-03-15.21:59:22::SCWSystem::Completed Processing the sysconfig 001_platform
+LOG::2021-03-15.21:59:22::SCWPlatform::Completed generating the artifacts for system configuration 001_platform
+TRACE::2021-03-15.21:59:22::SCWPlatform::Started preparing the platform 
+TRACE::2021-03-15.21:59:22::SCWSystem::Writing the bif file for system config 001_platform
+TRACE::2021-03-15.21:59:22::SCWSystem::dir created 
+TRACE::2021-03-15.21:59:22::SCWSystem::Writing the bif 
+TRACE::2021-03-15.21:59:22::SCWPlatform::Started writing the spfm file 
+TRACE::2021-03-15.21:59:22::SCWPlatform::Started writing the xpfm file 
+TRACE::2021-03-15.21:59:22::SCWPlatform::Completed generating the platform
+TRACE::2021-03-15.21:59:22::SCWMssOS::Saving the mss changes C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:59:22::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-03-15.21:59:22::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-03-15.21:59:22::SCWMssOS::Commit changes completed.
+TRACE::2021-03-15.21:59:22::SCWMssOS::Saving the mss changes C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:59:22::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-03-15.21:59:22::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-03-15.21:59:22::SCWMssOS::Commit changes completed.
+TRACE::2021-03-15.21:59:22::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:59:22::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:59:22::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:59:22::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:59:22::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:59:22::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:59:22::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_14
+TRACE::2021-03-15.21:59:22::SCWPlatform::Opened existing hwdb design_1_wrapper_14
+TRACE::2021-03-15.21:59:22::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-15.21:59:22::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:59:22::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-15.21:59:22::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-15.21:59:22::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:59:22::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:59:22::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:59:22::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:59:22::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:59:22::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:59:22::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_14
+TRACE::2021-03-15.21:59:22::SCWPlatform::Opened existing hwdb design_1_wrapper_14
+TRACE::2021-03-15.21:59:22::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-15.21:59:22::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:59:22::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-15.21:59:22::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:59:22::SCWWriter::formatted JSON is {
+	"platformName":	"001_platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"001_platform",
+	"platHandOff":	"C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_temperature_sensor_vivado/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"001_platform",
+	"systems":	[{
+			"systemName":	"001_platform",
+			"systemDesc":	"001_platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"001_platform",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"239b5207dfff4ff3f360b1bac1166fc6",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.3", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx2020/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx2020/Vitis/2020.1/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"e030d84abc1933be90dfffbaf100d3e3",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2021-03-15.21:59:22::SCWPlatform::updated the xpfm file.
+TRACE::2021-03-15.21:59:22::SCWPlatform::Trying to open the hw design at C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:59:22::SCWPlatform::DSA given C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:59:22::SCWPlatform::DSA absoulate path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:59:22::SCWPlatform::DSA directory C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw
+TRACE::2021-03-15.21:59:22::SCWPlatform:: Platform Path C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/hw/design_1_wrapper.xsa
+TRACE::2021-03-15.21:59:22::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-15.21:59:22::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_14
+TRACE::2021-03-15.21:59:22::SCWPlatform::Opened existing hwdb design_1_wrapper_14
+TRACE::2021-03-15.21:59:22::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-15.21:59:22::SCWMssOS::Checking the sw design at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-15.21:59:22::SCWMssOS::DEBUG:  swdes dump  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-15.21:59:22::SCWMssOS::Sw design exists and opened at  C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss

@@ -158,3 +158,47 @@ timestamp=[2021-03-15 20:26:49], mode=BUILD, duration=0:00:05.961, duration_ms=5
 timestamp=[2021-03-15 20:56:51], mode=PLATFORM_GENERATION, duration=0:00:17.830, duration_ms=17830, data={name=001_platform}
 timestamp=[2021-03-15 20:56:55], mode=BUILD, duration=0:00:01.190, duration_ms=1190, data={name=001_IoT, configuration=Debug, clean_build=false}
 timestamp=[2021-03-15 20:57:08], mode=BUILD, duration=0:00:06.336, duration_ms=6336, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 21:32:04], mode=PLATFORM_GENERATION, duration=0:00:15.319, duration_ms=15319, data={name=001_platform}
+timestamp=[2021-03-15 21:32:07], mode=BUILD, duration=0:00:00.903, duration_ms=903, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 21:32:19], mode=BUILD, duration=0:00:05.979, duration_ms=5979, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 21:34:50], mode=BUILD, duration=0:00:00.909, duration_ms=909, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 21:34:56], mode=BUILD, duration=0:00:05.932, duration_ms=5932, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 21:35:53], mode=BUILD, duration=0:00:00.605, duration_ms=605, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 21:35:59], mode=BUILD, duration=0:00:05.925, duration_ms=5925, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 21:36:51], mode=BUILD, duration=0:00:00.890, duration_ms=890, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 21:36:58], mode=BUILD, duration=0:00:06.177, duration_ms=6177, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 21:37:49], mode=BUILD, duration=0:00:00.921, duration_ms=921, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 21:37:55], mode=BUILD, duration=0:00:06.175, duration_ms=6175, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 21:39:47], mode=PLATFORM_GENERATION, duration=0:00:03.041, duration_ms=3041, data={name=001_platform}
+timestamp=[2021-03-15 21:39:47], mode=BUILD, duration=0:00:00.176, duration_ms=176, data={name=001_IoT, configuration=Debug, clean_build=true}
+timestamp=[2021-03-15 21:39:47], mode=BUILD, duration=0:00:00.140, duration_ms=140, data={name=001_IoT_system, configuration=Debug, clean_build=true}
+timestamp=[2021-03-15 21:40:25], mode=PLATFORM_GENERATION, duration=0:00:34.535, duration_ms=34535, data={name=001_platform}
+timestamp=[2021-03-15 21:40:26], mode=BUILD, duration=0:00:01.006, duration_ms=1006, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 21:40:32], mode=BUILD, duration=0:00:05.914, duration_ms=5914, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 21:42:07], mode=BUILD, duration=0:00:00.909, duration_ms=909, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 21:42:14], mode=BUILD, duration=0:00:06.343, duration_ms=6343, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 21:51:28], mode=BUILD, duration=0:00:00.924, duration_ms=924, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 21:51:34], mode=BUILD, duration=0:00:05.983, duration_ms=5983, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 21:52:33], mode=BUILD, duration=0:00:00.917, duration_ms=917, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 21:52:40], mode=BUILD, duration=0:00:06.276, duration_ms=6276, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 21:56:41], mode=BUILD, duration=0:00:00.604, duration_ms=604, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 21:56:47], mode=BUILD, duration=0:00:06.080, duration_ms=6080, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 21:57:02], mode=BUILD, duration=0:00:00.964, duration_ms=964, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 21:57:09], mode=BUILD, duration=0:00:06.279, duration_ms=6279, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 21:58:18], mode=APP_CREATION, duration=0:00:07.124, duration_ms=7124, data={name=xgpio_intr_tapp_example_1, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=001_platform, application_type=application}
+timestamp=[2021-03-15 21:59:22], mode=PLATFORM_GENERATION, duration=0:00:02.660, duration_ms=2660, data={name=001_platform}
+timestamp=[2021-03-15 21:59:23], mode=BUILD, duration=0:00:00.706, duration_ms=706, data={name=xgpio_intr_tapp_example_1, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 21:59:26], mode=BUILD, duration=0:00:02.943, duration_ms=2943, data={name=xgpio_intr_tapp_example_1_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 21:59:57], mode=BUILD, duration=0:00:00.703, duration_ms=703, data={name=xgpio_intr_tapp_example_1, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 22:00:03], mode=BUILD, duration=0:00:05.919, duration_ms=5919, data={name=xgpio_intr_tapp_example_1_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 22:01:31], mode=BUILD, duration=0:00:00.742, duration_ms=742, data={name=xgpio_intr_tapp_example_1, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 22:01:37], mode=BUILD, duration=0:00:05.825, duration_ms=5825, data={name=xgpio_intr_tapp_example_1_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 22:14:25], mode=BUILD, duration=0:00:00.606, duration_ms=606, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 22:14:32], mode=BUILD, duration=0:00:06.023, duration_ms=6023, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 22:14:40], mode=BUILD, duration=0:00:00.956, duration_ms=956, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 22:14:46], mode=BUILD, duration=0:00:05.865, duration_ms=5865, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 22:15:24], mode=BUILD, duration=0:00:00.939, duration_ms=939, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 22:15:30], mode=BUILD, duration=0:00:05.867, duration_ms=5867, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 22:16:47], mode=APP_CREATION, duration=0:00:06.758, duration_ms=6758, data={name=xgpio_tapp_example_1, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=001_platform, application_type=application}
+timestamp=[2021-03-15 22:21:41], mode=BUILD, duration=0:00:00.904, duration_ms=904, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 22:21:47], mode=BUILD, duration=0:00:05.860, duration_ms=5860, data={name=001_IoT_system, configuration=Debug, clean_build=false}

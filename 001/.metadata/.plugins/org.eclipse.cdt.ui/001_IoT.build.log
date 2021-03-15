@@ -1,4 +1,4 @@
-20:56:54 **** Incremental Build of configuration Debug for project 001_IoT ****
+22:21:40 **** Incremental Build of configuration Debug for project 001_IoT ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -17,9 +17,9 @@ arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size 001_IoT.elf  |tee "001_IoT.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  40900	   3004	  22812	  66716	  1049c	001_IoT.elf
+  39648	   3004	  22804	  65456	   ffb0	001_IoT.elf
 'Finished building: 001_IoT.elf.size'
 ' '
 
-20:56:55 Build Finished (took 1s.171ms)
+22:21:41 Build Finished (took 888ms)
 
