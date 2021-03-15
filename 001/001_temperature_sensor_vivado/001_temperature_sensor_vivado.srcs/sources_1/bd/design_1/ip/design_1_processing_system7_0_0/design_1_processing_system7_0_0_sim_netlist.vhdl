@@ -1,10 +1,10 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
--- Date        : Thu Mar 11 21:07:16 2021
+-- Date        : Mon Mar 15 20:47:42 2021
 -- Host        : DESKTOP-O8T2GMT running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               c:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_temperature_sensor_vivado/001_temperature_sensor_vivado.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0_sim_netlist.vhdl
+--               c:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_temperature_sensor_vivado/001_temperature_sensor_vivado.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0_sim_netlist.vhdl
 -- Design      : design_1_processing_system7_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -70,9 +70,9 @@ entity design_1_processing_system7_0_0_processing_system7_v5_5_processing_system
     ENET1_MDIO_I : in STD_LOGIC;
     ENET1_EXT_INTIN : in STD_LOGIC;
     ENET1_GMII_RXD : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    GPIO_I : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    GPIO_O : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    GPIO_T : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    GPIO_I : in STD_LOGIC_VECTOR ( 63 downto 0 );
+    GPIO_O : out STD_LOGIC_VECTOR ( 63 downto 0 );
+    GPIO_T : out STD_LOGIC_VECTOR ( 63 downto 0 );
     I2C0_SDA_I : in STD_LOGIC;
     I2C0_SDA_O : out STD_LOGIC;
     I2C0_SDA_T : out STD_LOGIC;
@@ -709,7 +709,7 @@ entity design_1_processing_system7_0_0_processing_system7_v5_5_processing_system
   attribute C_DQ_WIDTH : integer;
   attribute C_DQ_WIDTH of design_1_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 32;
   attribute C_EMIO_GPIO_WIDTH : integer;
-  attribute C_EMIO_GPIO_WIDTH of design_1_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 2;
+  attribute C_EMIO_GPIO_WIDTH of design_1_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 64;
   attribute C_EN_EMIO_ENET0 : integer;
   attribute C_EN_EMIO_ENET0 of design_1_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 0;
   attribute C_EN_EMIO_ENET1 : integer;
@@ -795,7 +795,7 @@ entity design_1_processing_system7_0_0_processing_system7_v5_5_processing_system
   attribute C_USE_DEFAULT_ACP_USER_VAL : integer;
   attribute C_USE_DEFAULT_ACP_USER_VAL of design_1_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 0;
   attribute C_USE_M_AXI_GP0 : integer;
-  attribute C_USE_M_AXI_GP0 of design_1_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 0;
+  attribute C_USE_M_AXI_GP0 of design_1_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 1;
   attribute C_USE_M_AXI_GP1 : integer;
   attribute C_USE_M_AXI_GP1 of design_1_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 0;
   attribute C_USE_S_AXI_ACP : integer;
@@ -817,7 +817,7 @@ entity design_1_processing_system7_0_0_processing_system7_v5_5_processing_system
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of design_1_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is "processing_system7_v5_5_processing_system7";
   attribute POWER : string;
-  attribute POWER of design_1_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is "<PROCESSOR name={system} numA9Cores={2} clockFreq={666.666667} load={0.5} /><MEMORY name={code} memType={DDR3} dataWidth={32} clockFreq={533.333313} readRate={0.5} writeRate={0.5} /><IO interface={SPI} ioStandard={} bidis={0} ioBank={} clockFreq={166.666672} usageRate={0.5} /><IO interface={UART} ioStandard={LVCMOS18} bidis={2} ioBank={Vcco_p1} clockFreq={50.000000} usageRate={0.5} /><PLL domain={Processor} vco={1333.333} /><PLL domain={Memory} vco={1066.667} /><PLL domain={IO} vco={1000.000} />/>";
+  attribute POWER of design_1_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is "<PROCESSOR name={system} numA9Cores={2} clockFreq={666.666667} load={0.5} /><MEMORY name={code} memType={DDR3} dataWidth={32} clockFreq={533.333313} readRate={0.5} writeRate={0.5} /><IO interface={SPI} ioStandard={LVCMOS33} bidis={5} ioBank={Vcco_p0} clockFreq={166.666672} usageRate={0.5} /><IO interface={UART} ioStandard={LVCMOS18} bidis={2} ioBank={Vcco_p1} clockFreq={50.000000} usageRate={0.5} /><PLL domain={Processor} vco={1333.333} /><PLL domain={Memory} vco={1066.667} /><PLL domain={IO} vco={1000.000} /><AXI interface={M_AXI_GP0} dataWidth={32} clockFreq={100} usageRate={0.5} />/>";
   attribute USE_TRACE_DATA_EDGE_DETECTOR : integer;
   attribute USE_TRACE_DATA_EDGE_DETECTOR of design_1_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 0;
 end design_1_processing_system7_0_0_processing_system7_v5_5_processing_system7;
@@ -906,7 +906,7 @@ architecture STRUCTURE of design_1_processing_system7_0_0_processing_system7_v5_
   signal buffered_PS_CLK : STD_LOGIC;
   signal buffered_PS_PORB : STD_LOGIC;
   signal buffered_PS_SRSTB : STD_LOGIC;
-  signal gpio_out_t_n : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal gpio_out_t_n : STD_LOGIC_VECTOR ( 63 downto 0 );
   signal NLW_PS7_i_EMIOENET0GMIITXEN_UNCONNECTED : STD_LOGIC;
   signal NLW_PS7_i_EMIOENET0GMIITXER_UNCONNECTED : STD_LOGIC;
   signal NLW_PS7_i_EMIOENET1GMIITXEN_UNCONNECTED : STD_LOGIC;
@@ -916,8 +916,6 @@ architecture STRUCTURE of design_1_processing_system7_0_0_processing_system7_v5_
   signal NLW_PS7_i_EMIOTRACECTL_UNCONNECTED : STD_LOGIC;
   signal NLW_PS7_i_EMIOENET0GMIITXD_UNCONNECTED : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal NLW_PS7_i_EMIOENET1GMIITXD_UNCONNECTED : STD_LOGIC_VECTOR ( 7 downto 0 );
-  signal NLW_PS7_i_EMIOGPIOO_UNCONNECTED : STD_LOGIC_VECTOR ( 63 downto 2 );
-  signal NLW_PS7_i_EMIOGPIOTN_UNCONNECTED : STD_LOGIC_VECTOR ( 63 downto 2 );
   signal NLW_PS7_i_EMIOTRACEDATA_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal NLW_PS7_i_MAXIGP0ARCACHE_UNCONNECTED : STD_LOGIC_VECTOR ( 1 to 1 );
   signal NLW_PS7_i_MAXIGP0AWCACHE_UNCONNECTED : STD_LOGIC_VECTOR ( 1 to 1 );
@@ -1184,6 +1182,86 @@ GND: unisim.vcomponents.GND
       I0 => gpio_out_t_n(0),
       O => GPIO_T(0)
     );
+\GPIO_T[10]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(10),
+      O => GPIO_T(10)
+    );
+\GPIO_T[11]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(11),
+      O => GPIO_T(11)
+    );
+\GPIO_T[12]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(12),
+      O => GPIO_T(12)
+    );
+\GPIO_T[13]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(13),
+      O => GPIO_T(13)
+    );
+\GPIO_T[14]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(14),
+      O => GPIO_T(14)
+    );
+\GPIO_T[15]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(15),
+      O => GPIO_T(15)
+    );
+\GPIO_T[16]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(16),
+      O => GPIO_T(16)
+    );
+\GPIO_T[17]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(17),
+      O => GPIO_T(17)
+    );
+\GPIO_T[18]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(18),
+      O => GPIO_T(18)
+    );
+\GPIO_T[19]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(19),
+      O => GPIO_T(19)
+    );
 \GPIO_T[1]_INST_0\: unisim.vcomponents.LUT1
     generic map(
       INIT => X"1"
@@ -1191,6 +1269,422 @@ GND: unisim.vcomponents.GND
         port map (
       I0 => gpio_out_t_n(1),
       O => GPIO_T(1)
+    );
+\GPIO_T[20]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(20),
+      O => GPIO_T(20)
+    );
+\GPIO_T[21]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(21),
+      O => GPIO_T(21)
+    );
+\GPIO_T[22]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(22),
+      O => GPIO_T(22)
+    );
+\GPIO_T[23]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(23),
+      O => GPIO_T(23)
+    );
+\GPIO_T[24]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(24),
+      O => GPIO_T(24)
+    );
+\GPIO_T[25]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(25),
+      O => GPIO_T(25)
+    );
+\GPIO_T[26]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(26),
+      O => GPIO_T(26)
+    );
+\GPIO_T[27]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(27),
+      O => GPIO_T(27)
+    );
+\GPIO_T[28]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(28),
+      O => GPIO_T(28)
+    );
+\GPIO_T[29]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(29),
+      O => GPIO_T(29)
+    );
+\GPIO_T[2]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(2),
+      O => GPIO_T(2)
+    );
+\GPIO_T[30]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(30),
+      O => GPIO_T(30)
+    );
+\GPIO_T[31]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(31),
+      O => GPIO_T(31)
+    );
+\GPIO_T[32]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(32),
+      O => GPIO_T(32)
+    );
+\GPIO_T[33]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(33),
+      O => GPIO_T(33)
+    );
+\GPIO_T[34]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(34),
+      O => GPIO_T(34)
+    );
+\GPIO_T[35]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(35),
+      O => GPIO_T(35)
+    );
+\GPIO_T[36]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(36),
+      O => GPIO_T(36)
+    );
+\GPIO_T[37]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(37),
+      O => GPIO_T(37)
+    );
+\GPIO_T[38]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(38),
+      O => GPIO_T(38)
+    );
+\GPIO_T[39]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(39),
+      O => GPIO_T(39)
+    );
+\GPIO_T[3]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(3),
+      O => GPIO_T(3)
+    );
+\GPIO_T[40]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(40),
+      O => GPIO_T(40)
+    );
+\GPIO_T[41]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(41),
+      O => GPIO_T(41)
+    );
+\GPIO_T[42]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(42),
+      O => GPIO_T(42)
+    );
+\GPIO_T[43]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(43),
+      O => GPIO_T(43)
+    );
+\GPIO_T[44]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(44),
+      O => GPIO_T(44)
+    );
+\GPIO_T[45]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(45),
+      O => GPIO_T(45)
+    );
+\GPIO_T[46]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(46),
+      O => GPIO_T(46)
+    );
+\GPIO_T[47]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(47),
+      O => GPIO_T(47)
+    );
+\GPIO_T[48]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(48),
+      O => GPIO_T(48)
+    );
+\GPIO_T[49]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(49),
+      O => GPIO_T(49)
+    );
+\GPIO_T[4]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(4),
+      O => GPIO_T(4)
+    );
+\GPIO_T[50]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(50),
+      O => GPIO_T(50)
+    );
+\GPIO_T[51]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(51),
+      O => GPIO_T(51)
+    );
+\GPIO_T[52]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(52),
+      O => GPIO_T(52)
+    );
+\GPIO_T[53]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(53),
+      O => GPIO_T(53)
+    );
+\GPIO_T[54]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(54),
+      O => GPIO_T(54)
+    );
+\GPIO_T[55]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(55),
+      O => GPIO_T(55)
+    );
+\GPIO_T[56]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(56),
+      O => GPIO_T(56)
+    );
+\GPIO_T[57]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(57),
+      O => GPIO_T(57)
+    );
+\GPIO_T[58]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(58),
+      O => GPIO_T(58)
+    );
+\GPIO_T[59]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(59),
+      O => GPIO_T(59)
+    );
+\GPIO_T[5]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(5),
+      O => GPIO_T(5)
+    );
+\GPIO_T[60]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(60),
+      O => GPIO_T(60)
+    );
+\GPIO_T[61]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(61),
+      O => GPIO_T(61)
+    );
+\GPIO_T[62]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(62),
+      O => GPIO_T(62)
+    );
+\GPIO_T[63]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(63),
+      O => GPIO_T(63)
+    );
+\GPIO_T[6]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(6),
+      O => GPIO_T(6)
+    );
+\GPIO_T[7]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(7),
+      O => GPIO_T(7)
+    );
+\GPIO_T[8]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(8),
+      O => GPIO_T(8)
+    );
+\GPIO_T[9]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(9),
+      O => GPIO_T(9)
     );
 I2C0_SCL_T_INST_0: unisim.vcomponents.LUT1
     generic map(
@@ -1334,12 +1828,9 @@ PS7_i: unisim.vcomponents.PS7
       EMIOENET1PTPSYNCFRAMETX => ENET1_PTP_SYNC_FRAME_TX,
       EMIOENET1SOFRX => ENET1_SOF_RX,
       EMIOENET1SOFTX => ENET1_SOF_TX,
-      EMIOGPIOI(63 downto 2) => B"00000000000000000000000000000000000000000000000000000000000000",
-      EMIOGPIOI(1 downto 0) => GPIO_I(1 downto 0),
-      EMIOGPIOO(63 downto 2) => NLW_PS7_i_EMIOGPIOO_UNCONNECTED(63 downto 2),
-      EMIOGPIOO(1 downto 0) => GPIO_O(1 downto 0),
-      EMIOGPIOTN(63 downto 2) => NLW_PS7_i_EMIOGPIOTN_UNCONNECTED(63 downto 2),
-      EMIOGPIOTN(1 downto 0) => gpio_out_t_n(1 downto 0),
+      EMIOGPIOI(63 downto 0) => GPIO_I(63 downto 0),
+      EMIOGPIOO(63 downto 0) => GPIO_O(63 downto 0),
+      EMIOGPIOTN(63 downto 0) => gpio_out_t_n(63 downto 0),
       EMIOI2C0SCLI => I2C0_SCL_I,
       EMIOI2C0SCLO => I2C0_SCL_O,
       EMIOI2C0SCLTN => I2C0_SCL_T_n,
@@ -2868,23 +3359,46 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity design_1_processing_system7_0_0 is
   port (
-    GPIO_I : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    GPIO_O : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    GPIO_T : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    SPI0_SCLK_I : in STD_LOGIC;
-    SPI0_SCLK_O : out STD_LOGIC;
-    SPI0_SCLK_T : out STD_LOGIC;
-    SPI0_MOSI_I : in STD_LOGIC;
-    SPI0_MOSI_O : out STD_LOGIC;
-    SPI0_MOSI_T : out STD_LOGIC;
-    SPI0_MISO_I : in STD_LOGIC;
-    SPI0_MISO_O : out STD_LOGIC;
-    SPI0_MISO_T : out STD_LOGIC;
-    SPI0_SS_I : in STD_LOGIC;
-    SPI0_SS_O : out STD_LOGIC;
-    SPI0_SS1_O : out STD_LOGIC;
-    SPI0_SS2_O : out STD_LOGIC;
-    SPI0_SS_T : out STD_LOGIC;
+    M_AXI_GP0_ARVALID : out STD_LOGIC;
+    M_AXI_GP0_AWVALID : out STD_LOGIC;
+    M_AXI_GP0_BREADY : out STD_LOGIC;
+    M_AXI_GP0_RREADY : out STD_LOGIC;
+    M_AXI_GP0_WLAST : out STD_LOGIC;
+    M_AXI_GP0_WVALID : out STD_LOGIC;
+    M_AXI_GP0_ARID : out STD_LOGIC_VECTOR ( 11 downto 0 );
+    M_AXI_GP0_AWID : out STD_LOGIC_VECTOR ( 11 downto 0 );
+    M_AXI_GP0_WID : out STD_LOGIC_VECTOR ( 11 downto 0 );
+    M_AXI_GP0_ARBURST : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    M_AXI_GP0_ARLOCK : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    M_AXI_GP0_ARSIZE : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    M_AXI_GP0_AWBURST : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    M_AXI_GP0_AWLOCK : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    M_AXI_GP0_AWSIZE : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    M_AXI_GP0_ARPROT : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    M_AXI_GP0_AWPROT : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    M_AXI_GP0_ARADDR : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    M_AXI_GP0_AWADDR : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    M_AXI_GP0_WDATA : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    M_AXI_GP0_ARCACHE : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    M_AXI_GP0_ARLEN : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    M_AXI_GP0_ARQOS : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    M_AXI_GP0_AWCACHE : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    M_AXI_GP0_AWLEN : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    M_AXI_GP0_AWQOS : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    M_AXI_GP0_WSTRB : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    M_AXI_GP0_ACLK : in STD_LOGIC;
+    M_AXI_GP0_ARREADY : in STD_LOGIC;
+    M_AXI_GP0_AWREADY : in STD_LOGIC;
+    M_AXI_GP0_BVALID : in STD_LOGIC;
+    M_AXI_GP0_RLAST : in STD_LOGIC;
+    M_AXI_GP0_RVALID : in STD_LOGIC;
+    M_AXI_GP0_WREADY : in STD_LOGIC;
+    M_AXI_GP0_BID : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    M_AXI_GP0_RID : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    M_AXI_GP0_BRESP : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    M_AXI_GP0_RRESP : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    M_AXI_GP0_RDATA : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    IRQ_F2P : in STD_LOGIC_VECTOR ( 0 to 0 );
     FCLK_CLK0 : out STD_LOGIC;
     FCLK_RESET0_N : out STD_LOGIC;
     MIO : inout STD_LOGIC_VECTOR ( 53 downto 0 );
@@ -3017,12 +3531,6 @@ architecture STRUCTURE of design_1_processing_system7_0_0 is
   signal NLW_inst_IRQ_P2F_USB0_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_IRQ_P2F_USB1_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_M_AXI_GP0_ARESETN_UNCONNECTED : STD_LOGIC;
-  signal NLW_inst_M_AXI_GP0_ARVALID_UNCONNECTED : STD_LOGIC;
-  signal NLW_inst_M_AXI_GP0_AWVALID_UNCONNECTED : STD_LOGIC;
-  signal NLW_inst_M_AXI_GP0_BREADY_UNCONNECTED : STD_LOGIC;
-  signal NLW_inst_M_AXI_GP0_RREADY_UNCONNECTED : STD_LOGIC;
-  signal NLW_inst_M_AXI_GP0_WLAST_UNCONNECTED : STD_LOGIC;
-  signal NLW_inst_M_AXI_GP0_WVALID_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_M_AXI_GP1_ARESETN_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_M_AXI_GP1_ARVALID_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_M_AXI_GP1_AWVALID_UNCONNECTED : STD_LOGIC;
@@ -3041,6 +3549,16 @@ architecture STRUCTURE of design_1_processing_system7_0_0 is
   signal NLW_inst_SDIO1_CMD_O_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_SDIO1_CMD_T_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_SDIO1_LED_UNCONNECTED : STD_LOGIC;
+  signal NLW_inst_SPI0_MISO_O_UNCONNECTED : STD_LOGIC;
+  signal NLW_inst_SPI0_MISO_T_UNCONNECTED : STD_LOGIC;
+  signal NLW_inst_SPI0_MOSI_O_UNCONNECTED : STD_LOGIC;
+  signal NLW_inst_SPI0_MOSI_T_UNCONNECTED : STD_LOGIC;
+  signal NLW_inst_SPI0_SCLK_O_UNCONNECTED : STD_LOGIC;
+  signal NLW_inst_SPI0_SCLK_T_UNCONNECTED : STD_LOGIC;
+  signal NLW_inst_SPI0_SS1_O_UNCONNECTED : STD_LOGIC;
+  signal NLW_inst_SPI0_SS2_O_UNCONNECTED : STD_LOGIC;
+  signal NLW_inst_SPI0_SS_O_UNCONNECTED : STD_LOGIC;
+  signal NLW_inst_SPI0_SS_T_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_SPI1_MISO_O_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_SPI1_MISO_T_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_SPI1_MOSI_O_UNCONNECTED : STD_LOGIC;
@@ -3126,27 +3644,8 @@ architecture STRUCTURE of design_1_processing_system7_0_0 is
   signal NLW_inst_EVENT_STANDBYWFE_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal NLW_inst_EVENT_STANDBYWFI_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal NLW_inst_FTMT_P2F_DEBUG_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal NLW_inst_M_AXI_GP0_ARADDR_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal NLW_inst_M_AXI_GP0_ARBURST_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal NLW_inst_M_AXI_GP0_ARCACHE_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal NLW_inst_M_AXI_GP0_ARID_UNCONNECTED : STD_LOGIC_VECTOR ( 11 downto 0 );
-  signal NLW_inst_M_AXI_GP0_ARLEN_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal NLW_inst_M_AXI_GP0_ARLOCK_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal NLW_inst_M_AXI_GP0_ARPROT_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
-  signal NLW_inst_M_AXI_GP0_ARQOS_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal NLW_inst_M_AXI_GP0_ARSIZE_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
-  signal NLW_inst_M_AXI_GP0_AWADDR_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal NLW_inst_M_AXI_GP0_AWBURST_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal NLW_inst_M_AXI_GP0_AWCACHE_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal NLW_inst_M_AXI_GP0_AWID_UNCONNECTED : STD_LOGIC_VECTOR ( 11 downto 0 );
-  signal NLW_inst_M_AXI_GP0_AWLEN_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal NLW_inst_M_AXI_GP0_AWLOCK_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal NLW_inst_M_AXI_GP0_AWPROT_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
-  signal NLW_inst_M_AXI_GP0_AWQOS_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal NLW_inst_M_AXI_GP0_AWSIZE_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
-  signal NLW_inst_M_AXI_GP0_WDATA_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal NLW_inst_M_AXI_GP0_WID_UNCONNECTED : STD_LOGIC_VECTOR ( 11 downto 0 );
-  signal NLW_inst_M_AXI_GP0_WSTRB_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal NLW_inst_GPIO_O_UNCONNECTED : STD_LOGIC_VECTOR ( 63 downto 0 );
+  signal NLW_inst_GPIO_T_UNCONNECTED : STD_LOGIC_VECTOR ( 63 downto 0 );
   signal NLW_inst_M_AXI_GP1_ARADDR_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal NLW_inst_M_AXI_GP1_ARBURST_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal NLW_inst_M_AXI_GP1_ARCACHE_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -3235,7 +3734,7 @@ architecture STRUCTURE of design_1_processing_system7_0_0 is
   attribute C_DQ_WIDTH : integer;
   attribute C_DQ_WIDTH of inst : label is 32;
   attribute C_EMIO_GPIO_WIDTH : integer;
-  attribute C_EMIO_GPIO_WIDTH of inst : label is 2;
+  attribute C_EMIO_GPIO_WIDTH of inst : label is 64;
   attribute C_EN_EMIO_ENET0 : integer;
   attribute C_EN_EMIO_ENET0 of inst : label is 0;
   attribute C_EN_EMIO_ENET1 : integer;
@@ -3321,7 +3820,7 @@ architecture STRUCTURE of design_1_processing_system7_0_0 is
   attribute C_USE_DEFAULT_ACP_USER_VAL : integer;
   attribute C_USE_DEFAULT_ACP_USER_VAL of inst : label is 0;
   attribute C_USE_M_AXI_GP0 : integer;
-  attribute C_USE_M_AXI_GP0 of inst : label is 0;
+  attribute C_USE_M_AXI_GP0 of inst : label is 1;
   attribute C_USE_M_AXI_GP1 : integer;
   attribute C_USE_M_AXI_GP1 of inst : label is 0;
   attribute C_USE_S_AXI_ACP : integer;
@@ -3341,7 +3840,7 @@ architecture STRUCTURE of design_1_processing_system7_0_0 is
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of inst : label is "design_1_processing_system7_0_0.hwdef";
   attribute POWER : string;
-  attribute POWER of inst : label is "<PROCESSOR name={system} numA9Cores={2} clockFreq={666.666667} load={0.5} /><MEMORY name={code} memType={DDR3} dataWidth={32} clockFreq={533.333313} readRate={0.5} writeRate={0.5} /><IO interface={SPI} ioStandard={} bidis={0} ioBank={} clockFreq={166.666672} usageRate={0.5} /><IO interface={UART} ioStandard={LVCMOS18} bidis={2} ioBank={Vcco_p1} clockFreq={50.000000} usageRate={0.5} /><PLL domain={Processor} vco={1333.333} /><PLL domain={Memory} vco={1066.667} /><PLL domain={IO} vco={1000.000} />/>";
+  attribute POWER of inst : label is "<PROCESSOR name={system} numA9Cores={2} clockFreq={666.666667} load={0.5} /><MEMORY name={code} memType={DDR3} dataWidth={32} clockFreq={533.333313} readRate={0.5} writeRate={0.5} /><IO interface={SPI} ioStandard={LVCMOS33} bidis={5} ioBank={Vcco_p0} clockFreq={166.666672} usageRate={0.5} /><IO interface={UART} ioStandard={LVCMOS18} bidis={2} ioBank={Vcco_p1} clockFreq={50.000000} usageRate={0.5} /><PLL domain={Processor} vco={1333.333} /><PLL domain={Memory} vco={1066.667} /><PLL domain={IO} vco={1000.000} /><AXI interface={M_AXI_GP0} dataWidth={32} clockFreq={100} usageRate={0.5} />/>";
   attribute USE_TRACE_DATA_EDGE_DETECTOR : integer;
   attribute USE_TRACE_DATA_EDGE_DETECTOR of inst : label is 0;
   attribute X_INTERFACE_INFO : string;
@@ -3361,24 +3860,24 @@ architecture STRUCTURE of design_1_processing_system7_0_0 is
   attribute X_INTERFACE_PARAMETER of FCLK_CLK0 : signal is "XIL_INTERFACENAME FCLK_CLK0, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of FCLK_RESET0_N : signal is "xilinx.com:signal:reset:1.0 FCLK_RESET0_N RST";
   attribute X_INTERFACE_PARAMETER of FCLK_RESET0_N : signal is "XIL_INTERFACENAME FCLK_RESET0_N, POLARITY ACTIVE_LOW, INSERT_VIP 0";
+  attribute X_INTERFACE_INFO of M_AXI_GP0_ACLK : signal is "xilinx.com:signal:clock:1.0 M_AXI_GP0_ACLK CLK";
+  attribute X_INTERFACE_PARAMETER of M_AXI_GP0_ACLK : signal is "XIL_INTERFACENAME M_AXI_GP0_ACLK, ASSOCIATED_BUSIF M_AXI_GP0, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
+  attribute X_INTERFACE_INFO of M_AXI_GP0_ARREADY : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 ARREADY";
+  attribute X_INTERFACE_INFO of M_AXI_GP0_ARVALID : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 ARVALID";
+  attribute X_INTERFACE_INFO of M_AXI_GP0_AWREADY : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 AWREADY";
+  attribute X_INTERFACE_INFO of M_AXI_GP0_AWVALID : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 AWVALID";
+  attribute X_INTERFACE_INFO of M_AXI_GP0_BREADY : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 BREADY";
+  attribute X_INTERFACE_INFO of M_AXI_GP0_BVALID : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 BVALID";
+  attribute X_INTERFACE_INFO of M_AXI_GP0_RLAST : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 RLAST";
+  attribute X_INTERFACE_INFO of M_AXI_GP0_RREADY : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 RREADY";
+  attribute X_INTERFACE_INFO of M_AXI_GP0_RVALID : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 RVALID";
+  attribute X_INTERFACE_INFO of M_AXI_GP0_WLAST : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 WLAST";
+  attribute X_INTERFACE_INFO of M_AXI_GP0_WREADY : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 WREADY";
+  attribute X_INTERFACE_INFO of M_AXI_GP0_WVALID : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 WVALID";
   attribute X_INTERFACE_INFO of PS_CLK : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_CLK";
   attribute X_INTERFACE_INFO of PS_PORB : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_PORB";
   attribute X_INTERFACE_PARAMETER of PS_PORB : signal is "XIL_INTERFACENAME FIXED_IO, CAN_DEBUG false";
   attribute X_INTERFACE_INFO of PS_SRSTB : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_SRSTB";
-  attribute X_INTERFACE_INFO of SPI0_MISO_I : signal is "xilinx.com:interface:spi:1.0 SPI_0 IO1_I";
-  attribute X_INTERFACE_INFO of SPI0_MISO_O : signal is "xilinx.com:interface:spi:1.0 SPI_0 IO1_O";
-  attribute X_INTERFACE_INFO of SPI0_MISO_T : signal is "xilinx.com:interface:spi:1.0 SPI_0 IO1_T";
-  attribute X_INTERFACE_INFO of SPI0_MOSI_I : signal is "xilinx.com:interface:spi:1.0 SPI_0 IO0_I";
-  attribute X_INTERFACE_INFO of SPI0_MOSI_O : signal is "xilinx.com:interface:spi:1.0 SPI_0 IO0_O";
-  attribute X_INTERFACE_INFO of SPI0_MOSI_T : signal is "xilinx.com:interface:spi:1.0 SPI_0 IO0_T";
-  attribute X_INTERFACE_INFO of SPI0_SCLK_I : signal is "xilinx.com:interface:spi:1.0 SPI_0 SCK_I";
-  attribute X_INTERFACE_INFO of SPI0_SCLK_O : signal is "xilinx.com:interface:spi:1.0 SPI_0 SCK_O";
-  attribute X_INTERFACE_INFO of SPI0_SCLK_T : signal is "xilinx.com:interface:spi:1.0 SPI_0 SCK_T";
-  attribute X_INTERFACE_INFO of SPI0_SS1_O : signal is "xilinx.com:interface:spi:1.0 SPI_0 SS1_O";
-  attribute X_INTERFACE_INFO of SPI0_SS2_O : signal is "xilinx.com:interface:spi:1.0 SPI_0 SS2_O";
-  attribute X_INTERFACE_INFO of SPI0_SS_I : signal is "xilinx.com:interface:spi:1.0 SPI_0 SS_I";
-  attribute X_INTERFACE_INFO of SPI0_SS_O : signal is "xilinx.com:interface:spi:1.0 SPI_0 SS_O";
-  attribute X_INTERFACE_INFO of SPI0_SS_T : signal is "xilinx.com:interface:spi:1.0 SPI_0 SS_T";
   attribute X_INTERFACE_INFO of DDR_Addr : signal is "xilinx.com:interface:ddrx:1.0 DDR ADDR";
   attribute X_INTERFACE_INFO of DDR_BankAddr : signal is "xilinx.com:interface:ddrx:1.0 DDR BA";
   attribute X_INTERFACE_INFO of DDR_DM : signal is "xilinx.com:interface:ddrx:1.0 DDR DM";
@@ -3386,10 +3885,36 @@ architecture STRUCTURE of design_1_processing_system7_0_0 is
   attribute X_INTERFACE_INFO of DDR_DQS : signal is "xilinx.com:interface:ddrx:1.0 DDR DQS_P";
   attribute X_INTERFACE_PARAMETER of DDR_DQS : signal is "XIL_INTERFACENAME DDR, CAN_DEBUG false, TIMEPERIOD_PS 1250, MEMORY_TYPE COMPONENTS, DATA_WIDTH 8, CS_ENABLED true, DATA_MASK_ENABLED true, SLOT Single, MEM_ADDR_MAP ROW_COLUMN_BANK, BURST_LENGTH 8, AXI_ARBITRATION_SCHEME TDM, CAS_LATENCY 11, CAS_WRITE_LATENCY 11";
   attribute X_INTERFACE_INFO of DDR_DQS_n : signal is "xilinx.com:interface:ddrx:1.0 DDR DQS_N";
-  attribute X_INTERFACE_INFO of GPIO_I : signal is "xilinx.com:interface:gpio:1.0 GPIO_0 TRI_I";
-  attribute X_INTERFACE_INFO of GPIO_O : signal is "xilinx.com:interface:gpio:1.0 GPIO_0 TRI_O";
-  attribute X_INTERFACE_INFO of GPIO_T : signal is "xilinx.com:interface:gpio:1.0 GPIO_0 TRI_T";
+  attribute X_INTERFACE_INFO of IRQ_F2P : signal is "xilinx.com:signal:interrupt:1.0 IRQ_F2P INTERRUPT";
+  attribute X_INTERFACE_PARAMETER of IRQ_F2P : signal is "XIL_INTERFACENAME IRQ_F2P, SENSITIVITY LEVEL_HIGH, PortWidth 1";
   attribute X_INTERFACE_INFO of MIO : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO MIO";
+  attribute X_INTERFACE_INFO of M_AXI_GP0_ARADDR : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 ARADDR";
+  attribute X_INTERFACE_INFO of M_AXI_GP0_ARBURST : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 ARBURST";
+  attribute X_INTERFACE_INFO of M_AXI_GP0_ARCACHE : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 ARCACHE";
+  attribute X_INTERFACE_INFO of M_AXI_GP0_ARID : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 ARID";
+  attribute X_INTERFACE_INFO of M_AXI_GP0_ARLEN : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 ARLEN";
+  attribute X_INTERFACE_INFO of M_AXI_GP0_ARLOCK : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 ARLOCK";
+  attribute X_INTERFACE_INFO of M_AXI_GP0_ARPROT : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 ARPROT";
+  attribute X_INTERFACE_INFO of M_AXI_GP0_ARQOS : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 ARQOS";
+  attribute X_INTERFACE_INFO of M_AXI_GP0_ARSIZE : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 ARSIZE";
+  attribute X_INTERFACE_INFO of M_AXI_GP0_AWADDR : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 AWADDR";
+  attribute X_INTERFACE_INFO of M_AXI_GP0_AWBURST : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 AWBURST";
+  attribute X_INTERFACE_INFO of M_AXI_GP0_AWCACHE : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 AWCACHE";
+  attribute X_INTERFACE_INFO of M_AXI_GP0_AWID : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 AWID";
+  attribute X_INTERFACE_INFO of M_AXI_GP0_AWLEN : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 AWLEN";
+  attribute X_INTERFACE_INFO of M_AXI_GP0_AWLOCK : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 AWLOCK";
+  attribute X_INTERFACE_INFO of M_AXI_GP0_AWPROT : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 AWPROT";
+  attribute X_INTERFACE_INFO of M_AXI_GP0_AWQOS : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 AWQOS";
+  attribute X_INTERFACE_INFO of M_AXI_GP0_AWSIZE : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 AWSIZE";
+  attribute X_INTERFACE_INFO of M_AXI_GP0_BID : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 BID";
+  attribute X_INTERFACE_INFO of M_AXI_GP0_BRESP : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 BRESP";
+  attribute X_INTERFACE_INFO of M_AXI_GP0_RDATA : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 RDATA";
+  attribute X_INTERFACE_PARAMETER of M_AXI_GP0_RDATA : signal is "XIL_INTERFACENAME M_AXI_GP0, SUPPORTS_NARROW_BURST 0, NUM_WRITE_OUTSTANDING 8, NUM_READ_OUTSTANDING 8, DATA_WIDTH 32, PROTOCOL AXI3, FREQ_HZ 100000000, ID_WIDTH 12, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, MAX_BURST_LENGTH 16, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 4, NUM_WRITE_THREADS 4, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
+  attribute X_INTERFACE_INFO of M_AXI_GP0_RID : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 RID";
+  attribute X_INTERFACE_INFO of M_AXI_GP0_RRESP : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 RRESP";
+  attribute X_INTERFACE_INFO of M_AXI_GP0_WDATA : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 WDATA";
+  attribute X_INTERFACE_INFO of M_AXI_GP0_WID : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 WID";
+  attribute X_INTERFACE_INFO of M_AXI_GP0_WSTRB : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 WSTRB";
 begin
 inst: entity work.design_1_processing_system7_0_0_processing_system7_v5_5_processing_system7
      port map (
@@ -3544,9 +4069,9 @@ inst: entity work.design_1_processing_system7_0_0_processing_system7_v5_5_proces
       FTMT_P2F_TRIG_1 => NLW_inst_FTMT_P2F_TRIG_1_UNCONNECTED,
       FTMT_P2F_TRIG_2 => NLW_inst_FTMT_P2F_TRIG_2_UNCONNECTED,
       FTMT_P2F_TRIG_3 => NLW_inst_FTMT_P2F_TRIG_3_UNCONNECTED,
-      GPIO_I(1 downto 0) => GPIO_I(1 downto 0),
-      GPIO_O(1 downto 0) => GPIO_O(1 downto 0),
-      GPIO_T(1 downto 0) => GPIO_T(1 downto 0),
+      GPIO_I(63 downto 0) => B"0000000000000000000000000000000000000000000000000000000000000000",
+      GPIO_O(63 downto 0) => NLW_inst_GPIO_O_UNCONNECTED(63 downto 0),
+      GPIO_T(63 downto 0) => NLW_inst_GPIO_T_UNCONNECTED(63 downto 0),
       I2C0_SCL_I => '0',
       I2C0_SCL_O => NLW_inst_I2C0_SCL_O_UNCONNECTED,
       I2C0_SCL_T => NLW_inst_I2C0_SCL_T_UNCONNECTED,
@@ -3559,7 +4084,7 @@ inst: entity work.design_1_processing_system7_0_0_processing_system7_v5_5_proces
       I2C1_SDA_I => '0',
       I2C1_SDA_O => NLW_inst_I2C1_SDA_O_UNCONNECTED,
       I2C1_SDA_T => NLW_inst_I2C1_SDA_T_UNCONNECTED,
-      IRQ_F2P(0) => '0',
+      IRQ_F2P(0) => IRQ_F2P(0),
       IRQ_P2F_CAN0 => NLW_inst_IRQ_P2F_CAN0_UNCONNECTED,
       IRQ_P2F_CAN1 => NLW_inst_IRQ_P2F_CAN1_UNCONNECTED,
       IRQ_P2F_CTI => NLW_inst_IRQ_P2F_CTI_UNCONNECTED,
@@ -3590,46 +4115,46 @@ inst: entity work.design_1_processing_system7_0_0_processing_system7_v5_5_proces
       IRQ_P2F_USB0 => NLW_inst_IRQ_P2F_USB0_UNCONNECTED,
       IRQ_P2F_USB1 => NLW_inst_IRQ_P2F_USB1_UNCONNECTED,
       MIO(53 downto 0) => MIO(53 downto 0),
-      M_AXI_GP0_ACLK => '0',
-      M_AXI_GP0_ARADDR(31 downto 0) => NLW_inst_M_AXI_GP0_ARADDR_UNCONNECTED(31 downto 0),
-      M_AXI_GP0_ARBURST(1 downto 0) => NLW_inst_M_AXI_GP0_ARBURST_UNCONNECTED(1 downto 0),
-      M_AXI_GP0_ARCACHE(3 downto 0) => NLW_inst_M_AXI_GP0_ARCACHE_UNCONNECTED(3 downto 0),
+      M_AXI_GP0_ACLK => M_AXI_GP0_ACLK,
+      M_AXI_GP0_ARADDR(31 downto 0) => M_AXI_GP0_ARADDR(31 downto 0),
+      M_AXI_GP0_ARBURST(1 downto 0) => M_AXI_GP0_ARBURST(1 downto 0),
+      M_AXI_GP0_ARCACHE(3 downto 0) => M_AXI_GP0_ARCACHE(3 downto 0),
       M_AXI_GP0_ARESETN => NLW_inst_M_AXI_GP0_ARESETN_UNCONNECTED,
-      M_AXI_GP0_ARID(11 downto 0) => NLW_inst_M_AXI_GP0_ARID_UNCONNECTED(11 downto 0),
-      M_AXI_GP0_ARLEN(3 downto 0) => NLW_inst_M_AXI_GP0_ARLEN_UNCONNECTED(3 downto 0),
-      M_AXI_GP0_ARLOCK(1 downto 0) => NLW_inst_M_AXI_GP0_ARLOCK_UNCONNECTED(1 downto 0),
-      M_AXI_GP0_ARPROT(2 downto 0) => NLW_inst_M_AXI_GP0_ARPROT_UNCONNECTED(2 downto 0),
-      M_AXI_GP0_ARQOS(3 downto 0) => NLW_inst_M_AXI_GP0_ARQOS_UNCONNECTED(3 downto 0),
-      M_AXI_GP0_ARREADY => '0',
-      M_AXI_GP0_ARSIZE(2 downto 0) => NLW_inst_M_AXI_GP0_ARSIZE_UNCONNECTED(2 downto 0),
-      M_AXI_GP0_ARVALID => NLW_inst_M_AXI_GP0_ARVALID_UNCONNECTED,
-      M_AXI_GP0_AWADDR(31 downto 0) => NLW_inst_M_AXI_GP0_AWADDR_UNCONNECTED(31 downto 0),
-      M_AXI_GP0_AWBURST(1 downto 0) => NLW_inst_M_AXI_GP0_AWBURST_UNCONNECTED(1 downto 0),
-      M_AXI_GP0_AWCACHE(3 downto 0) => NLW_inst_M_AXI_GP0_AWCACHE_UNCONNECTED(3 downto 0),
-      M_AXI_GP0_AWID(11 downto 0) => NLW_inst_M_AXI_GP0_AWID_UNCONNECTED(11 downto 0),
-      M_AXI_GP0_AWLEN(3 downto 0) => NLW_inst_M_AXI_GP0_AWLEN_UNCONNECTED(3 downto 0),
-      M_AXI_GP0_AWLOCK(1 downto 0) => NLW_inst_M_AXI_GP0_AWLOCK_UNCONNECTED(1 downto 0),
-      M_AXI_GP0_AWPROT(2 downto 0) => NLW_inst_M_AXI_GP0_AWPROT_UNCONNECTED(2 downto 0),
-      M_AXI_GP0_AWQOS(3 downto 0) => NLW_inst_M_AXI_GP0_AWQOS_UNCONNECTED(3 downto 0),
-      M_AXI_GP0_AWREADY => '0',
-      M_AXI_GP0_AWSIZE(2 downto 0) => NLW_inst_M_AXI_GP0_AWSIZE_UNCONNECTED(2 downto 0),
-      M_AXI_GP0_AWVALID => NLW_inst_M_AXI_GP0_AWVALID_UNCONNECTED,
-      M_AXI_GP0_BID(11 downto 0) => B"000000000000",
-      M_AXI_GP0_BREADY => NLW_inst_M_AXI_GP0_BREADY_UNCONNECTED,
-      M_AXI_GP0_BRESP(1 downto 0) => B"00",
-      M_AXI_GP0_BVALID => '0',
-      M_AXI_GP0_RDATA(31 downto 0) => B"00000000000000000000000000000000",
-      M_AXI_GP0_RID(11 downto 0) => B"000000000000",
-      M_AXI_GP0_RLAST => '0',
-      M_AXI_GP0_RREADY => NLW_inst_M_AXI_GP0_RREADY_UNCONNECTED,
-      M_AXI_GP0_RRESP(1 downto 0) => B"00",
-      M_AXI_GP0_RVALID => '0',
-      M_AXI_GP0_WDATA(31 downto 0) => NLW_inst_M_AXI_GP0_WDATA_UNCONNECTED(31 downto 0),
-      M_AXI_GP0_WID(11 downto 0) => NLW_inst_M_AXI_GP0_WID_UNCONNECTED(11 downto 0),
-      M_AXI_GP0_WLAST => NLW_inst_M_AXI_GP0_WLAST_UNCONNECTED,
-      M_AXI_GP0_WREADY => '0',
-      M_AXI_GP0_WSTRB(3 downto 0) => NLW_inst_M_AXI_GP0_WSTRB_UNCONNECTED(3 downto 0),
-      M_AXI_GP0_WVALID => NLW_inst_M_AXI_GP0_WVALID_UNCONNECTED,
+      M_AXI_GP0_ARID(11 downto 0) => M_AXI_GP0_ARID(11 downto 0),
+      M_AXI_GP0_ARLEN(3 downto 0) => M_AXI_GP0_ARLEN(3 downto 0),
+      M_AXI_GP0_ARLOCK(1 downto 0) => M_AXI_GP0_ARLOCK(1 downto 0),
+      M_AXI_GP0_ARPROT(2 downto 0) => M_AXI_GP0_ARPROT(2 downto 0),
+      M_AXI_GP0_ARQOS(3 downto 0) => M_AXI_GP0_ARQOS(3 downto 0),
+      M_AXI_GP0_ARREADY => M_AXI_GP0_ARREADY,
+      M_AXI_GP0_ARSIZE(2 downto 0) => M_AXI_GP0_ARSIZE(2 downto 0),
+      M_AXI_GP0_ARVALID => M_AXI_GP0_ARVALID,
+      M_AXI_GP0_AWADDR(31 downto 0) => M_AXI_GP0_AWADDR(31 downto 0),
+      M_AXI_GP0_AWBURST(1 downto 0) => M_AXI_GP0_AWBURST(1 downto 0),
+      M_AXI_GP0_AWCACHE(3 downto 0) => M_AXI_GP0_AWCACHE(3 downto 0),
+      M_AXI_GP0_AWID(11 downto 0) => M_AXI_GP0_AWID(11 downto 0),
+      M_AXI_GP0_AWLEN(3 downto 0) => M_AXI_GP0_AWLEN(3 downto 0),
+      M_AXI_GP0_AWLOCK(1 downto 0) => M_AXI_GP0_AWLOCK(1 downto 0),
+      M_AXI_GP0_AWPROT(2 downto 0) => M_AXI_GP0_AWPROT(2 downto 0),
+      M_AXI_GP0_AWQOS(3 downto 0) => M_AXI_GP0_AWQOS(3 downto 0),
+      M_AXI_GP0_AWREADY => M_AXI_GP0_AWREADY,
+      M_AXI_GP0_AWSIZE(2 downto 0) => M_AXI_GP0_AWSIZE(2 downto 0),
+      M_AXI_GP0_AWVALID => M_AXI_GP0_AWVALID,
+      M_AXI_GP0_BID(11 downto 0) => M_AXI_GP0_BID(11 downto 0),
+      M_AXI_GP0_BREADY => M_AXI_GP0_BREADY,
+      M_AXI_GP0_BRESP(1 downto 0) => M_AXI_GP0_BRESP(1 downto 0),
+      M_AXI_GP0_BVALID => M_AXI_GP0_BVALID,
+      M_AXI_GP0_RDATA(31 downto 0) => M_AXI_GP0_RDATA(31 downto 0),
+      M_AXI_GP0_RID(11 downto 0) => M_AXI_GP0_RID(11 downto 0),
+      M_AXI_GP0_RLAST => M_AXI_GP0_RLAST,
+      M_AXI_GP0_RREADY => M_AXI_GP0_RREADY,
+      M_AXI_GP0_RRESP(1 downto 0) => M_AXI_GP0_RRESP(1 downto 0),
+      M_AXI_GP0_RVALID => M_AXI_GP0_RVALID,
+      M_AXI_GP0_WDATA(31 downto 0) => M_AXI_GP0_WDATA(31 downto 0),
+      M_AXI_GP0_WID(11 downto 0) => M_AXI_GP0_WID(11 downto 0),
+      M_AXI_GP0_WLAST => M_AXI_GP0_WLAST,
+      M_AXI_GP0_WREADY => M_AXI_GP0_WREADY,
+      M_AXI_GP0_WSTRB(3 downto 0) => M_AXI_GP0_WSTRB(3 downto 0),
+      M_AXI_GP0_WVALID => M_AXI_GP0_WVALID,
       M_AXI_GP1_ACLK => '0',
       M_AXI_GP1_ARADDR(31 downto 0) => NLW_inst_M_AXI_GP1_ARADDR_UNCONNECTED(31 downto 0),
       M_AXI_GP1_ARBURST(1 downto 0) => NLW_inst_M_AXI_GP1_ARBURST_UNCONNECTED(1 downto 0),
@@ -3703,20 +4228,20 @@ inst: entity work.design_1_processing_system7_0_0_processing_system7_v5_5_proces
       SDIO1_DATA_T(3 downto 0) => NLW_inst_SDIO1_DATA_T_UNCONNECTED(3 downto 0),
       SDIO1_LED => NLW_inst_SDIO1_LED_UNCONNECTED,
       SDIO1_WP => '0',
-      SPI0_MISO_I => SPI0_MISO_I,
-      SPI0_MISO_O => SPI0_MISO_O,
-      SPI0_MISO_T => SPI0_MISO_T,
-      SPI0_MOSI_I => SPI0_MOSI_I,
-      SPI0_MOSI_O => SPI0_MOSI_O,
-      SPI0_MOSI_T => SPI0_MOSI_T,
-      SPI0_SCLK_I => SPI0_SCLK_I,
-      SPI0_SCLK_O => SPI0_SCLK_O,
-      SPI0_SCLK_T => SPI0_SCLK_T,
-      SPI0_SS1_O => SPI0_SS1_O,
-      SPI0_SS2_O => SPI0_SS2_O,
-      SPI0_SS_I => SPI0_SS_I,
-      SPI0_SS_O => SPI0_SS_O,
-      SPI0_SS_T => SPI0_SS_T,
+      SPI0_MISO_I => '0',
+      SPI0_MISO_O => NLW_inst_SPI0_MISO_O_UNCONNECTED,
+      SPI0_MISO_T => NLW_inst_SPI0_MISO_T_UNCONNECTED,
+      SPI0_MOSI_I => '0',
+      SPI0_MOSI_O => NLW_inst_SPI0_MOSI_O_UNCONNECTED,
+      SPI0_MOSI_T => NLW_inst_SPI0_MOSI_T_UNCONNECTED,
+      SPI0_SCLK_I => '0',
+      SPI0_SCLK_O => NLW_inst_SPI0_SCLK_O_UNCONNECTED,
+      SPI0_SCLK_T => NLW_inst_SPI0_SCLK_T_UNCONNECTED,
+      SPI0_SS1_O => NLW_inst_SPI0_SS1_O_UNCONNECTED,
+      SPI0_SS2_O => NLW_inst_SPI0_SS2_O_UNCONNECTED,
+      SPI0_SS_I => '0',
+      SPI0_SS_O => NLW_inst_SPI0_SS_O_UNCONNECTED,
+      SPI0_SS_T => NLW_inst_SPI0_SS_T_UNCONNECTED,
       SPI1_MISO_I => '0',
       SPI1_MISO_O => NLW_inst_SPI1_MISO_O_UNCONNECTED,
       SPI1_MISO_T => NLW_inst_SPI1_MISO_T_UNCONNECTED,

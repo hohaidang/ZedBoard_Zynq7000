@@ -70,7 +70,7 @@ design_1_processing_system7_0_0_sc::design_1_processing_system7_0_0_sc(const sc_
     model_param_props.addLong("USE_TRACE_DATA_EDGE_DETECTOR", "0");
     model_param_props.addLong("C_TRACE_PIPELINE_WIDTH", "8");
     model_param_props.addLong("C_TRACE_BUFFER_CLOCK_DELAY", "12");
-    model_param_props.addLong("C_EMIO_GPIO_WIDTH", "2");
+    model_param_props.addLong("C_EMIO_GPIO_WIDTH", "64");
     model_param_props.addLong("C_INCLUDE_ACP_TRANS_CHECK", "0");
     model_param_props.addLong("C_USE_DEFAULT_ACP_USER_VAL", "0");
     model_param_props.addLong("C_S_AXI_ACP_ARUSER_VAL", "31");
@@ -99,7 +99,7 @@ design_1_processing_system7_0_0_sc::design_1_processing_system7_0_0_sc(const sc_
     model_param_props.addLong("C_MIO_PRIMITIVE", "54");
     model_param_props.addLong("C_TRACE_INTERNAL_WIDTH", "2");
     model_param_props.addLong("C_USE_AXI_NONSECURE", "0");
-    model_param_props.addLong("C_USE_M_AXI_GP0", "0");
+    model_param_props.addLong("C_USE_M_AXI_GP0", "1");
     model_param_props.addLong("C_USE_M_AXI_GP1", "0");
     model_param_props.addLong("C_USE_S_AXI_GP0", "0");
     model_param_props.addLong("C_USE_S_AXI_GP1", "0");
@@ -119,6 +119,10 @@ design_1_processing_system7_0_0_sc::design_1_processing_system7_0_0_sc(const sc_
     model_param_props.addString("C_PACKAGE_NAME", "clg484");
 
   mp_impl = new processing_system7_v5_5_tlm("inst", model_param_props);
+
+  // initialize sockets
+  M_AXI_GP0_rd_socket = mp_impl->M_AXI_GP0_rd_socket;
+  M_AXI_GP0_wr_socket = mp_impl->M_AXI_GP0_wr_socket;
 }
 
 design_1_processing_system7_0_0_sc::~design_1_processing_system7_0_0_sc()

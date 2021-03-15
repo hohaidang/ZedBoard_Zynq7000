@@ -1,52 +1,102 @@
-/* Project nay dung UART de send len putty hoac terminal vitis thong qua cong
-   USB cam vao board va control LED thong qua bo Axi GPIO duoc tao ra trong
-   vivado
-  */
-#include "xgpiops.h"
-#include "xil_printf.h"
-#include "xstatus.h"
+#include "gpio_driver.hpp"
+#include "spi_driver.hpp"
 #include <array>
 
-#define PIN_OFFSET 54 // [0:53] is MIO pins, so EMIO from 54
+// dang bi loi luc init spi thi interrupt cua button cung bi disable luon,
+// question?
 
-XGpioPs gpio;
-XGpioPs_Config *gpio_config;
-int status;
+extern "C" {
+void btm_isr_handler(void);
+}
+
+gpio_handler button, led;
+spi_handler spi0;
 
 void small_delay() {
-  for (u32 i = 0; i < 25000000; ++i) {
+  for (u32 i = 0; i < 50000000; ++i) {
   }
 }
 
-void gpio_control() {
-  gpio_config = XGpioPs_LookupConfig(XPAR_XGPIOPS_0_DEVICE_ID);
-  status = XGpioPs_CfgInitialize(&gpio, gpio_config, gpio_config->BaseAddr);
-  if (status != XST_SUCCESS) {
-    xil_printf("GPIO Initialize failed");
+void gpio_init() {
+  if (XST_SUCCESS != button.init(XPAR_BUTTON_DEVICE_ID, 1, 0xff)) {
+    xil_printf("Button Initial failed\r\n");
     return;
   }
-  XGpioPs_SetDirectionPin(&gpio, PIN_OFFSET, 1); // LED
-  XGpioPs_SetOutputEnablePin(&gpio, PIN_OFFSET, 1);
-  XGpioPs_SetDirectionPin(&gpio, PIN_OFFSET + 1, 0); // BUTTON
-  XGpioPs_SetOutputEnablePin(&gpio, PIN_OFFSET + 1, 1);
+  if (XST_SUCCESS != button.init_irq(XPAR_PS7_SCUGIC_0_DEVICE_ID,
+                                     XPAR_FABRIC_BUTTON_IP2INTC_IRPT_INTR,
+                                     btm_isr_handler, XGPIO_IR_CH1_MASK)) {
+    xil_printf("Button irq initial failed\r\n");
+    return;
+  }
+  if (XST_SUCCESS != led.init(XPAR_LED_DEVICE_ID, 1, 0x00)) {
+    xil_printf("Led initial failed\r\n");
+    return;
+  }
+}
+
+void spi_init() {
+  if (XST_SUCCESS != spi0.init(XPAR_XSPIPS_0_DEVICE_ID, XPAR_XSPIPS_0_INTR)) {
+    xil_printf("SPI Initial failed\r\n");
+    return;
+  }
+//  if (XST_SUCCESS != spi0.irq_init(XPAR_XSPIPS_0_INTR)) {
+//    xil_printf("SPI irq initial failed\r\n");
+//    return;
+//  }
+}
+
+void spi_write() {
+  u64 data = 0x0102030405060708;
+//  std::array<u8, 8> data_out;
+//  std::array<u8, 8> data_in;
+  u8 data_out[8];
+  u8 data_in[8];
+//  memset(data_in.begin(), 0x33, data_in.size());
+//  memcpy(data_out.begin(), &data, sizeof(data));
+  memset(data_in, 0x33, 8);
+    memcpy(data_out, &data, sizeof(data));
+
+    u8 temp_data = 0xf3;
+    if (XST_SUCCESS != spi0.transmit(&temp_data, data_in, 1)) {
+    	xil_printf("SPI transmit failed\r\n");
+    }
+//  if (XST_SUCCESS !=
+////      spi0.transmit(data_out.begin(), data_in.begin(), data_out.size())) {
+//		  spi0.transmit(data_out, data_in, 8)){
+//    xil_printf("SPI transmit failed\r\n");
+//    return;
+//  }
+  for (int i = 0; i < 8; ++i) {
+    xil_printf("%d ", data_out[i]);
+  }
 }
 
 int main(void) {
-  gpio_control();
+  xil_printf("Program Starting\r\n");
+  // gpio_init();
+  spi_init();
+  xil_printf("Peripheral device initial completed\r\n");
+  // spi_write();
+
   while (1) {
-    if (XGpioPs_ReadPin(&gpio, PIN_OFFSET + 1)) {
-      XGpioPs_WritePin(&gpio, PIN_OFFSET,
-                       1 ^ XGpioPs_ReadPin(&gpio, PIN_OFFSET));
-      small_delay();
-    }
+    spi_write();
+    small_delay();
   }
-  return 0;
+  return XST_SUCCESS;
 }
 
-  // while (1) {
-  //   if (XGpioPs_ReadPin(&gpio, PIN_OFFSET + 1)) {
-  //     XGpioPs_WritePin(&gpio, PIN_OFFSET,
-  //                      1 ^ XGpioPs_ReadPin(&gpio, PIN_OFFSET));
-  //     small_delay();
-  //   }
-  // }
+
+
+extern "C" {
+void btm_isr_handler(void) {
+  button.disable_irq();
+  if ((button.get_irq_status() & XGPIO_IR_CH1_MASK) != XGPIO_IR_CH1_MASK)
+    return;
+  led.write_toggle(0xff);
+  //  spi_write();
+
+  small_delay();
+  button.clear_irq();
+  button.enable_irq();
+}
+}

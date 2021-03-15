@@ -1,10 +1,10 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-// Date        : Thu Mar 11 21:07:16 2021
+// Date        : Mon Mar 15 20:47:42 2021
 // Host        : DESKTOP-O8T2GMT running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               c:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_temperature_sensor_vivado/001_temperature_sensor_vivado.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0_sim_netlist.v
+//               c:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_temperature_sensor_vivado/001_temperature_sensor_vivado.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0_sim_netlist.v
 // Design      : design_1_processing_system7_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -15,23 +15,46 @@
 (* CHECK_LICENSE_TYPE = "design_1_processing_system7_0_0,processing_system7_v5_5_processing_system7,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "processing_system7_v5_5_processing_system7,Vivado 2020.1" *) 
 (* NotValidForBitStream *)
 module design_1_processing_system7_0_0
-   (GPIO_I,
-    GPIO_O,
-    GPIO_T,
-    SPI0_SCLK_I,
-    SPI0_SCLK_O,
-    SPI0_SCLK_T,
-    SPI0_MOSI_I,
-    SPI0_MOSI_O,
-    SPI0_MOSI_T,
-    SPI0_MISO_I,
-    SPI0_MISO_O,
-    SPI0_MISO_T,
-    SPI0_SS_I,
-    SPI0_SS_O,
-    SPI0_SS1_O,
-    SPI0_SS2_O,
-    SPI0_SS_T,
+   (M_AXI_GP0_ARVALID,
+    M_AXI_GP0_AWVALID,
+    M_AXI_GP0_BREADY,
+    M_AXI_GP0_RREADY,
+    M_AXI_GP0_WLAST,
+    M_AXI_GP0_WVALID,
+    M_AXI_GP0_ARID,
+    M_AXI_GP0_AWID,
+    M_AXI_GP0_WID,
+    M_AXI_GP0_ARBURST,
+    M_AXI_GP0_ARLOCK,
+    M_AXI_GP0_ARSIZE,
+    M_AXI_GP0_AWBURST,
+    M_AXI_GP0_AWLOCK,
+    M_AXI_GP0_AWSIZE,
+    M_AXI_GP0_ARPROT,
+    M_AXI_GP0_AWPROT,
+    M_AXI_GP0_ARADDR,
+    M_AXI_GP0_AWADDR,
+    M_AXI_GP0_WDATA,
+    M_AXI_GP0_ARCACHE,
+    M_AXI_GP0_ARLEN,
+    M_AXI_GP0_ARQOS,
+    M_AXI_GP0_AWCACHE,
+    M_AXI_GP0_AWLEN,
+    M_AXI_GP0_AWQOS,
+    M_AXI_GP0_WSTRB,
+    M_AXI_GP0_ACLK,
+    M_AXI_GP0_ARREADY,
+    M_AXI_GP0_AWREADY,
+    M_AXI_GP0_BVALID,
+    M_AXI_GP0_RLAST,
+    M_AXI_GP0_RVALID,
+    M_AXI_GP0_WREADY,
+    M_AXI_GP0_BID,
+    M_AXI_GP0_RID,
+    M_AXI_GP0_BRESP,
+    M_AXI_GP0_RRESP,
+    M_AXI_GP0_RDATA,
+    IRQ_F2P,
     FCLK_CLK0,
     FCLK_RESET0_N,
     MIO,
@@ -55,23 +78,46 @@ module design_1_processing_system7_0_0
     PS_SRSTB,
     PS_CLK,
     PS_PORB);
-  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO_0 TRI_I" *) input [1:0]GPIO_I;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO_0 TRI_O" *) output [1:0]GPIO_O;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO_0 TRI_T" *) output [1:0]GPIO_T;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 SCK_I" *) input SPI0_SCLK_I;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 SCK_O" *) output SPI0_SCLK_O;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 SCK_T" *) output SPI0_SCLK_T;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 IO0_I" *) input SPI0_MOSI_I;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 IO0_O" *) output SPI0_MOSI_O;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 IO0_T" *) output SPI0_MOSI_T;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 IO1_I" *) input SPI0_MISO_I;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 IO1_O" *) output SPI0_MISO_O;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 IO1_T" *) output SPI0_MISO_T;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 SS_I" *) input SPI0_SS_I;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 SS_O" *) output SPI0_SS_O;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 SS1_O" *) output SPI0_SS1_O;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 SS2_O" *) output SPI0_SS2_O;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 SS_T" *) output SPI0_SS_T;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 ARVALID" *) output M_AXI_GP0_ARVALID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 AWVALID" *) output M_AXI_GP0_AWVALID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 BREADY" *) output M_AXI_GP0_BREADY;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 RREADY" *) output M_AXI_GP0_RREADY;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 WLAST" *) output M_AXI_GP0_WLAST;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 WVALID" *) output M_AXI_GP0_WVALID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 ARID" *) output [11:0]M_AXI_GP0_ARID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 AWID" *) output [11:0]M_AXI_GP0_AWID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 WID" *) output [11:0]M_AXI_GP0_WID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 ARBURST" *) output [1:0]M_AXI_GP0_ARBURST;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 ARLOCK" *) output [1:0]M_AXI_GP0_ARLOCK;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 ARSIZE" *) output [2:0]M_AXI_GP0_ARSIZE;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 AWBURST" *) output [1:0]M_AXI_GP0_AWBURST;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 AWLOCK" *) output [1:0]M_AXI_GP0_AWLOCK;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 AWSIZE" *) output [2:0]M_AXI_GP0_AWSIZE;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 ARPROT" *) output [2:0]M_AXI_GP0_ARPROT;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 AWPROT" *) output [2:0]M_AXI_GP0_AWPROT;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 ARADDR" *) output [31:0]M_AXI_GP0_ARADDR;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 AWADDR" *) output [31:0]M_AXI_GP0_AWADDR;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 WDATA" *) output [31:0]M_AXI_GP0_WDATA;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 ARCACHE" *) output [3:0]M_AXI_GP0_ARCACHE;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 ARLEN" *) output [3:0]M_AXI_GP0_ARLEN;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 ARQOS" *) output [3:0]M_AXI_GP0_ARQOS;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 AWCACHE" *) output [3:0]M_AXI_GP0_AWCACHE;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 AWLEN" *) output [3:0]M_AXI_GP0_AWLEN;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 AWQOS" *) output [3:0]M_AXI_GP0_AWQOS;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 WSTRB" *) output [3:0]M_AXI_GP0_WSTRB;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 M_AXI_GP0_ACLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_AXI_GP0_ACLK, ASSOCIATED_BUSIF M_AXI_GP0, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input M_AXI_GP0_ACLK;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 ARREADY" *) input M_AXI_GP0_ARREADY;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 AWREADY" *) input M_AXI_GP0_AWREADY;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 BVALID" *) input M_AXI_GP0_BVALID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 RLAST" *) input M_AXI_GP0_RLAST;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 RVALID" *) input M_AXI_GP0_RVALID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 WREADY" *) input M_AXI_GP0_WREADY;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 BID" *) input [11:0]M_AXI_GP0_BID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 RID" *) input [11:0]M_AXI_GP0_RID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 BRESP" *) input [1:0]M_AXI_GP0_BRESP;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 RRESP" *) input [1:0]M_AXI_GP0_RRESP;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 RDATA" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_AXI_GP0, SUPPORTS_NARROW_BURST 0, NUM_WRITE_OUTSTANDING 8, NUM_READ_OUTSTANDING 8, DATA_WIDTH 32, PROTOCOL AXI3, FREQ_HZ 100000000, ID_WIDTH 12, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, MAX_BURST_LENGTH 16, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 4, NUM_WRITE_THREADS 4, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input [31:0]M_AXI_GP0_RDATA;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:interrupt:1.0 IRQ_F2P INTERRUPT" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME IRQ_F2P, SENSITIVITY LEVEL_HIGH, PortWidth 1" *) input [0:0]IRQ_F2P;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 FCLK_CLK0 CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME FCLK_CLK0, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) output FCLK_CLK0;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 FCLK_RESET0_N RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME FCLK_RESET0_N, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) output FCLK_RESET0_N;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO MIO" *) inout [53:0]MIO;
@@ -115,27 +161,50 @@ module design_1_processing_system7_0_0
   wire DDR_WEB;
   wire FCLK_CLK0;
   wire FCLK_RESET0_N;
-  wire [1:0]GPIO_I;
-  wire [1:0]GPIO_O;
-  wire [1:0]GPIO_T;
+  wire [0:0]IRQ_F2P;
   wire [53:0]MIO;
+  wire M_AXI_GP0_ACLK;
+  wire [31:0]M_AXI_GP0_ARADDR;
+  wire [1:0]M_AXI_GP0_ARBURST;
+  wire [3:0]M_AXI_GP0_ARCACHE;
+  wire [11:0]M_AXI_GP0_ARID;
+  wire [3:0]M_AXI_GP0_ARLEN;
+  wire [1:0]M_AXI_GP0_ARLOCK;
+  wire [2:0]M_AXI_GP0_ARPROT;
+  wire [3:0]M_AXI_GP0_ARQOS;
+  wire M_AXI_GP0_ARREADY;
+  wire [2:0]M_AXI_GP0_ARSIZE;
+  wire M_AXI_GP0_ARVALID;
+  wire [31:0]M_AXI_GP0_AWADDR;
+  wire [1:0]M_AXI_GP0_AWBURST;
+  wire [3:0]M_AXI_GP0_AWCACHE;
+  wire [11:0]M_AXI_GP0_AWID;
+  wire [3:0]M_AXI_GP0_AWLEN;
+  wire [1:0]M_AXI_GP0_AWLOCK;
+  wire [2:0]M_AXI_GP0_AWPROT;
+  wire [3:0]M_AXI_GP0_AWQOS;
+  wire M_AXI_GP0_AWREADY;
+  wire [2:0]M_AXI_GP0_AWSIZE;
+  wire M_AXI_GP0_AWVALID;
+  wire [11:0]M_AXI_GP0_BID;
+  wire M_AXI_GP0_BREADY;
+  wire [1:0]M_AXI_GP0_BRESP;
+  wire M_AXI_GP0_BVALID;
+  wire [31:0]M_AXI_GP0_RDATA;
+  wire [11:0]M_AXI_GP0_RID;
+  wire M_AXI_GP0_RLAST;
+  wire M_AXI_GP0_RREADY;
+  wire [1:0]M_AXI_GP0_RRESP;
+  wire M_AXI_GP0_RVALID;
+  wire [31:0]M_AXI_GP0_WDATA;
+  wire [11:0]M_AXI_GP0_WID;
+  wire M_AXI_GP0_WLAST;
+  wire M_AXI_GP0_WREADY;
+  wire [3:0]M_AXI_GP0_WSTRB;
+  wire M_AXI_GP0_WVALID;
   wire PS_CLK;
   wire PS_PORB;
   wire PS_SRSTB;
-  wire SPI0_MISO_I;
-  wire SPI0_MISO_O;
-  wire SPI0_MISO_T;
-  wire SPI0_MOSI_I;
-  wire SPI0_MOSI_O;
-  wire SPI0_MOSI_T;
-  wire SPI0_SCLK_I;
-  wire SPI0_SCLK_O;
-  wire SPI0_SCLK_T;
-  wire SPI0_SS1_O;
-  wire SPI0_SS2_O;
-  wire SPI0_SS_I;
-  wire SPI0_SS_O;
-  wire SPI0_SS_T;
   wire NLW_inst_CAN0_PHY_TX_UNCONNECTED;
   wire NLW_inst_CAN1_PHY_TX_UNCONNECTED;
   wire NLW_inst_DMA0_DAVALID_UNCONNECTED;
@@ -233,12 +302,6 @@ module design_1_processing_system7_0_0
   wire NLW_inst_IRQ_P2F_USB0_UNCONNECTED;
   wire NLW_inst_IRQ_P2F_USB1_UNCONNECTED;
   wire NLW_inst_M_AXI_GP0_ARESETN_UNCONNECTED;
-  wire NLW_inst_M_AXI_GP0_ARVALID_UNCONNECTED;
-  wire NLW_inst_M_AXI_GP0_AWVALID_UNCONNECTED;
-  wire NLW_inst_M_AXI_GP0_BREADY_UNCONNECTED;
-  wire NLW_inst_M_AXI_GP0_RREADY_UNCONNECTED;
-  wire NLW_inst_M_AXI_GP0_WLAST_UNCONNECTED;
-  wire NLW_inst_M_AXI_GP0_WVALID_UNCONNECTED;
   wire NLW_inst_M_AXI_GP1_ARESETN_UNCONNECTED;
   wire NLW_inst_M_AXI_GP1_ARVALID_UNCONNECTED;
   wire NLW_inst_M_AXI_GP1_AWVALID_UNCONNECTED;
@@ -257,6 +320,16 @@ module design_1_processing_system7_0_0
   wire NLW_inst_SDIO1_CMD_O_UNCONNECTED;
   wire NLW_inst_SDIO1_CMD_T_UNCONNECTED;
   wire NLW_inst_SDIO1_LED_UNCONNECTED;
+  wire NLW_inst_SPI0_MISO_O_UNCONNECTED;
+  wire NLW_inst_SPI0_MISO_T_UNCONNECTED;
+  wire NLW_inst_SPI0_MOSI_O_UNCONNECTED;
+  wire NLW_inst_SPI0_MOSI_T_UNCONNECTED;
+  wire NLW_inst_SPI0_SCLK_O_UNCONNECTED;
+  wire NLW_inst_SPI0_SCLK_T_UNCONNECTED;
+  wire NLW_inst_SPI0_SS1_O_UNCONNECTED;
+  wire NLW_inst_SPI0_SS2_O_UNCONNECTED;
+  wire NLW_inst_SPI0_SS_O_UNCONNECTED;
+  wire NLW_inst_SPI0_SS_T_UNCONNECTED;
   wire NLW_inst_SPI1_MISO_O_UNCONNECTED;
   wire NLW_inst_SPI1_MISO_T_UNCONNECTED;
   wire NLW_inst_SPI1_MOSI_O_UNCONNECTED;
@@ -342,27 +415,8 @@ module design_1_processing_system7_0_0
   wire [1:0]NLW_inst_EVENT_STANDBYWFE_UNCONNECTED;
   wire [1:0]NLW_inst_EVENT_STANDBYWFI_UNCONNECTED;
   wire [31:0]NLW_inst_FTMT_P2F_DEBUG_UNCONNECTED;
-  wire [31:0]NLW_inst_M_AXI_GP0_ARADDR_UNCONNECTED;
-  wire [1:0]NLW_inst_M_AXI_GP0_ARBURST_UNCONNECTED;
-  wire [3:0]NLW_inst_M_AXI_GP0_ARCACHE_UNCONNECTED;
-  wire [11:0]NLW_inst_M_AXI_GP0_ARID_UNCONNECTED;
-  wire [3:0]NLW_inst_M_AXI_GP0_ARLEN_UNCONNECTED;
-  wire [1:0]NLW_inst_M_AXI_GP0_ARLOCK_UNCONNECTED;
-  wire [2:0]NLW_inst_M_AXI_GP0_ARPROT_UNCONNECTED;
-  wire [3:0]NLW_inst_M_AXI_GP0_ARQOS_UNCONNECTED;
-  wire [2:0]NLW_inst_M_AXI_GP0_ARSIZE_UNCONNECTED;
-  wire [31:0]NLW_inst_M_AXI_GP0_AWADDR_UNCONNECTED;
-  wire [1:0]NLW_inst_M_AXI_GP0_AWBURST_UNCONNECTED;
-  wire [3:0]NLW_inst_M_AXI_GP0_AWCACHE_UNCONNECTED;
-  wire [11:0]NLW_inst_M_AXI_GP0_AWID_UNCONNECTED;
-  wire [3:0]NLW_inst_M_AXI_GP0_AWLEN_UNCONNECTED;
-  wire [1:0]NLW_inst_M_AXI_GP0_AWLOCK_UNCONNECTED;
-  wire [2:0]NLW_inst_M_AXI_GP0_AWPROT_UNCONNECTED;
-  wire [3:0]NLW_inst_M_AXI_GP0_AWQOS_UNCONNECTED;
-  wire [2:0]NLW_inst_M_AXI_GP0_AWSIZE_UNCONNECTED;
-  wire [31:0]NLW_inst_M_AXI_GP0_WDATA_UNCONNECTED;
-  wire [11:0]NLW_inst_M_AXI_GP0_WID_UNCONNECTED;
-  wire [3:0]NLW_inst_M_AXI_GP0_WSTRB_UNCONNECTED;
+  wire [63:0]NLW_inst_GPIO_O_UNCONNECTED;
+  wire [63:0]NLW_inst_GPIO_T_UNCONNECTED;
   wire [31:0]NLW_inst_M_AXI_GP1_ARADDR_UNCONNECTED;
   wire [1:0]NLW_inst_M_AXI_GP1_ARBURST_UNCONNECTED;
   wire [3:0]NLW_inst_M_AXI_GP1_ARCACHE_UNCONNECTED;
@@ -448,7 +502,7 @@ module design_1_processing_system7_0_0
   (* C_DM_WIDTH = "4" *) 
   (* C_DQS_WIDTH = "4" *) 
   (* C_DQ_WIDTH = "32" *) 
-  (* C_EMIO_GPIO_WIDTH = "2" *) 
+  (* C_EMIO_GPIO_WIDTH = "64" *) 
   (* C_EN_EMIO_ENET0 = "0" *) 
   (* C_EN_EMIO_ENET1 = "0" *) 
   (* C_EN_EMIO_PJTAG = "0" *) 
@@ -491,7 +545,7 @@ module design_1_processing_system7_0_0
   (* C_TRACE_PIPELINE_WIDTH = "8" *) 
   (* C_USE_AXI_NONSECURE = "0" *) 
   (* C_USE_DEFAULT_ACP_USER_VAL = "0" *) 
-  (* C_USE_M_AXI_GP0 = "0" *) 
+  (* C_USE_M_AXI_GP0 = "1" *) 
   (* C_USE_M_AXI_GP1 = "0" *) 
   (* C_USE_S_AXI_ACP = "0" *) 
   (* C_USE_S_AXI_GP0 = "0" *) 
@@ -501,7 +555,7 @@ module design_1_processing_system7_0_0
   (* C_USE_S_AXI_HP2 = "0" *) 
   (* C_USE_S_AXI_HP3 = "0" *) 
   (* HW_HANDOFF = "design_1_processing_system7_0_0.hwdef" *) 
-  (* POWER = "<PROCESSOR name={system} numA9Cores={2} clockFreq={666.666667} load={0.5} /><MEMORY name={code} memType={DDR3} dataWidth={32} clockFreq={533.333313} readRate={0.5} writeRate={0.5} /><IO interface={SPI} ioStandard={} bidis={0} ioBank={} clockFreq={166.666672} usageRate={0.5} /><IO interface={UART} ioStandard={LVCMOS18} bidis={2} ioBank={Vcco_p1} clockFreq={50.000000} usageRate={0.5} /><PLL domain={Processor} vco={1333.333} /><PLL domain={Memory} vco={1066.667} /><PLL domain={IO} vco={1000.000} />/>" *) 
+  (* POWER = "<PROCESSOR name={system} numA9Cores={2} clockFreq={666.666667} load={0.5} /><MEMORY name={code} memType={DDR3} dataWidth={32} clockFreq={533.333313} readRate={0.5} writeRate={0.5} /><IO interface={SPI} ioStandard={LVCMOS33} bidis={5} ioBank={Vcco_p0} clockFreq={166.666672} usageRate={0.5} /><IO interface={UART} ioStandard={LVCMOS18} bidis={2} ioBank={Vcco_p1} clockFreq={50.000000} usageRate={0.5} /><PLL domain={Processor} vco={1333.333} /><PLL domain={Memory} vco={1066.667} /><PLL domain={IO} vco={1000.000} /><AXI interface={M_AXI_GP0} dataWidth={32} clockFreq={100} usageRate={0.5} />/>" *) 
   (* USE_TRACE_DATA_EDGE_DETECTOR = "0" *) 
   design_1_processing_system7_0_0_processing_system7_v5_5_processing_system7 inst
        (.CAN0_PHY_RX(1'b0),
@@ -655,9 +709,9 @@ module design_1_processing_system7_0_0
         .FTMT_P2F_TRIG_1(NLW_inst_FTMT_P2F_TRIG_1_UNCONNECTED),
         .FTMT_P2F_TRIG_2(NLW_inst_FTMT_P2F_TRIG_2_UNCONNECTED),
         .FTMT_P2F_TRIG_3(NLW_inst_FTMT_P2F_TRIG_3_UNCONNECTED),
-        .GPIO_I(GPIO_I),
-        .GPIO_O(GPIO_O),
-        .GPIO_T(GPIO_T),
+        .GPIO_I({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+        .GPIO_O(NLW_inst_GPIO_O_UNCONNECTED[63:0]),
+        .GPIO_T(NLW_inst_GPIO_T_UNCONNECTED[63:0]),
         .I2C0_SCL_I(1'b0),
         .I2C0_SCL_O(NLW_inst_I2C0_SCL_O_UNCONNECTED),
         .I2C0_SCL_T(NLW_inst_I2C0_SCL_T_UNCONNECTED),
@@ -670,7 +724,7 @@ module design_1_processing_system7_0_0
         .I2C1_SDA_I(1'b0),
         .I2C1_SDA_O(NLW_inst_I2C1_SDA_O_UNCONNECTED),
         .I2C1_SDA_T(NLW_inst_I2C1_SDA_T_UNCONNECTED),
-        .IRQ_F2P(1'b0),
+        .IRQ_F2P(IRQ_F2P),
         .IRQ_P2F_CAN0(NLW_inst_IRQ_P2F_CAN0_UNCONNECTED),
         .IRQ_P2F_CAN1(NLW_inst_IRQ_P2F_CAN1_UNCONNECTED),
         .IRQ_P2F_CTI(NLW_inst_IRQ_P2F_CTI_UNCONNECTED),
@@ -701,46 +755,46 @@ module design_1_processing_system7_0_0
         .IRQ_P2F_USB0(NLW_inst_IRQ_P2F_USB0_UNCONNECTED),
         .IRQ_P2F_USB1(NLW_inst_IRQ_P2F_USB1_UNCONNECTED),
         .MIO(MIO),
-        .M_AXI_GP0_ACLK(1'b0),
-        .M_AXI_GP0_ARADDR(NLW_inst_M_AXI_GP0_ARADDR_UNCONNECTED[31:0]),
-        .M_AXI_GP0_ARBURST(NLW_inst_M_AXI_GP0_ARBURST_UNCONNECTED[1:0]),
-        .M_AXI_GP0_ARCACHE(NLW_inst_M_AXI_GP0_ARCACHE_UNCONNECTED[3:0]),
+        .M_AXI_GP0_ACLK(M_AXI_GP0_ACLK),
+        .M_AXI_GP0_ARADDR(M_AXI_GP0_ARADDR),
+        .M_AXI_GP0_ARBURST(M_AXI_GP0_ARBURST),
+        .M_AXI_GP0_ARCACHE(M_AXI_GP0_ARCACHE),
         .M_AXI_GP0_ARESETN(NLW_inst_M_AXI_GP0_ARESETN_UNCONNECTED),
-        .M_AXI_GP0_ARID(NLW_inst_M_AXI_GP0_ARID_UNCONNECTED[11:0]),
-        .M_AXI_GP0_ARLEN(NLW_inst_M_AXI_GP0_ARLEN_UNCONNECTED[3:0]),
-        .M_AXI_GP0_ARLOCK(NLW_inst_M_AXI_GP0_ARLOCK_UNCONNECTED[1:0]),
-        .M_AXI_GP0_ARPROT(NLW_inst_M_AXI_GP0_ARPROT_UNCONNECTED[2:0]),
-        .M_AXI_GP0_ARQOS(NLW_inst_M_AXI_GP0_ARQOS_UNCONNECTED[3:0]),
-        .M_AXI_GP0_ARREADY(1'b0),
-        .M_AXI_GP0_ARSIZE(NLW_inst_M_AXI_GP0_ARSIZE_UNCONNECTED[2:0]),
-        .M_AXI_GP0_ARVALID(NLW_inst_M_AXI_GP0_ARVALID_UNCONNECTED),
-        .M_AXI_GP0_AWADDR(NLW_inst_M_AXI_GP0_AWADDR_UNCONNECTED[31:0]),
-        .M_AXI_GP0_AWBURST(NLW_inst_M_AXI_GP0_AWBURST_UNCONNECTED[1:0]),
-        .M_AXI_GP0_AWCACHE(NLW_inst_M_AXI_GP0_AWCACHE_UNCONNECTED[3:0]),
-        .M_AXI_GP0_AWID(NLW_inst_M_AXI_GP0_AWID_UNCONNECTED[11:0]),
-        .M_AXI_GP0_AWLEN(NLW_inst_M_AXI_GP0_AWLEN_UNCONNECTED[3:0]),
-        .M_AXI_GP0_AWLOCK(NLW_inst_M_AXI_GP0_AWLOCK_UNCONNECTED[1:0]),
-        .M_AXI_GP0_AWPROT(NLW_inst_M_AXI_GP0_AWPROT_UNCONNECTED[2:0]),
-        .M_AXI_GP0_AWQOS(NLW_inst_M_AXI_GP0_AWQOS_UNCONNECTED[3:0]),
-        .M_AXI_GP0_AWREADY(1'b0),
-        .M_AXI_GP0_AWSIZE(NLW_inst_M_AXI_GP0_AWSIZE_UNCONNECTED[2:0]),
-        .M_AXI_GP0_AWVALID(NLW_inst_M_AXI_GP0_AWVALID_UNCONNECTED),
-        .M_AXI_GP0_BID({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .M_AXI_GP0_BREADY(NLW_inst_M_AXI_GP0_BREADY_UNCONNECTED),
-        .M_AXI_GP0_BRESP({1'b0,1'b0}),
-        .M_AXI_GP0_BVALID(1'b0),
-        .M_AXI_GP0_RDATA({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .M_AXI_GP0_RID({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .M_AXI_GP0_RLAST(1'b0),
-        .M_AXI_GP0_RREADY(NLW_inst_M_AXI_GP0_RREADY_UNCONNECTED),
-        .M_AXI_GP0_RRESP({1'b0,1'b0}),
-        .M_AXI_GP0_RVALID(1'b0),
-        .M_AXI_GP0_WDATA(NLW_inst_M_AXI_GP0_WDATA_UNCONNECTED[31:0]),
-        .M_AXI_GP0_WID(NLW_inst_M_AXI_GP0_WID_UNCONNECTED[11:0]),
-        .M_AXI_GP0_WLAST(NLW_inst_M_AXI_GP0_WLAST_UNCONNECTED),
-        .M_AXI_GP0_WREADY(1'b0),
-        .M_AXI_GP0_WSTRB(NLW_inst_M_AXI_GP0_WSTRB_UNCONNECTED[3:0]),
-        .M_AXI_GP0_WVALID(NLW_inst_M_AXI_GP0_WVALID_UNCONNECTED),
+        .M_AXI_GP0_ARID(M_AXI_GP0_ARID),
+        .M_AXI_GP0_ARLEN(M_AXI_GP0_ARLEN),
+        .M_AXI_GP0_ARLOCK(M_AXI_GP0_ARLOCK),
+        .M_AXI_GP0_ARPROT(M_AXI_GP0_ARPROT),
+        .M_AXI_GP0_ARQOS(M_AXI_GP0_ARQOS),
+        .M_AXI_GP0_ARREADY(M_AXI_GP0_ARREADY),
+        .M_AXI_GP0_ARSIZE(M_AXI_GP0_ARSIZE),
+        .M_AXI_GP0_ARVALID(M_AXI_GP0_ARVALID),
+        .M_AXI_GP0_AWADDR(M_AXI_GP0_AWADDR),
+        .M_AXI_GP0_AWBURST(M_AXI_GP0_AWBURST),
+        .M_AXI_GP0_AWCACHE(M_AXI_GP0_AWCACHE),
+        .M_AXI_GP0_AWID(M_AXI_GP0_AWID),
+        .M_AXI_GP0_AWLEN(M_AXI_GP0_AWLEN),
+        .M_AXI_GP0_AWLOCK(M_AXI_GP0_AWLOCK),
+        .M_AXI_GP0_AWPROT(M_AXI_GP0_AWPROT),
+        .M_AXI_GP0_AWQOS(M_AXI_GP0_AWQOS),
+        .M_AXI_GP0_AWREADY(M_AXI_GP0_AWREADY),
+        .M_AXI_GP0_AWSIZE(M_AXI_GP0_AWSIZE),
+        .M_AXI_GP0_AWVALID(M_AXI_GP0_AWVALID),
+        .M_AXI_GP0_BID(M_AXI_GP0_BID),
+        .M_AXI_GP0_BREADY(M_AXI_GP0_BREADY),
+        .M_AXI_GP0_BRESP(M_AXI_GP0_BRESP),
+        .M_AXI_GP0_BVALID(M_AXI_GP0_BVALID),
+        .M_AXI_GP0_RDATA(M_AXI_GP0_RDATA),
+        .M_AXI_GP0_RID(M_AXI_GP0_RID),
+        .M_AXI_GP0_RLAST(M_AXI_GP0_RLAST),
+        .M_AXI_GP0_RREADY(M_AXI_GP0_RREADY),
+        .M_AXI_GP0_RRESP(M_AXI_GP0_RRESP),
+        .M_AXI_GP0_RVALID(M_AXI_GP0_RVALID),
+        .M_AXI_GP0_WDATA(M_AXI_GP0_WDATA),
+        .M_AXI_GP0_WID(M_AXI_GP0_WID),
+        .M_AXI_GP0_WLAST(M_AXI_GP0_WLAST),
+        .M_AXI_GP0_WREADY(M_AXI_GP0_WREADY),
+        .M_AXI_GP0_WSTRB(M_AXI_GP0_WSTRB),
+        .M_AXI_GP0_WVALID(M_AXI_GP0_WVALID),
         .M_AXI_GP1_ACLK(1'b0),
         .M_AXI_GP1_ARADDR(NLW_inst_M_AXI_GP1_ARADDR_UNCONNECTED[31:0]),
         .M_AXI_GP1_ARBURST(NLW_inst_M_AXI_GP1_ARBURST_UNCONNECTED[1:0]),
@@ -814,20 +868,20 @@ module design_1_processing_system7_0_0
         .SDIO1_DATA_T(NLW_inst_SDIO1_DATA_T_UNCONNECTED[3:0]),
         .SDIO1_LED(NLW_inst_SDIO1_LED_UNCONNECTED),
         .SDIO1_WP(1'b0),
-        .SPI0_MISO_I(SPI0_MISO_I),
-        .SPI0_MISO_O(SPI0_MISO_O),
-        .SPI0_MISO_T(SPI0_MISO_T),
-        .SPI0_MOSI_I(SPI0_MOSI_I),
-        .SPI0_MOSI_O(SPI0_MOSI_O),
-        .SPI0_MOSI_T(SPI0_MOSI_T),
-        .SPI0_SCLK_I(SPI0_SCLK_I),
-        .SPI0_SCLK_O(SPI0_SCLK_O),
-        .SPI0_SCLK_T(SPI0_SCLK_T),
-        .SPI0_SS1_O(SPI0_SS1_O),
-        .SPI0_SS2_O(SPI0_SS2_O),
-        .SPI0_SS_I(SPI0_SS_I),
-        .SPI0_SS_O(SPI0_SS_O),
-        .SPI0_SS_T(SPI0_SS_T),
+        .SPI0_MISO_I(1'b0),
+        .SPI0_MISO_O(NLW_inst_SPI0_MISO_O_UNCONNECTED),
+        .SPI0_MISO_T(NLW_inst_SPI0_MISO_T_UNCONNECTED),
+        .SPI0_MOSI_I(1'b0),
+        .SPI0_MOSI_O(NLW_inst_SPI0_MOSI_O_UNCONNECTED),
+        .SPI0_MOSI_T(NLW_inst_SPI0_MOSI_T_UNCONNECTED),
+        .SPI0_SCLK_I(1'b0),
+        .SPI0_SCLK_O(NLW_inst_SPI0_SCLK_O_UNCONNECTED),
+        .SPI0_SCLK_T(NLW_inst_SPI0_SCLK_T_UNCONNECTED),
+        .SPI0_SS1_O(NLW_inst_SPI0_SS1_O_UNCONNECTED),
+        .SPI0_SS2_O(NLW_inst_SPI0_SS2_O_UNCONNECTED),
+        .SPI0_SS_I(1'b0),
+        .SPI0_SS_O(NLW_inst_SPI0_SS_O_UNCONNECTED),
+        .SPI0_SS_T(NLW_inst_SPI0_SS_T_UNCONNECTED),
         .SPI1_MISO_I(1'b0),
         .SPI1_MISO_O(NLW_inst_SPI1_MISO_O_UNCONNECTED),
         .SPI1_MISO_T(NLW_inst_SPI1_MISO_T_UNCONNECTED),
@@ -1192,7 +1246,7 @@ module design_1_processing_system7_0_0
 endmodule
 
 (* C_DM_WIDTH = "4" *) (* C_DQS_WIDTH = "4" *) (* C_DQ_WIDTH = "32" *) 
-(* C_EMIO_GPIO_WIDTH = "2" *) (* C_EN_EMIO_ENET0 = "0" *) (* C_EN_EMIO_ENET1 = "0" *) 
+(* C_EMIO_GPIO_WIDTH = "64" *) (* C_EN_EMIO_ENET0 = "0" *) (* C_EN_EMIO_ENET1 = "0" *) 
 (* C_EN_EMIO_PJTAG = "0" *) (* C_EN_EMIO_TRACE = "0" *) (* C_FCLK_CLK0_BUF = "TRUE" *) 
 (* C_FCLK_CLK1_BUF = "FALSE" *) (* C_FCLK_CLK2_BUF = "FALSE" *) (* C_FCLK_CLK3_BUF = "FALSE" *) 
 (* C_GP0_EN_MODIFIABLE_TXN = "1" *) (* C_GP1_EN_MODIFIABLE_TXN = "1" *) (* C_INCLUDE_ACP_TRANS_CHECK = "0" *) 
@@ -1206,11 +1260,11 @@ endmodule
 (* C_S_AXI_HP2_DATA_WIDTH = "64" *) (* C_S_AXI_HP2_ID_WIDTH = "6" *) (* C_S_AXI_HP3_DATA_WIDTH = "64" *) 
 (* C_S_AXI_HP3_ID_WIDTH = "6" *) (* C_TRACE_BUFFER_CLOCK_DELAY = "12" *) (* C_TRACE_BUFFER_FIFO_SIZE = "128" *) 
 (* C_TRACE_INTERNAL_WIDTH = "2" *) (* C_TRACE_PIPELINE_WIDTH = "8" *) (* C_USE_AXI_NONSECURE = "0" *) 
-(* C_USE_DEFAULT_ACP_USER_VAL = "0" *) (* C_USE_M_AXI_GP0 = "0" *) (* C_USE_M_AXI_GP1 = "0" *) 
+(* C_USE_DEFAULT_ACP_USER_VAL = "0" *) (* C_USE_M_AXI_GP0 = "1" *) (* C_USE_M_AXI_GP1 = "0" *) 
 (* C_USE_S_AXI_ACP = "0" *) (* C_USE_S_AXI_GP0 = "0" *) (* C_USE_S_AXI_GP1 = "0" *) 
 (* C_USE_S_AXI_HP0 = "0" *) (* C_USE_S_AXI_HP1 = "0" *) (* C_USE_S_AXI_HP2 = "0" *) 
 (* C_USE_S_AXI_HP3 = "0" *) (* HW_HANDOFF = "design_1_processing_system7_0_0.hwdef" *) (* ORIG_REF_NAME = "processing_system7_v5_5_processing_system7" *) 
-(* POWER = "<PROCESSOR name={system} numA9Cores={2} clockFreq={666.666667} load={0.5} /><MEMORY name={code} memType={DDR3} dataWidth={32} clockFreq={533.333313} readRate={0.5} writeRate={0.5} /><IO interface={SPI} ioStandard={} bidis={0} ioBank={} clockFreq={166.666672} usageRate={0.5} /><IO interface={UART} ioStandard={LVCMOS18} bidis={2} ioBank={Vcco_p1} clockFreq={50.000000} usageRate={0.5} /><PLL domain={Processor} vco={1333.333} /><PLL domain={Memory} vco={1066.667} /><PLL domain={IO} vco={1000.000} />/>" *) (* USE_TRACE_DATA_EDGE_DETECTOR = "0" *) 
+(* POWER = "<PROCESSOR name={system} numA9Cores={2} clockFreq={666.666667} load={0.5} /><MEMORY name={code} memType={DDR3} dataWidth={32} clockFreq={533.333313} readRate={0.5} writeRate={0.5} /><IO interface={SPI} ioStandard={LVCMOS33} bidis={5} ioBank={Vcco_p0} clockFreq={166.666672} usageRate={0.5} /><IO interface={UART} ioStandard={LVCMOS18} bidis={2} ioBank={Vcco_p1} clockFreq={50.000000} usageRate={0.5} /><PLL domain={Processor} vco={1333.333} /><PLL domain={Memory} vco={1066.667} /><PLL domain={IO} vco={1000.000} /><AXI interface={M_AXI_GP0} dataWidth={32} clockFreq={100} usageRate={0.5} />/>" *) (* USE_TRACE_DATA_EDGE_DETECTOR = "0" *) 
 module design_1_processing_system7_0_0_processing_system7_v5_5_processing_system7
    (CAN0_PHY_TX,
     CAN0_PHY_RX,
@@ -1951,9 +2005,9 @@ module design_1_processing_system7_0_0_processing_system7_v5_5_processing_system
   input ENET1_MDIO_I;
   input ENET1_EXT_INTIN;
   input [7:0]ENET1_GMII_RXD;
-  input [1:0]GPIO_I;
-  output [1:0]GPIO_O;
-  output [1:0]GPIO_T;
+  input [63:0]GPIO_I;
+  output [63:0]GPIO_O;
+  output [63:0]GPIO_T;
   input I2C0_SDA_I;
   output I2C0_SDA_O;
   output I2C0_SDA_T;
@@ -2716,9 +2770,9 @@ module design_1_processing_system7_0_0_processing_system7_v5_5_processing_system
   wire FTMT_P2F_TRIG_1;
   wire FTMT_P2F_TRIG_2;
   wire FTMT_P2F_TRIG_3;
-  wire [1:0]GPIO_I;
-  wire [1:0]GPIO_O;
-  wire [1:0]GPIO_T;
+  wire [63:0]GPIO_I;
+  wire [63:0]GPIO_O;
+  wire [63:0]GPIO_T;
   wire I2C0_SCL_I;
   wire I2C0_SCL_O;
   wire I2C0_SCL_T;
@@ -3299,7 +3353,7 @@ module design_1_processing_system7_0_0_processing_system7_v5_5_processing_system
   wire buffered_PS_CLK;
   wire buffered_PS_PORB;
   wire buffered_PS_SRSTB;
-  wire [1:0]gpio_out_t_n;
+  wire [63:0]gpio_out_t_n;
   wire NLW_PS7_i_EMIOENET0GMIITXEN_UNCONNECTED;
   wire NLW_PS7_i_EMIOENET0GMIITXER_UNCONNECTED;
   wire NLW_PS7_i_EMIOENET1GMIITXEN_UNCONNECTED;
@@ -3309,8 +3363,6 @@ module design_1_processing_system7_0_0_processing_system7_v5_5_processing_system
   wire NLW_PS7_i_EMIOTRACECTL_UNCONNECTED;
   wire [7:0]NLW_PS7_i_EMIOENET0GMIITXD_UNCONNECTED;
   wire [7:0]NLW_PS7_i_EMIOENET1GMIITXD_UNCONNECTED;
-  wire [63:2]NLW_PS7_i_EMIOGPIOO_UNCONNECTED;
-  wire [63:2]NLW_PS7_i_EMIOGPIOTN_UNCONNECTED;
   wire [31:0]NLW_PS7_i_EMIOTRACEDATA_UNCONNECTED;
   wire [1:1]NLW_PS7_i_MAXIGP0ARCACHE_UNCONNECTED;
   wire [1:1]NLW_PS7_i_MAXIGP0AWCACHE_UNCONNECTED;
@@ -3424,9 +3476,319 @@ module design_1_processing_system7_0_0_processing_system7_v5_5_processing_system
         .O(GPIO_T[0]));
   LUT1 #(
     .INIT(2'h1)) 
+    \GPIO_T[10]_INST_0 
+       (.I0(gpio_out_t_n[10]),
+        .O(GPIO_T[10]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[11]_INST_0 
+       (.I0(gpio_out_t_n[11]),
+        .O(GPIO_T[11]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[12]_INST_0 
+       (.I0(gpio_out_t_n[12]),
+        .O(GPIO_T[12]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[13]_INST_0 
+       (.I0(gpio_out_t_n[13]),
+        .O(GPIO_T[13]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[14]_INST_0 
+       (.I0(gpio_out_t_n[14]),
+        .O(GPIO_T[14]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[15]_INST_0 
+       (.I0(gpio_out_t_n[15]),
+        .O(GPIO_T[15]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[16]_INST_0 
+       (.I0(gpio_out_t_n[16]),
+        .O(GPIO_T[16]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[17]_INST_0 
+       (.I0(gpio_out_t_n[17]),
+        .O(GPIO_T[17]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[18]_INST_0 
+       (.I0(gpio_out_t_n[18]),
+        .O(GPIO_T[18]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[19]_INST_0 
+       (.I0(gpio_out_t_n[19]),
+        .O(GPIO_T[19]));
+  LUT1 #(
+    .INIT(2'h1)) 
     \GPIO_T[1]_INST_0 
        (.I0(gpio_out_t_n[1]),
         .O(GPIO_T[1]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[20]_INST_0 
+       (.I0(gpio_out_t_n[20]),
+        .O(GPIO_T[20]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[21]_INST_0 
+       (.I0(gpio_out_t_n[21]),
+        .O(GPIO_T[21]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[22]_INST_0 
+       (.I0(gpio_out_t_n[22]),
+        .O(GPIO_T[22]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[23]_INST_0 
+       (.I0(gpio_out_t_n[23]),
+        .O(GPIO_T[23]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[24]_INST_0 
+       (.I0(gpio_out_t_n[24]),
+        .O(GPIO_T[24]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[25]_INST_0 
+       (.I0(gpio_out_t_n[25]),
+        .O(GPIO_T[25]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[26]_INST_0 
+       (.I0(gpio_out_t_n[26]),
+        .O(GPIO_T[26]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[27]_INST_0 
+       (.I0(gpio_out_t_n[27]),
+        .O(GPIO_T[27]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[28]_INST_0 
+       (.I0(gpio_out_t_n[28]),
+        .O(GPIO_T[28]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[29]_INST_0 
+       (.I0(gpio_out_t_n[29]),
+        .O(GPIO_T[29]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[2]_INST_0 
+       (.I0(gpio_out_t_n[2]),
+        .O(GPIO_T[2]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[30]_INST_0 
+       (.I0(gpio_out_t_n[30]),
+        .O(GPIO_T[30]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[31]_INST_0 
+       (.I0(gpio_out_t_n[31]),
+        .O(GPIO_T[31]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[32]_INST_0 
+       (.I0(gpio_out_t_n[32]),
+        .O(GPIO_T[32]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[33]_INST_0 
+       (.I0(gpio_out_t_n[33]),
+        .O(GPIO_T[33]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[34]_INST_0 
+       (.I0(gpio_out_t_n[34]),
+        .O(GPIO_T[34]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[35]_INST_0 
+       (.I0(gpio_out_t_n[35]),
+        .O(GPIO_T[35]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[36]_INST_0 
+       (.I0(gpio_out_t_n[36]),
+        .O(GPIO_T[36]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[37]_INST_0 
+       (.I0(gpio_out_t_n[37]),
+        .O(GPIO_T[37]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[38]_INST_0 
+       (.I0(gpio_out_t_n[38]),
+        .O(GPIO_T[38]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[39]_INST_0 
+       (.I0(gpio_out_t_n[39]),
+        .O(GPIO_T[39]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[3]_INST_0 
+       (.I0(gpio_out_t_n[3]),
+        .O(GPIO_T[3]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[40]_INST_0 
+       (.I0(gpio_out_t_n[40]),
+        .O(GPIO_T[40]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[41]_INST_0 
+       (.I0(gpio_out_t_n[41]),
+        .O(GPIO_T[41]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[42]_INST_0 
+       (.I0(gpio_out_t_n[42]),
+        .O(GPIO_T[42]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[43]_INST_0 
+       (.I0(gpio_out_t_n[43]),
+        .O(GPIO_T[43]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[44]_INST_0 
+       (.I0(gpio_out_t_n[44]),
+        .O(GPIO_T[44]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[45]_INST_0 
+       (.I0(gpio_out_t_n[45]),
+        .O(GPIO_T[45]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[46]_INST_0 
+       (.I0(gpio_out_t_n[46]),
+        .O(GPIO_T[46]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[47]_INST_0 
+       (.I0(gpio_out_t_n[47]),
+        .O(GPIO_T[47]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[48]_INST_0 
+       (.I0(gpio_out_t_n[48]),
+        .O(GPIO_T[48]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[49]_INST_0 
+       (.I0(gpio_out_t_n[49]),
+        .O(GPIO_T[49]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[4]_INST_0 
+       (.I0(gpio_out_t_n[4]),
+        .O(GPIO_T[4]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[50]_INST_0 
+       (.I0(gpio_out_t_n[50]),
+        .O(GPIO_T[50]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[51]_INST_0 
+       (.I0(gpio_out_t_n[51]),
+        .O(GPIO_T[51]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[52]_INST_0 
+       (.I0(gpio_out_t_n[52]),
+        .O(GPIO_T[52]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[53]_INST_0 
+       (.I0(gpio_out_t_n[53]),
+        .O(GPIO_T[53]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[54]_INST_0 
+       (.I0(gpio_out_t_n[54]),
+        .O(GPIO_T[54]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[55]_INST_0 
+       (.I0(gpio_out_t_n[55]),
+        .O(GPIO_T[55]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[56]_INST_0 
+       (.I0(gpio_out_t_n[56]),
+        .O(GPIO_T[56]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[57]_INST_0 
+       (.I0(gpio_out_t_n[57]),
+        .O(GPIO_T[57]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[58]_INST_0 
+       (.I0(gpio_out_t_n[58]),
+        .O(GPIO_T[58]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[59]_INST_0 
+       (.I0(gpio_out_t_n[59]),
+        .O(GPIO_T[59]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[5]_INST_0 
+       (.I0(gpio_out_t_n[5]),
+        .O(GPIO_T[5]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[60]_INST_0 
+       (.I0(gpio_out_t_n[60]),
+        .O(GPIO_T[60]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[61]_INST_0 
+       (.I0(gpio_out_t_n[61]),
+        .O(GPIO_T[61]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[62]_INST_0 
+       (.I0(gpio_out_t_n[62]),
+        .O(GPIO_T[62]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[63]_INST_0 
+       (.I0(gpio_out_t_n[63]),
+        .O(GPIO_T[63]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[6]_INST_0 
+       (.I0(gpio_out_t_n[6]),
+        .O(GPIO_T[6]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[7]_INST_0 
+       (.I0(gpio_out_t_n[7]),
+        .O(GPIO_T[7]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[8]_INST_0 
+       (.I0(gpio_out_t_n[8]),
+        .O(GPIO_T[8]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GPIO_T[9]_INST_0 
+       (.I0(gpio_out_t_n[9]),
+        .O(GPIO_T[9]));
   LUT1 #(
     .INIT(2'h1)) 
     I2C0_SCL_T_INST_0
@@ -3557,9 +3919,9 @@ module design_1_processing_system7_0_0_processing_system7_v5_5_processing_system
         .EMIOENET1PTPSYNCFRAMETX(ENET1_PTP_SYNC_FRAME_TX),
         .EMIOENET1SOFRX(ENET1_SOF_RX),
         .EMIOENET1SOFTX(ENET1_SOF_TX),
-        .EMIOGPIOI({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,GPIO_I}),
-        .EMIOGPIOO({NLW_PS7_i_EMIOGPIOO_UNCONNECTED[63:2],GPIO_O}),
-        .EMIOGPIOTN({NLW_PS7_i_EMIOGPIOTN_UNCONNECTED[63:2],gpio_out_t_n}),
+        .EMIOGPIOI(GPIO_I),
+        .EMIOGPIOO(GPIO_O),
+        .EMIOGPIOTN(gpio_out_t_n),
         .EMIOI2C0SCLI(I2C0_SCL_I),
         .EMIOI2C0SCLO(I2C0_SCL_O),
         .EMIOI2C0SCLTN(I2C0_SCL_T_n),

@@ -8986,3 +8986,319 @@ Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-97: Launc
 
 !ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:35:29.754
 !MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:05.833
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002/002_platform/export/002_platform/hw/design_1_wrapper.xsa C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002/002_platform/export/002_platform/sw/002_platform/standalone_domain/system.mss ], Thread: Worker-87: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:05.841
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002/002_platform/export/002_platform/hw/design_1_wrapper.xsa C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002/002_platform/export/002_platform/sw/002_platform/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-87: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:05.846
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002/002_platform/export/002_platform/hw/design_1_wrapper.xsa C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002/002_platform/export/002_platform/sw/002_platform/standalone_domain/system.mss], Thread: Worker-87: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:05.855
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002/002_platform/export/002_platform/hw/design_1_wrapper.xsa C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002/002_platform/export/002_platform/sw/002_platform/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.2",
+}]. Thread: Worker-87: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2021-03-13 00:39:05.860
+!MESSAGE Generating MD5 hash for file: C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\002\002_platform\export\002_platform\sw\002_platform\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:05.865
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002/002_platform/export/002_platform/sw/002_platform/standalone_domain/system.mss], Thread: Worker-87: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:05.872
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002/002_platform/export/002_platform/sw/002_platform/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-87: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:17.393
+!MESSAGE XSCT Command: [disconnect tcfchan#68], Thread: Thread-1849
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:17.398
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:17.404
+!MESSAGE XSCT command with result: [disconnect tcfchan#68], Result: [null, ]. Thread: Thread-1849
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:17.412
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#70]. Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:17.418
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:17.432
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248AC8994]. Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:17.436
+!MESSAGE XSCT Command: [version -server], Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:17.441
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2020.1]. Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:17.446
+!MESSAGE XSCT Command: [version], Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:17.450
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2020.1
+SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:17.454
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:17.464
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248AC8994]. Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:17.468
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==1}], Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:17.488
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:17.492
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:17.503
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248AC8994]. Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:17.507
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==1}], Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:17.526
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:17.531
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:17.540
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248AC8994]. Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:17.544
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==1}], Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:17.564
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:17.568
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:17.578
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248AC8994]. Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:17.582
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==1}], Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:17.600
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:17.604
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:17.613
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248AC8994]. Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:17.618
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==1}], Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:17.636
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:17.640
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:17.649
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248AC8994]. Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:17.653
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==1}], Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:17.672
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:17.676
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zed 210248AC8994" && level == 0}], Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:17.695
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zed 210248AC8994" && level == 0}], Result: [null, ]. Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:17.699
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:17.704
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:17.707
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:17.722
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:17.726
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:17.774
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:17.779
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:20.785
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:20.808
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:20.818
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248AC8994]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:20.822
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:20.840
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:20.844
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:20.880
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:20.884
+!MESSAGE XSCT Command: [fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002/002_btm_led_axi_isr_vitis/_ide/bitstream/design_1_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:23.215
+!MESSAGE XSCT command with result: [fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002/002_btm_led_axi_isr_vitis/_ide/bitstream/design_1_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:23.251
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:23.264
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:23.269
+!MESSAGE XSCT Command: [loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002/002_platform/export/002_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:23.306
+!MESSAGE XSCT command with result: [loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002/002_platform/export/002_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, design_1_wrapper_3]. Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:23.311
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:23.317
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:23.322
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:23.333
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:23.337
+!MESSAGE XSCT Command: [source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002/002_btm_led_axi_isr_vitis/_ide/psinit/ps7_init.tcl], Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:23.342
+!MESSAGE XSCT command with result: [source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002/002_btm_led_axi_isr_vitis/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:23.346
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:23.717
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:23.721
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:23.737
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:23.741
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:23.752
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:23.757
+!MESSAGE XSCT Command: [dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002/002_btm_led_axi_isr_vitis/Debug/002_btm_led_axi_isr_vitis.elf], Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:23.996
+!MESSAGE XSCT command with result: [dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002/002_btm_led_axi_isr_vitis/Debug/002_btm_led_axi_isr_vitis.elf], Result: [null, ]. Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:24.001
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:24.040
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:24.074
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:24.087
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:24.091
+!MESSAGE XSCT Command: [con], Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 00:39:24.123
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-97: Launching SystemDebugger_002_btm_led_axi_isr_vitis_system
+
+!ENTRY org.eclipse.tcf 4 0 2021-03-13 02:03:01.511
+!MESSAGE TCF channel terminated
+!STACK 0
+java.net.SocketException: Connection reset
+	at java.base/java.net.SocketInputStream.read(Unknown Source)
+	at java.base/java.net.SocketInputStream.read(Unknown Source)
+	at java.base/java.io.BufferedInputStream.read1(Unknown Source)
+	at java.base/java.io.BufferedInputStream.read(Unknown Source)
+	at java.base/java.io.FilterInputStream.read(Unknown Source)
+	at org.eclipse.tcf.core.ChannelTCP.get(ChannelTCP.java:186)
+	at org.eclipse.tcf.core.StreamChannel.read(StreamChannel.java:85)
+	at org.eclipse.tcf.core.AbstractChannel$1.run(AbstractChannel.java:329)
+!SESSION 2021-03-13 11:57:37.598 -----------------------------------------------
+eclipse.buildId=2020.1
+java.version=9.0.4
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2021-03-13 11:57:50.683
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui 4 4 2021-03-13 11:57:54.605
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 11:57:59.963
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 11:57:59.968
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-8
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 11:57:59.984
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 11:57:59.999
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-8
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 11:58:00.011
+!MESSAGE XSCT Command: [setws C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002], Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 11:58:00.018
+!MESSAGE XSCT command with result: [setws C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002], Result: [null, ]. Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 11:58:03.136
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-1: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 11:58:06.456
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-1: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 11:58:06.460
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-1: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-13 11:58:06.465
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, C:/Xilinx2020/Vitis/2020.1/data]. Thread: Worker-1: Initializing s/w repositories

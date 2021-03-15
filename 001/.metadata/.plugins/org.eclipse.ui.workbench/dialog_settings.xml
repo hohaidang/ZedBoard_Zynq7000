@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.internal.QuickAccess">
+		<item value="947" key="dialogHeight"/>
+		<item value="1159" key="dialogWidth"/>
+		<list key="textEntries">
+			<item value="1"/>
+			<item value="1"/>
+			<item value="1"/>
+			<item value="1"/>
+		</list>
+		<list key="orderedElements">
+			<item value="com.xilinx.sdk.terminal.sdkterminal"/>
+			<item value="com.xilinx.sdk.performance.ui.views.ApmPerfTableView"/>
+			<item value="org.eclipse.ui.console.ConsoleView"/>
+			<item value="org.eclipse.tm.terminal.view.ui.TerminalsView"/>
+		</list>
+		<list key="orderedProviders">
+			<item value="org.eclipse.e4.ui.parts"/>
+			<item value="org.eclipse.e4.ui.parts"/>
+			<item value="org.eclipse.e4.ui.parts"/>
+			<item value="org.eclipse.e4.ui.parts"/>
+		</list>
+		<list key="textArray">
+			<item value="ser"/>
+			<item value="i"/>
+			<item value="conso"/>
+			<item value="terminal"/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+	</section>
+	<section name="FileSystemImportWizard">
+		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID"/>
+		<item value="PROJECT_LOC" key="WizardFileSystemResourceImportPage1.STORE_PATH_VARIABLE_NAME_ID"/>
+		<item value="true" key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
+		<item value="true" key="WizardFileSystemResourceImportPage1.STORE_CREATE_VIRTUAL_FOLDERS_ID"/>
+		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_CREATE_LINKS_IN_WORKSPACE_ID"/>
+		<item value="true" key="WizardFileSystemResourceImportPage1.STORE_PATH_VARIABLE_SELECTED_ID"/>
+		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\driver"/>
+		</list>
+	</section>
+</section>

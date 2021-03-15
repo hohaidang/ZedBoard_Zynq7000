@@ -133,23 +133,8 @@ class processing_system7_v5_5_tlm : public sc_core::sc_module   {
     
     public:
     // Non-AXI ports are declared here
-    sc_core::sc_in<sc_dt::sc_bv<2> >  GPIO_I;
-    sc_core::sc_out<sc_dt::sc_bv<2> >  GPIO_O;
-    sc_core::sc_out<sc_dt::sc_bv<2> >  GPIO_T;
-    sc_core::sc_in<bool> SPI0_SCLK_I;
-    sc_core::sc_out<bool> SPI0_SCLK_O;
-    sc_core::sc_out<bool> SPI0_SCLK_T;
-    sc_core::sc_in<bool> SPI0_MOSI_I;
-    sc_core::sc_out<bool> SPI0_MOSI_O;
-    sc_core::sc_out<bool> SPI0_MOSI_T;
-    sc_core::sc_in<bool> SPI0_MISO_I;
-    sc_core::sc_out<bool> SPI0_MISO_O;
-    sc_core::sc_out<bool> SPI0_MISO_T;
-    sc_core::sc_in<bool> SPI0_SS_I;
-    sc_core::sc_out<bool> SPI0_SS_O;
-    sc_core::sc_out<bool> SPI0_SS1_O;
-    sc_core::sc_out<bool> SPI0_SS2_O;
-    sc_core::sc_out<bool> SPI0_SS_T;
+    sc_core::sc_in<bool> M_AXI_GP0_ACLK;
+    sc_core::sc_in<sc_dt::sc_bv<1> >  IRQ_F2P;
     sc_core::sc_out<bool> FCLK_CLK0;
     sc_core::sc_out<bool> FCLK_RESET0_N;
     sc_core::sc_inout<sc_dt::sc_bv<54> >  MIO;
@@ -174,6 +159,8 @@ class processing_system7_v5_5_tlm : public sc_core::sc_module   {
     sc_core::sc_inout<bool> PS_CLK;
     sc_core::sc_inout<bool> PS_PORB;
 
+    xtlm::xtlm_aximm_initiator_socket*      M_AXI_GP0_wr_socket;
+    xtlm::xtlm_aximm_initiator_socket*      M_AXI_GP0_rd_socket;
 
     //constructor having three paramters
     // 1. module name in sc_module_name objec, 
@@ -205,6 +192,7 @@ processing_system7_v5_5_tlm(sc_core::sc_module_name name,
     // Bridge's tlm simple target socket binds with 
     // simple initiator socket of xilinx_zynqmp and xtlm 
     // socket with xilinx_zynq's simple target socket
+    rptlm2xtlm_converter<32, 32> m_rp_bridge_M_AXI_GP0;     
     
     // sc_clocks for generating pl clocks
     // output pins FCLK_CLK0..3 are drived by these clocks
@@ -215,6 +203,7 @@ processing_system7_v5_5_tlm(sc_core::sc_module_name name,
     //FCLK_CLK0 pin written based on FCLK_CLK0_clk clock value 
     void trigger_FCLK_CLK0_pin();
     
+    void IRQ_F2P_method();
     //FCLK_RESET0 output reset pin get toggle when emio bank 2's 31th signal gets toggled
     //EMIO[2] bank 31th(GPIO[95] signal)acts as reset signal to the PL(refer Zynq UltraScale+ TRM, page no:761)
     void FCLK_RESET0_N_trigger();

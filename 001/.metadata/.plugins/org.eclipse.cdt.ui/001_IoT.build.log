@@ -1,0 +1,25 @@
+20:56:54 **** Incremental Build of configuration Debug for project 001_IoT ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/main.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -IC:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/sw/001_platform/standalone_domain/bspinclude/include -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/sw/001_platform/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+'Finished building: ../src/main.cpp'
+' '
+'Building target: 001_IoT.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/sw/001_platform/standalone_domain/bsplib/lib -o "001_IoT.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: 001_IoT.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size 001_IoT.elf  |tee "001_IoT.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40900	   3004	  22812	  66716	  1049c	001_IoT.elf
+'Finished building: 001_IoT.elf.size'
+' '
+
+20:56:55 Build Finished (took 1s.171ms)
+

@@ -1,0 +1,18 @@
+!SESSION 2021-03-15 20:06:48.546 -----------------------------------------------
+eclipse.buildId=2020.1
+java.version=9.0.4
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+This is a continuation of log file C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\.metadata\.bak_0.log
+Created Time: 2021-03-15 20:58:24.797
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-15 20:58:24.801
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-35: Launching SystemDebugger_001_IoT_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-15 20:58:24.806
+!MESSAGE XSCT Command: [con], Thread: Worker-35: Launching SystemDebugger_001_IoT_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-15 20:58:24.829
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-35: Launching SystemDebugger_001_IoT_system

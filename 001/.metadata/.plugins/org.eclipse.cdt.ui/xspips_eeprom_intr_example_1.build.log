@@ -1,0 +1,25 @@
+20:03:33 **** Incremental Build of configuration Debug for project xspips_eeprom_intr_example_1 ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/xspips_eeprom_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xspips_eeprom_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/sw/001_platform/standalone_domain/bspinclude/include -MMD -MP -MF"src/xspips_eeprom_intr_example.d" -MT"src/xspips_eeprom_intr_example.o" -o "src/xspips_eeprom_intr_example.o" "../src/xspips_eeprom_intr_example.c"
+'Finished building: ../src/xspips_eeprom_intr_example.c'
+' '
+'Building target: xspips_eeprom_intr_example_1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/sw/001_platform/standalone_domain/bsplib/lib -o "xspips_eeprom_intr_example_1.elf"  ./src/xspips_eeprom_intr_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: xspips_eeprom_intr_example_1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size xspips_eeprom_intr_example_1.elf  |tee "xspips_eeprom_intr_example_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30636	   1928	  26776	  59340	   e7cc	xspips_eeprom_intr_example_1.elf
+'Finished building: xspips_eeprom_intr_example_1.elf.size'
+' '
+
+20:03:33 Build Finished (took 700ms)
+

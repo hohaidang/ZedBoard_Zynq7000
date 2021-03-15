@@ -3,6 +3,7 @@
 	<name>001_IoT</name>
 	<comment>Created by Vitis v2020.1</comment>
 	<projects>
+		<project>001_platform</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

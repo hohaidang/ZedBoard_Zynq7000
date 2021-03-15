@@ -56,9 +56,9 @@
       bit  ENET1_MDIO_I;
       bit  ENET1_EXT_INTIN;
       bit  [7 : 0] ENET1_GMII_RXD;
-      bit  [1 : 0] GPIO_I;
-      bit  [1 : 0] GPIO_O;
-      bit  [1 : 0] GPIO_T;
+      bit  [63 : 0] GPIO_I;
+      bit  [63 : 0] GPIO_O;
+      bit  [63 : 0] GPIO_T;
       bit  I2C0_SDA_I;
       bit  I2C0_SDA_O;
       bit  I2C0_SDA_T;
@@ -677,23 +677,46 @@
 
 //MODULE DECLARATION
  module design_1_processing_system7_0_0 (
-  GPIO_I,
-  GPIO_O,
-  GPIO_T,
-  SPI0_SCLK_I,
-  SPI0_SCLK_O,
-  SPI0_SCLK_T,
-  SPI0_MOSI_I,
-  SPI0_MOSI_O,
-  SPI0_MOSI_T,
-  SPI0_MISO_I,
-  SPI0_MISO_O,
-  SPI0_MISO_T,
-  SPI0_SS_I,
-  SPI0_SS_O,
-  SPI0_SS1_O,
-  SPI0_SS2_O,
-  SPI0_SS_T,
+  M_AXI_GP0_ARVALID,
+  M_AXI_GP0_AWVALID,
+  M_AXI_GP0_BREADY,
+  M_AXI_GP0_RREADY,
+  M_AXI_GP0_WLAST,
+  M_AXI_GP0_WVALID,
+  M_AXI_GP0_ARID,
+  M_AXI_GP0_AWID,
+  M_AXI_GP0_WID,
+  M_AXI_GP0_ARBURST,
+  M_AXI_GP0_ARLOCK,
+  M_AXI_GP0_ARSIZE,
+  M_AXI_GP0_AWBURST,
+  M_AXI_GP0_AWLOCK,
+  M_AXI_GP0_AWSIZE,
+  M_AXI_GP0_ARPROT,
+  M_AXI_GP0_AWPROT,
+  M_AXI_GP0_ARADDR,
+  M_AXI_GP0_AWADDR,
+  M_AXI_GP0_WDATA,
+  M_AXI_GP0_ARCACHE,
+  M_AXI_GP0_ARLEN,
+  M_AXI_GP0_ARQOS,
+  M_AXI_GP0_AWCACHE,
+  M_AXI_GP0_AWLEN,
+  M_AXI_GP0_AWQOS,
+  M_AXI_GP0_WSTRB,
+  M_AXI_GP0_ACLK,
+  M_AXI_GP0_ARREADY,
+  M_AXI_GP0_AWREADY,
+  M_AXI_GP0_BVALID,
+  M_AXI_GP0_RLAST,
+  M_AXI_GP0_RVALID,
+  M_AXI_GP0_WREADY,
+  M_AXI_GP0_BID,
+  M_AXI_GP0_RID,
+  M_AXI_GP0_BRESP,
+  M_AXI_GP0_RRESP,
+  M_AXI_GP0_RDATA,
+  IRQ_F2P,
   FCLK_CLK0,
   FCLK_RESET0_N,
   MIO,
@@ -730,7 +753,7 @@
       parameter USE_TRACE_DATA_EDGE_DETECTOR = 0;
       parameter C_TRACE_PIPELINE_WIDTH = 8;
       parameter C_TRACE_BUFFER_CLOCK_DELAY = 12;
-      parameter C_EMIO_GPIO_WIDTH = 2;
+      parameter C_EMIO_GPIO_WIDTH = 64;
       parameter C_INCLUDE_ACP_TRANS_CHECK = 0;
       parameter C_USE_DEFAULT_ACP_USER_VAL = 0;
       parameter C_S_AXI_ACP_ARUSER_VAL = 31;
@@ -760,7 +783,7 @@
       parameter C_MIO_PRIMITIVE = 54;
       parameter C_TRACE_INTERNAL_WIDTH = 2;
       parameter C_USE_AXI_NONSECURE = 0;
-      parameter C_USE_M_AXI_GP0 = 0;
+      parameter C_USE_M_AXI_GP0 = 1;
       parameter C_USE_M_AXI_GP1 = 0;
       parameter C_USE_S_AXI_GP0 = 0;
       parameter C_USE_S_AXI_GP1 = 0;
@@ -780,23 +803,46 @@
 
 //INPUT AND OUTPUT PORTS
 
-      input  [1 : 0] GPIO_I;
-      output  [1 : 0] GPIO_O;
-      output  [1 : 0] GPIO_T;
-      input  SPI0_SCLK_I;
-      output  SPI0_SCLK_O;
-      output  SPI0_SCLK_T;
-      input  SPI0_MOSI_I;
-      output  SPI0_MOSI_O;
-      output  SPI0_MOSI_T;
-      input  SPI0_MISO_I;
-      output  SPI0_MISO_O;
-      output  SPI0_MISO_T;
-      input  SPI0_SS_I;
-      output  SPI0_SS_O;
-      output  SPI0_SS1_O;
-      output  SPI0_SS2_O;
-      output  SPI0_SS_T;
+      output  M_AXI_GP0_ARVALID;
+      output  M_AXI_GP0_AWVALID;
+      output  M_AXI_GP0_BREADY;
+      output  M_AXI_GP0_RREADY;
+      output  M_AXI_GP0_WLAST;
+      output  M_AXI_GP0_WVALID;
+      output  [11 : 0] M_AXI_GP0_ARID;
+      output  [11 : 0] M_AXI_GP0_AWID;
+      output  [11 : 0] M_AXI_GP0_WID;
+      output  [1 : 0] M_AXI_GP0_ARBURST;
+      output  [1 : 0] M_AXI_GP0_ARLOCK;
+      output  [2 : 0] M_AXI_GP0_ARSIZE;
+      output  [1 : 0] M_AXI_GP0_AWBURST;
+      output  [1 : 0] M_AXI_GP0_AWLOCK;
+      output  [2 : 0] M_AXI_GP0_AWSIZE;
+      output  [2 : 0] M_AXI_GP0_ARPROT;
+      output  [2 : 0] M_AXI_GP0_AWPROT;
+      output  [31 : 0] M_AXI_GP0_ARADDR;
+      output  [31 : 0] M_AXI_GP0_AWADDR;
+      output  [31 : 0] M_AXI_GP0_WDATA;
+      output  [3 : 0] M_AXI_GP0_ARCACHE;
+      output  [3 : 0] M_AXI_GP0_ARLEN;
+      output  [3 : 0] M_AXI_GP0_ARQOS;
+      output  [3 : 0] M_AXI_GP0_AWCACHE;
+      output  [3 : 0] M_AXI_GP0_AWLEN;
+      output  [3 : 0] M_AXI_GP0_AWQOS;
+      output  [3 : 0] M_AXI_GP0_WSTRB;
+      input  M_AXI_GP0_ACLK;
+      input  M_AXI_GP0_ARREADY;
+      input  M_AXI_GP0_AWREADY;
+      input  M_AXI_GP0_BVALID;
+      input  M_AXI_GP0_RLAST;
+      input  M_AXI_GP0_RVALID;
+      input  M_AXI_GP0_WREADY;
+      input  [11 : 0] M_AXI_GP0_BID;
+      input  [11 : 0] M_AXI_GP0_RID;
+      input  [1 : 0] M_AXI_GP0_BRESP;
+      input  [1 : 0] M_AXI_GP0_RRESP;
+      input  [31 : 0] M_AXI_GP0_RDATA;
+      input  [0 : 0] IRQ_F2P;
       output  FCLK_CLK0;
       output  FCLK_RESET0_N;
       inout  [53 : 0] MIO;
@@ -823,18 +869,33 @@
 
 //REG DECLARATIONS
 
-      reg [1 : 0] GPIO_O;
-      reg [1 : 0] GPIO_T;
-      reg SPI0_SCLK_O;
-      reg SPI0_SCLK_T;
-      reg SPI0_MOSI_O;
-      reg SPI0_MOSI_T;
-      reg SPI0_MISO_O;
-      reg SPI0_MISO_T;
-      reg SPI0_SS_O;
-      reg SPI0_SS1_O;
-      reg SPI0_SS2_O;
-      reg SPI0_SS_T;
+      reg M_AXI_GP0_ARVALID;
+      reg M_AXI_GP0_AWVALID;
+      reg M_AXI_GP0_BREADY;
+      reg M_AXI_GP0_RREADY;
+      reg M_AXI_GP0_WLAST;
+      reg M_AXI_GP0_WVALID;
+      reg [11 : 0] M_AXI_GP0_ARID;
+      reg [11 : 0] M_AXI_GP0_AWID;
+      reg [11 : 0] M_AXI_GP0_WID;
+      reg [1 : 0] M_AXI_GP0_ARBURST;
+      reg [1 : 0] M_AXI_GP0_ARLOCK;
+      reg [2 : 0] M_AXI_GP0_ARSIZE;
+      reg [1 : 0] M_AXI_GP0_AWBURST;
+      reg [1 : 0] M_AXI_GP0_AWLOCK;
+      reg [2 : 0] M_AXI_GP0_AWSIZE;
+      reg [2 : 0] M_AXI_GP0_ARPROT;
+      reg [2 : 0] M_AXI_GP0_AWPROT;
+      reg [31 : 0] M_AXI_GP0_ARADDR;
+      reg [31 : 0] M_AXI_GP0_AWADDR;
+      reg [31 : 0] M_AXI_GP0_WDATA;
+      reg [3 : 0] M_AXI_GP0_ARCACHE;
+      reg [3 : 0] M_AXI_GP0_ARLEN;
+      reg [3 : 0] M_AXI_GP0_ARQOS;
+      reg [3 : 0] M_AXI_GP0_AWCACHE;
+      reg [3 : 0] M_AXI_GP0_AWLEN;
+      reg [3 : 0] M_AXI_GP0_AWQOS;
+      reg [3 : 0] M_AXI_GP0_WSTRB;
       reg FCLK_CLK0;
       reg FCLK_RESET0_N;
       string ip_name;
@@ -845,7 +906,53 @@ import "DPI-C" function void ps7_set_ip_context(input string ip_name);
 import "DPI-C" function void ps7_set_str_param(input string name,input string val);
 import "DPI-C" function void ps7_set_int_param(input string name,input longint val);
 import "DPI-C" function void ps7_init_c_model();
+import "DPI-C" function void ps7_set_input_IRQ_F2P(input int pinIdex, input int pinValue);
+import "DPI-C" function void ps7_init_m_axi_gp0(input int M_AXI_GP0_AWID_size,input int M_AXI_GP0_AWADDR_size,input int M_AXI_GP0_AWLEN_size,input int M_AXI_GP0_AWSIZE_size,input int M_AXI_GP0_AWBURST_size,input int M_AXI_GP0_AWLOCK_size,input int M_AXI_GP0_AWCACHE_size,input int M_AXI_GP0_AWPROT_size,input int M_AXI_GP0_AWQOS_size,input int M_AXI_GP0_AWVALID_size,input int M_AXI_GP0_AWREADY_size,input int M_AXI_GP0_WID_size,input int M_AXI_GP0_WDATA_size,input int M_AXI_GP0_WSTRB_size,input int M_AXI_GP0_WLAST_size,input int M_AXI_GP0_WVALID_size,input int M_AXI_GP0_WREADY_size,input int M_AXI_GP0_BID_size,input int M_AXI_GP0_BRESP_size,input int M_AXI_GP0_BVALID_size,input int M_AXI_GP0_BREADY_size,input int M_AXI_GP0_ARID_size,input int M_AXI_GP0_ARADDR_size,input int M_AXI_GP0_ARLEN_size,input int M_AXI_GP0_ARSIZE_size,input int M_AXI_GP0_ARBURST_size,input int M_AXI_GP0_ARLOCK_size,input int M_AXI_GP0_ARCACHE_size,input int M_AXI_GP0_ARPROT_size,input int M_AXI_GP0_ARQOS_size,input int M_AXI_GP0_ARVALID_size,input int M_AXI_GP0_ARREADY_size,input int M_AXI_GP0_RID_size,input int M_AXI_GP0_RDATA_size,input int M_AXI_GP0_RRESP_size,input int M_AXI_GP0_RLAST_size,input int M_AXI_GP0_RVALID_size,input int M_AXI_GP0_RREADY_size);
 import "DPI-C" function void ps7_simulate_single_cycle_FCLK_CLK0();
+import "DPI-C" function void ps7_simulate_single_cycle_M_AXI_GP0_ACLK();
+import "DPI-C" function void ps7_set_inputs_m_axi_gp0_M_AXI_GP0_ACLK(
+input bit M_AXI_GP0_AWREADY,
+input bit M_AXI_GP0_WREADY,
+input bit [11 : 0] M_AXI_GP0_BID,
+input bit [1 : 0] M_AXI_GP0_BRESP,
+input bit M_AXI_GP0_BVALID,
+input bit M_AXI_GP0_ARREADY,
+input bit [11 : 0] M_AXI_GP0_RID,
+input bit [31 : 0] M_AXI_GP0_RDATA,
+input bit [1 : 0] M_AXI_GP0_RRESP,
+input bit M_AXI_GP0_RLAST,
+input bit M_AXI_GP0_RVALID
+);
+import "DPI-C" function void ps7_get_outputs_m_axi_gp0_M_AXI_GP0_ACLK(
+output bit [11 : 0] M_AXI_GP0_AWID,
+output bit [31 : 0] M_AXI_GP0_AWADDR,
+output bit [3 : 0] M_AXI_GP0_AWLEN,
+output bit [2 : 0] M_AXI_GP0_AWSIZE,
+output bit [1 : 0] M_AXI_GP0_AWBURST,
+output bit [1 : 0] M_AXI_GP0_AWLOCK,
+output bit [3 : 0] M_AXI_GP0_AWCACHE,
+output bit [2 : 0] M_AXI_GP0_AWPROT,
+output bit [3 : 0] M_AXI_GP0_AWQOS,
+output bit M_AXI_GP0_AWVALID,
+output bit [11 : 0] M_AXI_GP0_WID,
+output bit [31 : 0] M_AXI_GP0_WDATA,
+output bit [3 : 0] M_AXI_GP0_WSTRB,
+output bit M_AXI_GP0_WLAST,
+output bit M_AXI_GP0_WVALID,
+output bit M_AXI_GP0_BREADY,
+output bit [11 : 0] M_AXI_GP0_ARID,
+output bit [31 : 0] M_AXI_GP0_ARADDR,
+output bit [3 : 0] M_AXI_GP0_ARLEN,
+output bit [2 : 0] M_AXI_GP0_ARSIZE,
+output bit [1 : 0] M_AXI_GP0_ARBURST,
+output bit [1 : 0] M_AXI_GP0_ARLOCK,
+output bit [3 : 0] M_AXI_GP0_ARCACHE,
+output bit [2 : 0] M_AXI_GP0_ARPROT,
+output bit [3 : 0] M_AXI_GP0_ARQOS,
+output bit M_AXI_GP0_ARVALID,
+output bit M_AXI_GP0_RREADY
+);
+
    export "DPI-C" function ps7_stop_sim;
    function void ps7_stop_sim();
         $display("End of simulation");
@@ -939,6 +1046,8 @@ import "DPI-C" function void ps7_simulate_single_cycle_FCLK_CLK0();
       ps7_set_str_param ( "C_PACKAGE_NAME",C_PACKAGE_NAME );
       ps7_set_str_param ( "C_GP0_EN_MODIFIABLE_TXN",C_GP0_EN_MODIFIABLE_TXN );
       ps7_set_str_param ( "C_GP1_EN_MODIFIABLE_TXN",C_GP1_EN_MODIFIABLE_TXN );
+
+  ps7_init_m_axi_gp0($bits(M_AXI_GP0_AWID),$bits(M_AXI_GP0_AWADDR),$bits(M_AXI_GP0_AWLEN),$bits(M_AXI_GP0_AWSIZE),$bits(M_AXI_GP0_AWBURST),$bits(M_AXI_GP0_AWLOCK),$bits(M_AXI_GP0_AWCACHE),$bits(M_AXI_GP0_AWPROT),$bits(M_AXI_GP0_AWQOS),$bits(M_AXI_GP0_AWVALID),$bits(M_AXI_GP0_AWREADY),$bits(M_AXI_GP0_WID),$bits(M_AXI_GP0_WDATA),$bits(M_AXI_GP0_WSTRB),$bits(M_AXI_GP0_WLAST),$bits(M_AXI_GP0_WVALID),$bits(M_AXI_GP0_WREADY),$bits(M_AXI_GP0_BID),$bits(M_AXI_GP0_BRESP),$bits(M_AXI_GP0_BVALID),$bits(M_AXI_GP0_BREADY),$bits(M_AXI_GP0_ARID),$bits(M_AXI_GP0_ARADDR),$bits(M_AXI_GP0_ARLEN),$bits(M_AXI_GP0_ARSIZE),$bits(M_AXI_GP0_ARBURST),$bits(M_AXI_GP0_ARLOCK),$bits(M_AXI_GP0_ARCACHE),$bits(M_AXI_GP0_ARPROT),$bits(M_AXI_GP0_ARQOS),$bits(M_AXI_GP0_ARVALID),$bits(M_AXI_GP0_ARREADY),$bits(M_AXI_GP0_RID),$bits(M_AXI_GP0_RDATA),$bits(M_AXI_GP0_RRESP),$bits(M_AXI_GP0_RLAST),$bits(M_AXI_GP0_RVALID),$bits(M_AXI_GP0_RREADY));
   ps7_init_c_model();
   end
   initial
@@ -953,6 +1062,67 @@ import "DPI-C" function void ps7_simulate_single_cycle_FCLK_CLK0();
    ps7_set_ip_context(ip_name);
    ps7_simulate_single_cycle_FCLK_CLK0();
   end
+
+always@(posedge IRQ_F2P[0])
+begin
+    ps7_set_input_IRQ_F2P(0,1);
+end
+always@(negedge IRQ_F2P[0])
+begin
+    ps7_set_input_IRQ_F2P(0,0);
+end
+
+always@(posedge M_AXI_GP0_ACLK)
+  begin
+
+   ps7_set_ip_context(ip_name);
+
+   ps7_set_inputs_m_axi_gp0_M_AXI_GP0_ACLK(
+    M_AXI_GP0_AWREADY,
+    M_AXI_GP0_WREADY,
+    M_AXI_GP0_BID,
+    M_AXI_GP0_BRESP,
+    M_AXI_GP0_BVALID,
+    M_AXI_GP0_ARREADY,
+    M_AXI_GP0_RID,
+    M_AXI_GP0_RDATA,
+    M_AXI_GP0_RRESP,
+    M_AXI_GP0_RLAST,
+    M_AXI_GP0_RVALID
+  );
+
+   ps7_simulate_single_cycle_M_AXI_GP0_ACLK();
+
+   ps7_get_outputs_m_axi_gp0_M_AXI_GP0_ACLK(
+    M_AXI_GP0_AWID,
+    M_AXI_GP0_AWADDR,
+    M_AXI_GP0_AWLEN,
+    M_AXI_GP0_AWSIZE,
+    M_AXI_GP0_AWBURST,
+    M_AXI_GP0_AWLOCK,
+    M_AXI_GP0_AWCACHE,
+    M_AXI_GP0_AWPROT,
+    M_AXI_GP0_AWQOS,
+    M_AXI_GP0_AWVALID,
+    M_AXI_GP0_WID,
+    M_AXI_GP0_WDATA,
+    M_AXI_GP0_WSTRB,
+    M_AXI_GP0_WLAST,
+    M_AXI_GP0_WVALID,
+    M_AXI_GP0_BREADY,
+    M_AXI_GP0_ARID,
+    M_AXI_GP0_ARADDR,
+    M_AXI_GP0_ARLEN,
+    M_AXI_GP0_ARSIZE,
+    M_AXI_GP0_ARBURST,
+    M_AXI_GP0_ARLOCK,
+    M_AXI_GP0_ARCACHE,
+    M_AXI_GP0_ARPROT,
+    M_AXI_GP0_ARQOS,
+    M_AXI_GP0_ARVALID,
+    M_AXI_GP0_RREADY
+  );
+   end
 
 endmodule
 

@@ -1,4 +1,4 @@
-00:35:12 **** Incremental Build of configuration Debug for project 002_btm_led_axi_isr_vitis_system ****
+00:39:06 **** Incremental Build of configuration Debug for project 002_btm_led_axi_isr_vitis_system ****
 make all 
 Generating bif file for the system project
 generate_system_bif.bat 50797 C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002/002_platform/export/002_platform/002_platform.xpfm standalone_domain C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002/002_btm_led_axi_isr_vitis_system/Debug/system.bif
@@ -6,5 +6,5 @@ sdcard_gen --xpfm C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002/002
 creating BOOT.BIN using C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002/002_btm_led_axi_isr_vitis/_ide/bitstream/design_1_wrapper.bit
 Running C:/Xilinx2020/Vitis/2020.1/bin/bootgen  -image C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002/002_btm_led_axi_isr_vitis_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
 
-00:35:18 Build Finished (took 6s.55ms)
+00:39:12 Build Finished (took 5s.876ms)
 

@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_temperature_sensor_vivado/001_temperature_sensor_vivado.runs/design_1_processing_system7_0_0_synth_1'
+HD_PWD='C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_temperature_sensor_vivado/001_temperature_sensor_vivado.runs/design_1_processing_system7_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

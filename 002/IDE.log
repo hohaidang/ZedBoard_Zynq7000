@@ -535,3 +535,105 @@ con
 
 00:34:58 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\002\.sdk\launch_scripts\single_application_debug\systemdebugger_002_btm_led_axi_isr_vitis_system_standalone.tcl'
 00:35:11 INFO  : Checking for BSP changes to sync application flags for project '002_btm_led_axi_isr_vitis'...
+00:35:23 INFO  : Disconnected from the channel tcfchan#66.
+00:35:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:35:23 INFO  : Jtag cable 'Digilent Zed 210248AC8994' is selected.
+00:35:23 INFO  : 'jtag frequency' command is executed.
+00:35:23 INFO  : Context for 'APU' is selected.
+00:35:23 INFO  : System reset is completed.
+00:35:26 INFO  : 'after 3000' command is executed.
+00:35:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}' command is executed.
+00:35:28 INFO  : FPGA configured successfully with bitstream "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002/002_btm_led_axi_isr_vitis/_ide/bitstream/design_1_wrapper.bit"
+00:35:28 INFO  : Context for 'APU' is selected.
+00:35:28 INFO  : Hardware design and registers information is loaded from 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002/002_platform/export/002_platform/hw/design_1_wrapper.xsa'.
+00:35:28 INFO  : 'configparams force-mem-access 1' command is executed.
+00:35:28 INFO  : Context for 'APU' is selected.
+00:35:29 INFO  : Sourcing of 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002/002_btm_led_axi_isr_vitis/_ide/psinit/ps7_init.tcl' is done.
+00:35:29 INFO  : 'ps7_init' command is executed.
+00:35:29 INFO  : 'ps7_post_config' command is executed.
+00:35:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:35:29 INFO  : The application 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002/002_btm_led_axi_isr_vitis/Debug/002_btm_led_axi_isr_vitis.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:35:29 INFO  : 'configparams force-mem-access 0' command is executed.
+00:35:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}
+fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002/002_btm_led_axi_isr_vitis/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002/002_platform/export/002_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002/002_btm_led_axi_isr_vitis/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002/002_btm_led_axi_isr_vitis/Debug/002_btm_led_axi_isr_vitis.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:35:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:35:29 INFO  : 'con' command is executed.
+00:35:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+00:35:29 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\002\.sdk\launch_scripts\single_application_debug\systemdebugger_002_btm_led_axi_isr_vitis_system_standalone.tcl'
+00:39:05 INFO  : Checking for BSP changes to sync application flags for project '002_btm_led_axi_isr_vitis'...
+00:39:17 INFO  : Disconnected from the channel tcfchan#68.
+00:39:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:39:17 INFO  : Jtag cable 'Digilent Zed 210248AC8994' is selected.
+00:39:17 INFO  : 'jtag frequency' command is executed.
+00:39:17 INFO  : Context for 'APU' is selected.
+00:39:17 INFO  : System reset is completed.
+00:39:20 INFO  : 'after 3000' command is executed.
+00:39:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}' command is executed.
+00:39:23 INFO  : FPGA configured successfully with bitstream "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002/002_btm_led_axi_isr_vitis/_ide/bitstream/design_1_wrapper.bit"
+00:39:23 INFO  : Context for 'APU' is selected.
+00:39:23 INFO  : Hardware design and registers information is loaded from 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002/002_platform/export/002_platform/hw/design_1_wrapper.xsa'.
+00:39:23 INFO  : 'configparams force-mem-access 1' command is executed.
+00:39:23 INFO  : Context for 'APU' is selected.
+00:39:23 INFO  : Sourcing of 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002/002_btm_led_axi_isr_vitis/_ide/psinit/ps7_init.tcl' is done.
+00:39:23 INFO  : 'ps7_init' command is executed.
+00:39:23 INFO  : 'ps7_post_config' command is executed.
+00:39:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:39:24 INFO  : The application 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002/002_btm_led_axi_isr_vitis/Debug/002_btm_led_axi_isr_vitis.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:39:24 INFO  : 'configparams force-mem-access 0' command is executed.
+00:39:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}
+fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002/002_btm_led_axi_isr_vitis/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002/002_platform/export/002_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002/002_btm_led_axi_isr_vitis/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/002/002_btm_led_axi_isr_vitis/Debug/002_btm_led_axi_isr_vitis.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:39:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:39:24 INFO  : 'con' command is executed.
+00:39:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+00:39:24 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\002\.sdk\launch_scripts\single_application_debug\systemdebugger_002_btm_led_axi_isr_vitis_system_standalone.tcl'
+02:03:03 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\002\temp_xsdb_launch_script.tcl
+11:57:56 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\002\temp_xsdb_launch_script.tcl
+11:57:59 INFO  : XSCT server has started successfully.
+11:57:59 INFO  : Successfully done setting XSCT server connection channel  
+11:58:00 INFO  : plnx-install-location is set to ''
+11:58:00 INFO  : Successfully done setting workspace for the tool. 
+11:58:03 INFO  : Platform repository initialization has completed.
+11:58:03 INFO  : Registering command handlers for Vitis TCF services
+11:58:06 INFO  : Successfully done query RDI_DATADIR 

@@ -178,22 +178,51 @@
 
 /******************************************************************/
 
-/* Definitions for driver GPIOPS */
-#define XPAR_XGPIOPS_NUM_INSTANCES 1
+/* Definitions for driver GPIO */
+#define XPAR_XGPIO_NUM_INSTANCES 2
 
-/* Definitions for peripheral PS7_GPIO_0 */
-#define XPAR_PS7_GPIO_0_DEVICE_ID 0
-#define XPAR_PS7_GPIO_0_BASEADDR 0xE000A000
-#define XPAR_PS7_GPIO_0_HIGHADDR 0xE000AFFF
+/* Definitions for peripheral BUTTON */
+#define XPAR_BUTTON_BASEADDR 0x41200000
+#define XPAR_BUTTON_HIGHADDR 0x4120FFFF
+#define XPAR_BUTTON_DEVICE_ID 0
+#define XPAR_BUTTON_INTERRUPT_PRESENT 1
+#define XPAR_BUTTON_IS_DUAL 0
+
+
+/* Definitions for peripheral LED */
+#define XPAR_LED_BASEADDR 0x41210000
+#define XPAR_LED_HIGHADDR 0x4121FFFF
+#define XPAR_LED_DEVICE_ID 1
+#define XPAR_LED_INTERRUPT_PRESENT 0
+#define XPAR_LED_IS_DUAL 0
 
 
 /******************************************************************/
 
-/* Canonical definitions for peripheral PS7_GPIO_0 */
-#define XPAR_XGPIOPS_0_DEVICE_ID XPAR_PS7_GPIO_0_DEVICE_ID
-#define XPAR_XGPIOPS_0_BASEADDR 0xE000A000
-#define XPAR_XGPIOPS_0_HIGHADDR 0xE000AFFF
+/* Canonical definitions for peripheral BUTTON */
+#define XPAR_GPIO_0_BASEADDR 0x41200000
+#define XPAR_GPIO_0_HIGHADDR 0x4120FFFF
+#define XPAR_GPIO_0_DEVICE_ID XPAR_BUTTON_DEVICE_ID
+#define XPAR_GPIO_0_INTERRUPT_PRESENT 1
+#define XPAR_GPIO_0_IS_DUAL 0
 
+/* Canonical definitions for peripheral LED */
+#define XPAR_GPIO_1_BASEADDR 0x41210000
+#define XPAR_GPIO_1_HIGHADDR 0x4121FFFF
+#define XPAR_GPIO_1_DEVICE_ID XPAR_LED_DEVICE_ID
+#define XPAR_GPIO_1_INTERRUPT_PRESENT 0
+#define XPAR_GPIO_1_IS_DUAL 0
+
+
+/******************************************************************/
+
+/* Definitions for Fabric interrupts connected to ps7_scugic_0 */
+#define XPAR_FABRIC_BUTTON_IP2INTC_IRPT_INTR 61U
+
+/******************************************************************/
+
+/* Canonical definitions for Fabric interrupts connected to ps7_scugic_0 */
+#define XPAR_FABRIC_GPIO_0_VEC_ID XPAR_FABRIC_BUTTON_IP2INTC_IRPT_INTR
 
 /******************************************************************/
 
