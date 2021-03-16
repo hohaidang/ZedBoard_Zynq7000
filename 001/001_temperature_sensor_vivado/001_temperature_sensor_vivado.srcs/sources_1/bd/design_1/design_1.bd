@@ -255,6 +255,9 @@
           "PCW_EN_EMIO_TTC0": {
             "value": "0"
           },
+          "PCW_EN_EMIO_WDT": {
+            "value": "0"
+          },
           "PCW_EN_ENET0": {
             "value": "0"
           },
@@ -282,6 +285,9 @@
           "PCW_EN_USB0": {
             "value": "0"
           },
+          "PCW_EN_WDT": {
+            "value": "0"
+          },
           "PCW_FPGA0_PERIPHERAL_FREQMHZ": {
             "value": "100.000000"
           },
@@ -306,51 +312,6 @@
           "PCW_IRQ_F2P_INTR": {
             "value": "1"
           },
-          "PCW_MIO_10_IOTYPE": {
-            "value": "LVCMOS 3.3V"
-          },
-          "PCW_MIO_10_PULLUP": {
-            "value": "enabled"
-          },
-          "PCW_MIO_10_SLEW": {
-            "value": "slow"
-          },
-          "PCW_MIO_11_IOTYPE": {
-            "value": "LVCMOS 3.3V"
-          },
-          "PCW_MIO_11_PULLUP": {
-            "value": "enabled"
-          },
-          "PCW_MIO_11_SLEW": {
-            "value": "slow"
-          },
-          "PCW_MIO_12_IOTYPE": {
-            "value": "LVCMOS 3.3V"
-          },
-          "PCW_MIO_12_PULLUP": {
-            "value": "enabled"
-          },
-          "PCW_MIO_12_SLEW": {
-            "value": "slow"
-          },
-          "PCW_MIO_13_IOTYPE": {
-            "value": "LVCMOS 3.3V"
-          },
-          "PCW_MIO_13_PULLUP": {
-            "value": "enabled"
-          },
-          "PCW_MIO_13_SLEW": {
-            "value": "slow"
-          },
-          "PCW_MIO_18_IOTYPE": {
-            "value": "LVCMOS 1.8V"
-          },
-          "PCW_MIO_18_PULLUP": {
-            "value": "enabled"
-          },
-          "PCW_MIO_18_SLEW": {
-            "value": "slow"
-          },
           "PCW_MIO_48_IOTYPE": {
             "value": "LVCMOS 1.8V"
           },
@@ -370,10 +331,10 @@
             "value": "slow"
           },
           "PCW_MIO_TREE_PERIPHERALS": {
-            "value": "unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#SPI 1#SPI 1#SPI 1#SPI 1#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#UART 1#UART 1#unassigned#unassigned#unassigned#unassigned"
+            "value": "unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#UART 1#UART 1#unassigned#unassigned#unassigned#unassigned"
           },
           "PCW_MIO_TREE_SIGNALS": {
-            "value": "unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#mosi#miso#sclk#ss[0]#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#tx#rx#unassigned#unassigned#unassigned#unassigned"
+            "value": "unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#tx#rx#unassigned#unassigned#unassigned#unassigned"
           },
           "PCW_NAND_PERIPHERAL_ENABLE": {
             "value": "0"
@@ -494,6 +455,9 @@
           },
           "PCW_USE_M_AXI_GP0": {
             "value": "1"
+          },
+          "PCW_WDT_PERIPHERAL_ENABLE": {
+            "value": "0"
           },
           "preset": {
             "value": "ZedBoard"
@@ -727,16 +691,16 @@
               }
             },
             "interface_nets": {
-              "s00_couplers_to_auto_pc": {
-                "interface_ports": [
-                  "S_AXI",
-                  "auto_pc/S_AXI"
-                ]
-              },
               "auto_pc_to_s00_couplers": {
                 "interface_ports": [
                   "M_AXI",
                   "auto_pc/M_AXI"
+                ]
+              },
+              "s00_couplers_to_auto_pc": {
+                "interface_ports": [
+                  "S_AXI",
+                  "auto_pc/S_AXI"
                 ]
               }
             },
@@ -877,16 +841,16 @@
               "xbar/S00_AXI"
             ]
           },
-          "m00_couplers_to_ps7_0_axi_periph": {
-            "interface_ports": [
-              "M00_AXI",
-              "m00_couplers/M_AXI"
-            ]
-          },
           "xbar_to_m00_couplers": {
             "interface_ports": [
               "xbar/M00_AXI",
               "m00_couplers/S_AXI"
+            ]
+          },
+          "m00_couplers_to_ps7_0_axi_periph": {
+            "interface_ports": [
+              "M00_AXI",
+              "m00_couplers/M_AXI"
             ]
           },
           "m01_couplers_to_ps7_0_axi_periph": {
@@ -941,16 +905,22 @@
           "button/GPIO"
         ]
       },
+      "ps7_0_axi_periph_M01_AXI": {
+        "interface_ports": [
+          "ps7_0_axi_periph/M01_AXI",
+          "led/S_AXI"
+        ]
+      },
       "ps7_0_axi_periph_M00_AXI": {
         "interface_ports": [
           "ps7_0_axi_periph/M00_AXI",
           "button/S_AXI"
         ]
       },
-      "processing_system7_0_FIXED_IO": {
+      "processing_system7_0_DDR": {
         "interface_ports": [
-          "FIXED_IO",
-          "processing_system7_0/FIXED_IO"
+          "DDR",
+          "processing_system7_0/DDR"
         ]
       },
       "led_GPIO": {
@@ -959,22 +929,16 @@
           "led/GPIO"
         ]
       },
-      "ps7_0_axi_periph_M01_AXI": {
-        "interface_ports": [
-          "ps7_0_axi_periph/M01_AXI",
-          "led/S_AXI"
-        ]
-      },
       "processing_system7_0_M_AXI_GP0": {
         "interface_ports": [
           "processing_system7_0/M_AXI_GP0",
           "ps7_0_axi_periph/S00_AXI"
         ]
       },
-      "processing_system7_0_DDR": {
+      "processing_system7_0_FIXED_IO": {
         "interface_ports": [
-          "DDR",
-          "processing_system7_0/DDR"
+          "FIXED_IO",
+          "processing_system7_0/FIXED_IO"
         ]
       }
     },

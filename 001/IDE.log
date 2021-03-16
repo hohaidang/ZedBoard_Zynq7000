@@ -3592,3 +3592,2088 @@ con
 ----------------End of Script----------------
 
 22:22:03 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\.sdk\launch_scripts\single_application_debug\systemdebugger_001_iot_system_standalone.tcl'
+10:01:28 INFO  : Disconnected from the channel tcfchan#55.
+13:35:22 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\temp_xsdb_launch_script.tcl
+13:35:24 INFO  : XSCT server has started successfully.
+13:35:24 INFO  : plnx-install-location is set to ''
+13:35:24 INFO  : Successfully done setting XSCT server connection channel  
+13:35:24 INFO  : Successfully done setting workspace for the tool. 
+13:35:30 INFO  : Platform repository initialization has completed.
+13:35:30 INFO  : Registering command handlers for Vitis TCF services
+13:35:30 INFO  : Successfully done query RDI_DATADIR 
+13:36:02 INFO  : Successfully done sdx_reload_mss "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+13:36:24 INFO  : Example project xspips_flash_intr_example_1 has been created successfully.
+13:47:21 INFO  : Result from executing command 'getProjects': 001_platform
+13:47:21 INFO  : Result from executing command 'getPlatforms': 001_platform|C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/001_platform.xpfm
+13:47:21 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+13:50:01 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+13:50:19 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+13:50:58 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+13:56:37 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+13:56:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:56:58 INFO  : Jtag cable 'Digilent Zed 210248AC8994' is selected.
+13:56:58 INFO  : 'jtag frequency' command is executed.
+13:56:58 INFO  : Context for 'APU' is selected.
+13:56:58 INFO  : System reset is completed.
+13:57:01 INFO  : 'after 3000' command is executed.
+13:57:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}' command is executed.
+13:57:04 INFO  : FPGA configured successfully with bitstream "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit"
+13:57:04 INFO  : Context for 'APU' is selected.
+13:57:04 INFO  : Hardware design and registers information is loaded from 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa'.
+13:57:04 INFO  : 'configparams force-mem-access 1' command is executed.
+13:57:04 INFO  : Context for 'APU' is selected.
+13:57:04 INFO  : Sourcing of 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl' is done.
+13:57:04 INFO  : 'ps7_init' command is executed.
+13:57:04 INFO  : 'ps7_post_config' command is executed.
+13:57:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:57:05 INFO  : The application 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:57:05 INFO  : 'configparams force-mem-access 0' command is executed.
+13:57:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}
+fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:57:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:57:05 INFO  : 'con' command is executed.
+13:57:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:57:05 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\.sdk\launch_scripts\single_application_debug\systemdebugger_001_iot_system_standalone.tcl'
+14:23:16 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+14:24:05 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+14:24:15 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+14:29:39 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+14:30:17 INFO  : Disconnected from the channel tcfchan#7.
+14:30:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:30:18 INFO  : Jtag cable 'Digilent Zed 210248AC8994' is selected.
+14:30:18 INFO  : 'jtag frequency' command is executed.
+14:30:18 INFO  : Context for 'APU' is selected.
+14:30:18 INFO  : System reset is completed.
+14:30:21 INFO  : 'after 3000' command is executed.
+14:30:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}' command is executed.
+14:30:23 INFO  : FPGA configured successfully with bitstream "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit"
+14:30:23 INFO  : Context for 'APU' is selected.
+14:30:23 INFO  : Hardware design and registers information is loaded from 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa'.
+14:30:23 INFO  : 'configparams force-mem-access 1' command is executed.
+14:30:23 INFO  : Context for 'APU' is selected.
+14:30:23 INFO  : Sourcing of 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl' is done.
+14:30:24 INFO  : 'ps7_init' command is executed.
+14:30:24 INFO  : 'ps7_post_config' command is executed.
+14:30:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:30:24 INFO  : The application 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:30:24 INFO  : 'configparams force-mem-access 0' command is executed.
+14:30:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}
+fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:30:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:30:24 INFO  : 'con' command is executed.
+14:30:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:30:24 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\.sdk\launch_scripts\single_application_debug\systemdebugger_001_iot_system_standalone.tcl'
+14:30:58 INFO  : Disconnected from the channel tcfchan#12.
+14:33:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:33:36 INFO  : Jtag cable 'Digilent Zed 210248AC8994' is selected.
+14:33:36 INFO  : 'jtag frequency' command is executed.
+14:33:36 INFO  : Context for 'APU' is selected.
+14:33:37 INFO  : System reset is completed.
+14:33:40 INFO  : 'after 3000' command is executed.
+14:33:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}' command is executed.
+14:33:42 INFO  : FPGA configured successfully with bitstream "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit"
+14:33:42 INFO  : Context for 'APU' is selected.
+14:33:42 INFO  : Hardware design and registers information is loaded from 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa'.
+14:33:42 INFO  : 'configparams force-mem-access 1' command is executed.
+14:33:42 INFO  : Context for 'APU' is selected.
+14:33:42 INFO  : Sourcing of 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl' is done.
+14:33:43 INFO  : 'ps7_init' command is executed.
+14:33:43 INFO  : 'ps7_post_config' command is executed.
+14:33:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:33:43 INFO  : The application 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:33:43 INFO  : 'configparams force-mem-access 0' command is executed.
+14:33:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}
+fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:33:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:33:43 INFO  : 'con' command is executed.
+14:33:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:33:43 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\.sdk\launch_scripts\single_application_debug\systemdebugger_001_iot_system_standalone.tcl'
+14:35:17 INFO  : Disconnected from the channel tcfchan#13.
+14:37:26 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+14:38:03 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+14:38:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:38:40 INFO  : Jtag cable 'Digilent Zed 210248AC8994' is selected.
+14:38:40 INFO  : 'jtag frequency' command is executed.
+14:38:40 INFO  : Context for 'APU' is selected.
+14:38:41 INFO  : System reset is completed.
+14:38:44 INFO  : 'after 3000' command is executed.
+14:38:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}' command is executed.
+14:38:46 INFO  : FPGA configured successfully with bitstream "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit"
+14:38:46 INFO  : Context for 'APU' is selected.
+14:38:46 INFO  : Hardware design and registers information is loaded from 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa'.
+14:38:46 INFO  : 'configparams force-mem-access 1' command is executed.
+14:38:46 INFO  : Context for 'APU' is selected.
+14:38:46 INFO  : Sourcing of 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl' is done.
+14:38:47 INFO  : 'ps7_init' command is executed.
+14:38:47 INFO  : 'ps7_post_config' command is executed.
+14:38:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:38:47 INFO  : The application 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:38:47 INFO  : 'configparams force-mem-access 0' command is executed.
+14:38:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}
+fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:38:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:38:47 INFO  : 'con' command is executed.
+14:38:47 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:38:47 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\.sdk\launch_scripts\single_application_debug\systemdebugger_001_iot_system_standalone.tcl'
+14:39:34 INFO  : Disconnected from the channel tcfchan#16.
+14:41:27 INFO  : Result from executing command 'getProjects': 001_platform
+14:41:27 INFO  : Result from executing command 'getPlatforms': 001_platform|C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/001_platform.xpfm
+14:41:27 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+14:42:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:42:01 INFO  : Jtag cable 'Digilent Zed 210248AC8994' is selected.
+14:42:01 INFO  : 'jtag frequency' command is executed.
+14:42:01 INFO  : Context for 'APU' is selected.
+14:42:01 INFO  : System reset is completed.
+14:42:04 INFO  : 'after 3000' command is executed.
+14:42:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}' command is executed.
+14:42:07 INFO  : FPGA configured successfully with bitstream "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit"
+14:42:07 INFO  : Context for 'APU' is selected.
+14:42:07 INFO  : Hardware design and registers information is loaded from 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa'.
+14:42:07 INFO  : 'configparams force-mem-access 1' command is executed.
+14:42:07 INFO  : Context for 'APU' is selected.
+14:42:07 INFO  : Sourcing of 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl' is done.
+14:42:08 INFO  : 'ps7_init' command is executed.
+14:42:08 INFO  : 'ps7_post_config' command is executed.
+14:42:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:42:08 INFO  : The application 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:42:08 INFO  : 'configparams force-mem-access 0' command is executed.
+14:42:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}
+fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:42:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:42:08 INFO  : 'con' command is executed.
+14:42:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:42:08 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\.sdk\launch_scripts\single_application_debug\systemdebugger_001_iot_system_standalone.tcl'
+14:42:24 INFO  : Disconnected from the channel tcfchan#20.
+14:42:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:42:24 INFO  : Jtag cable 'Digilent Zed 210248AC8994' is selected.
+14:42:24 INFO  : 'jtag frequency' command is executed.
+14:42:24 INFO  : Context for 'APU' is selected.
+14:42:24 INFO  : System reset is completed.
+14:42:27 INFO  : 'after 3000' command is executed.
+14:42:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}' command is executed.
+14:42:30 INFO  : FPGA configured successfully with bitstream "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit"
+14:42:30 INFO  : Context for 'APU' is selected.
+14:42:30 INFO  : Hardware design and registers information is loaded from 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa'.
+14:42:30 INFO  : 'configparams force-mem-access 1' command is executed.
+14:42:30 INFO  : Context for 'APU' is selected.
+14:42:30 INFO  : Sourcing of 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl' is done.
+14:42:30 INFO  : 'ps7_init' command is executed.
+14:42:30 INFO  : 'ps7_post_config' command is executed.
+14:42:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:42:31 INFO  : The application 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:42:31 INFO  : 'configparams force-mem-access 0' command is executed.
+14:42:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}
+fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:42:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:42:31 INFO  : 'con' command is executed.
+14:42:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:42:31 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\.sdk\launch_scripts\single_application_debug\systemdebugger_001_iot_system_standalone.tcl'
+14:49:47 INFO  : Disconnected from the channel tcfchan#21.
+14:52:41 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+14:53:32 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+14:54:00 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+14:54:31 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+14:55:55 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+14:56:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:56:11 INFO  : Jtag cable 'Digilent Zed 210248AC8994' is selected.
+14:56:11 INFO  : 'jtag frequency' command is executed.
+14:56:11 INFO  : Context for 'APU' is selected.
+14:56:11 INFO  : System reset is completed.
+14:56:14 INFO  : 'after 3000' command is executed.
+14:56:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}' command is executed.
+14:56:17 INFO  : FPGA configured successfully with bitstream "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit"
+14:56:17 INFO  : Context for 'APU' is selected.
+14:56:17 INFO  : Hardware design and registers information is loaded from 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa'.
+14:56:17 INFO  : 'configparams force-mem-access 1' command is executed.
+14:56:17 INFO  : Context for 'APU' is selected.
+14:56:17 INFO  : Sourcing of 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl' is done.
+14:56:18 INFO  : 'ps7_init' command is executed.
+14:56:18 INFO  : 'ps7_post_config' command is executed.
+14:56:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:56:18 INFO  : The application 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:56:18 INFO  : 'configparams force-mem-access 0' command is executed.
+14:56:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}
+fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:56:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:56:18 INFO  : 'con' command is executed.
+14:56:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:56:18 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\.sdk\launch_scripts\single_application_debug\systemdebugger_001_iot_system_standalone.tcl'
+14:56:36 INFO  : Disconnected from the channel tcfchan#25.
+14:57:13 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+14:57:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:57:28 INFO  : Jtag cable 'Digilent Zed 210248AC8994' is selected.
+14:57:28 INFO  : 'jtag frequency' command is executed.
+14:57:28 INFO  : Context for 'APU' is selected.
+14:57:28 INFO  : System reset is completed.
+14:57:31 INFO  : 'after 3000' command is executed.
+14:57:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}' command is executed.
+14:57:34 INFO  : FPGA configured successfully with bitstream "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit"
+14:57:34 INFO  : Context for 'APU' is selected.
+14:57:34 INFO  : Hardware design and registers information is loaded from 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa'.
+14:57:34 INFO  : 'configparams force-mem-access 1' command is executed.
+14:57:34 INFO  : Context for 'APU' is selected.
+14:57:34 INFO  : Sourcing of 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl' is done.
+14:57:34 INFO  : 'ps7_init' command is executed.
+14:57:34 INFO  : 'ps7_post_config' command is executed.
+14:57:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:57:34 INFO  : The application 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:57:35 INFO  : 'configparams force-mem-access 0' command is executed.
+14:57:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}
+fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:57:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:57:35 INFO  : 'con' command is executed.
+14:57:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:57:35 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\.sdk\launch_scripts\single_application_debug\systemdebugger_001_iot_system_standalone.tcl'
+14:58:18 INFO  : Disconnected from the channel tcfchan#27.
+14:59:26 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+14:59:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:59:45 INFO  : Jtag cable 'Digilent Zed 210248AC8994' is selected.
+14:59:45 INFO  : 'jtag frequency' command is executed.
+14:59:45 INFO  : Context for 'APU' is selected.
+14:59:45 INFO  : System reset is completed.
+14:59:48 INFO  : 'after 3000' command is executed.
+14:59:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}' command is executed.
+14:59:51 INFO  : FPGA configured successfully with bitstream "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit"
+14:59:51 INFO  : Context for 'APU' is selected.
+14:59:51 INFO  : Hardware design and registers information is loaded from 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa'.
+14:59:51 INFO  : 'configparams force-mem-access 1' command is executed.
+14:59:51 INFO  : Context for 'APU' is selected.
+14:59:51 INFO  : Sourcing of 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl' is done.
+14:59:51 INFO  : 'ps7_init' command is executed.
+14:59:51 INFO  : 'ps7_post_config' command is executed.
+14:59:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:59:52 INFO  : The application 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:59:52 INFO  : 'configparams force-mem-access 0' command is executed.
+14:59:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}
+fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:59:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:59:52 INFO  : 'con' command is executed.
+14:59:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:59:52 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\.sdk\launch_scripts\single_application_debug\systemdebugger_001_iot_system_standalone.tcl'
+15:01:06 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+15:01:21 INFO  : Disconnected from the channel tcfchan#29.
+15:01:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:01:22 INFO  : Jtag cable 'Digilent Zed 210248AC8994' is selected.
+15:01:22 INFO  : 'jtag frequency' command is executed.
+15:01:22 INFO  : Context for 'APU' is selected.
+15:01:22 INFO  : System reset is completed.
+15:01:25 INFO  : 'after 3000' command is executed.
+15:01:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}' command is executed.
+15:01:28 INFO  : FPGA configured successfully with bitstream "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit"
+15:01:28 INFO  : Context for 'APU' is selected.
+15:01:28 INFO  : Hardware design and registers information is loaded from 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa'.
+15:01:28 INFO  : 'configparams force-mem-access 1' command is executed.
+15:01:28 INFO  : Context for 'APU' is selected.
+15:01:28 INFO  : Sourcing of 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl' is done.
+15:01:28 INFO  : 'ps7_init' command is executed.
+15:01:28 INFO  : 'ps7_post_config' command is executed.
+15:01:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:01:28 INFO  : The application 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:01:28 INFO  : 'configparams force-mem-access 0' command is executed.
+15:01:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}
+fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:01:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:01:29 INFO  : 'con' command is executed.
+15:01:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:01:29 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\.sdk\launch_scripts\single_application_debug\systemdebugger_001_iot_system_standalone.tcl'
+15:01:48 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+15:01:59 INFO  : Disconnected from the channel tcfchan#31.
+15:01:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:01:59 INFO  : Jtag cable 'Digilent Zed 210248AC8994' is selected.
+15:01:59 INFO  : 'jtag frequency' command is executed.
+15:01:59 INFO  : Context for 'APU' is selected.
+15:01:59 INFO  : System reset is completed.
+15:02:02 INFO  : 'after 3000' command is executed.
+15:02:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}' command is executed.
+15:02:05 INFO  : FPGA configured successfully with bitstream "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit"
+15:02:05 INFO  : Context for 'APU' is selected.
+15:02:05 INFO  : Hardware design and registers information is loaded from 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa'.
+15:02:05 INFO  : 'configparams force-mem-access 1' command is executed.
+15:02:05 INFO  : Context for 'APU' is selected.
+15:02:05 INFO  : Sourcing of 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl' is done.
+15:02:05 INFO  : 'ps7_init' command is executed.
+15:02:05 INFO  : 'ps7_post_config' command is executed.
+15:02:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:02:06 INFO  : The application 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:02:06 INFO  : 'configparams force-mem-access 0' command is executed.
+15:02:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}
+fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:02:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:02:06 INFO  : 'con' command is executed.
+15:02:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:02:06 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\.sdk\launch_scripts\single_application_debug\systemdebugger_001_iot_system_standalone.tcl'
+15:09:01 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+15:09:15 INFO  : Disconnected from the channel tcfchan#33.
+15:09:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:09:15 INFO  : Jtag cable 'Digilent Zed 210248AC8994' is selected.
+15:09:15 INFO  : 'jtag frequency' command is executed.
+15:09:16 INFO  : Context for 'APU' is selected.
+15:09:16 INFO  : System reset is completed.
+15:09:19 INFO  : 'after 3000' command is executed.
+15:09:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}' command is executed.
+15:09:21 INFO  : FPGA configured successfully with bitstream "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit"
+15:09:21 INFO  : Context for 'APU' is selected.
+15:09:21 INFO  : Hardware design and registers information is loaded from 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa'.
+15:09:21 INFO  : 'configparams force-mem-access 1' command is executed.
+15:09:21 INFO  : Context for 'APU' is selected.
+15:09:21 INFO  : Sourcing of 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl' is done.
+15:09:22 INFO  : 'ps7_init' command is executed.
+15:09:22 INFO  : 'ps7_post_config' command is executed.
+15:09:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:09:22 INFO  : The application 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:09:22 INFO  : 'configparams force-mem-access 0' command is executed.
+15:09:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}
+fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:09:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:09:22 INFO  : 'con' command is executed.
+15:09:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:09:22 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\.sdk\launch_scripts\single_application_debug\systemdebugger_001_iot_system_standalone.tcl'
+15:09:54 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+15:10:15 INFO  : Disconnected from the channel tcfchan#35.
+15:10:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:10:16 INFO  : Jtag cable 'Digilent Zed 210248AC8994' is selected.
+15:10:16 INFO  : 'jtag frequency' command is executed.
+15:10:16 INFO  : Context for 'APU' is selected.
+15:10:16 INFO  : System reset is completed.
+15:10:19 INFO  : 'after 3000' command is executed.
+15:10:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}' command is executed.
+15:10:21 INFO  : FPGA configured successfully with bitstream "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit"
+15:10:21 INFO  : Context for 'APU' is selected.
+15:10:21 INFO  : Hardware design and registers information is loaded from 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa'.
+15:10:21 INFO  : 'configparams force-mem-access 1' command is executed.
+15:10:21 INFO  : Context for 'APU' is selected.
+15:10:21 INFO  : Sourcing of 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl' is done.
+15:10:22 INFO  : 'ps7_init' command is executed.
+15:10:22 INFO  : 'ps7_post_config' command is executed.
+15:10:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:10:22 INFO  : The application 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:10:22 INFO  : 'configparams force-mem-access 0' command is executed.
+15:10:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}
+fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:10:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:10:22 INFO  : 'con' command is executed.
+15:10:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:10:22 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\.sdk\launch_scripts\single_application_debug\systemdebugger_001_iot_system_standalone.tcl'
+15:11:14 INFO  : Disconnected from the channel tcfchan#37.
+15:11:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:11:15 INFO  : Jtag cable 'Digilent Zed 210248AC8994' is selected.
+15:11:15 INFO  : 'jtag frequency' command is executed.
+15:11:15 INFO  : Context for 'APU' is selected.
+15:11:15 INFO  : System reset is completed.
+15:11:18 INFO  : 'after 3000' command is executed.
+15:11:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}' command is executed.
+15:11:20 INFO  : FPGA configured successfully with bitstream "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit"
+15:11:20 INFO  : Context for 'APU' is selected.
+15:11:20 INFO  : Hardware design and registers information is loaded from 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa'.
+15:11:20 INFO  : 'configparams force-mem-access 1' command is executed.
+15:11:20 INFO  : Context for 'APU' is selected.
+15:11:20 INFO  : Sourcing of 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl' is done.
+15:11:21 INFO  : 'ps7_init' command is executed.
+15:11:21 INFO  : 'ps7_post_config' command is executed.
+15:11:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:11:21 INFO  : The application 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:11:21 INFO  : 'configparams force-mem-access 0' command is executed.
+15:11:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}
+fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:11:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:11:21 INFO  : 'con' command is executed.
+15:11:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:11:21 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\.sdk\launch_scripts\single_application_debug\systemdebugger_001_iot_system_standalone.tcl'
+15:12:08 INFO  : Disconnected from the channel tcfchan#38.
+15:12:18 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+15:12:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:12:32 INFO  : Jtag cable 'Digilent Zed 210248AC8994' is selected.
+15:12:32 INFO  : 'jtag frequency' command is executed.
+15:12:32 INFO  : Context for 'APU' is selected.
+15:12:32 INFO  : System reset is completed.
+15:12:35 INFO  : 'after 3000' command is executed.
+15:12:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}' command is executed.
+15:12:38 INFO  : FPGA configured successfully with bitstream "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit"
+15:12:38 INFO  : Context for 'APU' is selected.
+15:12:38 INFO  : Hardware design and registers information is loaded from 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa'.
+15:12:38 INFO  : 'configparams force-mem-access 1' command is executed.
+15:12:38 INFO  : Context for 'APU' is selected.
+15:12:38 INFO  : Sourcing of 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl' is done.
+15:12:39 INFO  : 'ps7_init' command is executed.
+15:12:39 INFO  : 'ps7_post_config' command is executed.
+15:12:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:12:39 INFO  : The application 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:12:39 INFO  : 'configparams force-mem-access 0' command is executed.
+15:12:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}
+fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:12:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:12:39 INFO  : 'con' command is executed.
+15:12:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:12:39 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\.sdk\launch_scripts\single_application_debug\systemdebugger_001_iot_system_standalone.tcl'
+15:12:53 INFO  : Disconnected from the channel tcfchan#40.
+15:12:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:12:53 INFO  : Jtag cable 'Digilent Zed 210248AC8994' is selected.
+15:12:53 INFO  : 'jtag frequency' command is executed.
+15:12:53 INFO  : Context for 'APU' is selected.
+15:12:53 INFO  : System reset is completed.
+15:12:56 INFO  : 'after 3000' command is executed.
+15:12:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}' command is executed.
+15:12:59 INFO  : FPGA configured successfully with bitstream "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit"
+15:12:59 INFO  : Context for 'APU' is selected.
+15:12:59 INFO  : Hardware design and registers information is loaded from 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa'.
+15:12:59 INFO  : 'configparams force-mem-access 1' command is executed.
+15:12:59 INFO  : Context for 'APU' is selected.
+15:12:59 INFO  : Sourcing of 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl' is done.
+15:12:59 INFO  : 'ps7_init' command is executed.
+15:12:59 INFO  : 'ps7_post_config' command is executed.
+15:12:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:13:00 INFO  : The application 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:13:00 INFO  : 'configparams force-mem-access 0' command is executed.
+15:13:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}
+fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:13:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:13:00 INFO  : 'con' command is executed.
+15:13:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:13:00 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\.sdk\launch_scripts\single_application_debug\systemdebugger_001_iot_system_standalone.tcl'
+15:13:21 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+15:13:43 INFO  : Disconnected from the channel tcfchan#41.
+15:13:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:13:43 INFO  : Jtag cable 'Digilent Zed 210248AC8994' is selected.
+15:13:43 INFO  : 'jtag frequency' command is executed.
+15:13:43 INFO  : Context for 'APU' is selected.
+15:13:43 INFO  : System reset is completed.
+15:13:46 INFO  : 'after 3000' command is executed.
+15:13:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}' command is executed.
+15:13:49 INFO  : FPGA configured successfully with bitstream "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit"
+15:13:49 INFO  : Context for 'APU' is selected.
+15:13:49 INFO  : Hardware design and registers information is loaded from 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa'.
+15:13:49 INFO  : 'configparams force-mem-access 1' command is executed.
+15:13:49 INFO  : Context for 'APU' is selected.
+15:13:49 INFO  : Sourcing of 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl' is done.
+15:13:49 INFO  : 'ps7_init' command is executed.
+15:13:49 INFO  : 'ps7_post_config' command is executed.
+15:13:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:13:50 INFO  : The application 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:13:50 INFO  : 'configparams force-mem-access 0' command is executed.
+15:13:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}
+fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:13:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:13:50 INFO  : 'con' command is executed.
+15:13:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:13:50 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\.sdk\launch_scripts\single_application_debug\systemdebugger_001_iot_system_standalone.tcl'
+15:14:09 INFO  : Disconnected from the channel tcfchan#43.
+15:14:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:14:10 INFO  : Jtag cable 'Digilent Zed 210248AC8994' is selected.
+15:14:10 INFO  : 'jtag frequency' command is executed.
+15:14:10 INFO  : Context for 'APU' is selected.
+15:14:10 INFO  : System reset is completed.
+15:14:13 INFO  : 'after 3000' command is executed.
+15:14:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}' command is executed.
+15:14:16 INFO  : FPGA configured successfully with bitstream "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit"
+15:14:16 INFO  : Context for 'APU' is selected.
+15:14:16 INFO  : Hardware design and registers information is loaded from 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa'.
+15:14:16 INFO  : 'configparams force-mem-access 1' command is executed.
+15:14:16 INFO  : Context for 'APU' is selected.
+15:14:16 INFO  : Sourcing of 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl' is done.
+15:14:16 INFO  : 'ps7_init' command is executed.
+15:14:16 INFO  : 'ps7_post_config' command is executed.
+15:14:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:14:16 INFO  : The application 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:14:16 INFO  : 'configparams force-mem-access 0' command is executed.
+15:14:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}
+fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:14:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:14:17 INFO  : 'con' command is executed.
+15:14:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:14:17 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\.sdk\launch_scripts\single_application_debug\systemdebugger_001_iot_system_standalone.tcl'
+15:14:57 INFO  : Disconnected from the channel tcfchan#44.
+15:15:10 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+15:15:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:15:40 INFO  : Jtag cable 'Digilent Zed 210248AC8994' is selected.
+15:15:40 INFO  : 'jtag frequency' command is executed.
+15:15:40 INFO  : Context for 'APU' is selected.
+15:15:40 INFO  : System reset is completed.
+15:15:43 INFO  : 'after 3000' command is executed.
+15:15:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}' command is executed.
+15:15:45 INFO  : FPGA configured successfully with bitstream "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit"
+15:15:45 INFO  : Context for 'APU' is selected.
+15:15:45 INFO  : Hardware design and registers information is loaded from 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa'.
+15:15:45 INFO  : 'configparams force-mem-access 1' command is executed.
+15:15:45 INFO  : Context for 'APU' is selected.
+15:15:45 INFO  : Sourcing of 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl' is done.
+15:15:46 INFO  : 'ps7_init' command is executed.
+15:15:46 INFO  : 'ps7_post_config' command is executed.
+15:15:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:15:46 INFO  : The application 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:15:46 INFO  : 'configparams force-mem-access 0' command is executed.
+15:15:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}
+fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:15:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:15:46 INFO  : 'con' command is executed.
+15:15:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:15:46 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\.sdk\launch_scripts\single_application_debug\systemdebugger_001_iot_system_standalone.tcl'
+15:16:17 INFO  : Disconnected from the channel tcfchan#46.
+15:19:36 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+15:19:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:19:50 INFO  : Jtag cable 'Digilent Zed 210248AC8994' is selected.
+15:19:50 INFO  : 'jtag frequency' command is executed.
+15:19:50 INFO  : Context for 'APU' is selected.
+15:19:50 INFO  : System reset is completed.
+15:19:53 INFO  : 'after 3000' command is executed.
+15:19:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}' command is executed.
+15:19:56 INFO  : FPGA configured successfully with bitstream "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit"
+15:19:56 INFO  : Context for 'APU' is selected.
+15:19:56 INFO  : Hardware design and registers information is loaded from 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa'.
+15:19:56 INFO  : 'configparams force-mem-access 1' command is executed.
+15:19:56 INFO  : Context for 'APU' is selected.
+15:19:56 INFO  : Sourcing of 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl' is done.
+15:19:56 INFO  : 'ps7_init' command is executed.
+15:19:56 INFO  : 'ps7_post_config' command is executed.
+15:19:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:19:57 INFO  : The application 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:19:57 INFO  : 'configparams force-mem-access 0' command is executed.
+15:19:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}
+fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:19:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:19:57 INFO  : 'con' command is executed.
+15:19:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:19:57 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\.sdk\launch_scripts\single_application_debug\systemdebugger_001_iot_system_standalone.tcl'
+15:51:51 INFO  : Successfully done sdx_reload_mss "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+15:54:28 INFO  : Example project xscutimer_intr_example_1 has been created successfully.
+15:54:36 INFO  : Example project xscutimer_polled_example_1 has been created successfully.
+16:33:13 INFO  : Result from executing command 'getProjects': 001_platform
+16:33:13 INFO  : Result from executing command 'getPlatforms': 001_platform|C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/001_platform.xpfm
+16:33:13 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+16:33:28 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+16:33:45 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+16:33:56 INFO  : Disconnected from the channel tcfchan#48.
+16:33:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:34:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+16:34:14 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+16:34:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:34:30 INFO  : Jtag cable 'Digilent Zed 210248AC8994' is selected.
+16:34:30 INFO  : 'jtag frequency' command is executed.
+16:34:30 INFO  : Context for 'APU' is selected.
+16:34:30 INFO  : System reset is completed.
+16:34:33 INFO  : 'after 3000' command is executed.
+16:34:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}' command is executed.
+16:34:35 INFO  : FPGA configured successfully with bitstream "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit"
+16:34:35 INFO  : Context for 'APU' is selected.
+16:34:35 INFO  : Hardware design and registers information is loaded from 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa'.
+16:34:35 INFO  : 'configparams force-mem-access 1' command is executed.
+16:34:35 INFO  : Context for 'APU' is selected.
+16:34:35 INFO  : Sourcing of 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl' is done.
+16:34:36 INFO  : 'ps7_init' command is executed.
+16:34:36 INFO  : 'ps7_post_config' command is executed.
+16:34:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:34:36 INFO  : The application 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:34:36 INFO  : 'configparams force-mem-access 0' command is executed.
+16:34:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}
+fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:34:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:34:36 INFO  : 'con' command is executed.
+16:34:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:34:36 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\.sdk\launch_scripts\single_application_debug\systemdebugger_001_iot_system_standalone.tcl'
+16:35:37 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+16:36:08 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+16:36:20 INFO  : Disconnected from the channel tcfchan#53.
+16:36:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:36:21 INFO  : Jtag cable 'Digilent Zed 210248AC8994' is selected.
+16:36:21 INFO  : 'jtag frequency' command is executed.
+16:36:21 INFO  : Context for 'APU' is selected.
+16:36:21 INFO  : System reset is completed.
+16:36:24 INFO  : 'after 3000' command is executed.
+16:36:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}' command is executed.
+16:36:26 INFO  : FPGA configured successfully with bitstream "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit"
+16:36:26 INFO  : Context for 'APU' is selected.
+16:36:26 INFO  : Hardware design and registers information is loaded from 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa'.
+16:36:26 INFO  : 'configparams force-mem-access 1' command is executed.
+16:36:26 INFO  : Context for 'APU' is selected.
+16:36:26 INFO  : Sourcing of 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl' is done.
+16:36:27 INFO  : 'ps7_init' command is executed.
+16:36:27 INFO  : 'ps7_post_config' command is executed.
+16:36:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:36:27 INFO  : The application 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:36:27 INFO  : 'configparams force-mem-access 0' command is executed.
+16:36:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}
+fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:36:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:36:27 INFO  : 'con' command is executed.
+16:36:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:36:27 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\.sdk\launch_scripts\single_application_debug\systemdebugger_001_iot_system_standalone.tcl'
+16:37:22 INFO  : Disconnected from the channel tcfchan#56.
+16:37:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:37:23 INFO  : Jtag cable 'Digilent Zed 210248AC8994' is selected.
+16:37:23 INFO  : 'jtag frequency' command is executed.
+16:37:23 INFO  : Context for 'APU' is selected.
+16:37:23 INFO  : System reset is completed.
+16:37:26 INFO  : 'after 3000' command is executed.
+16:37:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}' command is executed.
+16:37:28 INFO  : FPGA configured successfully with bitstream "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit"
+16:37:28 INFO  : Context for 'APU' is selected.
+16:37:28 INFO  : Hardware design and registers information is loaded from 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa'.
+16:37:28 INFO  : 'configparams force-mem-access 1' command is executed.
+16:37:28 INFO  : Context for 'APU' is selected.
+16:37:28 INFO  : Sourcing of 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl' is done.
+16:37:29 INFO  : 'ps7_init' command is executed.
+16:37:29 INFO  : 'ps7_post_config' command is executed.
+16:37:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:37:29 INFO  : The application 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:37:29 INFO  : 'configparams force-mem-access 0' command is executed.
+16:37:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}
+fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:37:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:37:29 INFO  : 'con' command is executed.
+16:37:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:37:29 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\.sdk\launch_scripts\single_application_debug\systemdebugger_001_iot_system_standalone.tcl'
+16:38:19 INFO  : Disconnected from the channel tcfchan#57.
+16:40:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:40:03 INFO  : Jtag cable 'Digilent Zed 210248AC8994' is selected.
+16:40:03 INFO  : 'jtag frequency' command is executed.
+16:40:03 INFO  : Context for 'APU' is selected.
+16:40:03 INFO  : System reset is completed.
+16:40:06 INFO  : 'after 3000' command is executed.
+16:40:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}' command is executed.
+16:40:08 INFO  : FPGA configured successfully with bitstream "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit"
+16:40:08 INFO  : Context for 'APU' is selected.
+16:40:08 INFO  : Hardware design and registers information is loaded from 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa'.
+16:40:08 INFO  : 'configparams force-mem-access 1' command is executed.
+16:40:09 INFO  : Context for 'APU' is selected.
+16:40:09 INFO  : Sourcing of 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl' is done.
+16:40:09 INFO  : 'ps7_init' command is executed.
+16:40:09 INFO  : 'ps7_post_config' command is executed.
+16:40:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:40:09 INFO  : The application 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:40:09 INFO  : 'configparams force-mem-access 0' command is executed.
+16:40:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}
+fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:40:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:40:09 INFO  : 'con' command is executed.
+16:40:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:40:09 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\.sdk\launch_scripts\single_application_debug\systemdebugger_001_iot_system_standalone.tcl'
+16:40:42 INFO  : Disconnected from the channel tcfchan#58.
+16:41:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:41:05 INFO  : Jtag cable 'Digilent Zed 210248AC8994' is selected.
+16:41:05 INFO  : 'jtag frequency' command is executed.
+16:41:05 INFO  : Context for 'APU' is selected.
+16:41:05 INFO  : System reset is completed.
+16:41:08 INFO  : 'after 3000' command is executed.
+16:41:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}' command is executed.
+16:41:10 INFO  : FPGA configured successfully with bitstream "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit"
+16:41:11 INFO  : Context for 'APU' is selected.
+16:41:11 INFO  : Hardware design and registers information is loaded from 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa'.
+16:41:11 INFO  : 'configparams force-mem-access 1' command is executed.
+16:41:11 INFO  : Context for 'APU' is selected.
+16:41:11 INFO  : Sourcing of 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl' is done.
+16:41:11 INFO  : 'ps7_init' command is executed.
+16:41:11 INFO  : 'ps7_post_config' command is executed.
+16:41:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:41:11 INFO  : The application 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:41:11 INFO  : 'configparams force-mem-access 0' command is executed.
+16:41:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}
+fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:41:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:41:11 INFO  : 'con' command is executed.
+16:41:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:41:11 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\.sdk\launch_scripts\single_application_debug\systemdebugger_001_iot_system_standalone.tcl'
+16:42:07 INFO  : Disconnected from the channel tcfchan#59.
+16:42:19 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+16:42:43 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+16:42:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:42:56 INFO  : Jtag cable 'Digilent Zed 210248AC8994' is selected.
+16:42:56 INFO  : 'jtag frequency' command is executed.
+16:42:56 INFO  : Context for 'APU' is selected.
+16:42:56 INFO  : System reset is completed.
+16:42:59 INFO  : 'after 3000' command is executed.
+16:43:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}' command is executed.
+16:43:02 INFO  : FPGA configured successfully with bitstream "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit"
+16:43:02 INFO  : Context for 'APU' is selected.
+16:43:02 INFO  : Hardware design and registers information is loaded from 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa'.
+16:43:02 INFO  : 'configparams force-mem-access 1' command is executed.
+16:43:02 INFO  : Context for 'APU' is selected.
+16:43:02 INFO  : Sourcing of 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl' is done.
+16:43:02 INFO  : 'ps7_init' command is executed.
+16:43:02 INFO  : 'ps7_post_config' command is executed.
+16:43:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:43:03 INFO  : The application 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:43:03 INFO  : 'configparams force-mem-access 0' command is executed.
+16:43:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}
+fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:43:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:43:03 INFO  : 'con' command is executed.
+16:43:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:43:03 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\.sdk\launch_scripts\single_application_debug\systemdebugger_001_iot_system_standalone.tcl'
+16:44:52 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+16:45:03 INFO  : Disconnected from the channel tcfchan#62.
+16:45:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:45:04 INFO  : Jtag cable 'Digilent Zed 210248AC8994' is selected.
+16:45:04 INFO  : 'jtag frequency' command is executed.
+16:45:04 INFO  : Context for 'APU' is selected.
+16:45:04 INFO  : System reset is completed.
+16:45:07 INFO  : 'after 3000' command is executed.
+16:45:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}' command is executed.
+16:45:09 INFO  : FPGA configured successfully with bitstream "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit"
+16:45:09 INFO  : Context for 'APU' is selected.
+16:45:10 INFO  : Hardware design and registers information is loaded from 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa'.
+16:45:10 INFO  : 'configparams force-mem-access 1' command is executed.
+16:45:10 INFO  : Context for 'APU' is selected.
+16:45:10 INFO  : Sourcing of 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl' is done.
+16:45:10 INFO  : 'ps7_init' command is executed.
+16:45:10 INFO  : 'ps7_post_config' command is executed.
+16:45:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:45:10 INFO  : The application 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:45:10 INFO  : 'configparams force-mem-access 0' command is executed.
+16:45:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}
+fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:45:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:45:10 INFO  : 'con' command is executed.
+16:45:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:45:10 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\.sdk\launch_scripts\single_application_debug\systemdebugger_001_iot_system_standalone.tcl'
+16:46:00 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+16:46:29 INFO  : Disconnected from the channel tcfchan#64.
+16:46:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:46:30 INFO  : Jtag cable 'Digilent Zed 210248AC8994' is selected.
+16:46:30 INFO  : 'jtag frequency' command is executed.
+16:46:30 INFO  : Context for 'APU' is selected.
+16:46:30 INFO  : System reset is completed.
+16:46:33 INFO  : 'after 3000' command is executed.
+16:46:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}' command is executed.
+16:46:35 INFO  : FPGA configured successfully with bitstream "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit"
+16:46:36 INFO  : Context for 'APU' is selected.
+16:46:36 INFO  : Hardware design and registers information is loaded from 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa'.
+16:46:36 INFO  : 'configparams force-mem-access 1' command is executed.
+16:46:36 INFO  : Context for 'APU' is selected.
+16:46:36 INFO  : Sourcing of 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl' is done.
+16:46:36 INFO  : 'ps7_init' command is executed.
+16:46:36 INFO  : 'ps7_post_config' command is executed.
+16:46:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:46:36 INFO  : The application 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:46:36 INFO  : 'configparams force-mem-access 0' command is executed.
+16:46:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}
+fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:46:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:46:36 INFO  : 'con' command is executed.
+16:46:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:46:36 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\.sdk\launch_scripts\single_application_debug\systemdebugger_001_iot_system_standalone.tcl'
+16:48:03 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+16:48:37 INFO  : Disconnected from the channel tcfchan#66.
+16:48:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:48:37 INFO  : Jtag cable 'Digilent Zed 210248AC8994' is selected.
+16:48:37 INFO  : 'jtag frequency' command is executed.
+16:48:37 INFO  : Context for 'APU' is selected.
+16:48:37 INFO  : System reset is completed.
+16:48:40 INFO  : 'after 3000' command is executed.
+16:48:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}' command is executed.
+16:48:43 INFO  : FPGA configured successfully with bitstream "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit"
+16:48:43 INFO  : Context for 'APU' is selected.
+16:48:43 INFO  : Hardware design and registers information is loaded from 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa'.
+16:48:43 INFO  : 'configparams force-mem-access 1' command is executed.
+16:48:43 INFO  : Context for 'APU' is selected.
+16:48:43 INFO  : Sourcing of 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl' is done.
+16:48:43 INFO  : 'ps7_init' command is executed.
+16:48:43 INFO  : 'ps7_post_config' command is executed.
+16:48:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:48:43 INFO  : The application 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:48:43 INFO  : 'configparams force-mem-access 0' command is executed.
+16:48:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}
+fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:48:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:48:43 INFO  : 'con' command is executed.
+16:48:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:48:43 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\.sdk\launch_scripts\single_application_debug\systemdebugger_001_iot_system_standalone.tcl'
+16:49:15 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+16:49:25 INFO  : Disconnected from the channel tcfchan#68.
+16:49:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:49:25 INFO  : Jtag cable 'Digilent Zed 210248AC8994' is selected.
+16:49:25 INFO  : 'jtag frequency' command is executed.
+16:49:25 INFO  : Context for 'APU' is selected.
+16:49:25 INFO  : System reset is completed.
+16:49:28 INFO  : 'after 3000' command is executed.
+16:49:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}' command is executed.
+16:49:31 INFO  : FPGA configured successfully with bitstream "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit"
+16:49:31 INFO  : Context for 'APU' is selected.
+16:49:31 INFO  : Hardware design and registers information is loaded from 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa'.
+16:49:31 INFO  : 'configparams force-mem-access 1' command is executed.
+16:49:31 INFO  : Context for 'APU' is selected.
+16:49:31 INFO  : Sourcing of 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl' is done.
+16:49:31 INFO  : 'ps7_init' command is executed.
+16:49:32 INFO  : 'ps7_post_config' command is executed.
+16:49:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:49:32 INFO  : The application 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:49:32 INFO  : 'configparams force-mem-access 0' command is executed.
+16:49:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}
+fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:49:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:49:32 INFO  : 'con' command is executed.
+16:49:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:49:32 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\.sdk\launch_scripts\single_application_debug\systemdebugger_001_iot_system_standalone.tcl'
+16:49:39 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+16:49:49 INFO  : Disconnected from the channel tcfchan#70.
+16:49:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:49:49 INFO  : Jtag cable 'Digilent Zed 210248AC8994' is selected.
+16:49:49 INFO  : 'jtag frequency' command is executed.
+16:49:49 INFO  : Context for 'APU' is selected.
+16:49:49 INFO  : System reset is completed.
+16:49:52 INFO  : 'after 3000' command is executed.
+16:49:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}' command is executed.
+16:49:55 INFO  : FPGA configured successfully with bitstream "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit"
+16:49:55 INFO  : Context for 'APU' is selected.
+16:49:55 INFO  : Hardware design and registers information is loaded from 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa'.
+16:49:55 INFO  : 'configparams force-mem-access 1' command is executed.
+16:49:55 INFO  : Context for 'APU' is selected.
+16:49:55 INFO  : Sourcing of 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl' is done.
+16:49:55 INFO  : 'ps7_init' command is executed.
+16:49:55 INFO  : 'ps7_post_config' command is executed.
+16:49:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:49:56 INFO  : The application 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:49:56 INFO  : 'configparams force-mem-access 0' command is executed.
+16:49:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}
+fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:49:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:49:56 INFO  : 'con' command is executed.
+16:49:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:49:56 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\.sdk\launch_scripts\single_application_debug\systemdebugger_001_iot_system_standalone.tcl'
+16:51:56 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+16:52:20 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+16:57:03 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+16:57:15 INFO  : Disconnected from the channel tcfchan#72.
+16:57:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:57:15 INFO  : Jtag cable 'Digilent Zed 210248AC8994' is selected.
+16:57:15 INFO  : 'jtag frequency' command is executed.
+16:57:15 INFO  : Context for 'APU' is selected.
+16:57:15 INFO  : System reset is completed.
+16:57:18 INFO  : 'after 3000' command is executed.
+16:57:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}' command is executed.
+16:57:21 INFO  : FPGA configured successfully with bitstream "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit"
+16:57:21 INFO  : Context for 'APU' is selected.
+16:57:21 INFO  : Hardware design and registers information is loaded from 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa'.
+16:57:21 INFO  : 'configparams force-mem-access 1' command is executed.
+16:57:21 INFO  : Context for 'APU' is selected.
+16:57:21 INFO  : Sourcing of 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl' is done.
+16:57:21 INFO  : 'ps7_init' command is executed.
+16:57:21 INFO  : 'ps7_post_config' command is executed.
+16:57:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:57:21 INFO  : The application 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:57:22 INFO  : 'configparams force-mem-access 0' command is executed.
+16:57:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}
+fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:57:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:57:22 INFO  : 'con' command is executed.
+16:57:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:57:22 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\.sdk\launch_scripts\single_application_debug\systemdebugger_001_iot_system_standalone.tcl'
+16:57:42 INFO  : Disconnected from the channel tcfchan#76.
+16:57:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:57:42 INFO  : Jtag cable 'Digilent Zed 210248AC8994' is selected.
+16:57:42 INFO  : 'jtag frequency' command is executed.
+16:57:42 INFO  : Context for 'APU' is selected.
+16:57:42 INFO  : System reset is completed.
+16:57:45 INFO  : 'after 3000' command is executed.
+16:57:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}' command is executed.
+16:57:48 INFO  : FPGA configured successfully with bitstream "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit"
+16:57:48 INFO  : Context for 'APU' is selected.
+16:57:48 INFO  : Hardware design and registers information is loaded from 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa'.
+16:57:48 INFO  : 'configparams force-mem-access 1' command is executed.
+16:57:48 INFO  : Context for 'APU' is selected.
+16:57:48 INFO  : Sourcing of 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl' is done.
+16:57:48 INFO  : 'ps7_init' command is executed.
+16:57:48 INFO  : 'ps7_post_config' command is executed.
+16:57:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:57:48 INFO  : The application 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:57:48 INFO  : 'configparams force-mem-access 0' command is executed.
+16:57:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}
+fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:57:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:57:48 INFO  : 'con' command is executed.
+16:57:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:57:48 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\.sdk\launch_scripts\single_application_debug\systemdebugger_001_iot_system_standalone.tcl'
+16:57:59 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+16:58:08 INFO  : Disconnected from the channel tcfchan#77.
+16:58:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:58:08 INFO  : Jtag cable 'Digilent Zed 210248AC8994' is selected.
+16:58:08 INFO  : 'jtag frequency' command is executed.
+16:58:08 INFO  : Context for 'APU' is selected.
+16:58:08 INFO  : System reset is completed.
+16:58:11 INFO  : 'after 3000' command is executed.
+16:58:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}' command is executed.
+16:58:14 INFO  : FPGA configured successfully with bitstream "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit"
+16:58:14 INFO  : Context for 'APU' is selected.
+16:58:14 INFO  : Hardware design and registers information is loaded from 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa'.
+16:58:14 INFO  : 'configparams force-mem-access 1' command is executed.
+16:58:14 INFO  : Context for 'APU' is selected.
+16:58:14 INFO  : Sourcing of 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl' is done.
+16:58:14 INFO  : 'ps7_init' command is executed.
+16:58:14 INFO  : 'ps7_post_config' command is executed.
+16:58:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:58:15 INFO  : The application 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:58:15 INFO  : 'configparams force-mem-access 0' command is executed.
+16:58:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}
+fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:58:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:58:15 INFO  : 'con' command is executed.
+16:58:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:58:15 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\.sdk\launch_scripts\single_application_debug\systemdebugger_001_iot_system_standalone.tcl'
+17:00:21 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+17:00:39 INFO  : Disconnected from the channel tcfchan#79.
+17:00:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:00:39 INFO  : Jtag cable 'Digilent Zed 210248AC8994' is selected.
+17:00:39 INFO  : 'jtag frequency' command is executed.
+17:00:39 INFO  : Context for 'APU' is selected.
+17:00:39 INFO  : System reset is completed.
+17:00:42 INFO  : 'after 3000' command is executed.
+17:00:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}' command is executed.
+17:00:45 INFO  : FPGA configured successfully with bitstream "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit"
+17:00:45 INFO  : Context for 'APU' is selected.
+17:00:45 INFO  : Hardware design and registers information is loaded from 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa'.
+17:00:45 INFO  : 'configparams force-mem-access 1' command is executed.
+17:00:45 INFO  : Context for 'APU' is selected.
+17:00:45 INFO  : Sourcing of 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl' is done.
+17:00:45 INFO  : 'ps7_init' command is executed.
+17:00:45 INFO  : 'ps7_post_config' command is executed.
+17:00:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:00:45 INFO  : The application 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:00:45 INFO  : 'configparams force-mem-access 0' command is executed.
+17:00:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}
+fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:00:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:00:46 INFO  : 'con' command is executed.
+17:00:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:00:46 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\.sdk\launch_scripts\single_application_debug\systemdebugger_001_iot_system_standalone.tcl'
+17:01:16 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+17:01:37 INFO  : Disconnected from the channel tcfchan#81.
+17:01:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:01:37 INFO  : Jtag cable 'Digilent Zed 210248AC8994' is selected.
+17:01:37 INFO  : 'jtag frequency' command is executed.
+17:01:37 INFO  : Context for 'APU' is selected.
+17:01:37 INFO  : System reset is completed.
+17:01:40 INFO  : 'after 3000' command is executed.
+17:01:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}' command is executed.
+17:01:43 INFO  : FPGA configured successfully with bitstream "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit"
+17:01:43 INFO  : Context for 'APU' is selected.
+17:01:43 INFO  : Hardware design and registers information is loaded from 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa'.
+17:01:43 INFO  : 'configparams force-mem-access 1' command is executed.
+17:01:43 INFO  : Context for 'APU' is selected.
+17:01:43 INFO  : Sourcing of 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl' is done.
+17:01:43 INFO  : 'ps7_init' command is executed.
+17:01:43 INFO  : 'ps7_post_config' command is executed.
+17:01:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:01:44 INFO  : The application 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:01:44 INFO  : 'configparams force-mem-access 0' command is executed.
+17:01:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}
+fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:01:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:01:44 INFO  : 'con' command is executed.
+17:01:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:01:44 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\.sdk\launch_scripts\single_application_debug\systemdebugger_001_iot_system_standalone.tcl'
+17:02:49 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+17:03:01 INFO  : Disconnected from the channel tcfchan#83.
+17:03:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:03:01 INFO  : Jtag cable 'Digilent Zed 210248AC8994' is selected.
+17:03:01 INFO  : 'jtag frequency' command is executed.
+17:03:01 INFO  : Context for 'APU' is selected.
+17:03:01 INFO  : System reset is completed.
+17:03:04 INFO  : 'after 3000' command is executed.
+17:03:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}' command is executed.
+17:03:07 INFO  : FPGA configured successfully with bitstream "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit"
+17:03:07 INFO  : Context for 'APU' is selected.
+17:03:07 INFO  : Hardware design and registers information is loaded from 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa'.
+17:03:07 INFO  : 'configparams force-mem-access 1' command is executed.
+17:03:07 INFO  : Context for 'APU' is selected.
+17:03:07 INFO  : Sourcing of 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl' is done.
+17:03:07 INFO  : 'ps7_init' command is executed.
+17:03:07 INFO  : 'ps7_post_config' command is executed.
+17:03:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:03:08 INFO  : The application 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:03:08 INFO  : 'configparams force-mem-access 0' command is executed.
+17:03:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}
+fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:03:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:03:08 INFO  : 'con' command is executed.
+17:03:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:03:08 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\.sdk\launch_scripts\single_application_debug\systemdebugger_001_iot_system_standalone.tcl'
+17:03:58 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+17:04:08 INFO  : Disconnected from the channel tcfchan#85.
+17:04:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:04:09 INFO  : Jtag cable 'Digilent Zed 210248AC8994' is selected.
+17:04:09 INFO  : 'jtag frequency' command is executed.
+17:04:09 INFO  : Context for 'APU' is selected.
+17:04:09 INFO  : System reset is completed.
+17:04:12 INFO  : 'after 3000' command is executed.
+17:04:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}' command is executed.
+17:04:14 INFO  : FPGA configured successfully with bitstream "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit"
+17:04:14 INFO  : Context for 'APU' is selected.
+17:04:14 INFO  : Hardware design and registers information is loaded from 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa'.
+17:04:14 INFO  : 'configparams force-mem-access 1' command is executed.
+17:04:14 INFO  : Context for 'APU' is selected.
+17:04:14 INFO  : Sourcing of 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl' is done.
+17:04:15 INFO  : 'ps7_init' command is executed.
+17:04:15 INFO  : 'ps7_post_config' command is executed.
+17:04:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:04:15 INFO  : The application 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:04:15 INFO  : 'configparams force-mem-access 0' command is executed.
+17:04:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}
+fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:04:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:04:15 INFO  : 'con' command is executed.
+17:04:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:04:15 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\.sdk\launch_scripts\single_application_debug\systemdebugger_001_iot_system_standalone.tcl'
+17:04:23 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+17:04:34 INFO  : Disconnected from the channel tcfchan#87.
+17:04:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:04:34 INFO  : Jtag cable 'Digilent Zed 210248AC8994' is selected.
+17:04:34 INFO  : 'jtag frequency' command is executed.
+17:04:34 INFO  : Context for 'APU' is selected.
+17:04:34 INFO  : System reset is completed.
+17:04:37 INFO  : 'after 3000' command is executed.
+17:04:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}' command is executed.
+17:04:39 INFO  : FPGA configured successfully with bitstream "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit"
+17:04:39 INFO  : Context for 'APU' is selected.
+17:04:39 INFO  : Hardware design and registers information is loaded from 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa'.
+17:04:39 INFO  : 'configparams force-mem-access 1' command is executed.
+17:04:39 INFO  : Context for 'APU' is selected.
+17:04:39 INFO  : Sourcing of 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl' is done.
+17:04:40 INFO  : 'ps7_init' command is executed.
+17:04:40 INFO  : 'ps7_post_config' command is executed.
+17:04:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:04:40 INFO  : The application 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:04:40 INFO  : 'configparams force-mem-access 0' command is executed.
+17:04:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}
+fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:04:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:04:40 INFO  : 'con' command is executed.
+17:04:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:04:40 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\.sdk\launch_scripts\single_application_debug\systemdebugger_001_iot_system_standalone.tcl'
+17:13:19 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+17:13:29 INFO  : Disconnected from the channel tcfchan#89.
+17:13:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:13:29 INFO  : Jtag cable 'Digilent Zed 210248AC8994' is selected.
+17:13:29 INFO  : 'jtag frequency' command is executed.
+17:13:29 INFO  : Context for 'APU' is selected.
+17:13:29 INFO  : System reset is completed.
+17:13:32 INFO  : 'after 3000' command is executed.
+17:13:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}' command is executed.
+17:13:35 INFO  : FPGA configured successfully with bitstream "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit"
+17:13:35 INFO  : Context for 'APU' is selected.
+17:13:35 INFO  : Hardware design and registers information is loaded from 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa'.
+17:13:35 INFO  : 'configparams force-mem-access 1' command is executed.
+17:13:35 INFO  : Context for 'APU' is selected.
+17:13:35 INFO  : Sourcing of 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl' is done.
+17:13:35 INFO  : 'ps7_init' command is executed.
+17:13:35 INFO  : 'ps7_post_config' command is executed.
+17:13:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:13:36 INFO  : The application 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:13:36 INFO  : 'configparams force-mem-access 0' command is executed.
+17:13:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}
+fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:13:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:13:36 INFO  : 'con' command is executed.
+17:13:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:13:36 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\.sdk\launch_scripts\single_application_debug\systemdebugger_001_iot_system_standalone.tcl'
+17:14:06 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+17:14:16 INFO  : Disconnected from the channel tcfchan#91.
+17:14:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:14:17 INFO  : Jtag cable 'Digilent Zed 210248AC8994' is selected.
+17:14:17 INFO  : 'jtag frequency' command is executed.
+17:14:17 INFO  : Context for 'APU' is selected.
+17:14:17 INFO  : System reset is completed.
+17:14:20 INFO  : 'after 3000' command is executed.
+17:14:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}' command is executed.
+17:14:22 INFO  : FPGA configured successfully with bitstream "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit"
+17:14:22 INFO  : Context for 'APU' is selected.
+17:14:22 INFO  : Hardware design and registers information is loaded from 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa'.
+17:14:22 INFO  : 'configparams force-mem-access 1' command is executed.
+17:14:22 INFO  : Context for 'APU' is selected.
+17:14:22 INFO  : Sourcing of 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl' is done.
+17:14:23 INFO  : 'ps7_init' command is executed.
+17:14:23 INFO  : 'ps7_post_config' command is executed.
+17:14:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:14:23 INFO  : The application 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:14:23 INFO  : 'configparams force-mem-access 0' command is executed.
+17:14:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}
+fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:14:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:14:23 INFO  : 'con' command is executed.
+17:14:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:14:23 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\.sdk\launch_scripts\single_application_debug\systemdebugger_001_iot_system_standalone.tcl'
+17:16:09 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+17:16:31 INFO  : Disconnected from the channel tcfchan#93.
+17:16:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:16:31 INFO  : Jtag cable 'Digilent Zed 210248AC8994' is selected.
+17:16:31 INFO  : 'jtag frequency' command is executed.
+17:16:31 INFO  : Context for 'APU' is selected.
+17:16:31 INFO  : System reset is completed.
+17:16:34 INFO  : 'after 3000' command is executed.
+17:16:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}' command is executed.
+17:16:37 INFO  : FPGA configured successfully with bitstream "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit"
+17:16:37 INFO  : Context for 'APU' is selected.
+17:16:37 INFO  : Hardware design and registers information is loaded from 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa'.
+17:16:37 INFO  : 'configparams force-mem-access 1' command is executed.
+17:16:37 INFO  : Context for 'APU' is selected.
+17:16:37 INFO  : Sourcing of 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl' is done.
+17:16:37 INFO  : 'ps7_init' command is executed.
+17:16:37 INFO  : 'ps7_post_config' command is executed.
+17:16:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:16:38 INFO  : The application 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:16:38 INFO  : 'configparams force-mem-access 0' command is executed.
+17:16:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}
+fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:16:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:16:38 INFO  : 'con' command is executed.
+17:16:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:16:38 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\.sdk\launch_scripts\single_application_debug\systemdebugger_001_iot_system_standalone.tcl'
+17:24:52 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+17:25:25 INFO  : Hardware specification for platform project '001_platform' is updated.
+17:25:33 INFO  : Result from executing command 'getProjects': 001_platform
+17:25:33 INFO  : Result from executing command 'getPlatforms': 001_platform|C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/001_platform.xpfm
+17:25:33 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+17:25:36 INFO  : The hardware specfication used by project '001_IoT' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+17:25:36 INFO  : The file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\001_IoT\_ide\bitstream\design_1_wrapper.bit' stored in project is removed.
+17:25:36 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\001_IoT\_ide\bitstream' in project '001_IoT'.
+17:25:36 INFO  : The file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\001_IoT\_ide\psinit\ps7_init.tcl' stored in project is removed.
+17:25:42 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\001_IoT\_ide\psinit' in project '001_IoT'.
+17:25:54 INFO  : Disconnected from the channel tcfchan#95.
+17:25:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:25:55 INFO  : Jtag cable 'Digilent Zed 210248AC8994' is selected.
+17:25:55 INFO  : 'jtag frequency' command is executed.
+17:25:55 INFO  : Context for 'APU' is selected.
+17:25:55 INFO  : System reset is completed.
+17:25:58 INFO  : 'after 3000' command is executed.
+17:25:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}' command is executed.
+17:26:00 INFO  : FPGA configured successfully with bitstream "C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit"
+17:26:00 INFO  : Context for 'APU' is selected.
+17:26:00 INFO  : Hardware design and registers information is loaded from 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa'.
+17:26:00 INFO  : 'configparams force-mem-access 1' command is executed.
+17:26:00 INFO  : Context for 'APU' is selected.
+17:26:00 INFO  : Sourcing of 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl' is done.
+17:26:01 INFO  : 'ps7_init' command is executed.
+17:26:01 INFO  : 'ps7_post_config' command is executed.
+17:26:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:26:01 INFO  : The application 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:26:01 INFO  : 'configparams force-mem-access 0' command is executed.
+17:26:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8994" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8994-23727093-0"}
+fpga -file C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:26:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:26:01 INFO  : 'con' command is executed.
+17:26:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:26:01 INFO  : Launch script is exported to file 'C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\.sdk\launch_scripts\single_application_debug\systemdebugger_001_iot_system_standalone.tcl'
+17:27:23 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+17:28:45 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+17:29:03 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+17:29:29 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+17:29:55 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+17:30:57 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+17:31:58 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+17:33:56 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+17:34:11 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+17:34:53 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...
+17:38:40 INFO  : Checking for BSP changes to sync application flags for project '001_IoT'...

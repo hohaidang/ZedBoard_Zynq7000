@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date             : Mon Mar 15 21:30:16 2021
+| Date             : Tue Mar 16 17:23:53 2021
 | Host             : DESKTOP-O8T2GMT running 64-bit major release  (build 9200)
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
@@ -59,7 +59,7 @@ Table of Contents
 |   CARRY4                |    <0.001 |       18 |     13300 |            0.14 |
 |   LUT as Shift Register |    <0.001 |       62 |     17400 |            0.36 |
 |   Others                |     0.000 |      210 |       --- |             --- |
-| Signals                 |     0.002 |     1399 |       --- |             --- |
+| Signals                 |     0.002 |     1400 |       --- |             --- |
 | I/O                     |     0.002 |       17 |       200 |            8.50 |
 | PS7                     |     1.518 |        1 |       --- |             --- |
 | Static Power            |     0.141 |          |           |                 |

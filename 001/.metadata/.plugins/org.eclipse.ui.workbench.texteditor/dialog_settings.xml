@@ -2,12 +2,19 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="SpiHandler" key="selection"/>
+		<item value="Main" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="main"/>
+			<item value="spi_write"/>
+			<item value="XPAR_PS7_SPI_0_DEVICE_ID"/>
+			<item value="SPI_1"/>
+			<item value="PIPS"/>
+			<item value="PIPS_1"/>
+			<item value="PIPS_0"/>
 			<item value="#include &quot;xil_printf.h&quot;"/>
 			<item value="SpiHandler"/>
 			<item value="transmit"/>
@@ -16,11 +23,6 @@
 			<item value="SPI_INTR_ID"/>
 			<item value="XPAR_XSPIPS_0_INTR"/>
 			<item value="irq_init"/>
-			<item value="SpiSetupIntrSystem"/>
-			<item value="XScuGic_Connect"/>
-			<item value="SpiPsEepromIntrExample"/>
-			<item value="TransferInProgress"/>
-			<item value="XPAR_PS7_SPI_0_DEVICE_ID"/>
 		</list>
 		<list key="replacehistory">
 		</list>

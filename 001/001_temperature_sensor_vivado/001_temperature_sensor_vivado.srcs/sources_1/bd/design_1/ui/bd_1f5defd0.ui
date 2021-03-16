@@ -1,41 +1,41 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"1.18889",
-   "Default View_TopLeft":"-458,0",
+   "Default View_ScaleFactor":"1.33625",
+   "Default View_TopLeft":"-350,1",
    "ExpandedHierarchyInLayout":"",
    "PinnedPorts":"",
    "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
 #  -string -flagsOSRD
-preplace port DDR -pg 1 -lvl 4 -x 1150 -y 450 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -lvl 4 -x 1150 -y 480 -defaultsOSRD
-preplace port btns_5bits -pg 1 -lvl 4 -x 1150 -y 70 -defaultsOSRD
-preplace port leds_8bits -pg 1 -lvl 4 -x 1150 -y 240 -defaultsOSRD
-preplace port spi0_sclk -pg 1 -lvl 4 -x 1150 -y 540 -defaultsOSRD
-preplace port spi0_mosi -pg 1 -lvl 4 -x 1150 -y 600 -defaultsOSRD
+preplace port DDR -pg 1 -lvl 4 -x 1180 -y 450 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 4 -x 1180 -y 480 -defaultsOSRD
+preplace port btns_5bits -pg 1 -lvl 4 -x 1180 -y 70 -defaultsOSRD
+preplace port leds_8bits -pg 1 -lvl 4 -x 1180 -y 240 -defaultsOSRD
+preplace port spi0_sclk -pg 1 -lvl 4 -x 1180 -y 540 -defaultsOSRD
+preplace port spi0_mosi -pg 1 -lvl 4 -x 1180 -y 600 -defaultsOSRD
 preplace port spi0_miso -pg 1 -lvl 0 -x -10 -y 400 -defaultsOSRD
-preplace port spi0_ss -pg 1 -lvl 4 -x 1150 -y 720 -defaultsOSRD
+preplace port spi0_ss -pg 1 -lvl 4 -x 1180 -y 720 -defaultsOSRD
 preplace inst processing_system7_0 -pg 1 -lvl 3 -x 900 -y 650 -defaultsOSRD
 preplace inst button -pg 1 -lvl 3 -x 900 -y 80 -defaultsOSRD
 preplace inst led -pg 1 -lvl 3 -x 900 -y 240 -defaultsOSRD
 preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 540 -y 210 -defaultsOSRD
 preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -x 200 -y 300 -defaultsOSRD
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 4 20 400 380 60 680 380 1110
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 4 30 410 NJ 410 700J 400 1100
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 4 20 400 380 60 680 500 1090
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 4 30 420 NJ 420 NJ 420 1110
 preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 2 370 50 710
-preplace netloc button_ip2intc_irpt 1 2 2 710 320 1090
-preplace netloc processing_system7_0_SPI0_SCLK_O 1 3 1 NJ 540
-preplace netloc processing_system7_0_SPI0_MOSI_O 1 3 1 NJ 600
-preplace netloc spi0_miso_1 1 0 4 10J 420 NJ 420 690J 390 1090
-preplace netloc processing_system7_0_SPI0_SS_O 1 3 1 NJ 720
-preplace netloc processing_system7_0_DDR 1 3 1 1130J 450n
-preplace netloc processing_system7_0_FIXED_IO 1 3 1 NJ 480
-preplace netloc ps7_0_axi_periph_M01_AXI 1 2 1 N 220
-preplace netloc led_GPIO 1 3 1 NJ 240
+preplace netloc button_ip2intc_irpt 1 2 2 700 320 1090
+preplace netloc processing_system7_0_SPI0_SCLK_O 1 3 1 1150J 540n
+preplace netloc processing_system7_0_SPI0_MOSI_O 1 3 1 1160J 600n
+preplace netloc spi0_miso_1 1 0 4 10J 410 NJ 410 NJ 410 1100
+preplace netloc processing_system7_0_SPI0_SS_O 1 3 1 1150J 680n
 preplace netloc button_GPIO 1 3 1 NJ 70
-preplace netloc processing_system7_0_M_AXI_GP0 1 1 3 390 70 700J 160 1120
-preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 690 60n
-levelinfo -pg 1 -10 200 540 900 1150
-pagesize -pg 1 -db -bbox -sgen -130 0 1270 900
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 700 60n
+preplace netloc processing_system7_0_FIXED_IO 1 3 1 1140J 480n
+preplace netloc led_GPIO 1 3 1 NJ 240
+preplace netloc ps7_0_axi_periph_M01_AXI 1 2 1 N 220
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 3 390 70 690J 160 1120
+preplace netloc processing_system7_0_DDR 1 3 1 1130J 450n
+levelinfo -pg 1 -10 200 540 900 1180
+pagesize -pg 1 -db -bbox -sgen -130 0 1300 900
 "
 }
 {

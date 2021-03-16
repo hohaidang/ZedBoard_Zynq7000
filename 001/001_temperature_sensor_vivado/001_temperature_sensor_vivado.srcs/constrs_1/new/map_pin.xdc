@@ -1,10 +1,15 @@
 # ----------------------------------------------------------------------------
 # JA Pmod - Bank 13
 # ----------------------------------------------------------------------------
-set_property PACKAGE_PIN Y11 [get_ports spi0_sclk];
-set_property PACKAGE_PIN AA11 [get_ports spi0_miso];
-set_property PACKAGE_PIN Y10 [get_ports spi0_mosi];
-set_property PACKAGE_PIN AA9 [get_ports spi0_ss];
+#set_property PACKAGE_PIN Y11 [get_ports spi0_sclk];
+#set_property PACKAGE_PIN AA11 [get_ports spi0_miso];
+#set_property PACKAGE_PIN Y10 [get_ports spi0_mosi];
+#set_property PACKAGE_PIN AA9 [get_ports spi0_ss];
+
+set_property PACKAGE_PIN W7 [get_ports {spi0_miso}];  # "JD1_N"
+set_property PACKAGE_PIN V7 [get_ports {spi0_sclk}];  # "JD1_P"
+set_property PACKAGE_PIN V4 [get_ports {spi0_ss}];  # "JD2_N"
+set_property PACKAGE_PIN V5 [get_ports {spi0_mosi}];  # "JD2_P"
 
 # ----------------------------------------------------------------------------
 # User LEDs - Bank 33
