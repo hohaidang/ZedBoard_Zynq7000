@@ -4,3 +4,6 @@
 1615883105950	Delete 2 resources
 1615883111350	Delete resource 'xspips_flash_intr_example_1_system'
 1615883672288	Delete 4 resources
+1615891964622	Delete 4 resources
+1615892313056	Delete resource '001_IoT/driver'
+1615892900706	Delete resource '001_IoT/src/btm_led_emio.cpp'

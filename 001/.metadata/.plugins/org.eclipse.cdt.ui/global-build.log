@@ -1,6 +1,6 @@
 Nothing to build in platform '001_platform'
 
-17:38:41 **** Incremental Build of configuration Debug for project 001_IoT ****
+20:10:49 **** Incremental Build of configuration Debug for project 001_IoT ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -14,26 +14,18 @@ arm-none-eabi-g++ -DDEBUG_EN -D__ZYNQ__ -Wall -O0 -g3 -IC:/Users/hohai/OneDrive/
 'Building target: 001_IoT.elf'
 'Invoking: ARM v7 g++ linker'
 arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/sw/001_platform/standalone_domain/bsplib/lib -o "001_IoT.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
-c:/xilinx2020/vitis/2020.1/gnu/aarch32/nt/gcc-arm-none-eabi/x86_64-oesdk-mingw32/usr/bin/arm-xilinx-eabi/../../libexec/arm-xilinx-eabi/gcc/arm-xilinx-eabi/9.2.0/real-ld.exe: ./src/main.o: in function `main':
-C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\001_IoT\Debug/../src/main.cpp:96: undefined reference to `bme_sensor_handler::init_BME280()'
-c:/xilinx2020/vitis/2020.1/gnu/aarch32/nt/gcc-arm-none-eabi/x86_64-oesdk-mingw32/usr/bin/arm-xilinx-eabi/../../libexec/arm-xilinx-eabi/gcc/arm-xilinx-eabi/9.2.0/real-ld.exe: C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\001_IoT\Debug/../src/main.cpp:97: undefined reference to `bme_sensor_handler::set_sensor_mode(unsigned char)'
-c:/xilinx2020/vitis/2020.1/gnu/aarch32/nt/gcc-arm-none-eabi/x86_64-oesdk-mingw32/usr/bin/arm-xilinx-eabi/../../libexec/arm-xilinx-eabi/gcc/arm-xilinx-eabi/9.2.0/real-ld.exe: C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\001_IoT\Debug/../src/main.cpp:98: undefined reference to `bme_sensor_handler::get_status()'
-c:/xilinx2020/vitis/2020.1/gnu/aarch32/nt/gcc-arm-none-eabi/x86_64-oesdk-mingw32/usr/bin/arm-xilinx-eabi/../../libexec/arm-xilinx-eabi/gcc/arm-xilinx-eabi/9.2.0/real-ld.exe: C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\001_IoT\Debug/../src/main.cpp:103: undefined reference to `bme_sensor_handler::set_sensor_settings(bme280_settings const&)'
-c:/xilinx2020/vitis/2020.1/gnu/aarch32/nt/gcc-arm-none-eabi/x86_64-oesdk-mingw32/usr/bin/arm-xilinx-eabi/../../libexec/arm-xilinx-eabi/gcc/arm-xilinx-eabi/9.2.0/real-ld.exe: C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\001_IoT\Debug/../src/main.cpp:104: undefined reference to `bme_sensor_handler::get_sensor_settings(bme280_settings&)'
-c:/xilinx2020/vitis/2020.1/gnu/aarch32/nt/gcc-arm-none-eabi/x86_64-oesdk-mingw32/usr/bin/arm-xilinx-eabi/../../libexec/arm-xilinx-eabi/gcc/arm-xilinx-eabi/9.2.0/real-ld.exe: C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\001_IoT\Debug/../src/main.cpp:106: undefined reference to `bme_sensor_handler::get_sensor_data()'
-c:/xilinx2020/vitis/2020.1/gnu/aarch32/nt/gcc-arm-none-eabi/x86_64-oesdk-mingw32/usr/bin/arm-xilinx-eabi/../../libexec/arm-xilinx-eabi/gcc/arm-xilinx-eabi/9.2.0/real-ld.exe: C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\001_IoT\Debug/../src/main.cpp:108: undefined reference to `bme_sensor_handler::print_sensor_data()'
-collect2.exe: error: ld returned 1 exit status
 'Finished building target: 001_IoT.elf'
 ' '
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size 001_IoT.elf  |tee "001_IoT.elf.size"
-arm-none-eabi-size: '001_IoT.elf': No such file
+   text	   data	    bss	    dec	    hex	filename
+  46996	   3004	  22904	  72904	  11cc8	001_IoT.elf
 'Finished building: 001_IoT.elf.size'
 ' '
-17:38:42 **** Incremental Build of configuration Debug for project 001_IoT_system ****
+20:10:50 **** Incremental Build of configuration Debug for project 001_IoT_system ****
 make all 
 Generating bif file for the system project
 generate_system_bif.bat 62964 C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/001_platform.xpfm standalone_domain C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT_system/Debug/system.bif
 sdcard_gen --xpfm C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/001_platform.xpfm --sys_config 001_platform --bif C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT_system/Debug/system.bif --bitstream C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit --elf C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf,ps7_cortexa9_0
-ELF does not exist: C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/Debug/001_IoT.elf
-make: *** [makefile:39: package] Error 1
+creating BOOT.BIN using C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT/_ide/bitstream/design_1_wrapper.bit
+Running C:/Xilinx2020/Vitis/2020.1/bin/bootgen  -image C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_IoT_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN

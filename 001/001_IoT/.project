@@ -25,11 +25,4 @@
 		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
 		<nature>org.eclipse.cdt.core.ccnature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>driver</name>
-			<type>2</type>
-			<location>C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/driver</location>
-		</link>
-	</linkedResources>
 </projectDescription>

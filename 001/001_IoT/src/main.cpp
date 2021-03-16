@@ -1,8 +1,9 @@
-#include <array>
+#include "bme280_driver.hpp"
 #include "gpio_driver.hpp"
 #include "sleep.h"
 #include "spi_driver.hpp"
-#include "bme280_driver.hpp"
+#include <array>
+
 
 s32 user_spi_read(const u8, u8 *, u32);
 s32 user_spi_write(const u8, const u8 *, u32);
@@ -10,7 +11,7 @@ void user_delay_ms(u32 period);
 
 gpio_handler button, led;
 spi_handler spi0;
-bme_sensor_handler bme280(user_spi_read, user_spi_write, user_delay_ms);
+bme_sensor_handler bme280;
 
 void small_delay() {
   for (u32 i = 0; i < 50000000; ++i) {
@@ -29,6 +30,7 @@ void gpio_init() {
 }
 
 void spi_init() {
+  // SPI clock ~166Mhz
   if (XST_SUCCESS !=
       spi0.init(XPAR_XSPIPS_0_DEVICE_ID, XSPIPS_CLK_PRESCALE_32)) {
     xil_printf("SPI Initial failed\r\n");
@@ -40,9 +42,7 @@ void spi_init() {
   }
 }
 
-void user_delay_ms(u32 period) {
-  usleep(period * 1000);
-}
+void user_delay_ms(u32 period) { usleep(period * 1000); }
 
 s32 user_spi_read(const u8 reg_addr, u8 *reg_data, u32 len) {
   s32 status = XST_FAILURE;
@@ -87,12 +87,11 @@ s32 user_spi_write(const u8 reg_addr, const u8 *reg_data, u32 len) {
 
 int main(void) {
   xil_printf("Program Starting\r\n");
-  bme280_settings temp{0};
-   gpio_init();
+  gpio_init();
   spi_init();
   xil_printf("Peripheral device initial completed\r\n");
 
-  bme280.init_BME280();
+  bme280.init_BME280(user_spi_read, user_spi_write, user_delay_ms);
   bme280.set_sensor_mode(BME280_NORMAL_MODE);
   if (SENSOR_OK == bme280.get_status()) {
     bme280_settings settings;
@@ -100,7 +99,6 @@ int main(void) {
     settings.osr_t = 0x07; // x16
     settings.osr_p = 0x07; // x16
     bme280.set_sensor_settings(settings);
-    bme280.get_sensor_settings(temp);
     while (1) {
       bme280.get_sensor_data();
 #ifdef DEBUG_EN
