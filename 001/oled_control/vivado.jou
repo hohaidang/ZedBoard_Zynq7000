@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Mar 21 15:52:49 2021
+# Process ID: 13000
+# Current directory: C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/oled_control
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11760 C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\oled_control\edit_oled_control_v1_0.xpr
+# Log file: C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/oled_control/vivado.log
+# Journal file: C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/oled_control\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/oled_control/edit_oled_control_v1_0.xpr
+update_compile_order -fileset sources_1

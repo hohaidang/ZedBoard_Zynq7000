@@ -176,6 +176,11 @@
 #define XPAR_PS7_SLCR_0_S_AXI_HIGHADDR 0xF8000FFF
 
 
+/* Definitions for peripheral OLED_CONTROL_0 */
+#define XPAR_OLED_CONTROL_0_S00_AXI_BASEADDR 0x43C00000
+#define XPAR_OLED_CONTROL_0_S00_AXI_HIGHADDR 0x43C0FFFF
+
+
 /******************************************************************/
 
 /* Definitions for driver GPIO */

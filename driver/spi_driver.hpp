@@ -79,7 +79,7 @@ public:
   }
 
   inline s32 irq_transfer(u8 *send_buffer, u8 *rcvd_buffer, u32 num_of_byte) {
-	TransferInProgress = TRUE;
+    TransferInProgress = TRUE;
     s32 status = XSpiPs_Transfer(&spi_, send_buffer, rcvd_buffer, num_of_byte);
     while (TransferInProgress)
       ;

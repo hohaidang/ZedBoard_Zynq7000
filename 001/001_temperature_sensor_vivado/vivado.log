@@ -2,20 +2,25 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Fri Mar 12 16:25:28 2021
-# Process ID: 3740
-# Current directory: C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_temperature_sensor_vivado
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7636 C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001_temperature_sensor_vivado\001_temperature_sensor_vivado.xpr
-# Log file: C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_temperature_sensor_vivado/vivado.log
-# Journal file: C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_temperature_sensor_vivado\vivado.jou
+# Start of session at: Sun Mar 21 15:54:20 2021
+# Process ID: 1940
+# Current directory: C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_temperature_sensor_vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1848 C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\001\001_temperature_sensor_vivado\001_temperature_sensor_vivado.xpr
+# Log file: C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_temperature_sensor_vivado/vivado.log
+# Journal file: C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_temperature_sensor_vivado\vivado.jou
 #-----------------------------------------------------------
-ststart_guopopen_project C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_temperature_sensor_vivado/001_temperature_sensor_vivado.xpr
+start_gui
+open_project C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_temperature_sensor_vivado/001_temperature_sensor_vivado.xpr
 INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
-Current project path is 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001_temperature_sensor_vivadoScanning sources...
+Current project path is 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_temperature_sensor_vivado'
+INFO: [Project 1-313] Project file moved from 'C:/Users/hohai/OneDrive/Desktop/Code/temp/ZedBoard_Zynq7000/001/001_temperature_sensor_vivado' since last save.
+Scanning sources...
 Finished scanning sources
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Users/hohai/OneDrive/Desktop/ZedBoard_Zynq7000/001/001_temperature_sensor_vivado/001_temperature_sensor_vivado.ip_user_files', nor could it be found using path 'C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_temperature_sensor_vivado/001_temperature_sensor_vivado.ip_user_files'.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-ININFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx2020/Vivado/2020.1/data/ip'opopen_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:06 . Memory (MB): peak = 1012.988 ; gain = 0.00update_compile_order -fileset sources_1
-1
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/oled_control'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx2020/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 1202.098 ; gain = 0.000
+update_compile_order -fileset sources_1
 exit
-INFO: [Common 17-206] Exiting Vivado at Fri Mar 12 16:26:05 2021...
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 21 15:59:24 2021...

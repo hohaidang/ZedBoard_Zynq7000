@@ -1,4 +1,4 @@
-20:10:49 **** Incremental Build of configuration Debug for project 001_IoT ****
+15:50:57 **** Incremental Build of configuration Debug for project 001_IoT ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -6,7 +6,7 @@ a9-linaro-pre-build-step
 make --no-print-directory main-build
 'Building file: ../src/main.cpp'
 'Invoking: ARM v7 g++ compiler'
-arm-none-eabi-g++ -DDEBUG_EN -D__ZYNQ__ -Wall -O0 -g3 -IC:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/sw/001_platform/standalone_domain/bspinclude/include -I"C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\driver" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+arm-none-eabi-g++ -DDEBUG_EN -D__ZYNQ__ -Wall -O0 -g3 -IC:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/sw/001_platform/standalone_domain/bspinclude/include -I"C:\Users\hohai\OneDrive\Desktop\Code\ZedBoard_Zynq7000\driver" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/sw/001_platform/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
 'Finished building: ../src/main.cpp'
 ' '
 'Building target: 001_IoT.elf'
@@ -17,9 +17,9 @@ arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size 001_IoT.elf  |tee "001_IoT.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  46996	   3004	  22904	  72904	  11cc8	001_IoT.elf
+ 114305	   3380	  22968	 140653	  2256d	001_IoT.elf
 'Finished building: 001_IoT.elf.size'
 ' '
 
-20:10:50 Build Finished (took 939ms)
+15:50:58 Build Finished (took 1s.29ms)
 

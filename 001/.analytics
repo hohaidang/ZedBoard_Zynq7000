@@ -385,3 +385,199 @@ timestamp=[2021-03-16 20:09:06], mode=BUILD, duration=0:00:00.886, duration_ms=8
 timestamp=[2021-03-16 20:09:12], mode=BUILD, duration=0:00:05.930, duration_ms=5930, data={name=001_IoT_system, configuration=Debug, clean_build=false}
 timestamp=[2021-03-16 20:10:50], mode=BUILD, duration=0:00:00.953, duration_ms=953, data={name=001_IoT, configuration=Debug, clean_build=false}
 timestamp=[2021-03-16 20:10:56], mode=BUILD, duration=0:00:05.742, duration_ms=5742, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 13:51:48], mode=WORKBENCH_START, duration=0:00:08.854, duration_ms=8854, data={}
+timestamp=[2021-03-21 13:51:48], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.034, duration_ms=34, data={}
+timestamp=[2021-03-21 13:51:49], mode=WORKBENCH_UI_INIT, duration=0:00:00.971, duration_ms=971, data={editors_count=2, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=001_IoT,001_IoT_system,001_platform,RemoteSystemsTempFiles}
+timestamp=[2021-03-21 13:52:21], mode=PLATFORM_GENERATION, duration=0:00:19.690, duration_ms=19690, data={name=001_platform}
+timestamp=[2021-03-21 13:52:25], mode=BUILD, duration=0:00:02.031, duration_ms=2031, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 13:52:27], mode=BUILD, duration=0:00:01.753, duration_ms=1753, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 13:52:40], mode=BUILD, duration=0:00:00.284, duration_ms=284, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 13:52:43], mode=BUILD, duration=0:00:01.758, duration_ms=1758, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 13:53:47], mode=BUILD, duration=0:00:00.289, duration_ms=289, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 13:53:49], mode=BUILD, duration=0:00:01.805, duration_ms=1805, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 13:55:17], mode=PLATFORM_GENERATION, duration=0:00:16.262, duration_ms=16262, data={name=001_platform}
+timestamp=[2021-03-21 13:55:20], mode=BUILD, duration=0:00:01.100, duration_ms=1100, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 13:55:27], mode=BUILD, duration=0:00:01.785, duration_ms=1785, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 13:59:08], mode=WORKBENCH_START, duration=0:00:08.188, duration_ms=8188, data={}
+timestamp=[2021-03-21 13:59:09], mode=WORKBENCH_UI_INIT, duration=0:00:00.707, duration_ms=707, data={editors_count=6, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=001_IoT,001_IoT_system,001_platform,RemoteSystemsTempFiles}
+timestamp=[2021-03-21 13:59:09], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.038, duration_ms=38, data={}
+timestamp=[2021-03-21 14:00:45], mode=BUILD, duration=0:00:00.310, duration_ms=310, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:00:54], mode=BUILD, duration=0:00:08.101, duration_ms=8101, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:03:03], mode=BUILD, duration=0:00:00.853, duration_ms=853, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:03:10], mode=BUILD, duration=0:00:05.899, duration_ms=5899, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:03:14], mode=BUILD, duration=0:00:00.479, duration_ms=479, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:03:21], mode=BUILD, duration=0:00:05.863, duration_ms=5863, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:03:42], mode=PLATFORM_GENERATION, duration=0:00:05.600, duration_ms=5600, data={name=001_platform}
+timestamp=[2021-03-21 14:03:42], mode=BUILD, duration=0:00:00.193, duration_ms=193, data={name=001_IoT, configuration=Debug, clean_build=true}
+timestamp=[2021-03-21 14:03:42], mode=BUILD, duration=0:00:00.192, duration_ms=192, data={name=001_IoT_system, configuration=Debug, clean_build=true}
+timestamp=[2021-03-21 14:04:19], mode=PLATFORM_GENERATION, duration=0:00:33.352, duration_ms=33352, data={name=001_platform}
+timestamp=[2021-03-21 14:04:20], mode=BUILD, duration=0:00:00.791, duration_ms=791, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:04:23], mode=BUILD, duration=0:00:02.955, duration_ms=2955, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:04:42], mode=BUILD, duration=0:00:00.704, duration_ms=704, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:04:48], mode=BUILD, duration=0:00:05.768, duration_ms=5768, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:10:58], mode=BUILD, duration=0:00:00.579, duration_ms=579, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:11:04], mode=BUILD, duration=0:00:06.222, duration_ms=6222, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:12:07], mode=BUILD, duration=0:00:00.590, duration_ms=590, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:12:13], mode=BUILD, duration=0:00:05.937, duration_ms=5937, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:12:21], mode=BUILD, duration=0:00:00.616, duration_ms=616, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:12:27], mode=BUILD, duration=0:00:05.878, duration_ms=5878, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:12:55], mode=BUILD, duration=0:00:00.603, duration_ms=603, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:13:01], mode=BUILD, duration=0:00:05.860, duration_ms=5860, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:14:31], mode=BUILD, duration=0:00:00.599, duration_ms=599, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:14:37], mode=BUILD, duration=0:00:05.919, duration_ms=5919, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:15:50], mode=BUILD, duration=0:00:00.585, duration_ms=585, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:15:56], mode=BUILD, duration=0:00:05.969, duration_ms=5969, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:15:59], mode=BUILD, duration=0:00:00.957, duration_ms=957, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:16:05], mode=BUILD, duration=0:00:05.873, duration_ms=5873, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:21:17], mode=WORKBENCH_START, duration=0:00:08.434, duration_ms=8434, data={}
+timestamp=[2021-03-21 14:21:18], mode=WORKBENCH_UI_INIT, duration=0:00:00.814, duration_ms=814, data={editors_count=5, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=001_IoT,001_IoT_system,001_platform,RemoteSystemsTempFiles}
+timestamp=[2021-03-21 14:21:18], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.047, duration_ms=47, data={}
+timestamp=[2021-03-21 14:21:30], mode=PLATFORM_GENERATION, duration=0:00:07.513, duration_ms=7513, data={name=001_platform}
+timestamp=[2021-03-21 14:21:30], mode=BUILD, duration=0:00:00.185, duration_ms=185, data={name=001_IoT, configuration=Debug, clean_build=true}
+timestamp=[2021-03-21 14:21:30], mode=BUILD, duration=0:00:00.193, duration_ms=193, data={name=001_IoT_system, configuration=Debug, clean_build=true}
+timestamp=[2021-03-21 14:22:02], mode=PLATFORM_GENERATION, duration=0:00:27.102, duration_ms=27102, data={name=001_platform}
+timestamp=[2021-03-21 14:22:03], mode=BUILD, duration=0:00:01.104, duration_ms=1104, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:22:08], mode=BUILD, duration=0:00:04.908, duration_ms=4908, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:22:47], mode=BUILD, duration=0:00:00.949, duration_ms=949, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:22:53], mode=BUILD, duration=0:00:05.751, duration_ms=5751, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:23:05], mode=BUILD, duration=0:00:00.950, duration_ms=950, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:23:11], mode=BUILD, duration=0:00:05.753, duration_ms=5753, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:23:46], mode=BUILD, duration=0:00:00.983, duration_ms=983, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:23:52], mode=BUILD, duration=0:00:05.850, duration_ms=5850, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:36:10], mode=WORKBENCH_START, duration=0:00:08.321, duration_ms=8321, data={}
+timestamp=[2021-03-21 14:36:11], mode=WORKBENCH_UI_INIT, duration=0:00:00.803, duration_ms=803, data={editors_count=4, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=001_IoT,001_IoT_system,001_platform,RemoteSystemsTempFiles}
+timestamp=[2021-03-21 14:36:11], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.042, duration_ms=42, data={}
+timestamp=[2021-03-21 14:38:34], mode=BUILD, duration=0:00:01.041, duration_ms=1041, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:38:41], mode=BUILD, duration=0:00:06.856, duration_ms=6856, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:38:48], mode=BUILD, duration=0:00:00.854, duration_ms=854, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:38:51], mode=BUILD, duration=0:00:02.773, duration_ms=2773, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:39:07], mode=BUILD, duration=0:00:01.031, duration_ms=1031, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:39:13], mode=BUILD, duration=0:00:05.760, duration_ms=5760, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:40:12], mode=BUILD, duration=0:00:00.988, duration_ms=988, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:40:18], mode=BUILD, duration=0:00:05.803, duration_ms=5803, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:42:29], mode=BUILD, duration=0:00:00.595, duration_ms=595, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:42:35], mode=BUILD, duration=0:00:05.863, duration_ms=5863, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:42:45], mode=BUILD, duration=0:00:01.016, duration_ms=1016, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:42:51], mode=BUILD, duration=0:00:05.917, duration_ms=5917, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:43:11], mode=BUILD, duration=0:00:01.058, duration_ms=1058, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:43:17], mode=BUILD, duration=0:00:05.809, duration_ms=5809, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:43:37], mode=BUILD, duration=0:00:00.616, duration_ms=616, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:43:43], mode=BUILD, duration=0:00:05.964, duration_ms=5964, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:45:05], mode=BUILD, duration=0:00:01.085, duration_ms=1085, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:45:11], mode=BUILD, duration=0:00:05.755, duration_ms=5755, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:46:09], mode=BUILD, duration=0:00:01.013, duration_ms=1013, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:46:15], mode=BUILD, duration=0:00:05.861, duration_ms=5861, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:46:35], mode=BUILD, duration=0:00:01.001, duration_ms=1001, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:46:41], mode=BUILD, duration=0:00:05.819, duration_ms=5819, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:47:55], mode=BUILD, duration=0:00:01.017, duration_ms=1017, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:48:01], mode=BUILD, duration=0:00:05.868, duration_ms=5868, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:48:28], mode=BUILD, duration=0:00:01.020, duration_ms=1020, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:48:34], mode=BUILD, duration=0:00:05.862, duration_ms=5862, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:49:34], mode=BUILD, duration=0:00:01.047, duration_ms=1047, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:49:40], mode=BUILD, duration=0:00:06.036, duration_ms=6036, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:50:56], mode=BUILD, duration=0:00:01.020, duration_ms=1020, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:51:02], mode=BUILD, duration=0:00:05.856, duration_ms=5856, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:51:23], mode=BUILD, duration=0:00:01.017, duration_ms=1017, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:51:29], mode=BUILD, duration=0:00:05.813, duration_ms=5813, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:52:12], mode=BUILD, duration=0:00:01.074, duration_ms=1074, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:52:18], mode=BUILD, duration=0:00:05.959, duration_ms=5959, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:55:49], mode=BUILD, duration=0:00:01.057, duration_ms=1057, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:55:55], mode=BUILD, duration=0:00:05.957, duration_ms=5957, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:58:32], mode=BUILD, duration=0:00:01.054, duration_ms=1054, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:58:38], mode=BUILD, duration=0:00:05.925, duration_ms=5925, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:59:18], mode=BUILD, duration=0:00:01.019, duration_ms=1019, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 14:59:24], mode=BUILD, duration=0:00:05.870, duration_ms=5870, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:01:04], mode=PLATFORM_GENERATION, duration=0:00:05.598, duration_ms=5598, data={name=001_platform}
+timestamp=[2021-03-21 15:01:04], mode=BUILD, duration=0:00:00.196, duration_ms=196, data={name=001_IoT, configuration=Debug, clean_build=true}
+timestamp=[2021-03-21 15:01:04], mode=BUILD, duration=0:00:00.136, duration_ms=136, data={name=001_IoT_system, configuration=Debug, clean_build=true}
+timestamp=[2021-03-21 15:01:50], mode=PLATFORM_GENERATION, duration=0:00:26.022, duration_ms=26022, data={name=001_platform}
+timestamp=[2021-03-21 15:01:51], mode=BUILD, duration=0:00:01.320, duration_ms=1320, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:01:58], mode=BUILD, duration=0:00:06.188, duration_ms=6188, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:04:38], mode=BUILD, duration=0:00:00.996, duration_ms=996, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:04:44], mode=BUILD, duration=0:00:05.962, duration_ms=5962, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:04:50], mode=BUILD, duration=0:00:00.988, duration_ms=988, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:04:56], mode=BUILD, duration=0:00:06.033, duration_ms=6033, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:05:33], mode=BUILD, duration=0:00:01.084, duration_ms=1084, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:05:40], mode=BUILD, duration=0:00:05.856, duration_ms=5856, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:06:05], mode=BUILD, duration=0:00:01.078, duration_ms=1078, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:06:12], mode=BUILD, duration=0:00:05.906, duration_ms=5906, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:06:33], mode=BUILD, duration=0:00:00.293, duration_ms=293, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:06:40], mode=BUILD, duration=0:00:05.939, duration_ms=5939, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:07:01], mode=BUILD, duration=0:00:01.028, duration_ms=1028, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:07:07], mode=BUILD, duration=0:00:05.813, duration_ms=5813, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:07:40], mode=BUILD, duration=0:00:00.576, duration_ms=576, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:07:46], mode=BUILD, duration=0:00:05.910, duration_ms=5910, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:08:01], mode=BUILD, duration=0:00:01.018, duration_ms=1018, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:08:07], mode=BUILD, duration=0:00:05.913, duration_ms=5913, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:08:38], mode=BUILD, duration=0:00:01.055, duration_ms=1055, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:08:44], mode=BUILD, duration=0:00:05.804, duration_ms=5804, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:09:05], mode=BUILD, duration=0:00:01.087, duration_ms=1087, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:09:11], mode=BUILD, duration=0:00:05.911, duration_ms=5911, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:10:45], mode=BUILD, duration=0:00:00.208, duration_ms=208, data={name=001_IoT, configuration=Debug, clean_build=true}
+timestamp=[2021-03-21 15:10:46], mode=BUILD, duration=0:00:00.993, duration_ms=993, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:10:52], mode=BUILD, duration=0:00:05.905, duration_ms=5905, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:11:13], mode=BUILD, duration=0:00:01.092, duration_ms=1092, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:11:20], mode=BUILD, duration=0:00:06.024, duration_ms=6024, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:11:58], mode=BUILD, duration=0:00:01.012, duration_ms=1012, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:12:04], mode=BUILD, duration=0:00:05.860, duration_ms=5860, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:12:26], mode=BUILD, duration=0:00:01.010, duration_ms=1010, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:12:32], mode=BUILD, duration=0:00:05.912, duration_ms=5912, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:13:15], mode=BUILD, duration=0:00:01.000, duration_ms=1000, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:13:22], mode=BUILD, duration=0:00:06.018, duration_ms=6018, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:14:02], mode=BUILD, duration=0:00:01.025, duration_ms=1025, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:14:08], mode=BUILD, duration=0:00:05.853, duration_ms=5853, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:15:15], mode=BUILD, duration=0:00:01.081, duration_ms=1081, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:15:21], mode=BUILD, duration=0:00:05.808, duration_ms=5808, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:16:37], mode=BUILD, duration=0:00:01.013, duration_ms=1013, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:16:44], mode=BUILD, duration=0:00:06.264, duration_ms=6264, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:17:38], mode=BUILD, duration=0:00:01.023, duration_ms=1023, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:17:44], mode=BUILD, duration=0:00:05.909, duration_ms=5909, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:18:19], mode=BUILD, duration=0:00:01.013, duration_ms=1013, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:18:26], mode=BUILD, duration=0:00:05.914, duration_ms=5914, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:19:26], mode=BUILD, duration=0:00:01.039, duration_ms=1039, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:19:32], mode=BUILD, duration=0:00:05.801, duration_ms=5801, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:20:58], mode=BUILD, duration=0:00:00.612, duration_ms=612, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:21:04], mode=BUILD, duration=0:00:05.963, duration_ms=5963, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:21:11], mode=BUILD, duration=0:00:01.012, duration_ms=1012, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:21:17], mode=BUILD, duration=0:00:05.858, duration_ms=5858, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:24:24], mode=BUILD, duration=0:00:01.050, duration_ms=1050, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:24:30], mode=BUILD, duration=0:00:05.858, duration_ms=5858, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:26:02], mode=BUILD, duration=0:00:01.019, duration_ms=1019, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:26:09], mode=BUILD, duration=0:00:05.920, duration_ms=5920, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:27:26], mode=BUILD, duration=0:00:01.016, duration_ms=1016, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:27:32], mode=BUILD, duration=0:00:05.860, duration_ms=5860, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:30:37], mode=BUILD, duration=0:00:00.612, duration_ms=612, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:30:43], mode=BUILD, duration=0:00:06.119, duration_ms=6119, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:30:47], mode=BUILD, duration=0:00:01.061, duration_ms=1061, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:30:53], mode=BUILD, duration=0:00:05.862, duration_ms=5862, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:31:20], mode=BUILD, duration=0:00:01.084, duration_ms=1084, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:31:26], mode=BUILD, duration=0:00:05.857, duration_ms=5857, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:31:46], mode=BUILD, duration=0:00:01.025, duration_ms=1025, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:31:52], mode=BUILD, duration=0:00:05.915, duration_ms=5915, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:32:39], mode=BUILD, duration=0:00:01.064, duration_ms=1064, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:32:45], mode=BUILD, duration=0:00:05.859, duration_ms=5859, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:33:47], mode=BUILD, duration=0:00:01.022, duration_ms=1022, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:33:53], mode=BUILD, duration=0:00:05.858, duration_ms=5858, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:34:47], mode=BUILD, duration=0:00:01.018, duration_ms=1018, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:34:53], mode=BUILD, duration=0:00:05.866, duration_ms=5866, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:35:33], mode=BUILD, duration=0:00:00.291, duration_ms=291, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:35:39], mode=BUILD, duration=0:00:05.872, duration_ms=5872, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:37:38], mode=BUILD, duration=0:00:01.007, duration_ms=1007, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:37:44], mode=BUILD, duration=0:00:05.860, duration_ms=5860, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:39:53], mode=BUILD, duration=0:00:01.015, duration_ms=1015, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:39:59], mode=BUILD, duration=0:00:05.858, duration_ms=5858, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:43:41], mode=BUILD, duration=0:00:00.597, duration_ms=597, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:43:47], mode=BUILD, duration=0:00:05.908, duration_ms=5908, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:44:23], mode=BUILD, duration=0:00:00.592, duration_ms=592, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:44:29], mode=BUILD, duration=0:00:06.022, duration_ms=6022, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:44:32], mode=BUILD, duration=0:00:00.587, duration_ms=587, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:44:38], mode=BUILD, duration=0:00:05.927, duration_ms=5927, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:46:32], mode=BUILD, duration=0:00:00.597, duration_ms=597, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:46:38], mode=BUILD, duration=0:00:05.969, duration_ms=5969, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:49:01], mode=BUILD, duration=0:00:01.055, duration_ms=1055, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:49:07], mode=BUILD, duration=0:00:05.904, duration_ms=5904, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:49:43], mode=BUILD, duration=0:00:00.999, duration_ms=999, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:49:50], mode=BUILD, duration=0:00:05.870, duration_ms=5870, data={name=001_IoT_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:50:57], mode=BUILD, duration=0:00:00.179, duration_ms=179, data={name=001_IoT, configuration=Debug, clean_build=true}
+timestamp=[2021-03-21 15:50:58], mode=BUILD, duration=0:00:01.042, duration_ms=1042, data={name=001_IoT, configuration=Debug, clean_build=false}
+timestamp=[2021-03-21 15:51:05], mode=BUILD, duration=0:00:06.112, duration_ms=6112, data={name=001_IoT_system, configuration=Debug, clean_build=false}

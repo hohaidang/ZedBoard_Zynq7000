@@ -1,7 +1,7 @@
 //Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-//Date        : Tue Mar 16 16:58:57 2021
+//Date        : Sun Mar 21 13:24:02 2021
 //Host        : DESKTOP-O8T2GMT running 64-bit major release  (build 9200)
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
@@ -33,6 +33,12 @@ module design_1_wrapper
     FIXED_IO_ps_srstb,
     btns_5bits_tri_i,
     leds_8bits_tri_o,
+    oled_dc_n_0,
+    oled_reset_n_0,
+    oled_spi_clk_0,
+    oled_spi_data_0,
+    oled_vbat_0,
+    oled_vdd_0,
     spi0_miso,
     spi0_mosi,
     spi0_sclk,
@@ -60,6 +66,12 @@ module design_1_wrapper
   inout FIXED_IO_ps_srstb;
   input [4:0]btns_5bits_tri_i;
   output [7:0]leds_8bits_tri_o;
+  output oled_dc_n_0;
+  output oled_reset_n_0;
+  output oled_spi_clk_0;
+  output oled_spi_data_0;
+  output oled_vbat_0;
+  output oled_vdd_0;
   input spi0_miso;
   output spi0_mosi;
   output spi0_sclk;
@@ -88,6 +100,12 @@ module design_1_wrapper
   wire FIXED_IO_ps_srstb;
   wire [4:0]btns_5bits_tri_i;
   wire [7:0]leds_8bits_tri_o;
+  wire oled_dc_n_0;
+  wire oled_reset_n_0;
+  wire oled_spi_clk_0;
+  wire oled_spi_data_0;
+  wire oled_vbat_0;
+  wire oled_vdd_0;
   wire spi0_miso;
   wire spi0_mosi;
   wire spi0_sclk;
@@ -117,6 +135,12 @@ module design_1_wrapper
         .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb),
         .btns_5bits_tri_i(btns_5bits_tri_i),
         .leds_8bits_tri_o(leds_8bits_tri_o),
+        .oled_dc_n_0(oled_dc_n_0),
+        .oled_reset_n_0(oled_reset_n_0),
+        .oled_spi_clk_0(oled_spi_clk_0),
+        .oled_spi_data_0(oled_spi_data_0),
+        .oled_vbat_0(oled_vbat_0),
+        .oled_vdd_0(oled_vdd_0),
         .spi0_miso(spi0_miso),
         .spi0_mosi(spi0_mosi),
         .spi0_sclk(spi0_sclk),

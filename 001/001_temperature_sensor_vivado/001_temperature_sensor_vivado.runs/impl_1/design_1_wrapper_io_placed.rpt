@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date                      : Tue Mar 16 17:23:26 2021
+| Date                      : Sun Mar 21 13:47:57 2021
 | Host                      : DESKTOP-O8T2GMT running 64-bit major release  (build 9200)
 | Command                   : report_io -file design_1_wrapper_io_placed.rpt
 | Design                    : design_1_wrapper
@@ -25,7 +25,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|           147 |
+|           153 |
 +---------------+
 
 
@@ -68,7 +68,7 @@ Table of Contents
 | AA9        |                     | High Range | IO_L11P_T1_SRCC_13      | User IO     |                   |      13 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | AA10       |                     | High Range | VCCO_13                 | VCCO        |                   |      13 |            |      |                     |                      |    3.30 |            |           |          |      |                  |              |                   |              |
 | AA11       |                     | High Range | IO_L8P_T1_13            | User IO     |                   |      13 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
-| AA12       |                     | High Range | IO_L7P_T1_13            | User IO     |                   |      13 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
+| AA12       | oled_spi_data_0     | High Range | IO_L7P_T1_13            | OUTPUT      | LVCMOS33          |      13 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | AA13       |                     | High Range | IO_L23N_T3_33           | User IO     |                   |      33 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | AA14       |                     | High Range | IO_L22N_T3_33           | User IO     |                   |      33 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | AA15       |                     |            | GND                     | GND         |                   |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
@@ -90,7 +90,7 @@ Table of Contents
 | AB9        |                     | High Range | IO_L9N_T1_DQS_13        | User IO     |                   |      13 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | AB10       |                     | High Range | IO_L9P_T1_DQS_13        | User IO     |                   |      13 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | AB11       |                     | High Range | IO_L8N_T1_13            | User IO     |                   |      13 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
-| AB12       |                     | High Range | IO_L7N_T1_13            | User IO     |                   |      13 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
+| AB12       | oled_spi_clk_0      | High Range | IO_L7N_T1_13            | OUTPUT      | LVCMOS33          |      13 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | AB13       |                     | High Range | VCCO_33                 | VCCO        |                   |      33 |            |      |                     |                      |    3.30 |            |           |          |      |                  |              |                   |              |
 | AB14       |                     | High Range | IO_L24P_T3_33           | User IO     |                   |      33 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | AB15       |                     | High Range | IO_L24N_T3_33           | User IO     |                   |      33 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
@@ -439,10 +439,10 @@ Table of Contents
 | U6         |                     | High Range | IO_L22P_T3_13           | User IO     |                   |      13 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | U7         |                     | High Range | IO_25_13                | User IO     |                   |      13 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | U8         |                     | High Range | VCCO_13                 | VCCO        |                   |      13 |            |      |                     |                      |    3.30 |            |           |          |      |                  |              |                   |              |
-| U9         |                     | High Range | IO_L6N_T0_VREF_13       | User IO     |                   |      13 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
-| U10        |                     | High Range | IO_L6P_T0_13            | User IO     |                   |      13 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
-| U11        |                     | High Range | IO_L5N_T0_13            | User IO     |                   |      13 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
-| U12        |                     | High Range | IO_L5P_T0_13            | User IO     |                   |      13 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
+| U9         | oled_reset_n_0      | High Range | IO_L6N_T0_VREF_13       | OUTPUT      | LVCMOS33          |      13 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
+| U10        | oled_dc_n_0         | High Range | IO_L6P_T0_13            | OUTPUT      | LVCMOS33          |      13 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
+| U11        | oled_vbat_0         | High Range | IO_L5N_T0_13            | OUTPUT      | LVCMOS33          |      13 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
+| U12        | oled_vdd_0          | High Range | IO_L5P_T0_13            | OUTPUT      | LVCMOS33          |      13 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | U13        |                     |            | GND                     | GND         |                   |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
 | U14        | leds_8bits_tri_o[7] | High Range | IO_25_33                | OUTPUT      | LVCMOS33          |      33 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | U15        |                     | High Range | IO_L15P_T2_DQS_33       | User IO     |                   |      33 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |

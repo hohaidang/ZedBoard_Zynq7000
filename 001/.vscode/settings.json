@@ -1,6 +1,8 @@
 {
   "files.associations": {
     "array": "cpp",
-    "functional": "cpp"
+    "functional": "cpp",
+    "sstream": "cpp",
+    "ostream": "cpp"
   }
 }

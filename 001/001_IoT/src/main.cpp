@@ -1,9 +1,10 @@
 #include "bme280_driver.hpp"
 #include "gpio_driver.hpp"
+#include "oled_driver.hpp"
 #include "sleep.h"
 #include "spi_driver.hpp"
 #include <array>
-
+#include <string>
 
 s32 user_spi_read(const u8, u8 *, u32);
 s32 user_spi_write(const u8, const u8 *, u32);
@@ -12,6 +13,7 @@ void user_delay_ms(u32 period);
 gpio_handler button, led;
 spi_handler spi0;
 bme_sensor_handler bme280;
+oled_handler oled;
 
 void small_delay() {
   for (u32 i = 0; i < 50000000; ++i) {
@@ -89,6 +91,7 @@ int main(void) {
   xil_printf("Program Starting\r\n");
   gpio_init();
   spi_init();
+  oled.init(XPAR_OLED_CONTROL_0_S00_AXI_BASEADDR);
   xil_printf("Peripheral device initial completed\r\n");
 
   bme280.init_BME280(user_spi_read, user_spi_write, user_delay_ms);
@@ -101,10 +104,11 @@ int main(void) {
     bme280.set_sensor_settings(settings);
     while (1) {
       bme280.get_sensor_data();
+      oled.print(bme280.data_to_string());
 #ifdef DEBUG_EN
       bme280.print_sensor_data();
 #endif
-      sleep(1);
+      sleep(2);
     }
   } else
     xil_printf(

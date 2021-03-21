@@ -7,9 +7,11 @@
 
 #ifndef INC_BME280_DRIVER_H_
 #define INC_BME280_DRIVER_H_
-#include "xil_types.h"
+#include <string>
 #ifdef __ZYNQ__
 #include "xil_printf.h"
+#include "xil_types.h"
+
 #endif
 
 #define BME280_TEMP_PRESS_CALIB_DATA_LEN static_cast<u8>(28u)
@@ -207,6 +209,8 @@ public:
   bme280_data get_sensor_data();
   BME280_Stat get_status();
   void print_sensor_data();
+  bme280_data data() { return data_; };
+  std::string data_to_string() const;
 
 private:
   BME280_Stat getRegData(u8 regAddr, u8 *regData, const u32 len);
@@ -814,6 +818,15 @@ bme_sensor_handler::compensate_humidity(const bme280_uncomp_data &uncomp_data) {
   }
 
   return humidity;
+}
+
+std::string bme_sensor_handler::data_to_string() const {
+  std::string data("");
+  data += std::to_string(int(data_.humidity));
+  data += "% huminity    ";
+  data += std::to_string(int(data_.temperature));
+  data += " degC";
+  return data;
 }
 
 #endif /* INC_BME280_DRIVER_H_ */

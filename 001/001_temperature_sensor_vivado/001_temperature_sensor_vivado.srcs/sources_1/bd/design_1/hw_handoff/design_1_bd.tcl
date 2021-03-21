@@ -166,6 +166,12 @@ proc create_root_design { parentCell } {
 
 
   # Create ports
+  set oled_dc_n_0 [ create_bd_port -dir O oled_dc_n_0 ]
+  set oled_reset_n_0 [ create_bd_port -dir O oled_reset_n_0 ]
+  set oled_spi_clk_0 [ create_bd_port -dir O -type clk oled_spi_clk_0 ]
+  set oled_spi_data_0 [ create_bd_port -dir O oled_spi_data_0 ]
+  set oled_vbat_0 [ create_bd_port -dir O oled_vbat_0 ]
+  set oled_vdd_0 [ create_bd_port -dir O oled_vdd_0 ]
   set spi0_miso [ create_bd_port -dir I -type data spi0_miso ]
   set spi0_mosi [ create_bd_port -dir O -type data spi0_mosi ]
   set spi0_sclk [ create_bd_port -dir O -type clk spi0_sclk ]
@@ -185,6 +191,9 @@ proc create_root_design { parentCell } {
    CONFIG.GPIO_BOARD_INTERFACE {leds_8bits} \
    CONFIG.USE_BOARD_FLOW {true} \
  ] $led
+
+  # Create instance: oled_control_0, and set properties
+  set oled_control_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:oled_control:1.0 oled_control_0 ]
 
   # Create instance: processing_system7_0, and set properties
   set processing_system7_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0 ]
@@ -620,7 +629,7 @@ proc create_root_design { parentCell } {
   # Create instance: ps7_0_axi_periph, and set properties
   set ps7_0_axi_periph [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 ps7_0_axi_periph ]
   set_property -dict [ list \
-   CONFIG.NUM_MI {2} \
+   CONFIG.NUM_MI {3} \
  ] $ps7_0_axi_periph
 
   # Create instance: rst_ps7_0_100M, and set properties
@@ -634,20 +643,28 @@ proc create_root_design { parentCell } {
   connect_bd_intf_net -intf_net processing_system7_0_M_AXI_GP0 [get_bd_intf_pins processing_system7_0/M_AXI_GP0] [get_bd_intf_pins ps7_0_axi_periph/S00_AXI]
   connect_bd_intf_net -intf_net ps7_0_axi_periph_M00_AXI [get_bd_intf_pins button/S_AXI] [get_bd_intf_pins ps7_0_axi_periph/M00_AXI]
   connect_bd_intf_net -intf_net ps7_0_axi_periph_M01_AXI [get_bd_intf_pins led/S_AXI] [get_bd_intf_pins ps7_0_axi_periph/M01_AXI]
+  connect_bd_intf_net -intf_net ps7_0_axi_periph_M02_AXI [get_bd_intf_pins oled_control_0/S00_AXI] [get_bd_intf_pins ps7_0_axi_periph/M02_AXI]
 
   # Create port connections
   connect_bd_net -net button_ip2intc_irpt [get_bd_pins button/ip2intc_irpt] [get_bd_pins processing_system7_0/IRQ_F2P]
-  connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins button/s_axi_aclk] [get_bd_pins led/s_axi_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins ps7_0_axi_periph/ACLK] [get_bd_pins ps7_0_axi_periph/M00_ACLK] [get_bd_pins ps7_0_axi_periph/M01_ACLK] [get_bd_pins ps7_0_axi_periph/S00_ACLK] [get_bd_pins rst_ps7_0_100M/slowest_sync_clk]
+  connect_bd_net -net oled_control_0_oled_dc_n [get_bd_ports oled_dc_n_0] [get_bd_pins oled_control_0/oled_dc_n]
+  connect_bd_net -net oled_control_0_oled_reset_n [get_bd_ports oled_reset_n_0] [get_bd_pins oled_control_0/oled_reset_n]
+  connect_bd_net -net oled_control_0_oled_spi_clk [get_bd_ports oled_spi_clk_0] [get_bd_pins oled_control_0/oled_spi_clk]
+  connect_bd_net -net oled_control_0_oled_spi_data [get_bd_ports oled_spi_data_0] [get_bd_pins oled_control_0/oled_spi_data]
+  connect_bd_net -net oled_control_0_oled_vbat [get_bd_ports oled_vbat_0] [get_bd_pins oled_control_0/oled_vbat]
+  connect_bd_net -net oled_control_0_oled_vdd [get_bd_ports oled_vdd_0] [get_bd_pins oled_control_0/oled_vdd]
+  connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins button/s_axi_aclk] [get_bd_pins led/s_axi_aclk] [get_bd_pins oled_control_0/s00_axi_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins ps7_0_axi_periph/ACLK] [get_bd_pins ps7_0_axi_periph/M00_ACLK] [get_bd_pins ps7_0_axi_periph/M01_ACLK] [get_bd_pins ps7_0_axi_periph/M02_ACLK] [get_bd_pins ps7_0_axi_periph/S00_ACLK] [get_bd_pins rst_ps7_0_100M/slowest_sync_clk]
   connect_bd_net -net processing_system7_0_FCLK_RESET0_N [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins rst_ps7_0_100M/ext_reset_in]
   connect_bd_net -net processing_system7_0_SPI0_MOSI_O [get_bd_ports spi0_mosi] [get_bd_pins processing_system7_0/SPI0_MOSI_O]
   connect_bd_net -net processing_system7_0_SPI0_SCLK_O [get_bd_ports spi0_sclk] [get_bd_pins processing_system7_0/SPI0_SCLK_O]
   connect_bd_net -net processing_system7_0_SPI0_SS_O [get_bd_ports spi0_ss] [get_bd_pins processing_system7_0/SPI0_SS_O]
-  connect_bd_net -net rst_ps7_0_100M_peripheral_aresetn [get_bd_pins button/s_axi_aresetn] [get_bd_pins led/s_axi_aresetn] [get_bd_pins ps7_0_axi_periph/ARESETN] [get_bd_pins ps7_0_axi_periph/M00_ARESETN] [get_bd_pins ps7_0_axi_periph/M01_ARESETN] [get_bd_pins ps7_0_axi_periph/S00_ARESETN] [get_bd_pins rst_ps7_0_100M/peripheral_aresetn]
+  connect_bd_net -net rst_ps7_0_100M_peripheral_aresetn [get_bd_pins button/s_axi_aresetn] [get_bd_pins led/s_axi_aresetn] [get_bd_pins oled_control_0/s00_axi_aresetn] [get_bd_pins ps7_0_axi_periph/ARESETN] [get_bd_pins ps7_0_axi_periph/M00_ARESETN] [get_bd_pins ps7_0_axi_periph/M01_ARESETN] [get_bd_pins ps7_0_axi_periph/M02_ARESETN] [get_bd_pins ps7_0_axi_periph/S00_ARESETN] [get_bd_pins rst_ps7_0_100M/peripheral_aresetn]
   connect_bd_net -net spi0_miso_1 [get_bd_ports spi0_miso] [get_bd_pins processing_system7_0/SPI0_MISO_I]
 
   # Create address segments
   assign_bd_address -offset 0x41200000 -range 0x00010000 -target_address_space [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs button/S_AXI/Reg] -force
   assign_bd_address -offset 0x41210000 -range 0x00010000 -target_address_space [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs led/S_AXI/Reg] -force
+  assign_bd_address -offset 0x43C00000 -range 0x00010000 -target_address_space [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs oled_control_0/S00_AXI/S00_AXI_reg] -force
 
 
   # Restore current instance

@@ -1,0 +1,15 @@
+2021-03-21T13:52:25.794615100255-13:52:25 **** Incremental Build of configuration Debug for project 001_IoT_system ****
+000-make all 
+000-Generating bif file for the system project
+000-generate_system_bif.bat 50713 C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/001_platform.xpfm standalone_domain C:/Users/hohai/OneDrive/Desktop/Code/temp/ZedBoard_Zynq7000/001/001_IoT_system/Debug/system.bif
+000-xpfm path is not valid
+000-    invoked from within
+000-"::tcf::eval -progress {apply {{msg} {puts $msg}}} {tcf_send_command tcfchan#0 xsdb eval s es {{::scw::generate_bif -xpfm C:/Users/hohai/OneDrive/Desktop/Code/ZedBoard_Zynq7000/001/001_platform/export/001_platform/001_platform.xpfm -domains standalone_domain -bifpath C:/Users/hohai/OneDrive/Desktop/Code/temp/ZedBoard_Zynq7000/001/001_IoT_system/Debug/system.bif}}}"
+000-    (procedure "::tcf::send_command" line 4)
+000-    invoked from within
+000-"tcf send_command $::xsdb::curchan xsdb eval s es [list "::scw::generate_bif $GENERATE_BIF_ARGS"]"
+000-    (file "C:/Xilinx2020/Vitis/2020.1\scripts\vitis\util\generate_system_bif.tcl" line 25)
+000/001_IoT_system/Debug0-1-1make: *** [makefile:38: package] Error 12-make: *** [makefile:38: package] Error 1
+00255-
+13:52:27 Build Finished (took 1s.728ms)
+

@@ -1,0 +1,83 @@
+/*
+ * oled.h
+ *
+ *  Created on: Feb 20, 2020
+ *      Author: VIPIN
+ */
+
+#ifndef SRC_OLED_H_
+#define SRC_OLED_H_
+
+#include "xil_types.h"
+#include <string>
+
+class oled_handler {
+public:
+  oled_handler() : oled_addr_(0) {}
+  void init(u32 addr) { oled_addr_ = addr; }
+
+  void writeCharOled(const char &myChar) const {
+    u32 status = 0;
+    Xil_Out32(oled_addr_ + 8, myChar);
+    Xil_Out32(oled_addr_, 0x1);
+    while (!status) {
+      status = Xil_In32(oled_addr_ + 4); // polling mode
+    }
+    Xil_Out32(oled_addr_ + 4, 0x0);
+  }
+
+  void print(const std::string &str) const {
+    for (const auto &chr : str) {
+      writeCharOled(chr);
+    }
+  }
+
+  void clear() const {
+    u32 i;
+    for (i = 0; i < 128; ++i)
+      writeCharOled(' ');
+  }
+
+private:
+  u32 oled_addr_;
+};
+
+#endif /* SRC_OLED_H_ */
+
+// /*
+//  * oled.c
+//  *
+//  *  Created on: Feb 20, 2020
+//  *      Author: VIPIN
+//  */
+
+// #include "oled_driver.hpp"
+// #include "xil_io.h"
+
+// int initOled(oledControl *myOled,u32 baseAddress){
+// 	myOled->baseAddress = baseAddress;
+// 	return 0;
+// }
+
+// void writeCharOled(oledControl *myOled,char myChar){
+// 	u32 status=0;
+// 	Xil_Out32(myOled->baseAddress+8,myChar);
+// 	Xil_Out32(myOled->baseAddress,0x1);
+// 	while(!status){
+// 		status = Xil_In32(myOled->baseAddress+4); //polling mode
+// 	}
+// 	Xil_Out32(myOled->baseAddress+4,0x0);
+// }
+
+// void printOled(oledControl *myOled,char *myString){
+// 	while(*myString != 0){
+// 		writeCharOled(myOled,*myString);
+// 		myString++;
+// 	}
+// }
+
+// void clearOled(oledControl *myOled){
+// 	u32 i;
+// 	for(i=0;i<64;i++)
+// 		writeCharOled(myOled,' ');
+// }
